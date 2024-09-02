@@ -95,7 +95,7 @@ body.scrolling .image-gallery img {
 }
 
 .cursor {
-    background-color: whitesmoke;
+    background-color: yellow;
     width: 24px;
     height: 24px;
     transform-origin: center;
@@ -114,7 +114,7 @@ body.scrolling .image-gallery img {
         width: 80px;
         height: 80px;
         border-radius: 100%;
-        border: 2px solid #ff674d;
+        border: 2px solid yellow;
         top: -2px;
         left: -2px;
         position: absolute;
@@ -129,7 +129,7 @@ body.scrolling .image-gallery img {
 }
 
 .cursor {
-    background-color: whitesmoke;
+    background-color: yellow;
     width: 24px;
     height: 24px;
     transform-origin: center;
@@ -149,7 +149,7 @@ body.scrolling .image-gallery img {
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    border: 2px solid #ff674d;
+    border: 2px solid yellow;
     top: -2px;
     left: -2px;
     position: absolute;

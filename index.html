@@ -205,64 +205,40 @@
 
 <body>
     <div class="cursor__wrapper">
-        <section class="sticky top-0 left-0 z-50 shadow-2xl">
+        <section class="sticky top-0 left-0 z-50 shadow-lg">
             <!-- Navbar -->
-            <nav class="bg-white p-5 shadow-lg bgfont">
-                <div class="flex justify-around items-center">
-
+            <nav class="bg-[#ffde16]  p-5 shadow-lg bgfont">
+                <div class=" flex justify-between items-center">
                     <!-- Logo -->
                     <div>
                         <img src="assets/AynMedia_Logo.png" alt="Brandbee">
                     </div>
-                    <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-lg">
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">HOME</a>
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SERVICES</a>
-                        <div class="relative">
-                            <a href="aboutus.html"
-                                class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">
-                                ABOUT US
-                            </a>
-                            <ul class="dropdown-list absolute hidden bg-white mt-2 rounded shadow-lg">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Who we are</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">How we work</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">What we do</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Our LeaderShip</a></li>
-                            </ul>
-                        </div>
-
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SAMPLE
-                            WORK</a>
-                        <a href="client.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">OUR
-                            CLIENTS</a>
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">INDUSTRIES
-                            WE HAVE</a>
-                        <a href="blog.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">BLOG</a>
+                    <!-- Centered Navbar Links (hidden on mobile) -->
+                    <div class="hidden md:flex flex-1 justify-center items-center gap-10">
+                        <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
+                        <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
+                        <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
+                        <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                        <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                        <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
+                        <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
                         <div class="flex justify-center items-center">
-                            <div class="bg-black p-2">
-                                <a href="#"
-                                    class="text-white preserve-3d backface-hidden transform transition duration-700 ease-in-out hover:rotate-y-180">LETS
+                            <div class="bg-black p-2 ">
+                                <a href="#" class="text-white hover:text-yellow-400 duration-700 ease-in-out ">LETS
                                     TALK</a>
                             </div>
                         </div>
                     </div>
-
-
-
                     <!-- Mobile Menu Toggle Button -->
                     <!-- Mobile Menu Toggle Button -->
                     <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
+
                 <!-- Mobile Menu (hidden by default) -->
                 <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                    <a href="#" class="text-black hover:text-gray-400">HOME</a>
+                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
                     <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
                     <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
                     <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
@@ -283,7 +259,7 @@
                             <img src="assets/Ayn_Media.webp" alt="">
                         </div>
                         <div class="text-white font-bold textsize3 ml-12 text-animate">BEE</div>
-                        <div class="text-yellow-400 font-bold textsize1 ml-10 text-animate">EVERY</div>
+                        <div class="text-[#ffde16] font-bold textsize1 ml-10 text-animate">EVERY</div>
                         <div class="text-white font-bold textsize2 text-right -mt-32 text-animate">THING</div>
                         <div class="flex gap-5">
                             <div class="border-white border w-28 p-10 rounded-full cursor-pointer">
@@ -296,9 +272,9 @@
                             <!-- <a href="" src="assets/AynMedia-Video.mp4">
                                 <div class="text-white">Watc Video Intro</div>
                             </a> -->
-                            
+
                         </div>
-                        
+
                         <div class="text-white lg:w-96 relative -top-96 ml-14">
                             <h1 class="font-bold text-2xl">Digital Marketing Agency in Chennai</h1>
                             <p class="bgfont2 mt-3 text-lg font-medium">Our innovative brand and digital solutions
@@ -319,7 +295,7 @@
                     </div>
                 </section>
                 <!-- Our Clients  -->
-                <section class="bg-white pt-20 pb-20">
+                <section class="bg-[#ffde16] pt-20 pb-20">
                     <div class="text-center font-medium text-5xl bgfont2 text-animate2">Our Clients</div>
                     <div class="bgfont text-center text-xl font-medium mt-5 text-animate2">WE DON'T BELIEVE IN MONOGAMY.
                         WE KEEP
@@ -452,15 +428,16 @@
                             </div>
                         </div>
                     </section>
-                    <div class="bgfont2 flex justify-center items-center">
-                        <div class="group cursor-pointer">
-                            <div
-                                class="bg-yellow-400 p-3 w-40 text-center rounded-md transition duration-300 ease-in-out group-hover:bg-black">
-                                <div class="text-xl group-hover:text-white">View More</div>
+                    <a href="client.html">
+                        <div class="bgfont2 flex justify-center items-center">
+                            <div class="group cursor-pointer">
+                                <div
+                                    class="bg-black p-3 w-40 text-center rounded-md transition duration-300 ease-in-out group-hover:bg-white">
+                                    <div class="text-xl group-hover:text-black text-[#ffde16]  ">View More</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
+                    </a>
                 </section>
                 <!-- Who we are  -->
                 <section class="bg-black  pb-10">
@@ -528,7 +505,7 @@
                 </section>
                 <!-- Services  -->
                 <section>
-                    <div class="p-10">
+                    <div class="bg-[#ffde16] p-10">
                         <div class="container mx-auto bgfont2  flex justify-between mt-20">
                             <div class="text-animate2">
                                 <div class="text-gray-700 text-xl">Services</div>
@@ -541,14 +518,14 @@
                             </div>
                         </div>
                         <div class="container mx-auto mt-20">
-                            <div class="bg-yellow-300  flex justify-around flex-wrap md:flex-nowrap mb-20">
+                            <div class="bg-black  flex justify-around flex-wrap md:flex-nowrap mb-20">
                                 <!-- BRAND SOLUTIONS Section -->
                                 <div class="group w-full h-full">
-                                    <div
-                                        class="relative hover:bg-yellow-300 transition duration-300 ease-in-out p-20 pb-16">
+                                    <div class="relative transition duration-300 ease-in-out p-20 pb-16">
                                         <div>
-                                            <div class="text-7xl font-bold bgfont">BRAND <br>SOLUTIONS</div>
-                                            <p class="bgfont2">
+                                            <div class="text-7xl font-bold bgfont text-[#ffde16]">BRAND <br>SOLUTIONS
+                                            </div>
+                                            <p class="bgfont2 text-white">
                                                 We are your PARTNER IN BRANDING, OFFERING <br>a tailored solution to
                                                 build a
                                                 <br>STRONG BRAND IDENTITY that resonates with your audience
@@ -557,20 +534,83 @@
 
                                         <!-- Hidden List Section for BRAND SOLUTIONS -->
                                         <div
-                                            class="bgfont2 absolute inset-0  bg-black text-white hidden group-hover:block transition duration-300 ease-in-out">
-                                            <div class="flex justify-center items-center w-full h-full">
-                                                <ul>
-                                                    <li class="mb-2 ">
-                                                        <a href="">Brand Strategy / Positioning</a>
-                                                    </li>
-                                                    <li class="mb-2">Brand Identity Development</li>
-                                                    <li class="mb-2">Corporate Communications</li>
-                                                    <li class="mb-2">Brand Refresh / Rebranding</li>
-                                                    <li class="mb-2">Brand Communication & Design</li>
-                                                    <li class="mb-2">Content Development Services</li>
-                                                    <li class="mb-2">Brand Experience Design</li>
-                                                    <li class="mb-2">Photoshoots & Video Shoots</li>
-                                                    <li class="mb-2">Brand Conformance (IPR)</li>
+                                            class="bgfont2 absolute inset-0  bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
+                                            <div class="flex justify-start items-start w-full h-full">
+                                                <ul class="container mx-auto p-10">
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2 ">
+                                                                <a href="">Brand Strategy / Positioning</a>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Brand Identity Development</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Corporate Communications</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Brand Refresh / Rebranding</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Brand Communication & Design</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Content Development Services</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Brand Experience Design</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Photoshoots & Video Shoots</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Brand Conformance (IPR)</li>
+                                                        </div>
+                                                    </div>
                                                 </ul>
                                             </div>
                                         </div>
@@ -584,11 +624,11 @@
 
                                 <!-- DIGITAL SOLUTIONS Section -->
                                 <div class="group w-full h-full">
-                                    <div
-                                        class="relative hover:bg-yellow-300 transition duration-300 ease-in-out  p-20 w-full h-full pb-16">
+                                    <div class="relative transition duration-300 ease-in-out  p-20 w-full h-full pb-16">
                                         <div>
-                                            <div class="text-7xl font-bold bgfont">DIGITAL <br>SOLUTIONS</div>
-                                            <p class="bgfont2">
+                                            <div class="text-7xl font-bold bgfont text-[#ffde16]">DIGITAL <br>SOLUTIONS
+                                            </div>
+                                            <p class="bgfont2 text-white">
                                                 We guide your online presence towards success, <br>meticulously crafting
                                                 and
                                                 <br>implementing our EXPERTLY TAILORED MARKETING STRATEGIES
@@ -597,18 +637,81 @@
 
                                         <!-- Hidden List Section for DIGITAL SOLUTIONS -->
                                         <div
-                                            class="bgfont2 absolute inset-0 bg-black text-white hidden group-hover:block transition duration-300 ease-in-out">
-                                            <div class="flex justify-center items-center w-full h-full">
-                                                <ul class="">
-                                                    <li class="mb-2">Website & Mobile App Development</li>
-                                                    <li class="mb-2">Social Media Marketing</li>
-                                                    <li class="mb-2">Search Engine Optimisation (SEO)</li>
-                                                    <li class="mb-2">Content Marketing</li>
-                                                    <li class="mb-2">Performance Marketing</li>
-                                                    <li class="mb-2">Community / Influencer Marketing</li>
-                                                    <li class="mb-2">Video Marketing</li>
-                                                    <li class="mb-2">Email Marketing</li>
-                                                    <li class="mb-2">Online Reputation Management</li>
+                                            class=" bgfont2 absolute inset-0 bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
+                                            <div class="flex justify-start items-start w-full h-full">
+                                                <ul class="container mx-auto p-10">
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Website & Mobile App Development</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Social Media Marketing</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Search Engine Optimisation (SEO)</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Content Marketing</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Performance Marketing</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Community / Influencer Marketing</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Video Marketing</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Email Marketing</li>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-3">
+                                                        <div>
+                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        </div>
+                                                        <div>
+                                                            <li class="mb-2">Online Reputation Management</li>
+                                                        </div>
+                                                    </div>
                                                 </ul>
                                             </div>
                                         </div>
@@ -668,7 +771,7 @@
 
                 </div>
                 <!-- Brands and Campaigns  -->
-                <section>
+                <section class="bg-[#ffde16] ">
                     <div class="container mx-auto pt-20 p-20">
                         <div class="text-3xl font-medium text-center bgfont2">
                             <div>We are passionate to create connected brands and campaigns to enable stable
@@ -680,7 +783,7 @@
                                 <div class="parallax2"></div>
                                 <!-- <img src="assets/Ayntech_CEO.webp" alt="Ayntech_CEO"> -->
                             </div>
-                            <div class="w-full text-xl text-gray-500">
+                            <div class="w-full text-xl text-gray-700">
                                 <div>Our award-winning team uses strategy, design, SEO,
                                     paid ads, and social media to connect with current
                                     and potential customers, generate more leads, and
@@ -689,7 +792,7 @@
                                     thanks to our company culture, which is built on
                                     everyday learning and self-improvement from each
                                     and every single task that we do.</div>
-                                <div class="mt-10 font-bold text-gray-500">Mr.Ayn Gajendran - CEO, Ayn Technologies
+                                <div class="mt-10 font-bold text-gray-950">Mr.Ayn Gajendran - CEO, Ayn Technologies
                                 </div>
                                 <div class="w-52">
                                     <img src="assets/CEO_Sign.png" alt="CEO_Sign">
@@ -706,15 +809,16 @@
 
                 </section>
                 <!-- Testimonials  -->
-                <section class="bgfont2">
-                    <div class="">
+                <section class="bgfont2 bg-black">
+                    <div class="pt-32">
                         <div class="flex justify-center items-center">
-                            <div class="border-black border rounded-full cursor-pointer p-2">
-                                <div class="text-gray-500">Testimonials</div>
+                            <div class="border-white border rounded-full cursor-pointer p-2">
+                                <div class="text-gray-300">Testimonials</div>
                             </div>
                         </div>
                         <div class="mt-10">
-                            <div class="text-5xl font-medium text-center">Happy words from our valuable clients!</div>
+                            <div class="text-5xl text-white font-medium text-center">Happy words from our valuable
+                                clients!</div>
                         </div>
                         <section class="py-12">
                             <div class="container mx-auto px-4">
@@ -841,8 +945,8 @@
 
                 </section>
                 <!-- Begin your transformation -->
-                <section>
-                    <div class="bgfont2 mt-32">
+                <section class="bg-[#ffde16] pb-20">
+                    <div class="bgfont2 mt-20 ">
                         <div
                             class="bg-gray-200 rounded-lg container mx-auto flex justify-around flex-wrap md:flex-nowrap p-10">
                             <div class="w-52">
@@ -856,7 +960,7 @@
                                     <div class="text-xl">Still waiting for us to make the first MOVE? <br>Don't BEE shy,
                                         get in
                                         TOUCH</div>
-                                    <div class="bg-yellow-300 rounded-xl w-72 p-3 mt-5 cursor-pointer">
+                                    <div class="bg-[#ffde16] rounded-xl w-72 p-3 mt-5 cursor-pointer">
                                         <div class="text-center font-medium">Begin Your Transformation Today</div>
                                     </div>
                                 </div>
@@ -892,7 +996,7 @@
                                     <!-- Blog 1 -->
                                     <div class="bg-white rounded-lg shadow-xl p-6">
                                         <img src="assets/Blog_1.webp" alt="Blog 1"
-                                            class="w-full h-48 object-cover filter grayscale hover:filter-none transition duration-300 ease-in-out rounded-lg mb-4">
+                                            class="w-full h-48 object-cover rounded-lg mb-4">
                                         <div class="mt-10">
                                             <div class="bg-gray-300 w-36 rounded-xl p-1">
                                                 <div class="text-center">05/08/2024</div>

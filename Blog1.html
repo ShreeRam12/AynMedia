@@ -41,70 +41,46 @@
 
 <body>
     <div class="cursor__wrapper">
-        <section class="sticky top-0 left-0 z-50 shadow-2xl">
+        <section class="sticky top-0 left-0 z-50 shadow-lg">
             <!-- Navbar -->
-            <nav class="bg-white p-5 shadow-lg bgfont">
-                <div class="flex justify-around items-center">
-
+            <nav class="bg-[#ffde16]  p-5 shadow-lg bgfont">
+                <div class=" flex justify-between items-center">
                     <!-- Logo -->
                     <div>
                         <img src="assets/AynMedia_Logo.png" alt="Brandbee">
                     </div>
-                    <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-lg">
-                        <a href="index.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">HOME</a>
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SERVICES</a>
-                        <div class="relative">
-                            <a href="aboutus.html"
-                                class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">
-                                ABOUT US
-                            </a>
-                            <ul class="dropdown-list absolute hidden bg-white mt-2 rounded shadow-lg">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Who we are</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">How we work</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">What we do</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Our LeaderShip</a></li>
-                            </ul>
-                        </div>
-
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SAMPLE
-                            WORK</a>
-                        <a href="client.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">OUR
-                            CLIENTS</a>
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">INDUSTRIES
-                            WE HAVE</a>
-                        <a href="blog.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">BLOG</a>
+                    <!-- Centered Navbar Links (hidden on mobile) -->
+                    <div class="hidden md:flex flex-1 justify-center items-center gap-10">
+                        <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
+                        <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
+                        <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
+                        <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                        <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                        <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
+                        <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
                         <div class="flex justify-center items-center">
-                            <div class="bg-black p-2">
-                                <a href="#"
-                                    class="text-white preserve-3d backface-hidden transform transition duration-700 ease-in-out hover:rotate-y-180">LETS
+                            <div class="bg-black p-2 ">
+                                <a href="#" class="text-white hover:text-yellow-400 duration-700 ease-in-out ">LETS
                                     TALK</a>
                             </div>
                         </div>
                     </div>
-
-
-
                     <!-- Mobile Menu Toggle Button -->
                     <!-- Mobile Menu Toggle Button -->
                     <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
+
                 <!-- Mobile Menu (hidden by default) -->
                 <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
                     <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
                     <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
                     <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
                     <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
                     <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
-                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
                     <div class="bg-black p-2 rounded-xl">
                         <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
                     </div>
@@ -113,287 +89,337 @@
         </section>
         <div data-scroll-container>
             <div data-scroll-section>
-                <section class="container mx-auto ">
-                    <div class="bgfont2 mt-20">
-                        <div class="">
-                            <div class="text-left text-gray-900">05/08/2024</div>
-                        </div>
-                        <div class="">
-                            <p class="text-black mb-4 mt-5 text-5xl font-medium">Why Every Startup Should
-                                Invest
-                                In A
-                                Professional Web Development Company
-                            </p>
-                        </div>
-
-                        <div class="mt-10">
+                <div class="bg-black">
+                    <section class="container mx-auto">
+                        <div class="bgfont2 mt-20">
                             <div class="">
-                                <img src="assets/Blog_1.webp" alt="" class="bg-fixed object-contain">
+                                <div class="text-left text-white">05/08/2024</div>
+                            </div>
+                            <div class="">
+                                <p class="text-[#ffde16] mb-4 mt-5 text-5xl font-medium">Why Every Startup Should
+                                    Invest
+                                    In A
+                                    Professional Web Development Company
+                                </p>
+                            </div>
+
+                            <div class="mt-10">
+                                <div class="">
+                                    <img src="assets/Blog_1.webp" alt="" class="bg-fixed object-contain">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container mx-auto w-5/6">
-                        <div class="bgfont2 mt-10 ">
-                            <div class="text-justify">
-                                <p class="text-gray-800 text-xl">Starting a business is an exciting adventure brimming
-                                    with both opportunities and
-                                    challenges. In today’s digital world, establishing a robust online presence is
-                                    essential
-                                    for any startup's success. One of the most effective ways to establish this presence
-                                    is
-                                    by collaborating with a professional web development company. A well-crafted website
-                                    not
-                                    only represents your brand but also acts as a powerful tool for customer engagement
-                                    and
-                                    business growth.</p>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl font-bold">The Role of a Web Development Company</div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">A professional website development company brings
-                                        expertise, creativity and
-                                        technical proficiency to the table. Here’s why your startup should consider
-                                        partnering with one:</p>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl font-bold">Expertise and Experience</div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">Web development companies are equipped with
-                                        experienced professionals who possess a deep understanding of the latest
-                                        technologies and trends. They can guide you in creating a website that is not
-                                        only visually appealing but also functionally robust. Their expertise ensures
-                                        that your website is built using best practices, enhancing its performance and
-                                        security.</p>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl font-bold">Customisation and Personalisation</div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">Every startup has unique needs and goals. A
-                                        professional website development company can tailor your website to align
-                                        perfectly with your brand identity and business objectives. From custom design
-                                        elements to specific functionalities, they can create a website that stands out
-                                        and delivers a personalised experience to your audience.</p>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl font-bold">Time and Cost Efficiency</div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">Building a website in-house can be time-consuming
-                                        and expensive, especially for startups with limited resources. By outsourcing
-                                        this task to a website development company, you can save valuable time and
-                                        reduce costs. These companies have the tools and skills to complete projects
-                                        efficiently, allowing you to focus on other critical aspects of your business.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl font-bold">Benefits of a Web Development Company</div>
-                                <div class="text-gray-700 text-xl font-bold mt-5">Local Expertise</div>
-
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">Choosing a website development company in Delhi
-                                        offers the advantage of local expertise. These companies understand the regional
-                                        market dynamics and can create websites that resonate with the local audience.
-                                        They are also easily accessible for face-to-face meetings and consultations,
-                                        ensuring smooth communication throughout the project.</p>
+                        <div class="container mx-auto w-5/6">
+                            <div class="bgfont2 mt-10 ">
+                                <div class="text-justify">
+                                    <p class="text-white text-xl">Starting a business is an exciting adventure
+                                        brimming
+                                        with both opportunities and
+                                        challenges. In today’s digital world, establishing a robust online presence is
+                                        essential
+                                        for any startup's success. One of the most effective ways to establish this
+                                        presence
+                                        is
+                                        by collaborating with a professional web development company. A well-crafted
+                                        website
+                                        not
+                                        only represents your brand but also acts as a powerful tool for customer
+                                        engagement
+                                        and
+                                        business growth.</p>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-gray-700 text-xl font-bold">SEO Optimisation</div>
+                                    <div class="text-[#ffde16] text-xl font-bold">The Role of a Web Development Company
+                                    </div>
                                     <div class="mt-5">
-                                        <p class="text-gray-800 text-xl">A professional website development company can
-                                            optimise your website for search engines, making it easier for potential
-                                            customers to find you online. They employ SEO best practices, such as
-                                            keyword
-                                            optimisation, mobile responsiveness and fast loading times, to improve your
-                                            website’s search engine ranking and drive organic traffic.</p>
+                                        <p class="text-white text-xl">A professional website development company
+                                            brings
+                                            expertise, creativity and
+                                            technical proficiency to the table. Here’s why your startup should consider
+                                            partnering with one:</p>
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-gray-700 text-xl font-bold">Technical Support and Maintenance</div>
+                                    <div class="text-[#ffde16] text-xl font-bold">Expertise and Experience</div>
                                     <div class="mt-5">
-                                        <p class="text-gray-800 text-xl">Post-launch support is crucial for maintaining
-                                            a high-performing website. A reliable <a href=""
-                                                class="text-blue-500">website development company
-                                                in Delhi</a>
-                                            offers ongoing technical support and maintenance services. They can quickly
-                                            address any issues that arise, ensuring that your website remains up-to-date
-                                            and fully functional.</p>
+                                        <p class="text-white text-xl">Web development companies are equipped with
+                                            experienced professionals who possess a deep understanding of the latest
+                                            technologies and trends. They can guide you in creating a website that is
+                                            not
+                                            only visually appealing but also functionally robust. Their expertise
+                                            ensures
+                                            that your website is built using best practices, enhancing its performance
+                                            and
+                                            security.</p>
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-gray-700 text-xl font-bold">Enhancing User Experience</div>
-                                    <div class="text-gray-700 text-xl font-bold mt-10">User-Centric Design</div>
+                                    <div class="text-[#ffde16] text-xl font-bold">Customisation and Personalisation
+                                    </div>
                                     <div class="mt-5">
-                                        <p class="text-gray-800 text-xl">A web development agency prioritises user
-                                            experience (UX) in the design process. Professional web development
-                                            companies dive deep into research to grasp the preferences and behaviours of
-                                            their target audience. This insight allows them to create a user-centric
-                                            design that is intuitive, engaging and easy to navigate, resulting in higher
-                                            user satisfaction and retention.</p>
+                                        <p class="text-white text-xl">Every startup has unique needs and goals. A
+                                            professional website development company can tailor your website to align
+                                            perfectly with your brand identity and business objectives. From custom
+                                            design
+                                            elements to specific functionalities, they can create a website that stands
+                                            out
+                                            and delivers a personalised experience to your audience.</p>
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-gray-700 text-xl font-bold">Mobile Responsiveness</div>
+                                    <div class="text-[#ffde16] text-xl font-bold">Time and Cost Efficiency</div>
                                     <div class="mt-5">
-                                        <p class="text-gray-800 text-xl">With the increasing use of smartphones, having
-                                            a mobile-responsive website is essential. A professional website development
-                                            company ensures that your website performs seamlessly across all devices,
-                                            providing a consistent and enjoyable experience for mobile users. This
-                                            responsiveness also positively impacts your search engine rankings.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-10">
-                                    <div class="text-gray-700 text-xl font-bold">Faster Load Times</div>
-                                    <div class="mt-5">
-                                        <p class="text-gray-800 text-xl">The speed of a website plays a vital role in
-                                            user experience. A sluggish site can irritate visitors and result in high
-                                            bounce rates. A web development agency implements performance optimisation
-                                            techniques, such as image compression and code minification, to ensure that
-                                            your website loads quickly and efficiently.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-10">
-                                    <div class="text-gray-700 text-xl font-bold">Final Thoughts</div>
-                                    <div class="mt-5">
-                                        <p class="text-gray-800 text-xl">In the competitive startup landscape, having a
-                                            professionally developed website is not a luxury but a necessity. Partnering
-                                            with The Brand Bee, a web development company, can give your business a
-                                            significant edge. We bring the expertise, creativity and technical know-how
-                                            needed to build a website that reflects your brand, engages your audience
-                                            and drives business growth. Moreover, choosing a website development company
-                                            offers the added benefits of local expertise, SEO optimisation and reliable
-                                            technical support.</p>
-                                        <p class="text-gray-800 text-xl mt-5">
-                                            For startups looking to venture into online sales, partnering with an
-                                            <a href="" class="text-blue-500">ecommerce development company</a>can
-                                            further
-                                            enhance your capabilities.
-                                            Ultimately, investing in a professional website development company is a
-                                            strategic decision that can propel your startup toward long-term success and
-                                            sustainability.
+                                        <p class="text-white text-xl">Building a website in-house can be
+                                            time-consuming
+                                            and expensive, especially for startups with limited resources. By
+                                            outsourcing
+                                            this task to a website development company, you can save valuable time and
+                                            reduce costs. These companies have the tools and skills to complete projects
+                                            efficiently, allowing you to focus on other critical aspects of your
+                                            business.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="mt-10">
+                                    <div class="text-[#ffde16] text-xl font-bold">Benefits of a Web Development Company
+                                    </div>
+                                    <div class="text-[#ffde16] text-xl font-bold mt-5">Local Expertise</div>
+
+                                    <div class="mt-5">
+                                        <p class="text-white text-xl">Choosing a website development company in Delhi
+                                            offers the advantage of local expertise. These companies understand the
+                                            regional
+                                            market dynamics and can create websites that resonate with the local
+                                            audience.
+                                            They are also easily accessible for face-to-face meetings and consultations,
+                                            ensuring smooth communication throughout the project.</p>
+                                    </div>
                                     <div class="mt-10">
-                                        <div class="text-gray-800 text-xl">Also Read:-</div>
-                                        <div class="text-blue-500 text-xl mt-5">The Role of A Website Design
-                                            Company In Boosting Your E-Commerce Success</div>
-                                        <div class="text-blue-500 text-xl mt-5">Why Every Business Needs A
-                                            Reputation Management Agency Today</div>
-                                        <div class="text-gray-800 text-xl mt-5">More Useful Links:-</div>
+                                        <div class="text-[#ffde16] text-xl font-bold">SEO Optimisation</div>
                                         <div class="mt-5">
-                                            <a href="" class="text-blue-500 text-xl">Technical SEO
-                                                Services</a> |
-                                            <a href="" class="text-blue-500 text-xl">Best SEO
-                                                Company in Gurgaon </a> |
-                                            <a href="" class="text-blue-500 text-xl">Digital Marketing Agency</a>
+                                            <p class="text-white text-xl">A professional website development company
+                                                can
+                                                optimise your website for search engines, making it easier for potential
+                                                customers to find you online. They employ SEO best practices, such as
+                                                keyword
+                                                optimisation, mobile responsiveness and fast loading times, to improve
+                                                your
+                                                website’s search engine ranking and drive organic traffic.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-[#ffde16] text-xl font-bold">Technical Support and Maintenance
+                                        </div>
+                                        <div class="mt-5">
+                                            <p class="text-white text-xl">Post-launch support is crucial for
+                                                maintaining
+                                                a high-performing website. A reliable <a href=""
+                                                    class="text-blue-500">website development company
+                                                    in Delhi</a>
+                                                offers ongoing technical support and maintenance services. They can
+                                                quickly
+                                                address any issues that arise, ensuring that your website remains
+                                                up-to-date
+                                                and fully functional.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-[#ffde16] text-xl font-bold">Enhancing User Experience</div>
+                                        <div class="text-[#ffde16] text-xl font-bold mt-10">User-Centric Design</div>
+                                        <div class="mt-5">
+                                            <p class="text-white text-xl">A web development agency prioritises user
+                                                experience (UX) in the design process. Professional web development
+                                                companies dive deep into research to grasp the preferences and
+                                                behaviours of
+                                                their target audience. This insight allows them to create a user-centric
+                                                design that is intuitive, engaging and easy to navigate, resulting in
+                                                higher
+                                                user satisfaction and retention.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-[#ffde16] text-xl font-bold">Mobile Responsiveness</div>
+                                        <div class="mt-5">
+                                            <p class="text-white text-xl">With the increasing use of smartphones,
+                                                having
+                                                a mobile-responsive website is essential. A professional website
+                                                development
+                                                company ensures that your website performs seamlessly across all
+                                                devices,
+                                                providing a consistent and enjoyable experience for mobile users. This
+                                                responsiveness also positively impacts your search engine rankings.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-[#ffde16] text-xl font-bold">Faster Load Times</div>
+                                        <div class="mt-5">
+                                            <p class="text-white text-xl">The speed of a website plays a vital role
+                                                in
+                                                user experience. A sluggish site can irritate visitors and result in
+                                                high
+                                                bounce rates. A web development agency implements performance
+                                                optimisation
+                                                techniques, such as image compression and code minification, to ensure
+                                                that
+                                                your website loads quickly and efficiently.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-[#ffde16] text-xl font-bold">Final Thoughts</div>
+                                        <div class="mt-5">
+                                            <p class="text-white text-xl">In the competitive startup landscape,
+                                                having a
+                                                professionally developed website is not a luxury but a necessity.
+                                                Partnering
+                                                with The Brand Bee, a web development company, can give your business a
+                                                significant edge. We bring the expertise, creativity and technical
+                                                know-how
+                                                needed to build a website that reflects your brand, engages your
+                                                audience
+                                                and drives business growth. Moreover, choosing a website development
+                                                company
+                                                offers the added benefits of local expertise, SEO optimisation and
+                                                reliable
+                                                technical support.</p>
+                                            <p class="text-white text-xl mt-5">
+                                                For startups looking to venture into online sales, partnering with an
+                                                <a href="" class="text-blue-500">ecommerce development company</a>can
+                                                further
+                                                enhance your capabilities.
+                                                Ultimately, investing in a professional website development company is a
+                                                strategic decision that can propel your startup toward long-term success
+                                                and
+                                                sustainability.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="mt-10">
+                                            <div class="text-[#ffde16] text-xl">Also Read:-</div>
+                                            <div class="text-blue-500 text-xl mt-5">The Role of A Website Design
+                                                Company In Boosting Your E-Commerce Success</div>
+                                            <div class="text-blue-500 text-xl mt-5">Why Every Business Needs A
+                                                Reputation Management Agency Today</div>
+                                            <div class="text-[#ffde16] text-xl mt-5">More Useful Links:-</div>
+                                            <div class="mt-5">
+                                                <a href="" class="text-blue-500 text-xl">Technical SEO
+                                                    Services</a> |
+                                                <a href="" class="text-blue-500 text-xl">Best SEO
+                                                    Company in Gurgaon </a> |
+                                                <a href="" class="text-blue-500 text-xl">Digital Marketing Agency</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mt-52 bgfont2">
-                        <div class="container mx-auto ">
-                            <div class="text-black mb-4 mt-5 text-5xl font-medium">Related Articles</div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                <!-- Blog 2 -->
-                                <a href="Blog2.html">
-                                    <div class="p-6">
-                                        <img src="assets/Blog_2.webp" alt="Blog 2"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">31/07/2024</div>
+                        <div class="mt-52 bgfont2 pb-20">
+                            <div class="container mx-auto ">
+                                <div class="text-[#ffde16] mb-4 mt-5 text-5xl font-medium">Related Articles</div>
+                                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    <!-- Blog 2 -->
+                                    <a href="Blog2.html">
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Blog_2.webp" alt="Blog 2"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-28">
+                                                <div class="w-36">
+                                                    <div class="text-left text-gray-500">31/07/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Role Of A
+                                                Website
+                                                Design
+                                                Company In
+                                                Boosting
+                                                Your E-Commerce Success</p>
+                                            <div class="pt-1 ">
+                                                <hr class="text-gray-500">
                                             </div>
                                         </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Role Of A Website
-                                            Design
-                                            Company In
-                                            Boosting
-                                            Your E-Commerce Success</p>
-                                        <div class="pt-1 ">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="Blog3.html">
-                                    <!-- Blog 3 -->
-                                    <div class="p-6">
-                                        <img src="assets/Blog_3.webp" alt="Blog 3"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">26/07/2024</div>
+                                    </a>
+                                    <a href="Blog3.html">
+                                        <!-- Blog 3 -->
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Blog_3.webp" alt="Blog 3"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-28">
+                                                <div class="w-36">
+                                                    <div class="text-left text-gray-500">26/07/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Business
+                                                Needs
+                                                A
+                                                Reputation
+                                                Management Agency Today</p>
+                                            <div class="pt-1">
+                                                <hr class="text-gray-500">
                                             </div>
                                         </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Business Needs
-                                            A
-                                            Reputation
-                                            Management Agency Today</p>
-                                        <div class="pt-1">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
 
-                                </a>
-                                <a href="Blog4.html">
-                                    <!-- Blog 4 -->
-                                    <div class="p-6">
-                                        <img src="assets/Blog_4.webp" alt="Blog 4"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">19/07/2024</div>
+                                    </a>
+                                    <a href="Blog4.html">
+                                        <!-- Blog 4 -->
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Blog_4.webp" alt="Blog 4"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-28">
+                                                <div class="w-36">
+                                                    <div class="text-left text-gray-500">19/07/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">How An Instagram
+                                                Marketing
+                                                Company Can
+                                                Skyrocket Your Brand's Online Presence</p>
+
+                                            <div class="pt-1">
+                                                <hr class="text-gray-500">
                                             </div>
                                         </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">How An Instagram
-                                            Marketing
-                                            Company Can
-                                            Skyrocket Your Brand's Online Presence</p>
-
-                                        <div class="pt-1">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work with us -->
-                    <section class="pb-10 mt-32">
-                        <div class="flex justify-center items-center">
-                            <div class="border-gray-400 border rounded-3xl p-2 ">
-                                <div class="flex justify-center items-center">
-                                    <div class="bgfont text-center pt-1">WORK WITH US</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-center items-center">
-                            <div class="mt-10 bgfont2">
-                                <div class="text-6xl ">We would love to hear <br>
-                                    more about your project</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-center mt-32 bgfont2 cursor-pointer">
-                            <div
-                                class="border-gray-300 border w-48 rounded-full p-14 transform transition duration-500 ease-in-out hover:bg-yellow-400 hover:scale-105">
-                                <div class="text-center text-lg">Let's talk US ?</div>
-                            </div>
-                        </div>
+
                     </section>
-                </section>
-                <!-- Digital Marketing Image -->
-                <section class="">
-                    <div class="mt-10 flex justify-end">
-                        <div class="w-5/6">
-                            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                </div>
+                <!-- Work with us -->
+                <section class="pt-32 bg-[#ffde16]">
+                    <div class="flex justify-center items-center">
+                        <div class="border-gray-700 border rounded-3xl p-2 ">
+                            <div class="flex justify-center items-center">
+                                <div class="bgfont text-black text-center pt-1">WORK WITH US</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="flex justify-center items-center">
+                        <div class="mt-10 bgfont2">
+                            <div class="text-6xl text-black">We would love to hear <br>
+                                more about your project</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center ">
+                        <div class="group mt-32 bgfont2 cursor-pointer">
+                            <div
+                                class="border-gray-700 border w-48 rounded-full p-14 transition duration-500 ease-in-out bg-black group-hover:bg-white group-hover:scale-105">
+                                <div
+                                    class="text-center text-lg text-[#ffde16] transition duration-500 ease-in-out group-hover:text-black">
+                                    Let's talk US?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Digital Marketing Image -->
+                    <section class="">
+                        <div class="mt-20 flex justify-end">
+                            <div class="w-5/6">
+                                <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                            </div>
+                        </div>
 
+                    </section>
                 </section>
                 <!-- Footer  -->
                 <section>
