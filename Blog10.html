@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="./output.css" rel="stylesheet">
+    <link href="/dist/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Locomotive Scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    /* Locomotive Smooth Scroll  */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    [data-scroll-container] {
+        overflow: hidden;
+    }
+
+    [data-scroll-section] {
+        position: relative;
+        min-height: 200vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    .object-contain {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog10 {
+        overflow: hidden;
+        position: relative;
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+
+    <div class="cursor__wrapper">
+        <section class="sticky top-0 left-0 z-50 shadow-xl">
+            <!-- Navbar -->
+            <nav class="bg-white p-5 shadow-lg bgfont">
+                <div class="flex justify-around items-center">
+                    <!-- Logo -->
+                    <div>
+                        <img src="assets/AynMedia_Logo.png" alt="Brandbee">
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-lg">
+                        <!-- Navbar Links -->
+                        <a href="index.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">HOME</a>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SERVICES</a>
+                        <div class="relative">
+                            <a href="aboutus.html"
+                                class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">
+                                ABOUT US
+                            </a>
+                            <ul class="dropdown-list absolute hidden bg-white mt-2 rounded shadow-lg">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Who we are</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">How we work</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">What we do</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Our Leadership</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SAMPLE
+                            WORK</a>
+                        <a href="client.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">OUR
+                            CLIENTS</a>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">INDUSTRIES
+                            WE HAVE</a>
+                        <a href="blog.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">BLOG</a>
+                        <div class="flex justify-center items-center">
+                            <div class="bg-black p-2">
+                                <a href="#"
+                                    class="text-white preserve-3d backface-hidden transform transition duration-700 ease-in-out hover:rotate-y-180">LETS
+                                    TALK</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+                <!-- Mobile Menu (hidden by default) -->
+                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
+                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
+                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
+                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
+                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
+                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                    <div class="bg-black p-2 rounded-xl">
+                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <div data-scroll-container>
+            <div data-scroll-section>
+                <section class="container mx-auto ">
+                    <div class="bgfont2 mt-20">
+                        <div class="">
+                            <div class="text-left text-gray-900">12/06/2024</div>
+                        </div>
+                        <div class="">
+                            <p class="text-black mb-4 mt-5 text-5xl font-medium">Unveiling the Global Path: Through
+                                SEO Technical Audit Service
+                            </p>
+                        </div>
+                        <div>
+                            <div class="mt-10">
+                                <div class="blog10" data-scroll data-scroll-speed="0.5" data-lag="0">
+                                    <img src="assets/Blog_10.webp" alt="Parallax Image"
+                                        class="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container mx-auto w-5/6">
+                        <div class="bgfont2 mt-10 ">
+                            <div class="text-justify">
+                                <p class="text-gray-800 text-xl">In the ever-expanding digital landscape, the pursuit of
+                                    online visibility has evolved into a multifaceted journey. As businesses transcend
+                                    geographical boundaries, the demand for effective multilingual SEO services, the
+                                    expertise of international SEO companies and the precision of SEO technical audits
+                                    becomes paramount. In this blog, we embark on an exploratory voyage to understand
+                                    the significance of these indispensable elements in conquering the global market.
+                                </p>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-black text-4xl font-medium">Navigating the Linguistic Mosaic:
+                                    Multilingual SEO Service </div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl">Picture this: a potential customer in Tokyo
+                                        searches for a product or service in Japanese, while another in Paris conducts a
+                                        similar search in French. Both are seeking solutions, but their linguistic
+                                        preferences shape their online queries. This is where multilingual SEO services
+                                        swoop in as the beacon of comprehension amidst linguistic diversity.</p>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="flex gap-5">
+                                    <div class="flex justify-start items-start mt-2">
+                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    </div>
+                                    <div class="text-gray-950 text-xl">
+                                        Multilingual SEO service is not merely about translation; it's about cultural
+                                        adaptation, keyword localization, and understanding the nuances of each target
+                                        market. A proficient multilingual SEO strategy seamlessly integrates keywords,
+                                        content, and metadata in multiple languages, ensuring that your online presence
+                                        resonates with diverse audiences worldwide.
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 mt-3">
+                                    <div class="flex justify-start items-start mt-2">
+                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    </div>
+                                    <div class="text-gray-950 text-xl">
+                                        By harnessing the power of multilingual SEO, businesses can unlock doors to new
+                                        markets, establish credibility across borders, and foster meaningful connections
+                                        with global consumers. It's the linguistic key that opens the gateway to
+                                        international success.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-10">
+                                <div class="text-black text-4xl font-medium">Beyond Borders: The Role of an
+                                    International SEO Company </div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl">In the realm of global digital expansion, local
+                                        expertise is indispensable. An international SEO company serves as the
+                                        orchestrator of your global SEO symphony, leveraging a deep understanding of
+                                        regional intricacies to orchestrate harmonious strategies across borders.</p>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="flex gap-5">
+                                    <div class="flex justify-start items-start mt-2">
+                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    </div>
+                                    <div class="text-gray-950 text-xl">
+                                        These companies aren't just adept at optimizing content for search engines; they
+                                        are cultural chameleons, adept at understanding the nuances of different
+                                        markets. From deciphering search engine preferences in various countries to
+                                        crafting region-specific content strategies, international SEO companies are the
+                                        architects of global visibility.
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 mt-3">
+                                    <div class="flex justify-start items-start mt-2">
+                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    </div>
+                                    <div class="text-gray-950 text-xl">
+                                        Moreover, they navigate the complexities of the international SEO landscape with
+                                        finesse, addressing challenges such as multilingual keyword research,
+                                        geo-targeted optimization, and localization of content. By partnering with an
+                                        international SEO company, businesses can transcend geographical constraints and
+                                        establish a formidable presence in every corner of the globe.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-black text-4xl font-medium">The SEO Technical Audit Service: Unveiling
+                                    the Digital Blueprint </div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl">Imagine your website as a majestic castle, standing
+                                        tall amidst the digital realm. But even the sturdiest castles require meticulous
+                                        upkeep, and that's where the SEO technical audit service comes into play.
+                                        Consider it as the blueprint that unveils the structural integrity of your
+                                        digital fortress.</p>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="flex gap-5">
+                                    <div class="flex justify-start items-start mt-2">
+                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    </div>
+                                    <div class="text-gray-950 text-xl">
+                                        An SEO technical audit service delves deep into the infrastructure of your
+                                        website, scrutinizing factors such as site speed, mobile-friendliness,
+                                        crawlability, and indexability. It identifies potential roadblocks that impede
+                                        search engine visibility and provides actionable insights to fortify your
+                                        digital presence.
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 mt-3">
+                                    <div class="flex justify-start items-start mt-2">
+                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    </div>
+                                    <div class="text-gray-950 text-xl">
+                                        Moreover, an SEO technical audit is not a one-time affair; it's an ongoing
+                                        process of optimization and refinement. By conducting regular audits, businesses
+                                        can stay ahead of algorithmic changes, mitigate technical glitches, and ensure
+                                        that their digital fortress remains impregnable in the ever-evolving digital
+                                        landscape.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="">
+                                    <p class="text-gray-800 text-xl">In the dynamic realm of digital marketing, the
+                                        pursuit of global visibility demands a strategic approach that transcends
+                                        boundaries. <a href="" class="text-blue-500">Multilingual SEO services,</a>
+                                        international SEO companies, and <a href="" class="text-blue-500">SEO
+                                            technical audit service</a> are the pillars upon which global success is
+                                        built.</p>
+                                    <p class="text-gray-800 text-xl mt-5">
+                                        As businesses embark on their journey to conquer new horizons, it's imperative
+                                        to recognize the indispensability of these elements in navigating the global
+                                        frontier. By embracing multilingualism, harnessing local expertise, and
+                                        fortifying their digital infrastructure, businesses can pave the way for
+                                        unparalleled success in the global arena.
+                                    </p>
+                                    <p class="text-gray-900 text-xl mt-5">In essence, the path to global prominence
+                                        isn't just about visibility; it's about
+                                        resonance. It's about crafting meaningful connections with diverse audiences
+                                        worldwide and establishing a digital legacy that transcends borders. With the
+                                        right blend of multilingual SEO services, international expertise, and technical
+                                        prowess, businesses can embark on this transformative journey with confidence,
+                                        paving the way for a future where borders exist only on maps, not in the digital
+                                        realm.</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="mt-10">
+                                    <div class="text-gray-800 text-xl">Also Read:-</div>
+                                    <div class="text-blue-500 text-xl mt-5">Brand Activation Agency Unlocking
+                                        Potential And Transforming Consumer Engagement</div>
+                                    <div class="text-blue-500 text-xl mt-5">Elevate Your Brand With Professional
+                                        Content Development Services</div>
+                                    <div class="text-gray-800 text-xl mt-5">More Useful Links:-</div>
+                                    <div class="mt-5">
+                                        <a href="" class="text-blue-500 text-xl">SEO Company India</a> |
+                                        <a href="" class="text-blue-500 text-xl"> Social Media Marketing Agency </a> |
+                                        <a href="" class="text-blue-500 text-xl"> Leads Generation Agency</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-52 bgfont2">
+                        <div class="container mx-auto ">
+                            <div class="text-black mb-4 mt-5 text-5xl font-medium">Related Articles</div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <!-- Blog 1 -->
+                                <a href="Blog1.html">
+                                    <div class=" p-6">
+                                        <img src="assets/Blog_1.webp" alt="Blog 1"
+                                            class="w-full h-48 object-cover mb-4 transition-transform duration-500 ease-in-out transform hover:translate-x-5">
+                                        <div class="mt-28">
+                                            <div class="w-36">
+                                                <div class="text-left text-gray-500">05/08/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Startup Should
+                                            Invest
+                                            In A
+                                            Professional <br>Web Development Company</p>
+                                        <div class="pt-1 ">
+                                            <hr class="text-gray-500">
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <!-- Blog 2 -->
+                                <a href="Blog2.html">
+                                    <div class="p-6">
+                                        <img src="assets/Blog_2.webp" alt="Blog 2"
+                                            class="w-full h-48 object-cover mb-4">
+                                        <div class="mt-28">
+                                            <div class="w-36">
+                                                <div class="text-left text-gray-500">31/07/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Role Of A Website
+                                            Design
+                                            Company In
+                                            Boosting
+                                            Your E-Commerce Success</p>
+                                        <div class="pt-1 ">
+                                            <hr class="text-gray-500">
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Blog 3 -->
+                                <a href="Blog3.html">
+                                    <div class="p-6">
+                                        <img src="assets/Blog_3.webp" alt="Blog 3"
+                                            class="w-full h-48 object-cover mb-4">
+                                        <div class="mt-28">
+                                            <div class="w-36">
+                                                <div class="text-left text-gray-500">26/07/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Business Needs
+                                            A
+                                            Reputation
+                                            Management Agency Today</p>
+                                        <div class="pt-1">
+                                            <hr class="text-gray-500">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work with us -->
+                    <section class="pb-10 mt-32">
+                        <div class="flex justify-center items-center">
+                            <div class="border-gray-400 border rounded-3xl p-2 ">
+                                <div class="flex justify-center items-center">
+                                    <div class="bgfont text-center pt-1">WORK WITH US</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="mt-10 bgfont2">
+                                <div class="text-6xl ">We would love to hear <br>
+                                    more about your project</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center mt-32 bgfont2 cursor-pointer">
+                            <div
+                                class="border-gray-300 border w-48 rounded-full p-14 transform transition duration-500 ease-in-out hover:bg-yellow-400 hover:scale-105">
+                                <div class="text-center text-lg">Let's talk US ?</div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- Digital Marketing Image -->
+                <section class="">
+                    <div class="mt-10 flex justify-end">
+                        <div class="w-5/6">
+                            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Footer  -->
+                <section>
+                    <div class="bg-black bgfont2 p-10">
+                        <div>
+                            <div class="flex justify-around">
+                                <div class="mt-20">
+                                    <div>
+                                        <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
+                                    </div>
+                                    <div class="mt-10 ">
+                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
+                                            <br>and
+                                            digital
+                                            marketing
+                                            agency based
+                                            in Gurgaon, India.
+                                            <br>With a team of over 40+, we are an award-winning <br>full-stack
+                                            digital
+                                            marketing
+                                            agency
+                                            offering <br>
+                                            creative and innovative <br>digital and brand solutions for brands <br>
+                                            looking to
+                                            grow
+                                            their
+                                            businesses.
+                                        </p>
+                                    </div>
+                                    <div class="mt-10 flex gap-5">
+                                        <div>
+                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3 mt-10 w-72 ">
+                                        <div>
+                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
+                                                class="rounded-sm">
+                                        </div>
+                                        <div>
+                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-10 gap-1">
+                                        <div class="cursor-pointer">
+                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+                                        </div>
+                                        <div class="text-white">Chennai's Leading Digital Agency</div>
+                                        <div> |</div>
+                                        <div class="flex">
+                                            <div class="text-yellow-300">30+</div>
+                                            <div>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-white pt-20">
+                                    <div class="font-bold text-xl">Information</div>
+                                    <ul class="text-gray-500 space-y-3 mt-5">
+                                        <li>Brand Solutions</li>
+                                        <li>Digital Marketing Solutions</li>
+                                        <li>Who We Are</li>
+                                        <li>Sample Work</li>
+                                        <li>Our Clients</li>
+                                        <li>Industries We Serve</li>
+                                        <li>Careers</li>
+                                        <li>Blog</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+                                <div class="text-white pt-20">
+                                    <div class="font-bold text-xl">Contact US</div>
+                                    <div class="text-gray-500 mt-5">
+                                        Ayn Technologies Pvt. Ltd.,<br>
+                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                                        Ullagaram, Madipakkam, Chennai- 600091.
+                                    </div>
+                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                                </div>
+                                <div>
+
+                                </div>
+                                <div>
+
+                                </div>
+                                <div class="bg-gray-950 p-10">
+                                    <div class="flex justify-center items-center mt-20">
+                                        <div class="">
+                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center items-center mt-10">
+                                        <div
+                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                            <div class="text-center">Contact US</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+                                        <div class="text-gray-500 text-center">Monday to Friday</div>
+                                    </div>
+                                    <div class="text-gray-500  mt-10 text-justify">
+                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
+                                        agency
+                                        brings
+                                        <br>invaluable
+                                        industry insights and <br>
+                                        international <br>know-how to your brand's success.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <span class="cursor"></span>
+    <span class="cursor-trail"></span>
+    </div>
+    <!-- Locomotive Smooth Scroll  -->
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            lerp: 0.1, // Adjust for smoother scrolling (lower = smoother)
+        });
+    </script>
+
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.getElementById('navbar-toggle').onclick = function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Cursor Effects  -->
+    <script>
+        var timeout
+
+        function fancyCursor(e) {
+
+            let halfCursorSize = 12; // For .cursor
+            let halfTrailSize = 40; // For .cursor-trail
+
+            let scaleMin = 0.35
+            let scaleMax = 1.0
+            let finalX = e.pageX - halfCursorSize
+            let finalY = e.pageY - halfCursorSize
+            let finalTrailX = e.pageX - halfTrailSize
+            let finalTrailY = e.pageY - halfTrailSize
+
+            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+
+            setTimeout(() => {
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+            }, 100)
+
+            if (timeout !== undefined) {
+                window.clearTimeout(timeout)
+            }
+
+            timeout = window.setTimeout(function () {
+                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+            }, 250)
+            document.querySelector('.cursor').style.opacity = '1'
+            document.querySelector('.cursor-trail').style.opacity = '1'
+        }
+
+        function cursorLoader() {
+            if (document.querySelector('.cursor__wrapper')) {
+                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                }, false)
+                window.addEventListener('scroll', function (e) {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                })
+            }
+        }
+
+        window.addEventListener('load', function () {
+            cursorLoader()
+            function animate() {
+                requestAnimationFrame(animate)
+            }
+            animate()
+        })
+    </script>
+</body>
+
+</html>

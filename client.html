@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="./output.css" rel="stylesheet">
+    <link href="/dist/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Locomotive Scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    [data-scroll-container] {
+        overflow: hidden;
+    }
+
+    [data-scroll-section] {
+        position: relative;
+        min-height: 200vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #bebcbc;
+        /* border-radius: 10px; */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #f5c837;
+        /* border-radius: 10px; */
+    }
+</style>
+
+<body>
+    <div class="cursor__wrapper">
+        <section class="sticky top-0 left-0 z-50 shadow-2xl">
+            <!-- Navbar -->
+            <nav class="bg-white p-5 shadow-lg bgfont">
+                <div class="flex justify-around items-center">
+                    <!-- Logo -->
+                    <div>
+                        <img src="assets/AynMedia_Logo.png" alt="Brandbee">
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-lg">
+                        <a href="index.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">HOME</a>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SERVICES</a>
+                        <div class="relative">
+                            <a href="aboutus.html"
+                                class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">
+                                ABOUT US
+                            </a>
+                            <ul class="dropdown-list absolute hidden bg-white mt-2 rounded shadow-lg">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Who we are</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">How we work</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">What we do</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Our LeaderShip</a></li>
+                            </ul>
+                        </div>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SAMPLE
+                            WORK</a>
+                        <a href="client.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">OUR
+                            CLIENTS</a>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">INDUSTRIES
+                            WE HAVE</a>
+                        <a href="blog.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">BLOG</a>
+                        <div class="flex justify-center items-center animate__animated animate__fadeInRight delay-100">
+                            <div class="bg-black p-2">
+                                <a href="#"
+                                    class="text-white preserve-3d backface-hidden transform transition duration-700 ease-in-out hover:rotate-y-180">LETS
+                                    TALK</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Mobile Menu Toggle Button -->
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+                <!-- Mobile Menu (hidden by default) -->
+                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
+                    <a href="#" class="text-black hover:text-gray-400">HOME</a>
+                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
+                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
+                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
+                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
+                    <div class="bg-black p-2 rounded-xl">
+                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <div data-scroll-container>
+            <div data-scroll-section>
+                <!-- Our Esteemed Clients  -->
+                <section>
+                    <div class="mt-20">
+                        <div class="bgfont2 font-medium text-center text-5xl animate__animated animate__fadeInUp"
+                            id="clients-text">Our Esteemed Clients</div>
+                    </div>
+                </section>
+                <!-- Categories and Clients  -->
+                <section class="container mx-auto mt-10">
+                    <div class="bgfont2 font-medium flex-wrap md:flex-nowrap flex justify-between">
+                        <div class="overflow-y-auto h-96 py-4 px-6 pr-16 custom-scrollbar">
+                            <div>
+                                <div class="text-lg">Show All</div>
+                                <div class="bg-yellow-400 w-20">
+                                    <div class="h-0.5"></div>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">HealthCare</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Education</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">FMCG</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Real Estate & Infra</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Beauty Care</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Kids</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Wellness</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">F&B</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Industrial</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Automobile</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Business Services</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Hospitality</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Banking</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Government & UN</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Consumer Electronics</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Aviation</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Agriculture</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Logistics</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">IT</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Fashion</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Home</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Consumer Retail</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Media</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Photography</p>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="">
+                                        <p class="text-lg font-normal">Others</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-5/6">
+                            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+                                <div
+                                    class="flex justify-center items-center  animate__animated animate__fadeInUp duration-100 ease-in-out delay-0">
+                                    <div class="w-40">
+                                        <img src="assets/MiStyle.webp" alt="Client 1"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-75">
+                                    <div class="w-40">
+                                        <img src="assets/Nailhub.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-40">
+                                        <img src="assets/EVM 1 copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-40">
+                                        <img src="assets/H & M logo copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-40">
+                                        <img src="assets/peak copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/BN Constructions - logo square copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-52">
+                                        <img src="assets/new rukmani copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-40">
+                                        <img src="assets/parambaryam copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-40">
+                                        <img src="assets/selligo copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/Optilenz png copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/vip copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/srt creative copy.webp" alt="srt creative"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/Silver Logo copy.webp" alt="Silver"
+                                            class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/waffle.webp" alt="Client 2" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/scr.webp" alt="scr" class="w-full h-auto object-cover">
+                                    </div>
+
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/magic.webp" alt="magic" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/inc.webp" alt="inc" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/iface.webp" alt="iface" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                                    <div class="w-44">
+                                        <img src="assets/event.webp" alt="event" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Get in Touch  -->
+                <section>
+                    <div class="bg-yellow-400 bgfont2 p-20 mt-10">
+                        <div class="container mx-auto">
+                            <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
+                                <!-- Text Section -->
+                                <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
+                                    <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-800">STILL, WAITING FOR
+                                        <br>US
+                                        TO
+                                        MAKE
+                                        THE
+                                        <br> FIRST MOVE?
+                                    </div>
+                                    <div class="text-gray-700 text-xl mt-20">Don't be shy, get in touch.</div>
+                                    <div class="mt-32 float-right">
+                                        <div class="w-full">
+                                            <img src="assets/Border_Img.webp" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Form Section -->
+                                <div class="w-full md:w-1/2 lg:w-3/5">
+                                    <form class="space-y-12">
+                                        <!-- Name Field -->
+                                        <div>
+                                            <label for="name" class="block  text-sm font-bold mb-2"></label>
+
+                                            <input type="text" id="name" name="name" placeholder="Your Name*:"
+                                                class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                                required>
+                                        </div>
+                                        <!-- Email Field -->
+                                        <div>
+                                            <label for="email"
+                                                class="block text-gray-700 text-sm font-bold mb-2"></label>
+                                            <input type="email" id="email" name="email" placeholder="Email Id:"
+                                                class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                                required>
+
+                                        </div>
+                                        <div>
+                                            <label for="number"
+                                                class="block text-gray-700 text-sm font-bold mb-2"></label>
+                                            <input type="number" id="email" name="number" placeholder="Phone Number:"
+                                                class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                                required>
+                                        </div>
+                                        <!-- Company Name  -->
+                                        <div>
+                                            <label for="name" class="block  text-sm font-bold"></label>
+                                            <input type="text" id="name" name="name" placeholder="Company Name:"
+                                                class=" bg-transparent w-full border-b text-gray-700  border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                                required>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <label for="dropdown1" class="block text-sm font-bold"></label>
+                                            <select id="dropdown1" name="dropdown1"
+                                                class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                                required>
+                                                <option value="" disabled selected hidden>Choose Service</option>
+                                                <option value="option1">Branding Solutions</option>
+                                                <option value="option2">Corporate Rebranding</option>
+                                                <option value="option3">Photoshoots & Video Shoots</option>
+                                                <option value="option3">social Media Marketing</option>
+                                                <option value="option3">Ecommerce Solutions</option>
+                                                <option value="option3">Website Development & Management</option>
+                                                <option value="option3">Ads/Perfomrance Marketing </option>
+                                                <option value="option3">SEO (Search Engine Optimization)</option>
+                                                <option value="option3">Content Marketing Solutions</option>
+                                                <option value="option3">Email Marketing & Automation</option>
+                                                <option value="option3">Marketing & Automation</option>
+                                                <option value="option3">Online Reputation Management </option>
+                                                <option value="option3">Influencer Marketing & Community Building
+                                                </option>
+                                                <option value="option3">Other </option>
+
+                                            </select>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <label for="dropdown2" class="block text-sm font-bold"></label>
+                                            <select id="dropdown2" name="dropdown2"
+                                                class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                                required>
+                                                <option value="" disabled selected hidden>Estimated Monthly Budget
+                                                </option>
+                                                <option value="option1">INR 75K - INR 1.5Lacs</option>
+                                                <option value="option2">INR 1.5Lacs - INR 5 Lacs</option>
+                                                <option value="option3"> INR 5 Lacs - INR 25 Lacs</option>
+                                                <option value="option3"> INR 25Lacs and above</option>
+                                            </select>
+                                        </div>
+                                        <!-- Message Field -->
+                                        <div class="">
+                                            <label for="message" class="block text-gray-700 text-sm font-bold"></label>
+                                            <textarea id="message" name="message"
+                                                placeholder="Please leave us a brief of your requirements and services you are interested in*:"
+                                                class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-700"
+                                                required></textarea>
+                                        </div>
+                                        <div class="mt-4 flex items-center bg-white w-72 p-5">
+                                            <input type="checkbox" id="not-a-robot" name="not-a-robot"
+                                                class="text-gray-700 focus:ring-2 focus:ring-gray-700 h-5 w-5">
+                                            <div class="flex gap-14 justify-center items-center">
+                                                <div>
+                                                    <label for="not-a-robot" class="ml-2 text-gray-700 text-sm">I am not
+                                                        a
+                                                        robot</label>
+                                                </div>
+
+                                                <div>
+                                                    <img src="assets/Captchaa.png" alt="Captchaa">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- Submit Button -->
+                                        <div class="flex justify-start items-start">
+                                            <div class="text-center mt-10">
+                                                <button type="submit"
+                                                    class="bg-black text-white py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                                                    Your Transformation Today</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- News and Blogs -->
+                <section>
+                    <div>
+                        <div class="bgfont2 mt-32">
+                            <div class="container mx-auto flex flex-wrap md:flex-nowrap">
+                                <div class="w-3/6">
+                                    <div class="border-black border w-32 rounded-lg">
+                                        <div class="tet-gray-300 text-center">Recent Blog</div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <p class="text-gray-400">We don't mind sharing the secret.
+                                            <br> Read our blogs and stay updated
+                                            <br> about the latest trends of the
+                                            digital world.
+                                        </p>
+                                    </div>
+                                    <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+                                        <div class="text-black text-center font-medium">All Articles</div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <!-- Blog 1 -->
+                                    <div class="bg-white rounded-lg shadow-xl p-6">
+                                        <img src="assets/Blog_1.webp" alt="Blog 1"
+                                            class="w-full h-48 object-cover rounded-lg mb-4">
+                                        <div class="mt-10">
+                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
+                                                <div class="text-center">05/08/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup Should
+                                            Invest
+                                            In A
+                                            Professional Web
+                                            Development Company</p>
+                                        <a href="#" class="text-yellow-300 font-medium hover:underline">Read More</a>
+                                    </div>
+
+                                    <!-- Blog 2 -->
+                                    <div class="bg-white rounded-lg shadow-lg p-6">
+                                        <img src="assets/Blog_2.webp" alt="Blog 2"
+                                            class="w-full h-48 object-cover rounded-lg mb-4">
+                                        <div class="mt-10">
+                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
+                                                <div class="text-center">31/07/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
+                                            Design
+                                            Company
+                                            In Boosting Your
+                                            E-Commerce Success</p>
+                                        <a href="#" class="text-yellow-300 font-medium hover:underline">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10 flex justify-end">
+                                <div class="w-5/6">
+                                    <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Footer  -->
+                <section>
+                    <div class="bg-black bgfont2 p-10">
+                        <div>
+                            <div class="flex justify-around flex-wrap md:flex-wrap">
+                                <div class="mt-20">
+                                    <div>
+                                        <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
+                                    </div>
+                                    <div class="mt-10 ">
+                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
+                                            <br>and
+                                            digital
+                                            marketing
+                                            agency based
+                                            in Gurgaon, India.
+                                            <br>With a team of over 40+, we are an award-winning <br>full-stack digital
+                                            marketing
+                                            agency
+                                            offering <br>
+                                            creative and innovative <br>digital and brand solutions for brands <br>
+                                            looking
+                                            to
+                                            grow
+                                            their
+                                            businesses.
+                                        </p>
+                                    </div>
+                                    <div class="mt-10 flex gap-5">
+                                        <div>
+                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3 mt-10 w-72 ">
+                                        <div>
+                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
+                                                class="rounded-sm">
+                                        </div>
+                                        <div>
+                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-10 gap-1">
+                                        <div class="cursor-pointer">
+                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+                                        </div>
+                                        <div class="text-white">Chennai's Leading Digital Agency</div>
+                                        <div> |</div>
+                                        <div class="flex">
+                                            <div class="text-yellow-300">30+</div>
+                                            <div>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-white pt-20">
+                                    <div class="font-bold text-xl">Information</div>
+                                    <ul class="text-gray-500 space-y-3 mt-5">
+                                        <li>Brand Solutions</li>
+                                        <li>Digital Marketing Solutions</li>
+                                        <li>Who We Are</li>
+                                        <li>Sample Work</li>
+                                        <li>Our Clients</li>
+                                        <li>Industries We Serve</li>
+                                        <li>Careers</li>
+                                        <li>Blog</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+                                <div class="text-white pt-20">
+                                    <div class="font-bold text-xl">Contact US</div>
+                                    <div class="text-gray-500 mt-5">
+                                        Ayn Technologies Pvt. Ltd.,<br>
+                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                                        Ullagaram, Madipakkam, Chennai- 600091.
+                                    </div>
+                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                                </div>
+                                <div>
+
+                                </div>
+                                <div>
+
+                                </div>
+                                <div class="bg-gray-950 p-10">
+                                    <div class="flex justify-center items-center mt-20">
+                                        <div class="">
+                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center items-center mt-10">
+                                        <div
+                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                            <div class="text-center">Contact US</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+                                        <div class="text-gray-500 text-center">Monday to Friday</div>
+                                    </div>
+                                    <div class="text-gray-500  mt-10 text-justify">
+                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
+                                        agency
+                                        brings
+                                        <br>invaluable
+                                        industry insights and <br>
+                                        international <br>know-how to your brand's success.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </div>
+            <span class="cursor"></span>
+            <span class="cursor-trail"></span>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true
+            });
+        });
+    </script>
+
+
+
+    <!-- Cursor Effects  -->
+    <script>
+        var timeout
+
+        function fancyCursor(e) {
+
+            let halfCursorSize = 12; // For .cursor
+            let halfTrailSize = 40; // For .cursor-trail
+
+            let scaleMin = 0.35
+            let scaleMax = 1.0
+            let finalX = e.pageX - halfCursorSize
+            let finalY = e.pageY - halfCursorSize
+            let finalTrailX = e.pageX - halfTrailSize
+            let finalTrailY = e.pageY - halfTrailSize
+
+            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+
+            setTimeout(() => {
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+            }, 100)
+
+            if (timeout !== undefined) {
+                window.clearTimeout(timeout)
+            }
+
+            timeout = window.setTimeout(function () {
+                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+            }, 250)
+            document.querySelector('.cursor').style.opacity = '1'
+            document.querySelector('.cursor-trail').style.opacity = '1'
+        }
+
+        function cursorLoader() {
+            if (document.querySelector('.cursor__wrapper')) {
+                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                }, false)
+                window.addEventListener('scroll', function (e) {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                })
+            }
+        }
+
+        window.addEventListener('load', function () {
+            cursorLoader()
+            function animate() {
+                requestAnimationFrame(animate)
+            }
+            animate()
+        })
+    </script>
+    <script>
+        gsap.from(".overflow-y-auto div", {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: ".overflow-y-auto",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true,
+            }
+        });
+    </script>
+
+    <script>
+        gsap.from("#clients-text", {
+            opacity: 0,
+            scale: 0.5,
+            duration: 1.5,
+            ease: "power3.out",
+            y: 50,
+        });
+    </script>
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.getElementById('navbar-toggle').onclick = function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="./output.css" rel="stylesheet">
+    <link href="/dist/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Locomotive Scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    /* Locomotive Smooth Scroll  */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    [data-scroll-container] {
+        overflow: hidden;
+    }
+
+    [data-scroll-section] {
+        position: relative;
+        min-height: 200vh;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="cursor__wrapper">
+        <section class="sticky top-0 left-0 z-50 shadow-2xl">
+            <!-- Navbar -->
+            <nav class="bg-white p-5 shadow-lg bgfont">
+                <div class="flex justify-around items-center">
+                    <!-- Logo -->
+                    <div>
+                        <img src="assets/AynMedia_Logo.png" alt="Brandbee">
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-lg">
+                        <a href="index.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">HOME</a>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SERVICES</a>
+                        <div class="relative">
+                            <a href="aboutus.html"
+                                class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">
+                                ABOUT US
+                            </a>
+                            <ul class="dropdown-list absolute hidden bg-white mt-2 rounded shadow-lg">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Who we are</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">How we work</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">What we do</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Our LeaderShip</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SAMPLE
+                            WORK</a>
+                        <a href="client.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">OUR
+                            CLIENTS</a>
+                        <a href="#"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">INDUSTRIES
+                            WE HAVE</a>
+                        <a href="blog.html"
+                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">BLOG</a>
+                        <div class="flex justify-center items-center">
+                            <div class="bg-black p-2">
+                                <a href="#"
+                                    class="text-white preserve-3d backface-hidden transform transition duration-700 ease-in-out hover:rotate-y-180">LETS
+                                    TALK</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Mobile Menu Toggle Button -->
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+                <!-- Mobile Menu (hidden by default) -->
+                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
+                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
+                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
+                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
+                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
+                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                    <div class="bg-black p-2 rounded-xl">
+                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <div data-scroll-container>
+            <div data-scroll-section>
+                <section class="container mx-auto ">
+                    <div class="bgfont2 mt-20">
+                        <div class="">
+                            <div class="text-left text-gray-900">30/06/2024</div>
+                        </div>
+                        <div class="">
+                            <p class="text-black mb-4 mt-5 text-5xl font-medium">Navigating the Digital Frontier:
+                                The Essential Role of Web Development Companies
+                            </p>
+                        </div>
+
+                        <div class="mt-10">
+                            <div class="">
+                                <img src="assets/Blog_7.webp" alt="" class="bg-fixed object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mx-auto w-5/6">
+                        <div class="bgfont2 mt-10 ">
+                            <div class="text-justify">
+                                <p class="text-gray-800 text-xl">In today’s digital era, a compelling online presence is
+                                    not a luxury but a necessity for businesses aiming to thrive. Websites are the
+                                    modern storefronts, and in many cases, the first interaction a potential customer
+                                    has with a brand. The behind-the-scenes magic of crafting these digital experiences
+                                    lies with web development companies, the unsung heroes of the internet. This blog
+                                    delves into the world of web development companies, the scope of their services, and
+                                    the transformative power of custom application development.</p>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-black text-4xl font-medium">The Evolution of Web Development Companies
+                                </div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl">The internet has come a long way from its early
+                                        days of static HTML pages. Today, web development companies are at the forefront
+                                        of this evolution, continually adapting to new technologies and user
+                                        expectations. These companies are more than just coders; they are innovators,
+                                        designers, strategists, and problem-solvers, creating digital solutions that are
+                                        as functional as they are beautiful.</p>
+                                    <p class="text-gray-800 text-xl">A web development company typically comprises
+                                        various specialists including front-end developers, back-end developers, UX/UI
+                                        designers, and project managers, all working in harmony to build websites that
+                                        not only look good but also perform seamlessly.</p>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-black text-4xl font-medium">The Comprehensive Services of Website
+                                    Development Companies</div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl">A reputable website development company offers a
+                                        suite of services designed to cover every aspect of creating and maintaining a
+                                        website. Here’s a closer look at what these services entail:</p>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-gray-700 text-xl">Website Design and Development:</div>
+                                    <div class="">
+                                        <div class="mt-10">
+                                            <div class="flex gap-5">
+                                                <div class="flex justify-center items-center">
+                                                    <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                </div>
+                                                <div class="text-gray-800 text-xl">
+                                                    <span class="font-bold text-black">Back-End Development:
+                                                    </span>Building the server-side logic and databases that power the
+                                                    website, using languages like PHP, Python, and Ruby.
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-5">
+                                                <div class="flex justify-center items-center">
+                                                    <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                </div>
+                                                <div class="text-gray-800 text-xl mt-5">
+                                                    <span class="font-bold text-black">Front-End Development: </span>
+                                                    Using languages like HTML, CSS, and JavaScript to create the visual
+                                                    and interactive aspects of a website.
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-5">
+                                                <div class="flex justify-center items-center">
+                                                    <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                </div>
+                                                <div class="text-gray-800 text-xl mt-5">
+                                                    <span class="font-bold text-black">Responsive Design: </span>
+                                                    Ensuring that websites look and function well on all devices, from
+                                                    desktops to smartphones.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-gray-700 text-xl">E-Commerce Solutions:</div>
+                                <div class="">
+                                    <div class="mt-10">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl">
+                                                <span class="font-bold text-black">Online Store Development:
+                                                </span>Creating robust e-commerce platforms using tools like Shopify,
+                                                WooCommerce, or Magento.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl mt-5">
+                                                <span class="font-bold text-black">Payment Gateway Integration: </span>
+                                                Ensuring secure and seamless payment processes for customers.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl mt-5">
+                                                <span class="font-bold text-black">Inventory Management Systems: </span>
+                                                Developing systems to track and manage inventory efficiently.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-gray-700 text-xl">Content Management Systems (CMS):</div>
+                                <div class="mt-5">
+                                    <div class="mt-10">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl">
+                                                <span class="font-bold text-black">Custom CMS Development:
+                                                </span> Creating bespoke CMS platforms tailored to specific business
+                                                needs.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl mt-5">
+                                                <span class="font-bold text-black">CMS Integration: </span>
+                                                Implementing popular CMS solutions like WordPress, Joomla, or Drupal.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-gray-700 text-xl">Content Management Systems (CMS):</div>
+                                <div class="mt-5">
+                                    <div class="mt-10">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl mt-5">
+                                                <span class="font-bold text-black">Custom CMS Development: </span>
+                                                Creating bespoke CMS platforms tailored to specific business needs.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl">
+                                                <span class="font-bold text-black">CMS Integration:
+                                                </span> Implementing and customizing popular CMS platforms like
+                                                WordPress, Joomla, and Drupal.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-gray-700 text-xl">SEO and Digital Marketing:</div>
+                                <div class="mt-5">
+                                    <div class="mt-10">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl">
+                                                <span class="font-bold text-black">SEO Optimization:
+                                                </span> Enhancing website visibility on search engines through on-page
+                                                and off-page SEO strategies.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl mt-5">
+                                                <span class="font-bold text-black">Analytics and Reporting: </span>
+                                                Monitoring website performance and providing insights to improve traffic
+                                                and engagement.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-gray-700 text-xl">Website Maintenance and Support:</div>
+                                <div class="mt-5">
+                                    <div class="mt-10">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl">
+                                                <span class="font-bold text-black">Regular Updates:
+                                                </span> Keeping the website up-to-date with the latest technologies and
+                                                security patches.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="text-gray-800 text-xl mt-5">
+                                                <span class="font-bold text-black">Technical Support: </span>
+                                                Offering ongoing support to resolve any issues that may arise.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <div class="text-black text-4xl font-medium">The Power of Custom Application Development
+                                    Services</div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl">In addition to standard web development, <a href=""
+                                            class="text-blue-500">
+                                            custom
+                                            application development services
+                                        </a> are becoming increasingly vital for businesses
+                                        looking to offer unique solutions tailored to their specific needs. Custom
+                                        applications can range from mobile apps to complex enterprise software, each
+                                        designed to address particular business challenges and opportunities.</p>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-black text-3xl">Why Custom Application Development?</div>
+                                    <div class="text-gray-800 text-xl mt-10">Tailored Solutions:</div>
+                                    <div class="flex gap-5">
+                                        <div class="flex justify-center items-center mt-5">
+                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                        </div>
+                                        <div class="text-gray-800 text-xl mt-5">
+                                            Custom applications are built to meet the exact requirements of a business,
+                                            ensuring a perfect fit for their processes and goals. This level of
+                                            personalization often translates to improved efficiency and user
+                                            satisfaction.
+                                        </div>
+                                    </div>
+                                    <div class="text-gray-800 text-xl mt-10">Scalability:</div>
+                                    <div class="flex gap-5">
+                                        <div class="flex justify-center items-center mt-5">
+                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                        </div>
+                                        <div class="text-gray-800 text-xl mt-5">
+                                            Unlike off-the-shelf solutions, custom applications can be scaled and
+                                            adapted as a business grows. This ensures that the application remains
+                                            relevant and useful over time.
+                                        </div>
+                                    </div>
+                                    <div class="text-gray-800 text-xl mt-10">Competitive Advantage:</div>
+                                    <div class="flex gap-5">
+                                        <div class="flex justify-center items-center mt-5">
+                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                        </div>
+                                        <div class="text-gray-800 text-xl mt-5">
+                                            A custom application can provide a business with unique features and
+                                            capabilities that are not available to competitors using standard solutions.
+                                        </div>
+                                    </div>
+                                    <div class="text-gray-800 text-xl mt-10">Integration Capabilities:</div>
+                                    <div class="flex gap-5">
+                                        <div class="flex justify-center items-center mt-5">
+                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                        </div>
+                                        <div class="text-gray-800 text-xl mt-5">
+                                            Custom applications can be seamlessly integrated with existing systems and
+                                            processes, ensuring smooth and efficient operations.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-black text-3xl font-bold">Services Offered by Custom Application
+                                        Development Companies</div>
+                                    <div class="text-black text-3xl mt-10">Consultation and Analysis:</div>
+                                    <div class="mt-10">
+                                        <div class="">
+                                            <div class="mt-10">
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl">
+                                                        <span class="font-bold text-black">Requirement Gathering:
+                                                        </span> Understanding the specific needs and goals of the
+                                                        business.
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5 mt-3">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl ">
+                                                        <span class="font-bold text-black">Feasibility Study: </span>
+                                                        Analyzing the technical and economic feasibility of the project.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-gray-700 text-xl">Design and Prototyping:</div>
+                                        <div class="mt-5">
+                                            <div class="mt-10">
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl">
+                                                        <span class="font-bold text-black">Wireframing and Mockups:
+                                                        </span> Creating visual representations of the application.
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl mt-5">
+                                                        <span class="font-bold text-black">User Experience (UX) Design:
+                                                        </span>
+                                                        Ensuring the application is intuitive and easy to use.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-gray-700 text-xl">Development and Testing:</div>
+                                        <div class="mt-5">
+                                            <div class="mt-10">
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl">
+                                                        <span class="font-bold text-black">Agile Development:
+                                                        </span> Using agile methodologies to develop the application in
+                                                        iterative cycles.
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl mt-5">
+                                                        <span class="font-bold text-black">Quality Assurance: </span>
+                                                        Rigorous testing to ensure the application is bug-free and
+                                                        performs well under various conditions.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-gray-700 text-xl">Deployment and Maintenance:</div>
+                                        <div class="mt-5">
+                                            <div class="mt-10">
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl">
+                                                        <span class="font-bold text-black">Deployment:
+                                                        </span> Launching the application on appropriate platforms (web,
+                                                        mobile, cloud).
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    </div>
+                                                    <div class="text-gray-800 text-xl mt-5">
+                                                        <span class="font-bold text-black">Ongoing Support: </span>
+                                                        Providing continuous support and updates to keep the application
+                                                        running smoothly.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <p class="text-gray-800 text-xl"><a href="" class="text-blue-500">Web development
+                                            company</a> and custom
+                                        application
+                                        development services are the backbone of the digital world. They turn ideas into
+                                        reality, crafting digital experiences that not only meet but exceed user
+                                        expectations. Whether it's building a sleek website or developing a custom
+                                        application tailored to a business’s unique needs, these companies play a
+                                        crucial role in shaping the online landscape.</p>
+                                    <p class="text-gray-800 text-xl mt-5">
+                                        In a world where digital presence is synonymous with business success,
+                                        partnering with a skilled web development company is no longer optional; it's
+                                        essential. These experts bring together creativity, technical prowess, and
+                                        strategic thinking to create digital solutions that drive growth and innovation.
+                                        So, whether you’re a startup looking to make your mark or an established
+                                        enterprise aiming to stay ahead, investing in professional web development and
+                                        custom application services is a step towards unlocking your full digital
+                                        potential.
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <div class="mt-10">
+                                        <div class="text-gray-800 text-xl">Also Read:-</div>
+                                        <div class="text-blue-500 text-xl mt-5">Unlocking the Potential The Power
+                                            of Social Media Marketing Agencies</div>
+                                        <div class="text-blue-500 text-xl mt-5">Unveiling the Global Path: Through
+                                            SEO Technical Audit Service</div>
+                                        <div class="text-gray-800 text-xl mt-5">More Useful Links:-</div>
+                                        <div class="mt-5">
+                                            <a href="" class="text-blue-500 text-xl">Digital Marketing Agency in
+                                                Gurgaon</a>
+                                            |
+                                            <a href="" class="text-blue-500 text-xl"> Best SEO Company in Gurgaon </a> |
+                                            <a href="" class="text-blue-500 text-xl"> Technical SEO Agency</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-52 bgfont2">
+                        <div class="container mx-auto ">
+                            <div class="text-black mb-4 mt-5 text-5xl font-medium">Related Articles</div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <!-- Blog 8 -->
+                                <a href="Blog8.html">
+                                    <div class="p-6">
+                                        <img src="assets/Blog_8_up.webp" alt="Blog 8"
+                                            class="w-full h-48 object-cover mb-4">
+                                        <div class="mt-28">
+                                            <div class="w-36 p-1">
+                                                <div class="text-left text-gray-500">27/06/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unlocking the Potential
+                                            The
+                                            Power of
+                                            Social
+                                            Media Marketing Agencies</p>
+                                        <div class="pt-8">
+                                            <hr class="text-gray-500">
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Blog 9 -->
+                                <a href="Blog9.html">
+                                    <div class="p-6">
+                                        <img src="assets/Blog_9.webp" alt="Blog 9"
+                                            class="w-full h-48 object-cover mb-4">
+                                        <div class="mt-28">
+                                            <div class="w-36">
+                                                <div class="text-left text-gray-500">18/06/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Digital Market
+                                            Revolution:
+                                            Unleashing
+                                            the
+                                            Power of Local Business SEO Services
+                                        </p>
+                                        <div class="pt-8">
+                                            <hr class="text-gray-500">
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Blog 10 -->
+                                <a href="Blog10.html">
+                                    <div class="p-6">
+                                        <img src="assets/Blog_10.webp" alt="Blog 10"
+                                            class="w-full h-48 object-cover mb-4">
+                                        <div class="mt-28">
+                                            <div class="w-36">
+                                                <div class="text-left text-gray-500">12/06/2024</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unveiling the Global
+                                            Path:
+                                            Through SEO
+                                            Technical Audit Service
+                                        </p>
+                                        <div class="pt-9">
+                                            <hr class="text-gray-500">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work with us -->
+                    <section class="pb-10 mt-32">
+                        <div class="flex justify-center items-center">
+                            <div class="border-gray-400 border rounded-3xl p-2 ">
+                                <div class="flex justify-center items-center">
+                                    <div class="bgfont text-center pt-1">WORK WITH US</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="mt-10 bgfont2">
+                                <div class="text-6xl ">We would love to hear <br>
+                                    more about your project</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center mt-32 bgfont2 cursor-pointer">
+                            <div
+                                class="border-gray-300 border w-48 rounded-full p-14 transform transition duration-500 ease-in-out hover:bg-yellow-400 hover:scale-105">
+                                <div class="text-center text-lg">Let's talk US ?</div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- Digital Marketing Image -->
+                <section class="">
+                    <div class="mt-10 flex justify-end">
+                        <div class="w-5/6">
+                            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Footer  -->
+                <section>
+                    <div class="bg-black bgfont2 p-10">
+                        <div>
+                            <div class="flex justify-around">
+                                <div class="mt-20">
+                                    <div>
+                                        <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
+                                    </div>
+                                    <div class="mt-10 ">
+                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
+                                            <br>and
+                                            digital
+                                            marketing
+                                            agency based
+                                            in Gurgaon, India.
+                                            <br>With a team of over 40+, we are an award-winning <br>full-stack
+                                            digital
+                                            marketing
+                                            agency
+                                            offering <br>
+                                            creative and innovative <br>digital and brand solutions for brands <br>
+                                            looking to
+                                            grow
+                                            their
+                                            businesses.
+                                        </p>
+                                    </div>
+                                    <div class="mt-10 flex gap-5">
+                                        <div>
+                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3 mt-10 w-72 ">
+                                        <div>
+                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
+                                                class="rounded-sm">
+                                        </div>
+                                        <div>
+                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-10 gap-1">
+                                        <div class="cursor-pointer">
+                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+                                        </div>
+                                        <div class="text-white">Chennai's Leading Digital Agency</div>
+                                        <div> |</div>
+                                        <div class="flex">
+                                            <div class="text-yellow-300">30+</div>
+                                            <div>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-white pt-20">
+                                    <div class="font-bold text-xl">Information</div>
+                                    <ul class="text-gray-500 space-y-3 mt-5">
+                                        <li>Brand Solutions</li>
+                                        <li>Digital Marketing Solutions</li>
+                                        <li>Who We Are</li>
+                                        <li>Sample Work</li>
+                                        <li>Our Clients</li>
+                                        <li>Industries We Serve</li>
+                                        <li>Careers</li>
+                                        <li>Blog</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+                                <div class="text-white pt-20">
+                                    <div class="font-bold text-xl">Contact US</div>
+                                    <div class="text-gray-500 mt-5">
+                                        Ayn Technologies Pvt. Ltd.,<br>
+                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                                        Ullagaram, Madipakkam, Chennai- 600091.
+                                    </div>
+                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                                </div>
+                                <div>
+
+                                </div>
+                                <div>
+
+                                </div>
+                                <div class="bg-gray-950 p-10">
+                                    <div class="flex justify-center items-center mt-20">
+                                        <div class="">
+                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center items-center mt-10">
+                                        <div
+                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                            <div class="text-center">Contact US</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+                                        <div class="text-gray-500 text-center">Monday to Friday</div>
+                                    </div>
+                                    <div class="text-gray-500  mt-10 text-justify">
+                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
+                                        agency
+                                        brings
+                                        <br>invaluable
+                                        industry insights and <br>
+                                        international <br>know-how to your brand's success.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <span class="cursor"></span>
+        <span class="cursor-trail"></span>
+    </div>
+    <!-- Locomotive Smooth Scroll  -->
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true
+            });
+        });
+    </script>
+
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.getElementById('navbar-toggle').onclick = function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <!-- Cursor Effects  -->
+    <script>
+        var timeout
+
+        function fancyCursor(e) {
+
+            let halfCursorSize = 12; // For .cursor
+            let halfTrailSize = 40; // For .cursor-trail
+
+            let scaleMin = 0.35
+            let scaleMax = 1.0
+            let finalX = e.pageX - halfCursorSize
+            let finalY = e.pageY - halfCursorSize
+            let finalTrailX = e.pageX - halfTrailSize
+            let finalTrailY = e.pageY - halfTrailSize
+
+            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+
+            setTimeout(() => {
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+            }, 100)
+
+            if (timeout !== undefined) {
+                window.clearTimeout(timeout)
+            }
+
+            timeout = window.setTimeout(function () {
+                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+            }, 250)
+            document.querySelector('.cursor').style.opacity = '1'
+            document.querySelector('.cursor-trail').style.opacity = '1'
+        }
+
+        function cursorLoader() {
+            if (document.querySelector('.cursor__wrapper')) {
+                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                }, false)
+                window.addEventListener('scroll', function (e) {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                })
+            }
+        }
+
+        window.addEventListener('load', function () {
+            cursorLoader()
+            function animate() {
+                requestAnimationFrame(animate)
+            }
+            animate()
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll with Parallax Effect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #282828;
+            position: relative;
+        }
+
+        .image-gallery {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 100px 0;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .parallax {
+            position: relative;
+        }
+
+        .parallax .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Parallax Background -->
+    <div class="parallax">
+        <div class="bg"></div>
+    </div>
+
+    <!-- Full Screen Section with Title -->
+    <section class="section">
+        <h1 class="text-5xl">Welcome to Our Gallery</h1>
+    </section>
+
+    <!-- Image Gallery with Parallax Effect -->
+    <section class="image-gallery mx-auto px-4">
+        <img src="assets/GL Cars - 1.jpg" alt="Work-1" class="parallax-item" data-speed="0.5">
+        <img src="assets/GL Cars - 2.jpg" alt="Work-2" class="parallax-item" data-speed="1">
+        <img src="assets/Silver Crest - 1.jpg" alt="Work-3" class="parallax-item" data-speed="0.75">
+        <img src="assets/Silver Crest - 2.jpg" alt="Work-4" class="parallax-item" data-speed="1.25">
+        <img src="assets/SRT - 1.jpg" alt="Work-5" class="parallax-item" data-speed="0.5">
+        <img src="assets/SRT - 2.webp" alt="Work-6" class="parallax-item" data-speed="1.5">
+    </section>
+
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.utils.toArray('.parallax-item').forEach(img => {
+            const speed = img.dataset.speed;
+
+            gsap.to(img, {
+                y: () => -(window.innerHeight * (speed === 'auto' ? 1 : parseFloat(speed))),
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: img,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
