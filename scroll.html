@@ -3,100 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smooth Scroll with Parallax Effect</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Parallax Effect</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            background-color: #282828;
-            position: relative;
-        }
-
-        .image-gallery {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            padding: 100px 0;
-        }
-
-        .image-gallery img {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .parallax {
+            height: 500px; /* Adjust as needed */
+            overflow: hidden;
             position: relative;
+            background-image: url('assets/Who_we_are_BG.webp'); /* Your image path */
+            background-size: cover;
+            background-position: center;
         }
 
-        .parallax .bg {
-            position: fixed;
+        .parallax-content {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
-            background-size: cover;
-            z-index: -1;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Optional: overlay for better text visibility */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .content {
+            height: 1500px; /* Ensures the page has enough content to scroll */
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
         }
     </style>
 </head>
 <body>
-
-    <!-- Parallax Background -->
-    <div class="parallax">
-        <div class="bg"></div>
+    <!-- Parallax Section -->
+    <div class="parallax" id="parallax">
+        <div class="parallax-content">
+            Parallax Effect
+        </div>
     </div>
 
-    <!-- Full Screen Section with Title -->
-    <section class="section">
-        <h1 class="text-5xl">Welcome to Our Gallery</h1>
-    </section>
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Scroll down to see the effect</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum venenatis est, eu venenatis dolor. Donec dictum venenatis odio, id scelerisque turpis feugiat vel.</p>
+        <!-- Add more content as needed -->
+    </div>
 
-    <!-- Image Gallery with Parallax Effect -->
-    <section class="image-gallery mx-auto px-4">
-        <img src="assets/GL Cars - 1.jpg" alt="Work-1" class="parallax-item" data-speed="0.5">
-        <img src="assets/GL Cars - 2.jpg" alt="Work-2" class="parallax-item" data-speed="1">
-        <img src="assets/Silver Crest - 1.jpg" alt="Work-3" class="parallax-item" data-speed="0.75">
-        <img src="assets/Silver Crest - 2.jpg" alt="Work-4" class="parallax-item" data-speed="1.25">
-        <img src="assets/SRT - 1.jpg" alt="Work-5" class="parallax-item" data-speed="0.5">
-        <img src="assets/SRT - 2.webp" alt="Work-6" class="parallax-item" data-speed="1.5">
-    </section>
-
-    <!-- GSAP and ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-- Parallax JavaScript -->
     <script>
-        gsap.utils.toArray('.parallax-item').forEach(img => {
-            const speed = img.dataset.speed;
-
-            gsap.to(img, {
-                y: () => -(window.innerHeight * (speed === 'auto' ? 1 : parseFloat(speed))),
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: img,
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: true,
-                }
-            });
+        window.addEventListener('scroll', function() {
+            const parallax = document.getElementById('parallax');
+            const scrollTop = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollTop * 0.5 + 'px'; // Adjust the multiplier as needed
         });
     </script>
-
 </body>
 </html>

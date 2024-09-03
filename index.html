@@ -15,6 +15,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Locomotive Scroll  -->
     <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -201,13 +203,24 @@
         height: auto;
         transition: transform 1s ease-in-out;
     }
+
+
+    .parallax-window {
+        width: 500px;
+        height: 1000px;
+        /* Adjust height as needed */
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        background-image: url('assets/Who_we_are_BG.webp');
+    }
 </style>
 
 <body>
     <div class="cursor__wrapper">
         <section class="sticky top-0 left-0 z-50 shadow-lg">
             <!-- Navbar -->
-            <nav class="bg-[#ffde16]  p-5 shadow-lg bgfont">
+            <nav class="bg-yellow-300  p-5 shadow-lg bgfont">
                 <div class=" flex justify-between items-center">
                     <!-- Logo -->
                     <div>
@@ -215,17 +228,333 @@
                     </div>
                     <!-- Centered Navbar Links (hidden on mobile) -->
                     <div class="hidden md:flex flex-1 justify-center items-center gap-10">
-                        <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                        <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                        <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                        <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                        <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                        <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
-                        <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                        <a href="index.html"
+                            class="text-black group relative inline-block overflow-hidden cursor-pointer">
+                            <span class="block text-black">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+                                <span
+                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+                                </span>
+                        </a>
+                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">V</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">V</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                        </a>
+
+                        <a href="aboutus.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span></a>
+                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                            </span>
+                        </a>
+                        <a href="client.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                        </a>
+                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">D</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">H</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">V</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">D</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">H</span>
+                            </span>
+                        </a>
+                        <a href="blog.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                            </span>
+                        </a>
                         <div class="flex justify-center items-center">
                             <div class="bg-black p-2 ">
-                                <a href="#" class="text-white hover:text-yellow-400 duration-700 ease-in-out ">LETS
-                                    TALK</a>
+                                <a href="#"
+                                    class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                                    <span class="block mt-3">
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                    </span>
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -255,12 +584,41 @@
             <div data-scroll-section>
                 <section class="bg-black bgfont">
                     <div class="container mx-auto">
-                        <div>
+                        <!-- <div>
                             <img src="assets/Ayn_Media.webp" alt="">
-                        </div>
+                        </div> -->
                         <div class="text-white font-bold textsize3 ml-12 text-animate">BEE</div>
-                        <div class="text-[#ffde16] font-bold textsize1 ml-10 text-animate">EVERY</div>
-                        <div class="text-white font-bold textsize2 text-right -mt-32 text-animate">THING</div>
+                        <div class="relative overflow-hidden">
+                            <!-- "EVERY" text with letter-by-letter slide-in -->
+                            <div class="text-yellow-300 font-bold textsize1 ml-10 flex space-x-1">
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="500">E</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="700">V</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="900">E</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="1000">R</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="1300">Y</span>
+                            </div>
+                            <!-- "THING" text with letter-by-letter slide-in -->
+                            <div class="text-white font-bold textsize2 text-right -mt-32 flex space-x-1 justify-end">
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="500">T</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="700">H</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="900">I</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="1000">N</span>
+                                <span class="inline-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="1300">G</span>
+                            </div>
+                        </div>
+
+
+
                         <div class="flex gap-5">
                             <div class="border-white border w-28 p-10 rounded-full cursor-pointer">
                                 <div class="text-white">
@@ -272,7 +630,6 @@
                             <!-- <a href="" src="assets/AynMedia-Video.mp4">
                                 <div class="text-white">Watc Video Intro</div>
                             </a> -->
-
                         </div>
 
                         <div class="text-white lg:w-96 relative -top-96 ml-14">
@@ -295,7 +652,7 @@
                     </div>
                 </section>
                 <!-- Our Clients  -->
-                <section class="bg-[#ffde16] pt-20 pb-20">
+                <section class="bg-yellow-300 pt-20 pb-20">
                     <div class="text-center font-medium text-5xl bgfont2 text-animate2">Our Clients</div>
                     <div class="bgfont text-center text-xl font-medium mt-5 text-animate2">WE DON'T BELIEVE IN MONOGAMY.
                         WE KEEP
@@ -329,8 +686,8 @@
                                 </div>
                             </div>
                             <div class="swiper-slide flex justify-center items-center">
-                                <div class="w-44">
-                                    <img src="assets/H & M logo copy.webp" alt="Client 2"
+                                <div class="w-44 pt-10">
+                                    <img src="assets/H&M hospital.webp" alt="Client 2"
                                         class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
                                 </div>
                             </div>
@@ -409,7 +766,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide flex justify-center items-center">
-                                <div class="w-44">
+                                <div class="w-60">
                                     <img src="assets/inc.webp" alt="inc"
                                         class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
                                 </div>
@@ -433,7 +790,7 @@
                             <div class="group cursor-pointer">
                                 <div
                                     class="bg-black p-3 w-40 text-center rounded-md transition duration-300 ease-in-out group-hover:bg-white">
-                                    <div class="text-xl group-hover:text-black text-[#ffde16]  ">View More</div>
+                                    <div class="text-xl group-hover:text-black text-yellow-300  ">View More</div>
                                 </div>
                             </div>
                         </div>
@@ -447,14 +804,14 @@
                                 <!-- <div class="">
                             <div class="parallax"></div>
                         </div> -->
-                                <div class="w-96 h-[700px] overflow-hidden relative mt-32 ">
+                                <!-- Parallax Section -->
+                                <div class="parallax-window"></div>
+
+                                <!-- <div class="w-96 h-[700px] overflow-hidden relative mt-32 ">
                                     <img src="assets/Who_we_are_BG.webp" alt="Who_we_are_BG"
                                         class="parallax-image absolute top-96 left-0 w-full h-[700px] ">
-                                </div>
-
-
+                                </div> -->
                             </div>
-
                             <div class="w-3/6">
                                 <div class="text-white font-semibold text-xl text-animate3">WHO WE ARE</div>
                                 <div class="text-white text-5xl font-semibold mt-5 text-animate3">EVERYTHING IS NOT
@@ -485,9 +842,7 @@
                                         you address issues in almost all these domains
                                         and Bee Everything.
                                     </p>
-
                                 </div>
-
                                 <div class="mt-10 group flex justify-center items-centers-center text-animate2">
                                     <div
                                         class="rounded-full w-32 p-10 cursor-pointer bg-white hover:bg-yellow-300 duration-500 ease-in-out transform transition-transform">
@@ -496,16 +851,13 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-
                     </div>
                 </section>
                 <!-- Services  -->
                 <section>
-                    <div class="bg-[#ffde16] p-10">
+                    <div class="bg-yellow-300 p-10">
                         <div class="container mx-auto bgfont2  flex justify-between mt-20">
                             <div class="text-animate2">
                                 <div class="text-gray-700 text-xl">Services</div>
@@ -523,7 +875,7 @@
                                 <div class="group w-full h-full">
                                     <div class="relative transition duration-300 ease-in-out p-20 pb-16">
                                         <div>
-                                            <div class="text-7xl font-bold bgfont text-[#ffde16]">BRAND <br>SOLUTIONS
+                                            <div class="text-7xl font-bold bgfont text-yellow-300">BRAND <br>SOLUTIONS
                                             </div>
                                             <p class="bgfont2 text-white">
                                                 We are your PARTNER IN BRANDING, OFFERING <br>a tailored solution to
@@ -626,7 +978,7 @@
                                 <div class="group w-full h-full">
                                     <div class="relative transition duration-300 ease-in-out  p-20 w-full h-full pb-16">
                                         <div>
-                                            <div class="text-7xl font-bold bgfont text-[#ffde16]">DIGITAL <br>SOLUTIONS
+                                            <div class="text-7xl font-bold bgfont text-yellow-300">DIGITAL <br>SOLUTIONS
                                             </div>
                                             <p class="bgfont2 text-white">
                                                 We guide your online presence towards success, <br>meticulously crafting
@@ -718,7 +1070,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -771,7 +1122,7 @@
 
                 </div>
                 <!-- Brands and Campaigns  -->
-                <section class="bg-[#ffde16] ">
+                <section class="bg-white">
                     <div class="container mx-auto pt-20 p-20">
                         <div class="text-3xl font-medium text-center bgfont2">
                             <div>We are passionate to create connected brands and campaigns to enable stable
@@ -945,7 +1296,7 @@
 
                 </section>
                 <!-- Begin your transformation -->
-                <section class="bg-[#ffde16] pb-20">
+                <section class="bg-yellow-300 pb-20">
                     <div class="bgfont2 mt-20 ">
                         <div
                             class="bg-gray-200 rounded-lg container mx-auto flex justify-around flex-wrap md:flex-nowrap p-10">
@@ -960,7 +1311,7 @@
                                     <div class="text-xl">Still waiting for us to make the first MOVE? <br>Don't BEE shy,
                                         get in
                                         TOUCH</div>
-                                    <div class="bg-[#ffde16] rounded-xl w-72 p-3 mt-5 cursor-pointer">
+                                    <div class="bg-yellow-300 rounded-xl w-72 p-3 mt-5 cursor-pointer">
                                         <div class="text-center font-medium">Begin Your Transformation Today</div>
                                     </div>
                                 </div>
@@ -1155,7 +1506,7 @@
                                         <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
                                         <div class="text-gray-500 text-center">Monday to Friday</div>
                                     </div>
-                                    <div class="text-gray-500  mt-10 text-justify">
+                                    <div class="text-gray-500  mt-16 text-justify">
                                         With extensive expertise <br>spanning in Chennai <br> our digital marketing
                                         agency
                                         brings
@@ -1175,6 +1526,42 @@
         <span class="cursor"></span>
         <span class="cursor-trail"></span>
     </div>
+    <!-- Relax JS -->
+    <script src="https://cdn.jsdelivr.net/npm/relax-js@1.0.0/dist/relax.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Relax.init({
+                selector: '.parallax-window', // Target element for the parallax effect
+                speed: 0.5 // Adjust speed as needed
+            });
+        });
+    </script>
+
+
+    Parallax Animation
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
+    <script>
+        document.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.parallax-window');
+            const scrolled = window.pageYOffset;
+            parallax.style.backgroundPositionY = -(scrolled * 0.5) + 'px'; // Adjust speed factor (0.5) as needed
+        });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 1000, // Animation duration
+                easing: 'ease-in-out', // Easing function
+                once: true, // Whether animation should happen only once
+                delay: 0, // Global delay
+            });
+        });
+
+    </script>
 
     <!-- Locomotive Smooth Scroll  -->
     <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>

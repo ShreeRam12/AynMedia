@@ -41,69 +41,362 @@
 
 <body>
     <div class="cursor__wrapper">
-        <section class="sticky top-0 left-0 z-50 shadow-2xl">
+        <section class="sticky top-0 left-0 z-50 shadow-lg">
             <!-- Navbar -->
-            <nav class="bg-white p-5 shadow-lg bgfont">
-                <div class="flex justify-around items-center">
+            <nav class="bg-yellow-300  p-5 shadow-lg bgfont">
+                <div class=" flex justify-between items-center">
                     <!-- Logo -->
                     <div>
                         <img src="assets/AynMedia_Logo.png" alt="Brandbee">
                     </div>
-                    <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-lg">
+                    <!-- Centered Navbar Links (hidden on mobile) -->
+                    <div class="hidden md:flex flex-1 justify-center items-center gap-10">
                         <a href="index.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">HOME</a>
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SERVICES</a>
-                        <div class="relative">
-                            <a href="aboutus.html"
-                                class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">
-                                ABOUT US
-                            </a>
-                            <ul class="dropdown-list absolute hidden bg-white mt-2 rounded shadow-lg">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Who we are</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">How we work</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">What we do</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Our LeaderShip</a></li>
-                            </ul>
-                        </div>
+                            class="text-black group relative inline-block overflow-hidden cursor-pointer">
+                            <span class="block text-black">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
 
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">SAMPLE
-                            WORK</a>
+                                <span
+                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+                                </span>
+                        </a>
+                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">V</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">V</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                        </a>
+
+                        <a href="aboutus.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span></a>
+                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                            </span>
+                        </a>
                         <a href="client.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">OUR
-                            CLIENTS</a>
-                        <a href="#"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">INDUSTRIES
-                            WE HAVE</a>
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                        </a>
+                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">D</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">H</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">V</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">D</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">H</span>
+                            </span>
+                        </a>
                         <a href="blog.html"
-                            class="text-black preserve-3d backface-hidden transform transition duration-300 ease-in-out hover:rotate-y-180">BLOG</a>
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                            </span>
+                        </a>
                         <div class="flex justify-center items-center">
-                            <div class="bg-black p-2">
+                            <div class="bg-black p-2 ">
                                 <a href="#"
-                                    class="text-white preserve-3d backface-hidden transform transition duration-700 ease-in-out hover:rotate-y-180">LETS
-                                    TALK</a>
+                                    class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                                    <span class="block mt-3">
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                    </span>
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-
-
                     <!-- Mobile Menu Toggle Button -->
                     <!-- Mobile Menu Toggle Button -->
                     <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
+
                 <!-- Mobile Menu (hidden by default) -->
                 <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
                     <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
                     <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
                     <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
                     <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
                     <a href="#" class="text-black hover:text-gray-400">INDUSTRIES WE HAVE</a>
-                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
                     <div class="bg-black p-2 rounded-xl">
                         <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
                     </div>
@@ -112,240 +405,259 @@
         </section>
         <div data-scroll-container>
             <div data-scroll-section>
-                <section class="container mx-auto ">
-                    <div class="bgfont2 mt-20">
-                        <div class="">
-                            <div class="text-left text-gray-900">27/06/2024</div>
-                        </div>
-                        <div class="">
-                            <p class="text-black mb-4 mt-5 text-5xl font-medium">Unlocking­ the­ Potential­ The­ Power­
-                                of­ Social­ Media­ Marketing­ Agencies
-                            </p>
-                        </div>
-
-                        <div class="mt-10">
+                <div class="bg-black pb-10">
+                    <section class="container mx-auto ">
+                        <div class="bgfont2 mt-20">
                             <div class="">
-                                <img src="assets/Blog_8.webp" alt="" class="bg-fixed object-contain">
+                                <div class="text-left text-white">27/06/2024</div>
+                            </div>
+                            <div class="">
+                                <p class="text-yellow-300 mb-4 mt-5 text-5xl font-medium">Unlocking­ the­ Potential­
+                                    The­
+                                    Power­
+                                    of­ Social­ Media­ Marketing­ Agencies
+                                </p>
+                            </div>
+
+                            <div class="mt-10">
+                                <div class="">
+                                    <img src="assets/Blog_8.webp" alt="" class="bg-fixed object-contain">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container mx-auto w-5/6">
-                        <div class="bgfont2 mt-10 ">
-                            <div class="text-justify">
-                                <p class="text-gray-800 text-xl">In the digital age, the phrase "If you're not online,
-                                    you don't exist" has never been more accurate. Businesses, both big and small, are
-                                    turning to social media marketing agencies to not just establish an online presence,
-                                    but to thrive in the virtual marketplace. This blog dives into the world of social
-                                    media marketing agencies, the services they offer, and why YouTube video marketing
-                                    companies are the game-changers you never knew you needed.</p>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-black text-4xl font-medium">The Rise of Social Media Marketing Agencies
-                                </div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">The inception of social media platforms like
-                                        Facebook, Instagram, and Twitter brought a revolution in how businesses connect
-                                        with their audience. However, as these platforms evolved, so did the complexity
-                                        of effectively using them for marketing purposes. Enter social media marketing
-                                        agencies—experts in navigating the digital landscape to enhance brand
-                                        visibility, engagement, and ultimately, sales.</p>
-                                    <p class="text-gray-800 text-xl mt-5">These agencies are more than just a group of
-                                        tech-savvy individuals; they are a blend of strategists, content creators, data
-                                        analysts, and customer engagement specialists. Their goal? To craft tailored
-                                        marketing campaigns that resonate with a brand's target audience, leveraging the
-                                        unique features of each social media platform.</p>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-black text-4xl font-medium">Comprehensive Social Media Marketing
-                                    Services</div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">A reputable social media marketing agency offers a
-                                        suite of services designed to cover every aspect of a brand's social media
-                                        presence. Here are some key services:</p>
+                        <div class="container mx-auto w-5/6">
+                            <div class="bgfont2 mt-10 ">
+                                <div class="text-justify">
+                                    <p class="text-white text-xl">In the digital age, the phrase "If you're not
+                                        online,
+                                        you don't exist" has never been more accurate. Businesses, both big and small,
+                                        are
+                                        turning to social media marketing agencies to not just establish an online
+                                        presence,
+                                        but to thrive in the virtual marketplace. This blog dives into the world of
+                                        social
+                                        media marketing agencies, the services they offer, and why YouTube video
+                                        marketing
+                                        companies are the game-changers you never knew you needed.</p>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-gray-700 text-xl">Strategic Planning and Consulting:</div>
-                                    <div class="">
-                                        <div class="mt-10">
-                                            <div class="flex gap-5">
-                                                <div class="flex justify-center items-center">
-                                                    <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                    <div class="text-yellow-300 text-4xl font-medium">The Rise of Social Media Marketing
+                                        Agencies
+                                    </div>
+                                    <div class="mt-5">
+                                        <p class="text-white text-xl">The inception of social media platforms like
+                                            Facebook, Instagram, and Twitter brought a revolution in how businesses
+                                            connect
+                                            with their audience. However, as these platforms evolved, so did the
+                                            complexity
+                                            of effectively using them for marketing purposes. Enter social media
+                                            marketing
+                                            agencies—experts in navigating the digital landscape to enhance brand
+                                            visibility, engagement, and ultimately, sales.</p>
+                                        <p class="text-white text-xl mt-5">These agencies are more than just a group
+                                            of
+                                            tech-savvy individuals; they are a blend of strategists, content creators,
+                                            data
+                                            analysts, and customer engagement specialists. Their goal? To craft tailored
+                                            marketing campaigns that resonate with a brand's target audience, leveraging
+                                            the
+                                            unique features of each social media platform.</p>
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-yellow-300 text-4xl font-medium">Comprehensive Social Media
+                                        Marketing
+                                        Services</div>
+                                    <div class="mt-5">
+                                        <p class="text-white text-xl">A reputable social media marketing agency
+                                            offers a
+                                            suite of services designed to cover every aspect of a brand's social media
+                                            presence. Here are some key services:</p>
+                                    </div>
+                                    <div class="mt-10">
+                                        <div class="text-yellow-300 text-xl">Strategic Planning and Consulting:</div>
+                                        <div class="">
+                                            <div class="mt-10">
+                                                <div class="flex gap-5">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                    </div>
+                                                    <div class="text-white text-xl">
+                                                        <span class="">Market Research:
+                                                        </span>Understanding the client's industry, competitors, and
+                                                        target
+                                                        audience.
+                                                    </div>
                                                 </div>
-                                                <div class="text-gray-800 text-xl">
-                                                    <span class="">Market Research:
-                                                    </span>Understanding the client's industry, competitors, and target
-                                                    audience.
+                                                <div class="flex gap-5 mt-3">
+                                                    <div class="flex justify-center items-center">
+                                                        <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                    </div>
+                                                    <div class="text-white text-xl">
+                                                        <span class="">Content Strategy: </span>
+                                                        Developing a content calendar that aligns with marketing goals.
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-5 mt-5">
+                                                    <div class="flex justify-start items-start mt-2">
+                                                        <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                    </div>
+                                                    <div class="text-white text-xl">
+                                                        <span class="">Campaign Planning: </span>
+                                                        Crafting campaigns that aim to achieve specific objectives,
+                                                        whether
+                                                        it’s brand awareness, lead generation, or sales.
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="flex gap-5 mt-3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-yellow-300 text-xl">Content Creation: </div>
+                                    <div class="">
+                                        <div class="mt-5">
+                                            <div class="flex gap-5">
                                                 <div class="flex justify-center items-center">
-                                                    <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                    <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                                 </div>
-                                                <div class="text-gray-800 text-xl">
-                                                    <span class="">Content Strategy: </span>
-                                                    Developing a content calendar that aligns with marketing goals.
+                                                <div class="text-white text-xl">
+                                                    <span class="">Interactive Content:
+                                                    </span>Creating polls, quizzes, and stories to increase user
+                                                    interaction.
                                                 </div>
                                             </div>
                                             <div class="flex gap-5 mt-5">
-                                                <div class="flex justify-center items-center">
-                                                    <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                <div class="flex justify-start items-start mt-2">
+                                                    <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                                 </div>
-                                                <div class="text-gray-800 text-xl">
-                                                    <span class="">Campaign Planning: </span>
-                                                    Crafting campaigns that aim to achieve specific objectives, whether
-                                                    it’s brand awareness, lead generation, or sales.
+                                                <div class="text-white text-xl">
+                                                    <span class="">Copywriting: </span>
+                                                    Crafting compelling captions, blog posts, and ads that engage the
+                                                    audience.
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-5 mt-5">
+                                                <div class="flex justify-start items-start mt-2">
+                                                    <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                </div>
+                                                <div class="text-white text-xl">
+                                                    <span class="">Visual Content: </span>
+                                                    Designing eye-catching graphics, photos, and videos.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl">Content Creation: </div>
-                                <div class="">
+                                <div class="mt-10">
+                                    <div class="text-yellow-300 text-xl">Community Management:</div>
                                     <div class="mt-5">
                                         <div class="flex gap-5">
                                             <div class="flex justify-center items-center">
-                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                             </div>
-                                            <div class="text-gray-800 text-xl">
-                                                <span class="">Interactive Content:
-                                                </span>Creating polls, quizzes, and stories to increase user
-                                                interaction.
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-5">
-                                            <div class="flex justify-center items-center">
-                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                            </div>
-                                            <div class="text-gray-800 text-xl mt-5">
-                                                <span class="">Copywriting: </span>
-                                                Crafting compelling captions, blog posts, and ads that engage the
-                                                audience.
+                                            <div class="text-white text-xl">
+                                                <span class="">Customer Support:
+                                                </span> Handling inquiries and complaints to maintain a positive brand
+                                                image.
                                             </div>
                                         </div>
-                                        <div class="flex gap-5">
-                                            <div class="flex justify-center items-center">
-                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                        <div class="flex gap-5 mt-5">
+                                            <div class="flex justify-start items-start mt-2">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                             </div>
-                                            <div class="text-gray-800 text-xl mt-5">
-                                                <span class="">Visual Content: </span>
-                                                Designing eye-catching graphics, photos, and videos.
+                                            <div class="text-white text-xl">
+                                                <span class="">Moderation: </span>
+                                                Ensuring discussions remain positive and on-brand.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5 mt-5">
+                                            <div class="flex justify-start items-start mt-2">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl">
+                                                <span class="">Engagement: </span>
+                                                Responding to comments, messages, and mentions to foster a loyal
+                                                community.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl">Community Management:</div>
-                                <div class="mt-5">
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl">
-                                            <span class="">Customer Support:
-                                            </span> Handling inquiries and complaints to maintain a positive brand
-                                            image.
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl mt-5">
-                                            <span class="">Moderation: </span>
-                                            Ensuring discussions remain positive and on-brand.
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl mt-5">
-                                            <span class="">Engagement: </span>
-                                            Responding to comments, messages, and mentions to foster a loyal
-                                            community.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl">Advertising and Promotion:</div>
-                                <div class="mt-5">
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl">
-                                            <span class="">Sponsored Content: </span>
-                                            Promoting content through sponsored posts to increase visibility.
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-5 mt-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl">
-                                            <span class="">Influencer Partnerships:
-                                            </span> Collaborating with influencers to reach wider audiences.
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-5 mt-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl">
-                                            <span class="">Social Media Ads:
-                                            </span>Creating and managing ad campaigns on platforms like Facebook,
-                                            Instagram, and LinkedIn.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl">Analytics and Reporting:</div>
-                                <div class="mt-5">
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl">
-                                            <span class="">Performance Tracking:
-                                            </span> Monitoring key metrics such as engagement rates, follower
-                                            growth, and conversion rates.
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-5 mt-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl ">
-                                            <span class="">Reporting: </span>
-                                            Providing clients with detailed reports and insights to inform future
-                                            strategies.
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-5 mt-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl ">
-                                            <span class="">Optimization: </span>
-                                            Adjusting strategies based on data to improve results over time.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-gray-700 text-xl">Website Maintenance and Support:</div>
+                                <div class="mt-10">
+                                    <div class="text-yellow-300 text-xl">Advertising and Promotion:</div>
                                     <div class="mt-5">
                                         <div class="flex gap-5">
                                             <div class="flex justify-center items-center">
-                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                             </div>
-                                            <div class="text-gray-800 text-xl">
+                                            <div class="text-white text-xl">
+                                                <span class="">Sponsored Content: </span>
+                                                Promoting content through sponsored posts to increase visibility.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5 mt-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl">
+                                                <span class="">Influencer Partnerships:
+                                                </span> Collaborating with influencers to reach wider audiences.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5 mt-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl">
+                                                <span class="">Social Media Ads:
+                                                </span>Creating and managing ad campaigns on platforms like Facebook,
+                                                Instagram, and LinkedIn.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-yellow-300 text-xl">Analytics and Reporting:</div>
+                                    <div class="mt-5">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl">
+                                                <span class="">Performance Tracking:
+                                                </span> Monitoring key metrics such as engagement rates, follower
+                                                growth, and conversion rates.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5 mt-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl ">
+                                                <span class="">Reporting: </span>
+                                                Providing clients with detailed reports and insights to inform future
+                                                strategies.
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-5 mt-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl ">
+                                                <span class="">Optimization: </span>
+                                                Adjusting strategies based on data to improve results over time.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="text-yellow-300 text-xl">Website Maintenance and Support:</div>
+                                    <div class="mt-5">
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-center items-center">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl">
                                                 <span class="">Regular Updates:
                                                 </span> Keeping the website up-to-date with the latest technologies and
                                                 security patches.
@@ -353,516 +665,534 @@
                                         </div>
                                         <div class="flex gap-5 mt-5">
                                             <div class="flex justify-center items-center">
-                                                <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                             </div>
-                                            <div class="text-gray-800 text-xl">
+                                            <div class="text-white text-xl">
                                                 <span class="">Technical Support: </span>
                                                 Offering ongoing support to resolve any issues that may arise.
                                             </div>
                                         </div>
                                     </div>
-                            </div>
-                            <div class="mt-10">
-                                <div class="text-black text-4xl font-medium">YouTube Video Marketing: The Ultimate
-                                    Game-Changer</div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">While traditional social media platforms are
-                                        essential, YouTube stands out as a unique and powerful tool in the marketing
-                                        arsenal. As the second-largest search engine in the world, YouTube offers
-                                        unparalleled opportunities for brands to reach vast audiences through video
-                                        content. This is where <a href="" class="text-blue-500">YouTube video marketing
-                                            company</a> come into play.</p>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-gray-800 text-xl">The YouTube Advantage</div>
-                                    <div class="text-gray-800 text-xl mt-10">Visual Storytelling:</div>
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl mt-5">
-                                            Videos allow brands to tell their story in a more engaging and visually
-                                            appealing way. Whether it’s a product demo, a customer testimonial, or a
-                                            behind-the-scenes look at the company, videos can convey messages more
-                                            effectively than text or images alone.
-                                        </div>
+                                    <div class="text-yellow-300 text-4xl font-medium">YouTube Video Marketing: The
+                                        Ultimate
+                                        Game-Changer</div>
+                                    <div class="mt-5">
+                                        <p class="text-white text-xl">While traditional social media platforms are
+                                            essential, YouTube stands out as a unique and powerful tool in the marketing
+                                            arsenal. As the second-largest search engine in the world, YouTube offers
+                                            unparalleled opportunities for brands to reach vast audiences through video
+                                            content. This is where <a href="" class="text-blue-500">YouTube video
+                                                marketing
+                                                company</a> come into play.</p>
                                     </div>
-                                    <div class="text-gray-800 text-xl mt-10">SEO Benefits:</div>
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center mt-5">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl mt-5">
-                                            YouTube videos often rank highly in Google search results, providing an
-                                            additional avenue for organic traffic. A well-optimized video can
-                                            significantly enhance a brand's visibility online.
-                                        </div>
-                                    </div>
-                                    <div class="text-gray-800 text-xl mt-10">Engagement:</div>
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center mt-5">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl mt-5">
-                                            Videos are more likely to be shared and commented on compared to other types
-                                            of content. This increased engagement can lead to higher brand loyalty and
-                                            advocacy.
-                                        </div>
-                                    </div>
-                                    <div class="text-gray-800 text-xl mt-10">Monetization Opportunities:</div>
-                                    <div class="flex gap-5">
-                                        <div class="flex justify-center items-center mt-5">
-                                            <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                        </div>
-                                        <div class="text-gray-800 text-xl mt-5">
-                                            Brands can monetize their YouTube channels through ads, sponsored content,
-                                            and partnerships, creating an additional revenue stream.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-10">
-                                    <div class="text-gray-800 text-xl">Services Offered by YouTube Video
-                                        Marketing Companies</div>
-                                    <div class="text-black text-3xl mt-10">Channel Setup and Optimization:</div>
                                     <div class="mt-10">
-                                        <div class="">
-                                            <div class="mt-10">
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl">
-                                                        <span class="">Profile Creation:
-                                                        </span> Setting up a professional and attractive YouTube
-                                                        channel.
-                                                    </div>
-                                                </div>
-                                                <div class="flex gap-5 mt-3">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl ">
-                                                        <span class="">SEO Optimization: </span>
-                                                        Optimizing video titles, descriptions, tags, and thumbnails for
-                                                        better search visibility.
-                                                    </div>
-                                                </div>
-                                                <div class="flex gap-5 mt-3">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl ">
-                                                        <span class="">Playlist Creation: </span>
-                                                        Organizing content into playlists for a better viewer
-                                                        experience.
-                                                    </div>
-                                                </div>
+                                        <div class="text-yellow-300 text-xl">The YouTube Advantage</div>
+                                        <div class="text-yellow-300 text-xl mt-10">Visual Storytelling:</div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-start items-start mt-7">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl mt-5">
+                                                Videos allow brands to tell their story in a more engaging and visually
+                                                appealing way. Whether it’s a product demo, a customer testimonial, or a
+                                                behind-the-scenes look at the company, videos can convey messages more
+                                                effectively than text or images alone.
+                                            </div>
+                                        </div>
+                                        <div class="text-yellow-300 text-xl mt-10">SEO Benefits:</div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-start items-start mt-7">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl mt-5">
+                                                YouTube videos often rank highly in Google search results, providing an
+                                                additional avenue for organic traffic. A well-optimized video can
+                                                significantly enhance a brand's visibility online.
+                                            </div>
+                                        </div>
+                                        <div class="text-yellow-300 text-xl mt-10">Engagement:</div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-start items-start mt-7">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl mt-5">
+                                                Videos are more likely to be shared and commented on compared to other
+                                                types
+                                                of content. This increased engagement can lead to higher brand loyalty
+                                                and
+                                                advocacy.
+                                            </div>
+                                        </div>
+                                        <div class="text-yellow-300 text-xl mt-10">Monetization Opportunities:</div>
+                                        <div class="flex gap-5">
+                                            <div class="flex justify-start items-start mt-7">
+                                                <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                            </div>
+                                            <div class="text-white text-xl mt-5">
+                                                Brands can monetize their YouTube channels through ads, sponsored
+                                                content,
+                                                and partnerships, creating an additional revenue stream.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-10">
-                                        <div class="text-gray-700 text-xl">Video Production:</div>
-                                        <div class="mt-5">
-                                            <div class="mt-10">
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl">
-                                                        <span class="">Concept Development:
-                                                        </span> Brainstorming video ideas that align with the brand’s
-                                                        goals.
-                                                    </div>
+                                        <div class="text-yellow-300 text-xl">Services Offered by YouTube Video
+                                            Marketing Companies</div>
+                                        <div class="text-yellow-300 text-3xl mt-10">Channel Setup and Optimization:
+                                        </div>
+                                        <div class="mt-10">
+                                            <div class="flex gap-5">
+                                                <div class="flex justify-start items-start mt-2">
+                                                    <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                                 </div>
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl mt-5">
-                                                        <span class="">Scriptwriting:
-                                                        </span>
-                                                        Writing scripts that are engaging and on-brand.
-                                                    </div>
+                                                <div class="text-white text-xl">
+                                                    <span class="">Profile Creation:
+                                                    </span> Setting up a professional and attractive YouTube
+                                                    channel.
                                                 </div>
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                            </div>
+                                            <div class="flex gap-5 mt-3">
+                                                <div class="flex justify-center items-center">
+                                                    <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                </div>
+                                                <div class="text-white text-xl ">
+                                                    <span class="">SEO Optimization: </span>
+                                                    Optimizing video titles, descriptions, tags, and thumbnails
+                                                    for
+                                                    better search visibility.
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-5 mt-3">
+                                                <div class="flex justify-center items-center">
+                                                    <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                </div>
+                                                <div class="text-white text-xl ">
+                                                    <span class="">Playlist Creation: </span>
+                                                    Organizing content into playlists for a better viewer
+                                                    experience.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-10">
+                                            <div class="text-yellow-300 text-xl">Video Production:</div>
+                                            <div class="mt-5">
+                                                <div class="mt-10">
+                                                    <div class="flex gap-5">
+                                                        <div class="flex justify-center items-center">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Concept Development:
+                                                            </span> Brainstorming video ideas that align with the
+                                                            brand’s
+                                                            goals.
+                                                        </div>
                                                     </div>
-                                                    <div class="text-gray-800 text-xl mt-5">
-                                                        <span class="">Filming and Editing:
-                                                        </span>
-                                                        Professional video production, including shooting, editing, and
-                                                        post-production.
+                                                    <div class="flex gap-5 mt-5">
+                                                        <div class="flex justify-start items-start mt-2">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl ">
+                                                            <span class="">Scriptwriting:
+                                                            </span>
+                                                            Writing scripts that are engaging and on-brand.
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-5 mt-5">
+                                                        <div class="flex justify-start items-start mt-2">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Filming and Editing:
+                                                            </span>
+                                                            Professional video production, including shooting, editing,
+                                                            and
+                                                            post-production.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <div class="text-gray-700 text-xl">Content Strategy:</div>
-                                        <div class="mt-5">
+                                        <div class="mt-10">
+                                            <div class="text-yellow-300 text-xl">Content Strategy:</div>
                                             <div class="mt-10">
                                                 <div class="flex gap-5">
                                                     <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                        <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                                     </div>
-                                                    <div class="text-gray-800 text-xl">
+                                                    <div class="text-white text-xl">
                                                         <span class="">Content Calendar:
                                                         </span> Planning a schedule for regular video uploads to
                                                         maintain audience interest.
                                                     </div>
                                                 </div>
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
+                                                <div class="flex gap-5 mt-5">
+                                                    <div class="flex justify-start items-start mt-2">
+                                                        <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
                                                     </div>
-                                                    <div class="text-gray-800 text-xl mt-5">
+                                                    <div class="text-white text-xl">
                                                         <span class="">Series Development: </span>
-                                                        Creating video series that keep viewers coming back for more.
+                                                        Creating video series that keep viewers coming back for
+                                                        more.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-10">
+                                            <div class="text-yellow-300 text-xl">Promotion and Distribution:</div>
+                                            <div class="mt-5">
+                                                <div class="mt-10">
+                                                    <div class="flex gap-5">
+                                                        <div class="flex justify-center items-center">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">SEO and SEM:
+                                                            </span>Using search engine optimization and marketing
+                                                            techniques
+                                                            to promote videos.
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-5 mt-5">
+                                                        <div class="flex justify-start items-start mt-2">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Social Media Sharing: </span>
+                                                            Leveraging other social media platforms to share YouTube
+                                                            videos.
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-5 mt-5">
+                                                        <div class="flex justify-start items-start mt-2">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Influencer Collaborations:
+                                                            </span>
+                                                            Partnering with YouTube influencers to reach a broader
+                                                            audience.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-10">
+                                            <div class="text-yellow-300 text-xl">Analytics and Growth:</div>
+                                            <div class="mt-5">
+                                                <div class="mt-10">
+                                                    <div class="flex gap-5">
+                                                        <div class="flex justify-start items-start mt-2">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Performance Analysis:
+                                                            </span>Monitoring video performance metrics such as views,
+                                                            watch
+                                                            time, and engagement.
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-5 mt-5">
+                                                        <div class="flex justify-center items-center">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Audience Insights: </span>
+                                                            Understanding the demographics and preferences of the
+                                                            audience.
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-5 mt-5">
+                                                        <div class="flex justify-center items-center">
+                                                            <i class="fa-solid fa-plus" style="color: #faee4d;"></i>
+                                                        </div>
+                                                        <div class="text-white text-xl">
+                                                            <span class="">Growth Strategies:
+                                                            </span>
+                                                            Implementing strategies to grow the subscriber base and
+                                                            increase
+                                                            viewership.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mt-10">
-                                        <div class="text-gray-700 text-xl">Promotion and Distribution:</div>
-                                        <div class="mt-5">
-                                            <div class="mt-10">
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl">
-                                                        <span class="">SEO and SEM:
-                                                        </span>Using search engine optimization and marketing techniques
-                                                        to promote videos.
-                                                    </div>
-                                                </div>
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl mt-5">
-                                                        <span class="">Social Media Sharing: </span>
-                                                        Leveraging other social media platforms to share YouTube videos.
-                                                    </div>
-                                                </div>
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl mt-5">
-                                                        <span class="">Influencer Collaborations:
-                                                        </span>
-                                                        Partnering with YouTube influencers to reach a broader audience.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="mt-5">
+                                        <p class="text-white text-xl">In an
+                                            ever-evolving digital landscape, <a href="" class="text-blue-500">social
+                                                media
+                                                marketing agency</a> and YouTube
+                                            video marketing companies are the architects of a brand's online success.
+                                            They bring expertise, creativity, and strategic thinking to the table,
+                                            ensuring that businesses not only survive but thrive in the competitive
+                                            digital marketplace. By leveraging their services, brands can unlock the
+                                            full potential of social media, transforming their online presence into a
+                                            powerful driver of growth and engagement. Whether you're a small business or
+                                            a large corporation, partnering with these digital maestros is a step
+                                            towards securing a robust and impactful online footprint.</p>
                                     </div>
                                     <div class="mt-10">
-                                        <div class="text-gray-700 text-xl">Analytics and Growth:</div>
-                                        <div class="mt-5">
-                                            <div class="mt-10">
-                                                <div class="flex gap-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl">
-                                                        <span class="">Performance Analysis:
-                                                        </span>Monitoring video performance metrics such as views, watch
-                                                        time, and engagement.
-                                                    </div>
-                                                </div>
-                                                <div class="flex gap-5 mt-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl">
-                                                        <span class="">Audience Insights: </span>
-                                                        Understanding the demographics and preferences of the audience.
-                                                    </div>
-                                                </div>
-                                                <div class="flex gap-5 mt-5">
-                                                    <div class="flex justify-center items-center">
-                                                        <i class="fa-solid fa-plus" style="color: #00040a;"></i>
-                                                    </div>
-                                                    <div class="text-gray-800 text-xl ">
-                                                        <span class="">Growth Strategies:
-                                                        </span>
-                                                        Implementing strategies to grow the subscriber base and increase
-                                                        viewership.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-5">
-                                    <p class="text-gray-800 text-xl">In an
-                                        ever-evolving digital landscape, <a href="" class="text-blue-500">social media
-                                            marketing agency</a> and YouTube
-                                        video marketing companies are the architects of a brand's online success.
-                                        They bring expertise, creativity, and strategic thinking to the table,
-                                        ensuring that businesses not only survive but thrive in the competitive
-                                        digital marketplace. By leveraging their services, brands can unlock the
-                                        full potential of social media, transforming their online presence into a
-                                        powerful driver of growth and engagement. Whether you're a small business or
-                                        a large corporation, partnering with these digital maestros is a step
-                                        towards securing a robust and impactful online footprint.</p>
-                                </div>
-                                <div class="">
-                                    <div class="mt-10">
-                                        <div class="text-gray-800 text-xl">Also Read:-</div>
+                                        <div class="text-yellow-300 text-xl">Also Read:-</div>
                                         <div class="text-blue-500 text-xl mt-5">The­ Digital­ Market­ Revolution:­
                                             Unleashing­ the­ Power­ of­ Local­ Business­ SEO­ Services</div>
-                                        <div class="text-blue-500 text-xl mt-5">Unveiling­ the­ Global­ Path:­ Through­
+                                        <div class="text-blue-500 text-xl mt-5">Unveiling­ the­ Global­ Path:­
+                                            Through­
                                             SEO­ Technical­ Audit­ Service</div>
-                                        <div class="text-gray-800 text-xl mt-5">More Useful Links:-</div>
+                                        <div class="text-yellow-300 text-xl mt-5">More Useful Links:-</div>
                                         <div class="mt-5">
                                             <a href="" class="text-blue-500 text-xl">Best Ecommerce SEO Company</a>
                                             |
-                                            <a href="" class="text-blue-500 text-xl">Instagram Marketing Agency </a> |
+                                            <a href="" class="text-blue-500 text-xl">Instagram Marketing Agency </a>
+                                            |
                                             <a href="" class="text-blue-500 text-xl">LinkedIn Marketing Agency</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mt-52 bgfont2">
-                        <div class="container mx-auto ">
-                            <div class="text-black mb-4 mt-5 text-5xl font-medium">Related Articles</div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                <!-- Blog 9 -->
-                                <a href="Blog9.html">
-                                    <div class="p-6">
-                                        <img src="assets/Blog_9.webp" alt="Blog 9"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">18/06/2024</div>
+                        <div class="mt-52 bgfont2">
+                            <div class="container mx-auto ">
+                                <div class="text-yellow-300 mb-4 mt-5 text-5xl font-medium">Related Articles</div>
+                                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    <!-- Blog 9 -->
+                                    <a href="Blog9.html">
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Blog_9_up.webp" alt="Blog 9"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-28">
+                                                <div class="w-36">
+                                                    <div class="text-left text-gray-500">18/06/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Digital Market
+                                                Revolution:
+                                                Unleashing
+                                                the
+                                                Power of Local Business SEO Services
+                                            </p>
+                                            <div class="pt-0">
+                                                <hr class="text-gray-500">
                                             </div>
                                         </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Digital Market
-                                            Revolution:
-                                            Unleashing
-                                            the
-                                            Power of Local Business SEO Services
-                                        </p>
-                                        <div class="pt-8">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 10 -->
-                                <a href="Blog10.html">
-                                    <div class="p-6">
-                                        <img src="assets/Blog_10.webp" alt="Blog 10"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">12/06/2024</div>
+                                    </a>
+                                    <!-- Blog 10 -->
+                                    <a href="Blog10.html">
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Blog_10.webp" alt="Blog 10"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-28">
+                                                <div class="w-36">
+                                                    <div class="text-left text-gray-500">12/06/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unveiling the Global
+                                                Path:
+                                                Through SEO
+                                                Technical Audit Service
+                                            </p>
+                                            <div class="pt-9">
+                                                <hr class="text-gray-500">
                                             </div>
                                         </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unveiling the Global
-                                            Path:
-                                            Through SEO
-                                            Technical Audit Service
-                                        </p>
-                                        <div class="pt-9">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 1 -->
-                                <a href="Blog1.html">
-                                    <div class=" p-6">
-                                        <img src="assets/Blog_1.webp" alt="Blog 1"
-                                            class="w-full h-48 object-cover mb-4 transition-transform duration-500 ease-in-out transform hover:translate-x-5">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">05/08/2024</div>
+                                    </a>
+                                    <!-- Blog 1 -->
+                                    <a href="Blog1.html">
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Blog_1.webp" alt="Blog 1"
+                                                class="w-full h-48 object-cover mb-4 transition-transform duration-500 ease-in-out transform hover:translate-x-5">
+                                            <div class="mt-28">
+                                                <div class="w-36">
+                                                    <div class="text-left text-gray-500">05/08/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Startup
+                                                Should
+                                                Invest
+                                                In A
+                                                Professional <br>Web Development Company</p>
+                                            <div class="pt-0">
+                                                <hr class="text-gray-500">
                                             </div>
                                         </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Startup Should
-                                            Invest
-                                            In A
-                                            Professional <br>Web Development Company</p>
-                                        <div class="pt-1 ">
-                                            <hr class="text-gray-500">
-                                        </div>
-
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Work with us -->
-                    <section class="pb-10 mt-32">
-                        <div class="flex justify-center items-center">
-                            <div class="border-gray-400 border rounded-3xl p-2 ">
-                                <div class="flex justify-center items-center">
-                                    <div class="bgfont text-center pt-1">WORK WITH US</div>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-center">
-                            <div class="mt-10 bgfont2">
-                                <div class="text-6xl ">We would love to hear <br>
-                                    more about your project</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-center mt-32 bgfont2 cursor-pointer">
-                            <div
-                                class="border-gray-300 border w-48 rounded-full p-14 transform transition duration-500 ease-in-out hover:bg-yellow-400 hover:scale-105">
-                                <div class="text-center text-lg">Let's talk US ?</div>
                             </div>
                         </div>
                     </section>
-                </section>
-                <!-- Digital Marketing Image -->
-                <section class="">
-                    <div class="mt-10 flex justify-end">
-                        <div class="w-5/6">
-                            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                </div>
+
+                <!-- Work with us -->
+                <section class="pt-32 bg-yellow-300">
+                    <div class="flex justify-center items-center">
+                        <div class="border-gray-700 border rounded-3xl p-2 ">
+                            <div class="flex justify-center items-center">
+                                <div class="bgfont text-black text-center pt-1">WORK WITH US</div>
+                            </div>
                         </div>
                     </div>
-
-                </section>
-                <!-- Footer  -->
-                <section>
-                    <div class="bg-black bgfont2 p-10">
-                        <div>
-                            <div class="flex justify-around">
-                                <div class="mt-20">
-                                    <div>
-                                        <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
-                                    </div>
-                                    <div class="mt-10 ">
-                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                            <br>and
-                                            digital
-                                            marketing
-                                            agency based
-                                            in Gurgaon, India.
-                                            <br>With a team of over 40+, we are an award-winning <br>full-stack
-                                            digital
-                                            marketing
-                                            agency
-                                            offering <br>
-                                            creative and innovative <br>digital and brand solutions for brands <br>
-                                            looking to
-                                            grow
-                                            their
-                                            businesses.
-                                        </p>
-                                    </div>
-                                    <div class="mt-10 flex gap-5">
-                                        <div>
-                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3 mt-10 w-72 ">
-                                        <div>
-                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
-                                                class="rounded-sm">
-                                        </div>
-                                        <div>
-                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                                        </div>
-                                    </div>
-                                    <div class="flex mt-10 gap-1">
-                                        <div class="cursor-pointer">
-                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                                        </div>
-                                        <div class="text-white">Chennai's Leading Digital Agency</div>
-                                        <div> |</div>
-                                        <div class="flex">
-                                            <div class="text-yellow-300">30+</div>
-                                            <div>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Information</div>
-                                    <ul class="text-gray-500 space-y-3 mt-5">
-                                        <li>Brand Solutions</li>
-                                        <li>Digital Marketing Solutions</li>
-                                        <li>Who We Are</li>
-                                        <li>Sample Work</li>
-                                        <li>Our Clients</li>
-                                        <li>Industries We Serve</li>
-                                        <li>Careers</li>
-                                        <li>Blog</li>
-                                        <li>Contact</li>
-                                    </ul>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Contact US</div>
-                                    <div class="text-gray-500 mt-5">
-                                        Ayn Technologies Pvt. Ltd.,<br>
-                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
-                                        Ullagaram, Madipakkam, Chennai- 600091.
-                                    </div>
-                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
-                                <div class="bg-gray-950 p-10">
-                                    <div class="flex justify-center items-center mt-20">
-                                        <div class="">
-                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-center items-center mt-10">
-                                        <div
-                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
-                                            <div class="text-center">Contact US</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                                        <div class="text-gray-500 text-center">Monday to Friday</div>
-                                    </div>
-                                    <div class="text-gray-500  mt-10 text-justify">
-                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                                        agency
-                                        brings
-                                        <br>invaluable
-                                        industry insights and <br>
-                                        international <br>know-how to your brand's success.
-                                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="mt-10 bgfont2">
+                            <div class="text-6xl text-black">We would love to hear <br>
+                                more about your project</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="group mt-32 bgfont2 cursor-pointer">
+                            <div
+                                class="border-gray-700 border w-48 rounded-full p-14 transition duration-500 ease-in-out bg-black group-hover:bg-white group-hover:scale-105">
+                                <div
+                                    class="text-center text-lg text-yellow-300 transition duration-500 ease-in-out group-hover:text-black">
+                                    Let's talk US?
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <!-- Digital Marketing Image -->
+                    <section class="">
+                        <div class="mt-20 flex justify-end">
+                            <div class="w-5/6">
+                                <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Footer  -->
+                    <section>
+                        <div class="bg-black bgfont2 p-10">
+                            <div>
+                                <div class="flex justify-around">
+                                    <div class="mt-20">
+                                        <div>
+                                            <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
+                                        </div>
+                                        <div class="mt-10 ">
+                                            <p class="text-white text-justify">The Brand Bee is an integrated branding
+                                                <br>and
+                                                digital
+                                                marketing
+                                                agency based
+                                                in Gurgaon, India.
+                                                <br>With a team of over 40+, we are an award-winning <br>full-stack
+                                                digital
+                                                marketing
+                                                agency
+                                                offering <br>
+                                                creative and innovative <br>digital and brand solutions for brands <br>
+                                                looking to
+                                                grow
+                                                their
+                                                businesses.
+                                            </p>
+                                        </div>
+                                        <div class="mt-10 flex gap-5">
+                                            <div>
+                                                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-3 mt-10 w-72 ">
+                                            <div>
+                                                <img src="assets/Googole_partner.webp" alt="Googole_partner"
+                                                    class="rounded-sm">
+                                            </div>
+                                            <div>
+                                                <img src="assets/Meta-partner.webp" alt="Meta-partner"
+                                                    class="rounded-sm">
+                                            </div>
+                                        </div>
+                                        <div class="flex mt-10 gap-1">
+                                            <div class="cursor-pointer">
+                                                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+                                            </div>
+                                            <div class="text-white">Chennai's Leading Digital Agency</div>
+                                            <div> |</div>
+                                            <div class="flex">
+                                                <div class="text-yellow-300">30+</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-white pt-20">
+                                        <div class="font-bold text-xl">Information</div>
+                                        <ul class="text-gray-500 space-y-3 mt-5">
+                                            <li>Brand Solutions</li>
+                                            <li>Digital Marketing Solutions</li>
+                                            <li>Who We Are</li>
+                                            <li>Sample Work</li>
+                                            <li>Our Clients</li>
+                                            <li>Industries We Serve</li>
+                                            <li>Careers</li>
+                                            <li>Blog</li>
+                                            <li>Contact</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-white pt-20">
+                                        <div class="font-bold text-xl">Contact US</div>
+                                        <div class="text-gray-500 mt-5">
+                                            Ayn Technologies Pvt. Ltd.,<br>
+                                            No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                                            Ullagaram, Madipakkam, Chennai- 600091.
+                                        </div>
+                                        <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                                        <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div class="bg-gray-950 p-10">
+                                        <div class="flex justify-center items-center mt-20">
+                                            <div class="">
+                                                <div class="text-white text-3xl text-center">Do you want to <br> Bee?
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center items-center mt-10">
+                                            <div
+                                                class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
+                                                <div class="text-center">Contact US</div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-10">
+                                            <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+                                            <div class="text-gray-500 text-center">Monday to Friday</div>
+                                        </div>
+                                        <div class="text-gray-500  mt-16 text-justify">
+                                            With extensive expertise <br>spanning in Chennai <br> our digital marketing
+                                            agency
+                                            brings
+                                            <br>invaluable
+                                            industry insights and <br>
+                                            international <br>know-how to your brand's success.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
             </div>
         </div>
         <span class="cursor"></span>
