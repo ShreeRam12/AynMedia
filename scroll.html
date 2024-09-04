@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Effect</title>
+    <title>Fixed Size Parallax</title>
     <style>
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            height: 700vh;
+            /* To create enough scrollable area */
         }
 
-        .parallax {
-            height: 500px; /* Adjust as needed */
+        .parallax-section {
+            width: 100%;
+            height: 500px;
+            /* Fixed height */
             overflow: hidden;
             position: relative;
-            background-image: url('assets/Who_we_are_BG.webp'); /* Your image path */
-            background-size: cover;
-            background-position: center;
+            margin-top: 500px;
         }
 
-        .parallax-content {
+        .parallax-bg {
+            width: 500px;
+            /* Fixed width */
+            height: 700px;
+            /* Height larger than the container to allow movement */
+            background-image: url('assets/Ayntech_CEO.webp');
+            background-size: contain;
+            background-position: center;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Optional: overlay for better text visibility */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2rem;
+            
         }
 
         .content {
-            height: 1500px; /* Ensures the page has enough content to scroll */
             padding: 20px;
-            background: #f4f4f4;
-            color: #333;
+            text-align: center;
+            background: #fff;
         }
     </style>
 </head>
+
 <body>
-    <!-- Parallax Section -->
-    <div class="parallax" id="parallax">
-        <div class="parallax-content">
-            Parallax Effect
-        </div>
+    <div class="parallax-section">
+        <div class="parallax-bg"></div>
     </div>
-
-    <!-- Content Section -->
     <div class="content">
-        <h1>Scroll down to see the effect</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum venenatis est, eu venenatis dolor. Donec dictum venenatis odio, id scelerisque turpis feugiat vel.</p>
-        <!-- Add more content as needed -->
+        <h1>Scroll Down to See Parallax Effect</h1>
     </div>
 
-    <!-- Parallax JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <script>
-        window.addEventListener('scroll', function() {
-            const parallax = document.getElementById('parallax');
-            const scrollTop = window.pageYOffset;
-            parallax.style.backgroundPositionY = scrollTop * 0.5 + 'px'; // Adjust the multiplier as needed
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".parallax-bg", {
+            y: "-30%", /* Moves the background image upwards as you scroll */
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".parallax-section",
+                start: "top bottom", /* Start when the top of the section hits the bottom of the viewport */
+                end: "bottom top", /* End when the bottom of the section hits the top of the viewport */
+                scrub: true
+            }
         });
     </script>
 </body>
+
 </html>

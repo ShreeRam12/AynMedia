@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <style>
     /* Locomotive Smooth Scroll  */
-    html,
+    /* html,
     body {
         height: 100%;
         margin: 0;
@@ -39,7 +40,7 @@
         min-height: 200vh;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     /* Navbar Hover Dropdwon  */
     .relative:hover .dropdown-list {
@@ -159,17 +160,23 @@
     }
 
     /* Whoe we are Parallax Animation */
-    .parallax2 {
-        background-image: url(assets/Ayntech_CEO.webp);
-        background-attachment: fixed;
-        background-size: contain;
-        padding-top: 10px;
-        background-position: 10% center;
-        background-repeat: no-repeat;
-        height: 100vh;
+    .parallax-section {
         width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
+        height: 500px;
+        /* Fixed height */
+        overflow: hidden;
+        position: relative;
+    }
+
+    .parallax2 {
+        width: 500px;
+        /* Fixed width */
+        height: 700px;
+        /* Height larger than the container to allow movement */
+        background-image: url('assets/Ayntech_CEO.webp');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
     }
 
     .parallax-container {
@@ -208,12 +215,40 @@
     .parallax-window {
         width: 500px;
         height: 1000px;
-        /* Adjust height as needed */
         background-size: contain;
         background-position: center;
         position: relative;
         background-image: url('assets/Who_we_are_BG.webp');
     }
+
+    /* Parallax Section */
+    .whoweare {
+        overflow: hidden;
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    .Who_we_are_BG {
+        position: absolute;
+        bottom: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 120%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Parallax container styling */
 </style>
 
 <body>
@@ -580,13 +615,13 @@
                 </div>
             </nav>
         </section>
-        <div data-scroll-container>
-            <div data-scroll-section>
+        <div>
+            <div data-scroll-container>
                 <section class="bg-black bgfont">
                     <div class="container mx-auto">
-                        <!-- <div>
+                        <div>
                             <img src="assets/Ayn_Media.webp" alt="">
-                        </div> -->
+                        </div>
                         <div class="text-white font-bold textsize3 ml-12 text-animate">BEE</div>
                         <div class="relative overflow-hidden">
                             <!-- "EVERY" text with letter-by-letter slide-in -->
@@ -616,9 +651,6 @@
                                     data-aos-offset="500" data-aos-duration="1300">G</span>
                             </div>
                         </div>
-
-
-
                         <div class="flex gap-5">
                             <div class="border-white border w-28 p-10 rounded-full cursor-pointer">
                                 <div class="text-white">
@@ -631,7 +663,6 @@
                                 <div class="text-white">Watc Video Intro</div>
                             </a> -->
                         </div>
-
                         <div class="text-white lg:w-96 relative -top-96 ml-14">
                             <h1 class="font-bold text-2xl">Digital Marketing Agency in Chennai</h1>
                             <p class="bgfont2 mt-3 text-lg font-medium">Our innovative brand and digital solutions
@@ -796,28 +827,26 @@
                         </div>
                     </a>
                 </section>
-                <!-- Who we are  -->
-                <section class="bg-black  pb-10">
+                <!-- Who we are -->
+                <section class="bg-black pb-10">
                     <div class="container mx-auto p-10 pt-20 bgfont">
                         <div class="flex flex-wrap md:flex-nowrap justify-around">
-                            <div class="w-1/2">
-                                <!-- <div class="">
-                            <div class="parallax"></div>
-                        </div> -->
+                            <!-- Left Side: Parallax Image -->
+                            <!-- <div class="parallax w-full md:w-1/2">
+                                <div class="parallax-image"></div>
+                            </div> -->
+                            <div class="w-full md:w-1/2 lg:w-1/3">
                                 <!-- Parallax Section -->
-                                <div class="parallax-window"></div>
-
-                                <!-- <div class="w-96 h-[700px] overflow-hidden relative mt-32 ">
-                                    <img src="assets/Who_we_are_BG.webp" alt="Who_we_are_BG"
-                                        class="parallax-image absolute top-96 left-0 w-full h-[700px] ">
-                                </div> -->
+                                <div class="whoweare">
+                                    <img src="assets/Who_we_are_BG.webp" class="Who_we_are_BG" alt="Parallax Image">
+                                </div>
                             </div>
-                            <div class="w-3/6">
+                            <!-- Right Side: Content -->
+                            <div class="content w-full md:w-1/2">
                                 <div class="text-white font-semibold text-xl text-animate3">WHO WE ARE</div>
-                                <div class="text-white text-5xl font-semibold mt-5 text-animate3">EVERYTHING IS NOT
-                                    <br> ABOUT <br>MARKETING.
-                                    SOMETIMES <br>YOU <br>JUST
-                                    HAVE TO BEE YOU.
+                                <div class="text-white text-5xl font-semibold mt-5 text-animate3">
+                                    EVERYTHING IS NOT <br> ABOUT <br>MARKETING.
+                                    SOMETIMES <br>YOU <br>JUST HAVE TO BEE YOU.
                                 </div>
                                 <div class="w-4/6 ml-32 text-xl">
                                     <p class="text-gray-500 font-medium mt-10 text-animate2">
@@ -843,7 +872,7 @@
                                         and Bee Everything.
                                     </p>
                                 </div>
-                                <div class="mt-10 group flex justify-center items-centers-center text-animate2">
+                                <div class="mt-10 group flex justify-center items-center text-animate2">
                                     <div
                                         class="rounded-full w-32 p-10 cursor-pointer bg-white hover:bg-yellow-300 duration-500 ease-in-out transform transition-transform">
                                         <div class="text-black text-center">
@@ -854,723 +883,768 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- Services  -->
-                <section>
-                    <div class="bg-yellow-300 p-10">
-                        <div class="container mx-auto bgfont2  flex justify-between mt-20">
-                            <div class="text-animate2">
-                                <div class="text-gray-700 text-xl">Services</div>
-                                <div class="text-black font-medium text-5xl mt-5">What Can We Do Together?
+                    <!-- Services  -->
+                    <section>
+                        <div class="bg-yellow-300 p-10">
+                            <div class="container mx-auto bgfont2  flex justify-between mt-20">
+                                <div class="text-animate2">
+                                    <div class="text-gray-700 text-xl">Services</div>
+                                    <div class="text-black font-medium text-5xl mt-5">What Can We Do Together?
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="text-gray-700 text-xl">Trends, Technology and Tactics are <br>
+                                        never stagnant and neither are we</div>
                                 </div>
                             </div>
-                            <div class="flex justify-center items-center">
-                                <div class="text-gray-700 text-xl">Trends, Technology and Tactics are <br>
-                                    never stagnant and neither are we</div>
-                            </div>
-                        </div>
-                        <div class="container mx-auto mt-20">
-                            <div class="bg-black  flex justify-around flex-wrap md:flex-nowrap mb-20">
-                                <!-- BRAND SOLUTIONS Section -->
-                                <div class="group w-full h-full">
-                                    <div class="relative transition duration-300 ease-in-out p-20 pb-16">
-                                        <div>
-                                            <div class="text-7xl font-bold bgfont text-yellow-300">BRAND <br>SOLUTIONS
+                            <div class="container mx-auto mt-20">
+                                <div class="bg-black  flex justify-around flex-wrap md:flex-nowrap mb-20">
+                                    <!-- BRAND SOLUTIONS Section -->
+                                    <div class="group w-full h-full">
+                                        <div class="relative transition duration-300 ease-in-out p-20 pb-16">
+                                            <div>
+                                                <div class="text-7xl font-bold bgfont text-yellow-300">BRAND
+                                                    <br>SOLUTIONS
+                                                </div>
+                                                <p class="bgfont2 text-white">
+                                                    We are your PARTNER IN BRANDING, OFFERING <br>a tailored solution to
+                                                    build a
+                                                    <br>STRONG BRAND IDENTITY that resonates with your audience
+                                                </p>
                                             </div>
-                                            <p class="bgfont2 text-white">
-                                                We are your PARTNER IN BRANDING, OFFERING <br>a tailored solution to
-                                                build a
-                                                <br>STRONG BRAND IDENTITY that resonates with your audience
-                                            </p>
-                                        </div>
 
-                                        <!-- Hidden List Section for BRAND SOLUTIONS -->
+                                            <!-- Hidden List Section for BRAND SOLUTIONS -->
+                                            <div
+                                                class="bgfont2 absolute inset-0  bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
+                                                <div class="flex justify-start items-start w-full h-full">
+                                                    <ul class="container mx-auto p-10">
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2 ">
+                                                                    <a href="">Brand Strategy / Positioning</a>
+                                                                </li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Brand Identity Development</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Corporate Communications</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Brand Refresh / Rebranding</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Brand Communication & Design</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Content Development Services</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Brand Experience Design</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Photoshoots & Video Shoots</li>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Brand Conformance (IPR)</li>
+                                                            </div>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Vertical Divider -->
+                                    <div class="flex items-center">
+                                        <div class="border-l-2 border-black h-48"></div>
+                                    </div>
+
+                                    <!-- DIGITAL SOLUTIONS Section -->
+                                    <div class="group w-full h-full">
                                         <div
-                                            class="bgfont2 absolute inset-0  bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
-                                            <div class="flex justify-start items-start w-full h-full">
-                                                <ul class="container mx-auto p-10">
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                            class="relative transition duration-300 ease-in-out  p-20 w-full h-full pb-16">
+                                            <div>
+                                                <div class="text-7xl font-bold bgfont text-yellow-300">DIGITAL
+                                                    <br>SOLUTIONS
+                                                </div>
+                                                <p class="bgfont2 text-white">
+                                                    We guide your online presence towards success, <br>meticulously
+                                                    crafting
+                                                    and
+                                                    <br>implementing our EXPERTLY TAILORED MARKETING STRATEGIES
+                                                </p>
+                                            </div>
+
+                                            <!-- Hidden List Section for DIGITAL SOLUTIONS -->
+                                            <div
+                                                class=" bgfont2 absolute inset-0 bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
+                                                <div class="flex justify-start items-start w-full h-full">
+                                                    <ul class="container mx-auto p-10">
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Website & Mobile App Development</li>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <li class="mb-2 ">
-                                                                <a href="">Brand Strategy / Positioning</a>
-                                                            </li>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Social Media Marketing</li>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Search Engine Optimisation (SEO)</li>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <li class="mb-2">Brand Identity Development</li>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Content Marketing</li>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Performance Marketing</li>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <li class="mb-2">Corporate Communications</li>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Community / Influencer Marketing</li>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Video Marketing</li>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <li class="mb-2">Brand Refresh / Rebranding</li>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Email Marketing</li>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
+                                                        <div class="flex gap-3">
+                                                            <div>
+                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            </div>
+                                                            <div>
+                                                                <li class="mb-2">Online Reputation Management</li>
+                                                            </div>
                                                         </div>
-                                                        <div>
-                                                            <li class="mb-2">Brand Communication & Design</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Content Development Services</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Brand Experience Design</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Photoshoots & Video Shoots</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Brand Conformance (IPR)</li>
-                                                        </div>
-                                                    </div>
-                                                </ul>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Featured Work -->
+                    <div class="bg-black bgfont2 parallax-container pb-10">
+                        <!-- Parallax Background -->
+                        <div id="parallax-bg" class="parallax-background">
+                            <div class="text-white text-7xl font-medium text-center ">
+                                FEATURED WORK
+                            </div>
+                        </div>
 
-                                <!-- Vertical Divider -->
-                                <div class="flex items-center">
-                                    <div class="border-l-2 border-black h-48"></div>
+                        <!-- Content Container -->
+                        <div class="content-container">
+                            <!-- Image Gallery -->
+                            <div class="grid grid-cols-2 container mx-auto gap-20 mt-20">
+                                <div class="image-container origin-bottom-right">
+                                    <img src="assets/MI - 2.webp" alt="Work-1">
                                 </div>
+                                <div class="image-container">
+                                    <img src="assets/Nail Hub - 1.jpg" alt="Work-2" class="mt-52">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/Selligo - 1.jpg" alt="Work-3">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/PYD - 2.webp" alt="Work-4" class="mt-52">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/SRT - 2.webp" alt="Work-5">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/Peak System - 1.jpg" alt="Peak System" class="mt-52">
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/Optilenz - 1.jpg" alt="Optilenz">
+                                </div>
+                            </div>
 
-                                <!-- DIGITAL SOLUTIONS Section -->
-                                <div class="group w-full h-full">
-                                    <div class="relative transition duration-300 ease-in-out  p-20 w-full h-full pb-16">
-                                        <div>
-                                            <div class="text-7xl font-bold bgfont text-yellow-300">DIGITAL <br>SOLUTIONS
-                                            </div>
-                                            <p class="bgfont2 text-white">
-                                                We guide your online presence towards success, <br>meticulously crafting
-                                                and
-                                                <br>implementing our EXPERTLY TAILORED MARKETING STRATEGIES
-                                            </p>
-                                        </div>
-
-                                        <!-- Hidden List Section for DIGITAL SOLUTIONS -->
-                                        <div
-                                            class=" bgfont2 absolute inset-0 bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
-                                            <div class="flex justify-start items-start w-full h-full">
-                                                <ul class="container mx-auto p-10">
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Website & Mobile App Development</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Social Media Marketing</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Search Engine Optimisation (SEO)</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Content Marketing</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Performance Marketing</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Community / Influencer Marketing</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Video Marketing</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Email Marketing</li>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex gap-3">
-                                                        <div>
-                                                            <i class="fa-solid fa-hand-point-right"></i>
-                                                        </div>
-                                                        <div>
-                                                            <li class="mb-2">Online Reputation Management</li>
-                                                        </div>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                        </div>
+                            <!-- View All Case Studies Button -->
+                            <div class="group flex justify-center items-center mt-32">
+                                <div
+                                    class="rounded-full w-40 p-10 cursor-pointer bg-white hover:bg-yellow-300 duration-500 ease-in-out">
+                                    <div class="text-black text-center">
+                                        View All Case Studies
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </section>
-                <!-- Featured Work -->
-                <div class="bg-black bgfont2 parallax-container pb-10">
-                    <!-- Parallax Background -->
-                    <div id="parallax-bg" class="parallax-background">
-                        <div class="text-white text-7xl font-medium text-center ">
-                            FEATURED WORK
-                        </div>
-                    </div>
+                    <!-- Brands and Campaigns  -->
+                    <section class="bg-white">
+                        <div class="container mx-auto pt-20 p-20">
+                            <div class="text-3xl font-medium text-center bgfont2">
+                                <div>We are passionate to create connected brands and campaigns to enable stable
+                                    and successful relationships between businesses and customers.</div>
+                            </div>
 
-                    <!-- Content Container -->
-                    <div class="content-container">
-                        <!-- Image Gallery -->
-                        <div class="grid grid-cols-2 container mx-auto gap-20 mt-20">
-                            <div class="image-container origin-bottom-right">
-                                <img src="assets/MI - 2.webp" alt="Work-1">
-                            </div>
-                            <div class="image-container">
-                                <img src="assets/Nail Hub - 1.jpg" alt="Work-2" class="mt-52">
-                            </div>
-                            <div class="image-container">
-                                <img src="assets/Selligo - 1.jpg" alt="Work-3">
-                            </div>
-                            <div class="image-container">
-                                <img src="assets/PYD - 2.webp" alt="Work-4" class="mt-52">
-                            </div>
-                            <div class="image-container">
-                                <img src="assets/SRT - 2.webp" alt="Work-5">
-                            </div>
-                            <div class="image-container">
-                                <img src="assets/Peak System - 1.jpg" alt="Peak System" class="mt-52">
-                            </div>
-                            <div class="image-container">
-                                <img src="assets/Optilenz - 1.jpg" alt="Optilenz">
-                            </div>
-                        </div>
-
-                        <!-- View All Case Studies Button -->
-                        <div class="group flex justify-center items-center mt-32">
-                            <div
-                                class="rounded-full w-40 p-10 cursor-pointer bg-white hover:bg-yellow-300 duration-500 ease-in-out">
-                                <div class="text-black text-center">
-                                    View All Case Studies
+                            <div class="flex gap-10 bgfont2 mt-20">
+                                <div class="w-5/6">
+                                    <div class="parallax-section">
+                                        <div class="parallax2"></div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Brands and Campaigns  -->
-                <section class="bg-white">
-                    <div class="container mx-auto pt-20 p-20">
-                        <div class="text-3xl font-medium text-center bgfont2">
-                            <div>We are passionate to create connected brands and campaigns to enable stable
-                                and successful relationships between businesses and customers.</div>
-                        </div>
-
-                        <div class="flex gap-10 bgfont2 mt-20">
-                            <div class="w-5/6">
-                                <div class="parallax2"></div>
-                                <!-- <img src="assets/Ayntech_CEO.webp" alt="Ayntech_CEO"> -->
-                            </div>
-                            <div class="w-full text-xl text-gray-700">
-                                <div>Our award-winning team uses strategy, design, SEO,
-                                    paid ads, and social media to connect with current
-                                    and potential customers, generate more leads, and
-                                    prepare your business for future growth.</div>
-                                <div class="mt-10">We can help you with the latest high tech solutions;
-                                    thanks to our company culture, which is built on
-                                    everyday learning and self-improvement from each
-                                    and every single task that we do.</div>
-                                <div class="mt-10 font-bold text-gray-950">Mr.Ayn Gajendran - CEO, Ayn Technologies
-                                </div>
-                                <div class="w-52">
-                                    <img src="assets/CEO_Sign.png" alt="CEO_Sign">
-                                </div>
-                                <!-- <div class="float-right mt-5 ">
+                                <div class="w-full text-xl text-gray-700">
+                                    <div>Our award-winning team uses strategy, design, SEO,
+                                        paid ads, and social media to connect with current
+                                        and potential customers, generate more leads, and
+                                        prepare your business for future growth.</div>
+                                    <div class="mt-10">We can help you with the latest high tech solutions;
+                                        thanks to our company culture, which is built on
+                                        everyday learning and self-improvement from each
+                                        and every single task that we do.</div>
+                                    <div class="mt-10 font-bold text-gray-950">Mr.Ayn Gajendran - CEO, Ayn Technologies
+                                    </div>
+                                    <div class="w-52">
+                                        <img src="assets/CEO_Sign.png" alt="CEO_Sign">
+                                    </div>
+                                    <!-- <div class="float-right mt-5 ">
                             <img src="assets/DJB-small.webp" alt="DJB-small" class="">
                         </div> -->
-                            </div>
-                            <div class="w-3/6 mt-32">
-                                <img src="assets/Ayn-logo.webp" alt="Ayn-logo" class="w-full">
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-                <!-- Testimonials  -->
-                <section class="bgfont2 bg-black">
-                    <div class="pt-32">
-                        <div class="flex justify-center items-center">
-                            <div class="border-white border rounded-full cursor-pointer p-2">
-                                <div class="text-gray-300">Testimonials</div>
-                            </div>
-                        </div>
-                        <div class="mt-10">
-                            <div class="text-5xl text-white font-medium text-center">Happy words from our valuable
-                                clients!</div>
-                        </div>
-                        <section class="py-12">
-                            <div class="container mx-auto px-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    <!-- Testimonial 1 -->
-                                    <div class="bg-white p-6 rounded-lg shadow-2xl">
-                                        <div class="mb-4">
-                                            <img src="https://via.placeholder.com/100" alt="Client 1"
-                                                class="w-16 h-16 rounded-full mx-auto">
-                                        </div>
-                                        <h3 class="text-xl font-semibold mb-2 text-center">John Doe</h3>
-                                        <div class="flex justify-center items-center">
-                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                <div class="text-center">Value Addition</div>
-                                            </div>
-                                        </div>
-
-                                        <p class="text-gray-600 text-center mt-5">
-                                            "The Brand Bee team have been great to work with and have added a lot a
-                                            value to our
-                                            brand by
-                                            taking the time to understand our business and what we wanted to achieve.
-                                            From a
-                                            detailed brand
-                                            strategy meeting, to targeted posts on Instagram and excellent quality
-                                            photography
-                                            for
-                                            our
-                                            waterpark and our social media account, they managed the entire process
-                                            brilliantly
-                                            which made
-                                            it so easy for us. The entire team is easy to communicate with, energetic,
-                                            fun and
-                                            really take
-                                            an interest in our Aqua Splash waterpark brand which shows on our Instagram
-                                            account."
-                                        </p>
-                                        <p class="mt-5 text-center text-gray-500">We highly recommend this dynamic team!
-                                        </p>
-                                        <div class="text-gray-700 mt-3">KumaraVelan, GM</div>
-                                        <div class="text-gray-700 mt-3">Aquasplash Waterpark, Kinshshasha, Africa</div>
-                                    </div>
-                                    <!-- Testimonial 2 -->
-                                    <div class="bg-white p-6 rounded-lg shadow-2xl">
-                                        <div class="mb-4">
-                                            <img src="https://via.placeholder.com/100" alt="Client 2"
-                                                class="w-16 h-16 rounded-full mx-auto">
-                                        </div>
-                                        <h3 class="text-xl font-semibold mb-2 text-center">Jane Smith</h3>
-                                        <div class="flex justify-center items-center">
-                                            <div class="bg-gray-300 w-44 rounded-xl p-1">
-                                                <div class="text-center">Exceptional Support</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-600 text-center mt-5">"
-                                            "The Brand Bee team have been great to work with and have added a lot a
-                                            value to our
-                                            brand by
-                                            taking the time to understand our business and what we wanted to achieve.
-                                            From a
-                                            detailed brand
-                                            strategy meeting, to targeted posts on Instagram and excellent quality
-                                            photography
-                                            for
-                                            our
-                                            waterpark and our social media account, they managed the entire process
-                                            brilliantly
-                                            which made
-                                            it so easy for us. The entire team is easy to communicate with, energetic,
-                                            fun and
-                                            really take
-                                            an interest in our Aqua Splash waterpark brand which shows on our Instagram
-                                            account."
-                                            "</p>
-                                        <p class="mt-5 text-center text-gray-500">We highly recommend this dynamic team!
-                                        </p>
-                                        <div class="text-gray-700 mt-3">Rohit Mall,CEO</div>
-                                        <div class="text-gray-700 mt-3">Mallicom India Pvt Ltd</div>
-                                    </div>
-                                    <!-- Testimonial 3 -->
-                                    <div class="bg-white p-6 rounded-lg shadow-2xl">
-                                        <div class="mb-4">
-                                            <img src="https://via.placeholder.com/100" alt="Client 3"
-                                                class="w-16 h-16 rounded-full mx-auto">
-                                        </div>
-                                        <h3 class="text-xl font-semibold mb-2 text-center">Emily Johnson</h3>
-                                        <div class="flex justify-center items-center">
-                                            <div class="bg-gray-300 w-44 rounded-xl p-1">
-                                                <div class="text-center">Transparency</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-600 text-center mt-5">"The Brand Bee team have been great to
-                                            work
-                                            with
-                                            and
-                                            have added a lot a value to our
-                                            brand by
-                                            taking the time to understand our business and what we wanted to achieve.
-                                            From a
-                                            detailed brand
-                                            strategy meeting, to targeted posts on Instagram and excellent quality
-                                            photography
-                                            for
-                                            our
-                                            waterpark and our social media account, they managed the entire process
-                                            brilliantly
-                                            which made
-                                            it so easy for us. The entire team is easy to communicate with, energetic,
-                                            fun and
-                                            really take
-                                            an interest in our Aqua Splash waterpark brand which shows on our Instagram
-                                            account."
-                                        </p>
-                                        <p class="mt-5 text-center text-gray-500">We highly recommend this dynamic team!
-                                        </p>
-                                        <div class="text-gray-700 mt-3">Rohit Mall,CEO</div>
-                                        <div class="text-gray-700 mt-3">Mallicom India Pvt Ltd</div>
-                                    </div>
+                                </div>
+                                <div class="w-3/6 mt-32">
+                                    <img src="assets/Ayn-logo.webp" alt="Ayn-logo" class="w-full">
                                 </div>
                             </div>
-                        </section>
+                        </div>
 
-                    </div>
-
-                </section>
-                <!-- Begin your transformation -->
-                <section class="bg-yellow-300 pb-20">
-                    <div class="bgfont2 mt-20 ">
-                        <div
-                            class="bg-gray-200 rounded-lg container mx-auto flex justify-around flex-wrap md:flex-nowrap p-10">
-                            <div class="w-52">
-                                <img src="assets/Together.jpg" alt="Begin_Your_Transform">
-                            </div>
+                    </section>
+                    <!-- Testimonials  -->
+                    <section class="bgfont2 bg-black">
+                        <div class="pt-32">
                             <div class="flex justify-center items-center">
-                                <div class="text-5xl font-medium">Let's make <br> something great <br> together</div>
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <div class="">
-                                    <div class="text-xl">Still waiting for us to make the first MOVE? <br>Don't BEE shy,
-                                        get in
-                                        TOUCH</div>
-                                    <div class="bg-yellow-300 rounded-xl w-72 p-3 mt-5 cursor-pointer">
-                                        <div class="text-center font-medium">Begin Your Transformation Today</div>
-                                    </div>
+                                <div class="border-white border rounded-full cursor-pointer p-2">
+                                    <div class="text-gray-300">Testimonials</div>
                                 </div>
                             </div>
+                            <div class="mt-10">
+                                <div class="text-5xl text-white font-medium text-center">Happy words from our valuable
+                                    clients!</div>
+                            </div>
+                            <section class="py-12">
+                                <div class="container mx-auto px-4">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        <!-- Testimonial 1 -->
+                                        <div class="bg-white p-6 rounded-lg shadow-2xl">
+                                            <div class="mb-4">
+                                                <img src="https://via.placeholder.com/100" alt="Client 1"
+                                                    class="w-16 h-16 rounded-full mx-auto">
+                                            </div>
+                                            <h3 class="text-xl font-semibold mb-2 text-center">John Doe</h3>
+                                            <div class="flex justify-center items-center">
+                                                <div class="bg-gray-300 w-36 rounded-xl p-1">
+                                                    <div class="text-center">Value Addition</div>
+                                                </div>
+                                            </div>
 
-                        </div>
-                    </div>
-                </section>
-                <!-- News and Blogs -->
-                <section>
-                    <div>
-                        <div class="bgfont2 mt-32">
-                            <div class="container mx-auto flex">
-                                <div class="w-3/6">
-                                    <div class="border-black border w-32 rounded-lg">
-                                        <div class="tet-gray-300 text-center">Recent Blog</div>
-                                    </div>
-                                    <div class="mt-5">
-                                        <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <p class="text-gray-400">We don't mind sharing the secret.
-                                            <br> Read our blogs and stay updated
-                                            <br> about the latest trends of the
-                                            digital world.
-                                        </p>
-                                    </div>
-                                    <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
-                                        <div class="text-black text-center font-medium">All Articles</div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <!-- Blog 1 -->
-                                    <div class="bg-white rounded-lg shadow-xl p-6">
-                                        <img src="assets/Blog_1.webp" alt="Blog 1"
-                                            class="w-full h-48 object-cover rounded-lg mb-4">
-                                        <div class="mt-10">
-                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                <div class="text-center">05/08/2024</div>
+                                            <p class="text-gray-600 text-center mt-5">
+                                                "The Brand Bee team have been great to work with and have added a lot a
+                                                value to our
+                                                brand by
+                                                taking the time to understand our business and what we wanted to
+                                                achieve.
+                                                From a
+                                                detailed brand
+                                                strategy meeting, to targeted posts on Instagram and excellent quality
+                                                photography
+                                                for
+                                                our
+                                                waterpark and our social media account, they managed the entire process
+                                                brilliantly
+                                                which made
+                                                it so easy for us. The entire team is easy to communicate with,
+                                                energetic,
+                                                fun and
+                                                really take
+                                                an interest in our Aqua Splash waterpark brand which shows on our
+                                                Instagram
+                                                account."
+                                            </p>
+                                            <p class="mt-5 text-center text-gray-500">We highly recommend this dynamic
+                                                team!
+                                            </p>
+                                            <div class="text-gray-700 mt-3">KumaraVelan, GM</div>
+                                            <div class="text-gray-700 mt-3">Aquasplash Waterpark, Kinshshasha, Africa
                                             </div>
                                         </div>
-                                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup Should
-                                            Invest
-                                            In A
-                                            Professional Web
-                                            Development Company</p>
-                                        <a href="#" class="text-yellow-300 font-medium hover:underline">Read More</a>
-                                    </div>
-
-                                    <!-- Blog 2 -->
-                                    <div class="bg-white rounded-lg shadow-lg p-6">
-                                        <img src="assets/Blog_2.webp" alt="Blog 2"
-                                            class="w-full h-48 object-cover rounded-lg mb-4">
-                                        <div class="mt-10">
-                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                <div class="text-center">31/07/2024</div>
+                                        <!-- Testimonial 2 -->
+                                        <div class="bg-white p-6 rounded-lg shadow-2xl">
+                                            <div class="mb-4">
+                                                <img src="https://via.placeholder.com/100" alt="Client 2"
+                                                    class="w-16 h-16 rounded-full mx-auto">
                                             </div>
+                                            <h3 class="text-xl font-semibold mb-2 text-center">Jane Smith</h3>
+                                            <div class="flex justify-center items-center">
+                                                <div class="bg-gray-300 w-44 rounded-xl p-1">
+                                                    <div class="text-center">Exceptional Support</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-600 text-center mt-5">"
+                                                "The Brand Bee team have been great to work with and have added a lot a
+                                                value to our
+                                                brand by
+                                                taking the time to understand our business and what we wanted to
+                                                achieve.
+                                                From a
+                                                detailed brand
+                                                strategy meeting, to targeted posts on Instagram and excellent quality
+                                                photography
+                                                for
+                                                our
+                                                waterpark and our social media account, they managed the entire process
+                                                brilliantly
+                                                which made
+                                                it so easy for us. The entire team is easy to communicate with,
+                                                energetic,
+                                                fun and
+                                                really take
+                                                an interest in our Aqua Splash waterpark brand which shows on our
+                                                Instagram
+                                                account."
+                                                "</p>
+                                            <p class="mt-5 text-center text-gray-500">We highly recommend this dynamic
+                                                team!
+                                            </p>
+                                            <div class="text-gray-700 mt-3">Rohit Mall,CEO</div>
+                                            <div class="text-gray-700 mt-3">Mallicom India Pvt Ltd</div>
                                         </div>
-                                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
-                                            Design
-                                            Company
-                                            In Boosting Your
-                                            E-Commerce Success</p>
-                                        <a href="#" class="text-yellow-300 font-medium hover:underline">Read More</a>
+                                        <!-- Testimonial 3 -->
+                                        <div class="bg-white p-6 rounded-lg shadow-2xl">
+                                            <div class="mb-4">
+                                                <img src="https://via.placeholder.com/100" alt="Client 3"
+                                                    class="w-16 h-16 rounded-full mx-auto">
+                                            </div>
+                                            <h3 class="text-xl font-semibold mb-2 text-center">Emily Johnson</h3>
+                                            <div class="flex justify-center items-center">
+                                                <div class="bg-gray-300 w-44 rounded-xl p-1">
+                                                    <div class="text-center">Transparency</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-600 text-center mt-5">"The Brand Bee team have been
+                                                great to
+                                                work
+                                                with
+                                                and
+                                                have added a lot a value to our
+                                                brand by
+                                                taking the time to understand our business and what we wanted to
+                                                achieve.
+                                                From a
+                                                detailed brand
+                                                strategy meeting, to targeted posts on Instagram and excellent quality
+                                                photography
+                                                for
+                                                our
+                                                waterpark and our social media account, they managed the entire process
+                                                brilliantly
+                                                which made
+                                                it so easy for us. The entire team is easy to communicate with,
+                                                energetic,
+                                                fun and
+                                                really take
+                                                an interest in our Aqua Splash waterpark brand which shows on our
+                                                Instagram
+                                                account."
+                                            </p>
+                                            <p class="mt-5 text-center text-gray-500">We highly recommend this dynamic
+                                                team!
+                                            </p>
+                                            <div class="text-gray-700 mt-3">Rohit Mall,CEO</div>
+                                            <div class="text-gray-700 mt-3">Mallicom India Pvt Ltd</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="mt-10 flex justify-end">
-                                <div class="w-5/6">
-                                    <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
-                                </div>
-                            </div>
+                            </section>
 
                         </div>
-                    </div>
-                </section>
-                <!-- Footer  -->
-                <section>
-                    <div class="bg-black bgfont2 p-10">
+
+                    </section>
+                    <!-- Begin your transformation -->
+                    <section class="bg-yellow-300 pb-20">
+                        <div class="bgfont2 mt-20 ">
+                            <div
+                                class="bg-gray-200 rounded-lg container mx-auto flex justify-around flex-wrap md:flex-nowrap p-10">
+                                <div class="w-52">
+                                    <img src="assets/Together.jpg" alt="Begin_Your_Transform">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="text-5xl font-medium">Let's make <br> something great <br> together
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="">
+                                        <div class="text-xl">Still waiting for us to make the first MOVE? <br>Don't BEE
+                                            shy,
+                                            get in
+                                            TOUCH</div>
+                                        <div class="bg-yellow-300 rounded-xl w-72 p-3 mt-5 cursor-pointer">
+                                            <div class="text-center font-medium">Begin Your Transformation Today</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- News and Blogs -->
+                    <section>
                         <div>
-                            <div class="flex justify-around">
-                                <div class="mt-20">
-                                    <div>
-                                        <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
-                                    </div>
-                                    <div class="mt-10 ">
-                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                            <br>and
-                                            digital
-                                            marketing
-                                            agency based
-                                            in Gurgaon, India.
-                                            <br>With a team of over 40+, we are an award-winning <br>full-stack digital
-                                            marketing
-                                            agency
-                                            offering <br>
-                                            creative and innovative <br>digital and brand solutions for brands <br>
-                                            looking to
-                                            grow
-                                            their
-                                            businesses.
-                                        </p>
-                                    </div>
-                                    <div class="mt-10 flex gap-5">
-                                        <div>
-                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                            <div class="bgfont2 mt-32">
+                                <div class="container mx-auto flex">
+                                    <div class="w-3/6">
+                                        <div class="border-black border w-32 rounded-lg">
+                                            <div class="tet-gray-300 text-center">Recent Blog</div>
                                         </div>
-                                        <div>
-                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                                        <div class="mt-5">
+                                            <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
                                         </div>
-                                        <div>
-                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                                        <div class="mt-10">
+                                            <p class="text-gray-400">We don't mind sharing the secret.
+                                                <br> Read our blogs and stay updated
+                                                <br> about the latest trends of the
+                                                digital world.
+                                            </p>
                                         </div>
-                                        <div>
-                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
+                                        <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+                                            <div class="text-black text-center font-medium">All Articles</div>
                                         </div>
                                     </div>
-                                    <div class="flex gap-3 mt-10 w-72 ">
-                                        <div>
-                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
-                                                class="rounded-sm">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                        <!-- Blog 1 -->
+                                        <div class="bg-white rounded-lg shadow-xl p-6">
+                                            <img src="assets/Blog_1.webp" alt="Blog 1"
+                                                class="w-full h-48 object-cover rounded-lg mb-4">
+                                            <div class="mt-10">
+                                                <div class="bg-gray-300 w-36 rounded-xl p-1">
+                                                    <div class="text-center">05/08/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup
+                                                Should
+                                                Invest
+                                                In A
+                                                Professional Web
+                                                Development Company</p>
+                                            <a href="#" class="text-yellow-300 font-medium hover:underline">Read
+                                                More</a>
                                         </div>
-                                        <div>
-                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                                        </div>
-                                    </div>
-                                    <div class="flex mt-10 gap-1">
-                                        <div class="cursor-pointer">
-                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                                        </div>
-                                        <div class="text-white">Chennai's Leading Digital Agency</div>
-                                        <div> |</div>
-                                        <div class="flex">
-                                            <div class="text-yellow-300">30+</div>
-                                            <div>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
 
+                                        <!-- Blog 2 -->
+                                        <div class="bg-white rounded-lg shadow-lg p-6">
+                                            <img src="assets/Blog_2.webp" alt="Blog 2"
+                                                class="w-full h-48 object-cover rounded-lg mb-4">
+                                            <div class="mt-10">
+                                                <div class="bg-gray-300 w-36 rounded-xl p-1">
+                                                    <div class="text-center">31/07/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
+                                                Design
+                                                Company
+                                                In Boosting Your
+                                                E-Commerce Success</p>
+                                            <a href="#" class="text-yellow-300 font-medium hover:underline">Read
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-10 flex justify-end">
+                                    <div class="w-5/6">
+                                        <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Footer  -->
+                    <section>
+                        <div class="bg-black bgfont2 p-10">
+                            <div>
+                                <div class="flex justify-around">
+                                    <div class="mt-20">
+                                        <div>
+                                            <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
+                                        </div>
+                                        <div class="mt-10 ">
+                                            <p class="text-white text-justify">The Brand Bee is an integrated branding
+                                                <br>and
+                                                digital
+                                                marketing
+                                                agency based
+                                                in Gurgaon, India.
+                                                <br>With a team of over 40+, we are an award-winning <br>full-stack
+                                                digital
+                                                marketing
+                                                agency
+                                                offering <br>
+                                                creative and innovative <br>digital and brand solutions for brands <br>
+                                                looking to
+                                                grow
+                                                their
+                                                businesses.
+                                            </p>
+                                        </div>
+                                        <div class="mt-10 flex gap-5">
+                                            <div>
+                                                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-3 mt-10 w-72 ">
+                                            <div>
+                                                <img src="assets/Googole_partner.webp" alt="Googole_partner"
+                                                    class="rounded-sm">
+                                            </div>
+                                            <div>
+                                                <img src="assets/Meta-partner.webp" alt="Meta-partner"
+                                                    class="rounded-sm">
+                                            </div>
+                                        </div>
+                                        <div class="flex mt-10 gap-1">
+                                            <div class="cursor-pointer">
+                                                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+                                            </div>
+                                            <div class="text-white">Chennai's Leading Digital Agency</div>
+                                            <div> |</div>
+                                            <div class="flex">
+                                                <div class="text-yellow-300">30+</div>
+                                                <div>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Information</div>
-                                    <ul class="text-gray-500 space-y-3 mt-5">
-                                        <li>Brand Solutions</li>
-                                        <li>Digital Marketing Solutions</li>
-                                        <li>Who We Are</li>
-                                        <li>Sample Work</li>
-                                        <li>Our Clients</li>
-                                        <li>Industries We Serve</li>
-                                        <li>Careers</li>
-                                        <li>Blog</li>
-                                        <li>Contact</li>
-                                    </ul>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Contact US</div>
-                                    <div class="text-gray-500 mt-5">
-                                        Ayn Technologies Pvt. Ltd.,<br>
-                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
-                                        Ullagaram, Madipakkam, Chennai- 600091.
+                                    <div class="text-white pt-20">
+                                        <div class="font-bold text-xl">Information</div>
+                                        <ul class="text-gray-500 space-y-3 mt-5">
+                                            <li>Brand Solutions</li>
+                                            <li>Digital Marketing Solutions</li>
+                                            <li>Who We Are</li>
+                                            <li>Sample Work</li>
+                                            <li>Our Clients</li>
+                                            <li>Industries We Serve</li>
+                                            <li>Careers</li>
+                                            <li>Blog</li>
+                                            <li>Contact</li>
+                                        </ul>
                                     </div>
-                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
-                                <div class="bg-gray-950 p-10">
-                                    <div class="flex justify-center items-center mt-20">
-                                        <div class="">
-                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+                                    <div class="text-white pt-20">
+                                        <div class="font-bold text-xl">Contact US</div>
+                                        <div class="text-gray-500 mt-5">
+                                            Ayn Technologies Pvt. Ltd.,<br>
+                                            No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                                            Ullagaram, Madipakkam, Chennai- 600091.
                                         </div>
+                                        <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                                        <div class="text-gray-500 mt-3">info@ayntech.in</div>
                                     </div>
-                                    <div class="flex justify-center items-center mt-10">
-                                        <div
-                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
-                                            <div class="text-center">Contact US</div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div class="bg-gray-950 p-10">
+                                        <div class="flex justify-center items-center mt-20">
+                                            <div class="">
+                                                <div class="text-white text-3xl text-center">Do you want to <br> Bee?
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                                        <div class="text-gray-500 text-center">Monday to Friday</div>
-                                    </div>
-                                    <div class="text-gray-500  mt-16 text-justify">
-                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                                        agency
-                                        brings
-                                        <br>invaluable
-                                        industry insights and <br>
-                                        international <br>know-how to your brand's success.
+                                        <div class="flex justify-center items-center mt-10">
+                                            <div
+                                                class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                                <div class="text-center">Contact US</div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-10">
+                                            <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+                                            <div class="text-gray-500 text-center">Monday to Friday</div>
+                                        </div>
+                                        <div class="text-gray-500  mt-16 text-justify">
+                                            With extensive expertise <br>spanning in Chennai <br> our digital marketing
+                                            agency
+                                            brings
+                                            <br>invaluable
+                                            industry insights and <br>
+                                            international <br>know-how to your brand's success.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                    </div>
-                </section>
+                    </section>
             </div>
         </div>
         <span class="cursor"></span>
         <span class="cursor-trail"></span>
     </div>
-    <!-- Relax JS -->
-    <script src="https://cdn.jsdelivr.net/npm/relax-js@1.0.0/dist/relax.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            Relax.init({
-                selector: '.parallax-window', // Target element for the parallax effect
-                speed: 0.5 // Adjust speed as needed
-            });
-        });
-    </script>
-
-
-    Parallax Animation
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/path/to/parallax.js"></script>
-    <script>
-        document.addEventListener('scroll', function () {
-            const parallax = document.querySelector('.parallax-window');
-            const scrolled = window.pageYOffset;
-            parallax.style.backgroundPositionY = -(scrolled * 0.5) + 'px'; // Adjust speed factor (0.5) as needed
-        });
-    </script>
-
+    <script src="dist/main.js"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             AOS.init({
-                duration: 1000, // Animation duration
-                easing: 'ease-in-out', // Easing function
-                once: true, // Whether animation should happen only once
-                delay: 0, // Global delay
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                delay: 0,
             });
         });
-
     </script>
 
     <!-- Locomotive Smooth Scroll  -->
     <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true
-            });
+        // Initialize Locomotive Scroll
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true
+        });
+
+        // Integrate GSAP's ScrollTrigger with Locomotive Scroll
+        gsap.registerPlugin(ScrollTrigger);
+
+        locoScroll.on("scroll", ScrollTrigger.update);
+
+        ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+            scrollTop(value) {
+                return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+            },
+            getBoundingClientRect() {
+                return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+            },
+            pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
+        });
+
+        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+        ScrollTrigger.refresh();
+
+        // Parallax effect with GSAP
+        gsap.to(".Who_we_are_BG", {
+            yPercent: -30,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".whoweare",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true,
+                scroller: "[data-scroll-container]" // Use the scroller from Locomotive Scroll
+            }
+        });
+
+        gsap.to(".parallax-bg", {
+            y: "-30%", /* Moves the background image upwards as you scroll */
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".parallax-section",
+                start: "top bottom", /* Start when the top of the section hits the bottom of the viewport */
+                end: "bottom top", /* End when the bottom of the section hits the top of the viewport */
+                scrub: true
+            }
         });
     </script>
 
@@ -1639,24 +1713,24 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var swiper = new Swiper('.mySwiper', {
-                // Enable looping
+
                 loop: true,
 
-                // Enable free mode for smooth, continuous scrolling
+
                 freeMode: {
                     enabled: true,
-                    momentum: true,       // Allows the scroll to continue smoothly
-                    momentumRatio: 1,     // Adjusts the momentum speed
-                    momentumBounce: false // Prevents the scroll from bouncing back
+                    momentum: true,
+                    momentumRatio: 1,
+                    momentumBounce: false
                 },
 
-                // Autoplay settings
+
                 autoplay: {
-                    delay: 0,                // No delay between transitions
-                    disableOnInteraction: false, // Continue autoplay after user interactions
+                    delay: 0,
+                    disableOnInteraction: false,
                 },
 
-                // Transition speed (in milliseconds)
+
                 speed: 1000, // Adjust this value for desired scroll speed
 
                 // Disable swiping interactions to maintain smooth autoplay
@@ -1700,10 +1774,7 @@
             }
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
 
     <script>
         // Select all images inside the image containers
