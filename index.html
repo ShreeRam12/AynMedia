@@ -207,8 +207,10 @@
         background-position: center;
         position: absolute;
         top: 0;
-        left: 50%; /* Move the image to the center */
-        transform: translateX(-50%); /* Center the image horizontally */
+        left: 50%;
+        /* Move the image to the center */
+        transform: translateX(-50%);
+        /* Center the image horizontally */
     }
 
 
@@ -270,14 +272,15 @@
         <section class="sticky top-0 left-0 z-50 shadow-lg">
             <!-- Navbar -->
             <nav class="bg-yellow-300 shadow-lg bgfont">
-                <div class=" flex justify-between items-center">
+                <div class=" flex justify-between  items-center">
                     <!-- Logo -->
-                    <div class="w-52">
-                        <img src="assets/Ayn Media New Logo.webp" alt="AynMedia_Logo">
+                    <div class="flex items-center">
+                        <img src="assets/Ayn Media New Logo.webp" alt="AynMedia_Logo" class="h-60 w-96 scale-x-150">
                     </div>
                     <!-- Centered Navbar Links (hidden on mobile) -->
-                    <div class="hidden md:flex flex-1 justify-center items-center gap-14">
-                        <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+                    <div class="p-5 hidden md:flex  justify-center items-center gap-10">
+                        <a href="index.html"
+                            class="text-black group relative inline-block overflow-hidden cursor-pointer">
                             <span class="block text-black">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
@@ -340,7 +343,8 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
                             </span>
                         </a>
-                        <a href="aboutus.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <a href="aboutus.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
@@ -421,7 +425,8 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
                             </span>
                         </a>
-                        <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <a href="client.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
@@ -533,7 +538,8 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">H</span>
                             </span>
                         </a>
-                        <a href="blog.html"  class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <a href="blog.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
@@ -1670,45 +1676,45 @@
             }
         });
     </script>
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Locomotive Scroll
-        const locoScroll = new LocomotiveScroll({
-            el: document.querySelector("[data-scroll-container]"),
-            smooth: true
-        });
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Locomotive Scroll
+            const locoScroll = new LocomotiveScroll({
+                el: document.querySelector("[data-scroll-container]"),
+                smooth: true
+            });
 
-        // Sync ScrollTrigger with Locomotive Scroll
-        gsap.registerPlugin(ScrollTrigger);
-        ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-            scrollTop(value) {
-                return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-            },
-            getBoundingClientRect() {
-                return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-            },
-            pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
-        });
+            // Sync ScrollTrigger with Locomotive Scroll
+            gsap.registerPlugin(ScrollTrigger);
+            ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+                scrollTop(value) {
+                    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+                },
+                getBoundingClientRect() {
+                    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+                },
+                pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
+            });
 
-        // Parallax animation (Top to Bottom)
-        gsap.to(".parallax2", {
-            yPercent: -30, // Negative value for top to bottom movement
-            ease: "none", // Smooth linear effect
-            scrollTrigger: {
-                trigger: ".parallax-section",
-                scroller: "[data-scroll-container]", // Locomotive Scroll container
-                start: "top bottom", // When the section enters the viewport
-                end: "bottom top", // When the section leaves the viewport
-                scrub: true // Smooth animation on scroll
-            }
-        });
+            // Parallax animation (Top to Bottom)
+            gsap.to(".parallax2", {
+                yPercent: -30, // Negative value for top to bottom movement
+                ease: "none", // Smooth linear effect
+                scrollTrigger: {
+                    trigger: ".parallax-section",
+                    scroller: "[data-scroll-container]", // Locomotive Scroll container
+                    start: "top bottom", // When the section enters the viewport
+                    end: "bottom top", // When the section leaves the viewport
+                    scrub: true // Smooth animation on scroll
+                }
+            });
 
-        // Refresh ScrollTrigger after Locomotive Scroll updates
-        locoScroll.on("scroll", ScrollTrigger.update);
-        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-        ScrollTrigger.refresh();
-    });
-</script>
+            // Refresh ScrollTrigger after Locomotive Scroll updates
+            locoScroll.on("scroll", ScrollTrigger.update);
+            ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+            ScrollTrigger.refresh();
+        });
+    </script>
 
     <script>
         var timeout
