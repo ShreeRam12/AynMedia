@@ -197,10 +197,6 @@
             opacity: 1;
         }
     }
-
-
-
-   
 </style>
 
 <body>
@@ -212,7 +208,7 @@
                 <div class="container mx-auto flex justify-between">
                     <!-- Logo -->
                     <div class="flex items-center">
-                        <img src="assets/Website-Ayntech.jpg" alt="AynMedia_Logo" class="">
+                        <img src="assets/Website-Ayntech.webp" alt="Website-Ayntech" class="">
                     </div>
                     <!-- Centered Navbar Links (hidden on mobile) -->
                     <div class="p-5 hidden md:flex justify-center items-center gap-16">
@@ -508,10 +504,10 @@
             <div class="bg-black bgfont2">
                 <div class="pt-10">
                     <!-- Wrapper for Section -->
-                    <div class="relative overflow-hidden">
+                    <!-- <div class="relative overflow-hidden">
                         <div class="container mx-auto flex md:flex-row justify-between relative">
-                            <!-- Left Side (Text) -->
-                            <div class="w-full md:w-1/3 sample">
+                           
+                            <div class="w-full md:w-1/3">
                                 <div class="bg-black p-4 ">
                                     <div class="text-white text-xl md:text-2xl">SAMPLE</div>
                                     <div class="text-yellow-300 text-2xl md:text-7xl font-bold mt-5">Work</div>
@@ -524,7 +520,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Right Side (Images) -->
+                           
                             <div class="w-full md:w-2/3 lg:w-3/6 flex flex-col gap-6 mt-20">
                                 <div class="">
                                     <img src="assets/MI - 1.jpg" alt="MI 1" class="w-full h-auto object-cover">
@@ -544,49 +540,50 @@
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+                </div>
+                <div class="o-grid o-grid--wide js-stickyWrapper container mx-auto">
+                    <!-- Left content section -->
+                    <div class="o-grid__item u-1/2">
+                        <div class="js-sticky text-white mt-28">
+                            <div class="w-full md:w-3/5">
+                                <div class="bg-black p-4">
+                                    <div class="text-white text-xl md:text-2xl">SAMPLE</div>
+                                    <div class="text-yellow-300 text-2xl md:text-7xl font-bold mt-5">Work</div>
+                                    <div class="mt-5">
+                                        <span class="text-white text-sm md:text-base leading-relaxed">
+                                            View some of our recent shortlisted <br> and awesome work that we created
+                                            <br> for our happy clients.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right image section for parallax effect -->
+                    <div class="o-grid__item u-1/2">
+                        <div class="parallax-images">
+                            <div class="parallax-image">
+                                <img src="assets/MI - 1.jpg" alt="MI 1" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="parallax-image">
+                                <img src="assets/Peak System - 1.jpg" alt="MI 2" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="parallax-image">
+                                <img src="assets/Selligo - 1.jpg" alt="Selligo 1" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="parallax-image">
+                                <img src="assets/SRT - 1.jpg" alt="SRT 1" class="w-full h-auto object-cover">
+                            </div>
+                            <div class="parallax-image">
+                                <img src="assets/PYD - 1.jpg" alt="PYD - 1" class="w-full h-auto object-cover">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="o-grid o-grid--wide js-stickyWrapper">
-                    <div class="o-grid__item u-1/2">
 
-
-                        <div class="js-sticky text-white mt-10">
-
-                            <h1>If I fits, I sits</h1>
-
-                            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles
-                                chase the red dot, hairball run catnip eat the grass sniff.</p>
-
-                            <p>Velit Lorem rutrum conubia blandit molestie persian semper norwegian forest cat petting
-                                eyes arcu loves eyes Praesent french! Mr. Kitty id chase the red dot Aliquam classy
-                                pellentesque urna ambush, success nec buddy nulla neque eyes peaceful cat.</p>
-
-                            <p>At, medium hair kitten furball grazing ipsum birdwatch tortor couch finally ham cat
-                                headbutt accumsan in?</p>
-
-                        </div><!-- /js-sticky -->
-
-
-                    </div>
-                    <div class="o-grid__item u-1/2">
-
-
-                        <div class="o-box o-square"></div><!-- /o-box__item -->
-
-                        <div class="o-box o-square"></div><!-- /o-box__item -->
-
-                        <div class="o-box o-square"></div><!-- /o-box__item -->
-
-                        <div class="o-box o-square"></div><!-- /o-box__item -->
-
-
-                    </div><!-- /o-grid__item -->
-
-                    <!-- /o-grid__item -->
-
-                </div><!-- /o-grid -->
             </div>
-
         </section>
         <!-- Websites we Developed -->
         <section>
@@ -999,7 +996,7 @@
                     <div class="flex justify-around flex-wrap md:flex-wrap">
                         <div class="mt-20">
                             <div>
-                                <img src="assets/AynMedia_Logo.png" alt="AynMedia_Logo">
+                                <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
                             </div>
                             <div class="mt-10 ">
                                 <p class="text-white text-justify">The Brand Bee is an integrated branding
@@ -1142,16 +1139,9 @@
                     root.stickMe = factory(root);
                 }
             })(typeof global !== "undefined" ? global : this.window || this.global, function (root) {
-
-                /**
-                 * Variables
-                 */
-
                 var stickMe = {};
                 var supports = !!document.querySelector && !!root.addEventListener;
                 var settings;
-
-                // Default settings
                 var defaults = {
                     element: "js-sticky",
                     wrapper: "js-stickyWrapper",
@@ -1160,222 +1150,101 @@
                     classNameSunkWrapper: "is-sunk-wrapper",
                     offset: 48
                 };
-
-
-                //
-                // Methods
-                //
-
-                /**
-                 * Handle events
-                 * @private
-                 * @param {event} Event
-                 */
                 var eventHandler = function (event) {
-
-                    // On scroll
                     if (event.type === "scroll") {
-
-                        // Debounce scroll and trigger stickyness
                         handleScrollEvents();
-
                     }
-
                 };
-
-                /**
-                 * Handle scroll events efficiently
-                 * @private
-                 */
                 var handleScrollEvents = function () {
-
                     var latestKnownScrollY = 0,
                         ticking = false;
-
                     function onScroll() {
                         latestKnownScrollY = window.scrollY;
                         requestTick();
                     }
-
                     function requestTick() {
                         if (!ticking) {
                             requestAnimationFrame(update);
                         }
                         ticking = true;
                     }
-
                     function update() {
-                        // reset the tick so we can
-                        // capture the next onScroll
                         ticking = false;
-
                         var currentScrollY = latestKnownScrollY;
-
-                        // Activate the stickyness
                         activate(currentScrollY);
                     }
-
                     onScroll();
-
                 };
-
-                /**
-                 * Extend defaults with user options
-                 * @private
-                 * @param {object} source
-                 * @param {object} properties
-                 */
                 var extendDefaults = function (source, properties) {
                     var property;
-
                     for (property in properties) {
-
                         if (properties.hasOwnProperty(property)) {
                             source[property] = properties[property];
                         }
-
                     }
-
                     return source;
                 };
-
-                /**
-                 * Get top and left position of element
-                 * @private
-                 * @param {node} element
-                 */
                 var getOffset = function (element) {
-
                     element = element.getBoundingClientRect();
-
                     return {
                         left: element.left + window.scrollX,
                         top: element.top + window.scrollY
                     }
                 }
-
-                /**
-                 * Stick element in place
-                 * @private
-                 * @param {node} element
-                 */
                 var stick = function (element) {
                     var width = element.offsetWidth;
-                    //var width = getRectangle( element ).width;
-
                     element.classList.add(settings.classNameSticky);
-
                     css(element, {
                         top: settings.offset + "px",
                         width: width + "px"
                     });
                 }
-
-                /**
-                 * Unstick our stuck element
-                 * @private
-                 * @param {node} element
-                 */
                 var unStick = function (element) {
                     element.classList.remove(settings.classNameSticky);
                     element.style.top = "";
                     element.style.width = "";
                 }
-
-                /**
-                 * Sink element to bottom of wrapper
-                 * @private
-                 * @param {node} element
-                 * @param {node} wrapper
-                 */
                 var sink = function (element, wrapper) {
                     element.classList.add(settings.classNameSunk);
                     wrapper.classList.add(settings.classNameSunkWrapper);
                 }
-
-                /**
-                 * Unsink our sunk element
-                 * @private
-                 * @param {node} element
-                 * @param {node} wrapper
-                 */
                 var unSink = function (element, wrapper) {
                     element.classList.remove(settings.classNameSunk);
                     wrapper.classList.remove(settings.classNameSunkWrapper);
                 }
-
-                /**
-                 * Activate stickyness
-                 * @private
-                 * @param {string} position Scroll position
-                 */
                 var activate = function (position) {
-
                     var element = document.getElementsByClassName(settings.element)[0],
                         wrapper = document.getElementsByClassName(settings.wrapper)[0],
                         height = wrapper.offsetHeight - element.offsetHeight,
                         top = getOffset(wrapper).top,
                         bottom = (top + height) - settings.offset,
                         start = top - settings.offset;
-
                     if (position >= start) {
-
                         if (position >= bottom) {
-
                             unStick(element);
                             sink(element, wrapper);
-
                         } else {
-
                             stick(element);
                             unSink(element, wrapper);
-
                         }
-
                     } else {
 
                         unStick(element);
-
                     }
-
                 }
-
-                /**
-                 * A helper function for adding/remove CSS properties
-                 * @private
-                 * @param {node} element
-                 * @param {object} properties
-                 */
                 var css = function (element, properties) {
-
                     for (var property in properties) {
-
                         if (properties.hasOwnProperty(property)) {
-
                             element.style[property] = properties[property];
-
                         }
-
                     }
-
                 };
-
-                /**
-                 * A function that returns element width, height, top, and left
-                 * @private
-                 * @param {node} element
-                 * @return {object}
-                 */
                 var getRectangle = function (element) {
-
                     css(element, { position: '', width: '', top: '', left: '' });
-
                     var width = Math.max(element.offsetWidth, element.clientWidth, element.scrollWidth);
                     var height = Math.max(element.offsetHeight, element.clientHeight, element.scrollHeight);
-
                     var top = 0;
                     var left = 0;
-
                     do {
                         top += element.offsetTop || 0;
                         left += element.offsetLeft || 0;
@@ -1385,10 +1254,6 @@
                     return { top: top, left: left, width: width, height: height };
                 };
 
-                /**
-                 * Destroy current initialisation
-                 * @public
-                 */
                 stickMe.destroy = function () {
 
                     // If sticky isn't already initialised, stop
@@ -1468,6 +1333,31 @@
             );
         });
 
+    </script>
+
+    <!-- Parallax Effect for Images  -->
+    <script>
+        // Initialize GSAP and ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Select all the images in the parallax section
+        const parallaxImages = document.querySelectorAll(".parallax-image");
+
+        // Loop over each image and apply parallax effect
+        parallaxImages.forEach((image, i) => {
+            gsap.fromTo(image, {
+                y: i * 100 // Set initial position based on index (this will create a stacking effect)
+            }, {
+                y: 0, // End position (no offset, merges into position)
+                ease: "power1.out",
+                scrollTrigger: {
+                    trigger: image, // Trigger each image individually
+                    start: "top bottom", // Animation starts when image hits bottom of viewport
+                    end: "bottom top", // Ends when the image leaves the top of the viewport
+                    scrub: 1, // Smooth scrubbing effect
+                }
+            });
+        });
     </script>
 
     <!-- jQuery (necessary for Owl Carousel) -->
