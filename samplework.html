@@ -200,7 +200,7 @@
 </style>
 
 <body>
-    <div>
+    <div class="cursor__wrapper">
         <!-- Navbar  -->
         <section class="sticky top-0 left-0 z-50 shadow-lg">
             <!-- Navbar -->
@@ -208,7 +208,7 @@
                 <div class="container mx-auto flex justify-between">
                     <!-- Logo -->
                     <div class="flex items-center">
-                        <img src="assets/Website-Ayntech.webp" alt="Website-Ayntech" class="">
+                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
                     </div>
                     <!-- Centered Navbar Links (hidden on mobile) -->
                     <div class="p-5 hidden md:flex justify-center items-center gap-16">
@@ -234,6 +234,7 @@
                                         class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
                                     <span
                                         class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
                                 </span>
                         </a>
                         <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
@@ -311,7 +312,8 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
                             </span>
                         </a>
-                        <a href="#" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <a href="samplework.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
@@ -771,6 +773,16 @@
                 </div>
             </div>
         </div>
+        <!-- Case Studies  -->
+        <!-- <section>
+            <div class="bgfont2 container mx-auto">
+                <div class="text-black text-5xl text-center">CASE STUDIES</div>
+                <div>
+                    <div class="">Igniting success through our Performance Marketing & Ad Campaign Mastery</div>
+                    <div></div>
+                </div>
+            </div>
+         </section> -->
         <!-- Get in Touch  -->
         <section>
             <div class="bg-yellow-300 bgfont2 p-20 pt-20">
@@ -1117,6 +1129,8 @@
                 </div>
             </div>
         </section>
+        <span class="cursor"></span>
+        <span class="cursor-trail"></span>
     </div>
     <!-- JavaScript to toggle the mobile menu -->
     <script>
@@ -1125,7 +1139,6 @@
             menu.classList.toggle('hidden');
         }
     </script>
-
     <script>
             (function (root, factory) {
                 if (typeof define === 'function' && define.amd) {
@@ -1331,7 +1344,6 @@
         });
 
     </script>
-
     <!-- Parallax Effect for Images  -->
     <script>
         // Initialize GSAP and ScrollTrigger
@@ -1356,7 +1368,6 @@
             });
         });
     </script>
-
     <!-- jQuery (necessary for Owl Carousel) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
@@ -1434,6 +1445,62 @@
         // Initialize the slider
         showSlides(slideIndex);
 
+    </script>
+    <!-- Cursor Effects  -->
+     <script>
+        var timeout
+
+        function fancyCursor(e) {
+
+            let halfCursorSize = 12; // For .cursor
+            let halfTrailSize = 40; // For .cursor-trail
+
+            let scaleMin = 0.35
+            let scaleMax = 1.0
+            let finalX = e.pageX - halfCursorSize
+            let finalY = e.pageY - halfCursorSize
+            let finalTrailX = e.pageX - halfTrailSize
+            let finalTrailY = e.pageY - halfTrailSize
+
+            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+
+            setTimeout(() => {
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+            }, 100)
+
+            if (timeout !== undefined) {
+                window.clearTimeout(timeout)
+            }
+
+            timeout = window.setTimeout(function () {
+                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+            }, 250)
+            document.querySelector('.cursor').style.opacity = '1'
+            document.querySelector('.cursor-trail').style.opacity = '1'
+        }
+
+        function cursorLoader() {
+            if (document.querySelector('.cursor__wrapper')) {
+                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                }, false)
+                window.addEventListener('scroll', function (e) {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                })
+            }
+        }
+
+        window.addEventListener('load', function () {
+            cursorLoader()
+            function animate() {
+                requestAnimationFrame(animate)
+            }
+            animate()
+        })
     </script>
     <script src="" async defer></script>
 </body>
