@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="/dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<!-- <style>
+    .hover-effect:hover {
+        background-color: black !important;
+        color: yellow !important;
+    }
+</style> -->
+
+<body>
+    <!-- NAVBAR  -->
+    <section class="sticky top-0 left-0 z-50 shadow-lg">
+        <!-- Navbar -->
+        <nav class="bg-yellow-300 shadow-lg bgfont">
+            <div class="container mx-auto flex justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
+                </div>
+                <!-- Centered Navbar Links (hidden on mobile) -->
+                <div class="p-5 hidden lg:flex justify-center items-center xl:gap-16 lg:gap-7">
+                    <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+                        <span class="block text-black">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="relative inline-block text-black cursor-pointer group z-50">
+                        <a href="brandsolutions.html" class="block text-black font-medium">
+                            SERVICES
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                            <ul class="py-2">
+                                <li>
+                                    <a href="brandsolutions.html"
+                                        class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                                        Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="digitalmarketing.html"
+                                        class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
+                                        Solutions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="relative inline-block text-black cursor-pointer group z-50">
+                        <a href="aboutus.html" class="text-black cursor-pointer">
+                            ABOUTUS
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                            <ul class="py-2">
+                                <li>
+                                    <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                                        we work</a>
+                                </li>
+                                <li>
+                                    <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                                        do</a>
+                                </li>
+
+                                <li>
+                                    <a href="ourleadership.html"
+                                        class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                                        LeaderShip</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="samplework.html"
+                        class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <span class="block">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                        </span>
+                        <span
+                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                        </span>
+                    </a>
+                    <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <span class="block">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                        </span>
+                        <span
+                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                        </span>
+                    </a>
+                    <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <span class="block">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                        </span>
+                        <span
+                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                            <span
+                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                        </span>
+                    </a>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-black p-2">
+                            <a href="contactus.html"
+                                class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                                <span class="block mt-3">
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                </span>
+                                <span
+                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu Toggle Button -->
+                <!-- Mobile Menu Toggle Button -->
+                <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 hidden pb-5">
+                <a href="index.html" class="text-black">HOME</a>
+                <!-- SERVICES with Dropdown -->
+                <div class="relative">
+                    <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+                    <div class="w-full ">
+                        <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+                            <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+                            <hr />
+                            <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+                            <hr />
+                            <li><a href="#" class="">Service 3</a></li>
+                            <hr />
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ABOUT US with Dropdown -->
+                <div class="relative">
+                    <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+                    <div class="">
+                        <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+                            <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+                            <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+                            <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                <div class="bg-black p-2 rounded-xl">
+                    <a href="contactus.html" class="text-white hover:text-gray-400">LET'S TALK</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- CONTENT  -->
+    <section class="bg-black pt-20 pb-20">
+        <div class="container mx-auto p-4">
+            <div class="flex flex-wrap md:flex-nowrap md:justify-between items-center">
+                <div class="w-full md:w-auto">
+                    <div
+                        class="animate__animated animate__fadeInLeft text-yellow-300 text-3xl lg:text-5xl lg:w-72 bgfont2 font-bold text-center md:text-left mt-5">
+                        It's time to become everything you aspire to be!
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-3/6">
+                    <div
+                        class="animate__animated animate__fadeInRight text-yellow-300 text-md lg:text-lg bgfont2 text-center md:text-left mt-10 md:mt-5">
+                        We’re excited to connect with you and start something extraordinary together. Feel free to call
+                        us with any inquiries!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ADDRESS AND CONTACT FORM  -->
+    <section class="bg-yellow-300">
+        <div class="container mx-auto flex justify-between flex-wrap md:flex-nowrap p-5 mt-20 pb-20">
+            <div class="sm:w-52 lg:w-1/2 ">
+                <div class="">
+                    <div class="bgfont2 text-black font-bold text-xl animate__animated animate__fadeInUp">Registered
+                        Office:</div>
+                    <p class="bgfont2 text-black text-md mt-5 animate__animated animate__fadeInUp">No.4, 2nd Floor,
+                        Vembuli Amman Koil Street,<br>
+                        Ullagaram,
+                        Madipakkam,
+                        Chennai- 600091.</p>
+                </div>
+                <div class="mt-10 md:mt-0">
+                    <div class="bgfont2 text-black font-bold text-xl animate__animated animate__fadeInUp">Chat over
+                        Coffee:</div>
+                    <p class="bgfont2 text-black text-md mt-5 animate__animated animate__fadeInUp">No.4, 2nd Floor,
+                        Vembuli Amman Koil Street,<br>
+                        Ullagaram,
+                        Madipakkam,
+                        Chennai- 600091.</p>
+                </div>
+
+                <div class="mt-10">
+                    <div class="bgfont2 text-black font-bold text-xl animate__animated animate__fadeInUp">Corporate
+                        Office:</div>
+                    <p class="bgfont2 text-black text-md mt-5 animate__animated animate__fadeInUp">No.4, 2nd Floor,
+                        Vembuli Amman Koil Street,<br>
+                        Ullagaram,
+                        Madipakkam,
+                        Chennai- 600091.</p>
+                </div>
+                <div class="mt-10 lg:w-72 ">
+                    <div class="bgfont2 text-black font-bold text-xl animate__animated animate__fadeInUp">When perfect
+                        matches happen, magic unfolds—let's start our journey!
+                        We're always searching for exceptional talent and truly appreciate stunningly
+                        crafted portfolios.</div>
+                    <p class="bgfont2 text-black text-md mt-5 animate__animated animate__fadeInUp">We are always on the
+                        look out for talented people and we
+                        respond well to beautifully crafted portfolios.</p>
+                    <div class="bgfont2 text-black text-md mt-5">Email: careers@thebrandbee.com</div>
+                </div>
+            </div>
+
+            <div class="sm:w-3/6 md:w-5/6 lg:w-1/2 mt-10 sm:mt-0">
+                <div class="bgfont2 text-black font-bold text-xl animate__animated animate__fadeInUp">Leave us a brief
+                    about your requirements
+                </div>
+                <div class="container1">
+                    <form action="#">
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" class="border-none outline-none" required>
+                                <div class="underline"></div>
+                                <label for="" class="bgfont2 animate__animated animate__fadeInUp">First Name</label>
+                            </div>
+                            <div class="input-data border-none outline-none">
+                                <input type="text" class="" required>
+                                <div class="underline"></div>
+                                <label for="" class="bgfont2 animate__animated animate__fadeInUp">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data">
+                                <input type="text" class="border-none outline-none" required>
+                                <div class="underline"></div>
+                                <label for="" class="bgfont2 animate__animated animate__fadeInUp">Email Address</label>
+                            </div>
+                            <div class="input-data">
+                                <input type="text" class="border-none outline-none" required>
+                                <div class="underline"></div>
+                                <label for="" class="bgfont2 animate__animated animate__fadeInUp">Website Name</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data textarea">
+                                <textarea rows="8" cols="80" class="border-none outline-none" required></textarea>
+                                <div class="underline"></div>
+                                <label for="" class="bgfont2 animate__animated animate__fadeInUp">Write your
+                                    message</label>
+                                <div class="form-row submit-btn mt-5">
+                                    <div class="input-data">
+                                        <div class="inner"></div>
+                                        <input type="submit" value="Submit" class="border-none outline-none">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER  -->
+    <section class="bg-black  lg:pt-20">
+        <div class="container mx-auto flex justify-between flex-wrap lg:flex-nowrap p-10 lg:p-5 mt-10 md:mt-0 ">
+            <div class="animate__animated animate__fadeInUp">
+                <div class="w-44 md:w-44 lg:w-52 cursor-pointer">
+                    <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo">
+                </div>
+                <div class="text-gray-500 bgfont2 lg:w-72 mt-5 animate__animated animate__fadeInUp">The Ayn Technologies
+                    is an integrated branding and
+                    digital marketing
+                    agency based in Chennai,
+                    India. With a
+                    team of over 40+, we are an award-winning full-stack digital marketing agency offering creative and
+                    innovative digital and brand solutions for brands looking to grow their businesses.</div>
+                <div class="flex gap-10 mt-10 cursor-pointer animate__animated animate__fadeInUp">
+                    <div class="">
+                        <i class="fa-brands fa-facebook-f" style="color: #a8acb3;"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram" style="color: #a8acb3;"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin " style="color: #a8acb3;"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-youtube " style="color: #a8acb3;"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter" style="color: #a8acb3;"></i>
+                    </div>
+                </div>
+                <div class="flex flex-wrap md:flex-nowrap gap-5 mt-10 animate__animated animate__fadeInUp">
+                    <div class="w-40 ">
+                        <div class="">
+                            <img src="assets/Google_Partner.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="w-28">
+                        <div>
+                            <img src="assets/Meta_image.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block mt-20 animate__animated animate__fadeInUp">
+                    <div class="flex space-x-2">
+                        <div class="">
+                            <img src="assets/Google_icon.webp" alt="">
+                        </div>
+                        <div class="text-white bgfont2 animate__animated animate__fadeInUp">Chennai's Leading Digital
+                            Agency</div>
+                        <div class="text-gray-500">|</div>
+                        <div class="text-yellow-300 bgfont2 flex animate__animated animate__fadeInUp">30+
+                            <div><i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+                            <div><i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+                            <div><i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+                            <div><i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="text-white font-bold bgfont2 mt-10 md:mt-10 animate__animated animate__fadeInUp">Information
+                </div>
+                <ul class="text-gray-500 bgfont2 mt-5 space-y-5 animate__animated animate__fadeInUp">
+                    <li> Brand Solutions</li>
+                    <li> Digital Marketing Solutions</li>
+                    <li> Who We Are</li>
+                    <li> Sample Work</li>
+                    <li> Our Clients</li>
+                    <li> Industries We Serve</li>
+                    <li> Careers</li>
+                    <li>Blog</li>
+                    <li> Contact</li>
+                </ul>
+            </div>
+            <div class="w-52">
+                <div class="text-white font-bold bgfont2 mt-10 md:mt-10 animate__animated animate__fadeInUp">Contact Us
+                </div>
+                <p class="text-gray-500 bgfont2 mt-5 animate__animated animate__fadeInUp">Brand Bee Management Pvt.
+                    Ltd., V Block, Basement, GF & 2nd Floor,
+                    DLF Phase III, Gurgaon - 122002
+                </p>
+                <div class="text-gray-500 bgfont2 mt-5 md:mt-5 animate__animated animate__fadeInUp">+91-958255-5556
+                </div>
+                <div class="text-gray-500 bgfont2 mt-5 md:mt-5 animate__animated animate__fadeInUp">djb@thebrandbee.com
+                </div>
+            </div>
+            <div class="bg-gray-950 lg:w-96 p-10 mt-10">
+                <div class="text-white bgfont2 font-bold text-center text-3xl animate__animated animate__fadeInUp">Do
+                    you want to reach AynTech?</div>
+                <div class="cursor-pointer group">
+                    <div
+                        class="text-center mt-36 bg-yellow-500 rounded-full p-10 transition-all duration-700 ease-in-out group-hover:bg-black">
+                        <div
+                            class="text-white bgfont2 transition-all duration-700 ease-in-out group-hover:text-yellow-500 animate__animated animate__fadeInUp">
+                            Contact US
+                        </div>
+                    </div>
+                </div>
+                <div class="bgfont2 text-center mt-10 animate__animated animate__fadeInUp">
+                    <div class="text-white">09:00 AM - 7:00 PM</div>
+                    <div class="text-gray-500">Monday - Friday</div>
+                </div>]
+                <div class="text-gray-500 bgfont2 text-center animate__animated animate__fadeInUp">
+                    With extensive expertise spanning PAN india and
+                    international digital marketing agency brings invaluable industry insights and
+                    international know-how to your brand's success.
+                </div>
+            </div>
+
+        </div>
+        <hr class="bg-gray-500">
+        <div class="container mx-auto  p-10 lg:p-20">
+            <div>
+                <div class="text-gray-500 bgfont2 animate__animated animate__fadeInUp">Copyright © 2024. Ayn
+                    Technologies Pvt. Ltd. all rights reserved
+                </div>
+            </div>
+            <!-- <div class="mt-10">
+                <div class="text-gray-500 bgfont2 font-bold animate__animated animate__fadeInUp">Top Searched Keywords:
+                    -
+                </div>
+                <div class="text-gray-500 bgfont2 mt-5 animate__animated animate__fadeInUp">
+                    <div>
+                        Influencer Marketing | SEO in Chennai | Technical SEO | Local SEO |
+                        Social Media Marketing | Youtube Marketing | Facebook Marketing | Instagram
+                        Marketing | Web Development | Ecommerce Development | Content Marketing
+                        | Facebook Ads | Leads Generation | Google Advertising
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+</body>
+<!-- JavaScript to toggle the mobile menu -->
+<script>
+    document.getElementById('navbar-toggle').onclick = function () {
+        var menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        const dropdown = document.getElementById('services-dropdown');
+        dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        const dropdown = document.getElementById('aboutus-dropdown');
+        dropdown.classList.toggle('hidden');
+    });
+</script>
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        } else {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        }
+    });
+</script>
+
+<!-- WebPage Animations  -->
+<script>
+    window.addEventListener('scroll', function () {
+        const scrollSections = document.querySelectorAll('.scroll-section');
+        scrollSections.forEach(section => {
+            if (isInViewport(section)) {
+                section.classList.add('animate__animated', 'animate__fadeInUp');
+            } else {
+                section.classList.remove('animate__animated', 'animate__fadeInUp');
+            }
+        });
+    });
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+</script>
+
+</html>

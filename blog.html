@@ -2,794 +2,834 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="./output.css" rel="stylesheet">
-    <link href="/dist/main.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Locomotive Scroll  -->
-    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Locomotive Scroll  -->
+  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <style>
-    /* Locomotive Smooth Scroll  */
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-    }
+  /* Locomotive Smooth Scroll  */
+  /*html,
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
 
-    [data-scroll-container] {
-        overflow: hidden;
-    }
+  [data-scroll-container] {
+    overflow: hidden;
+  }
 
-    [data-scroll-section] {
-        position: relative;
-        min-height: 200vh;
-        justify-content: center;
-        align-items: center;
-    }
+  [data-scroll-section] {
+    position: relative;
+    min-height: 200vh;
+    justify-content: center;
+    align-items: center;
+  }*/
 </style>
 
 <body>
-    <div class="cursor__wrapper">
-        <section class="sticky top-0 left-0 z-50 shadow-lg">
-            <!-- Navbar -->
-            <nav class="bg-yellow-300 shadow-lg bgfont">
-                <div class="container mx-auto flex justify-between">
-                    <!-- Logo -->
-                    <div class="flex items-center">
-                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                    </div>
-                    <!-- Centered Navbar Links (hidden on mobile) -->
-                    <div class="p-5 hidden md:flex justify-center items-center gap-16">
-                        <a href="index.html"
-                            class="text-black group relative inline-block overflow-hidden cursor-pointer">
-                            <span class="block text-black">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+  <div class="cursor__wrapper">
+    <section class="sticky top-0 left-0 z-50 shadow-lg">
+      <!-- Navbar -->
+      <nav class="bg-yellow-300 shadow-lg bgfont">
+        <div class="container mx-auto flex justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
+          </div>
+          <!-- Centered Navbar Links (hidden on mobile) -->
+          <div class="p-5 hidden lg:flex justify-center items-center xl:gap-16 lg:gap-7">
+            <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+              <span class="block text-black">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
 
-                                <span
-                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                </span>
+              </span>
+            </a>
+            <div class="relative inline-block text-black cursor-pointer group z-50">
+              <a href="brandsolutions.html" class="block text-black font-medium">
+                SERVICES
+              </a>
 
-                                </span>
-                        </a>
-                        <div class="relative inline-block text-black cursor-pointer group z-50">
-                            <a href="brandsolutions.html" class="block text-black font-medium">
-                                SERVICES
-                            </a>
-
-                            <!-- Dropdown Menu -->
-                            <div
-                                class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                                <ul class="py-2">
-                                    <li><a href="brandsolutions.html"
-                                            class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a>
-                                    </li>
-                                    <li><a href="digitalmarketing.html"
-                                            class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
-                                            Solutions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="aboutus.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                        </a>
-                        <a href="samplework.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                            </span>
-                        </a>
-                        <a href="client.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                        </a>
-                        <a href="blog.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                            </span>
-                        </a>
-                        <div class="flex justify-center items-center">
-                            <div class="bg-black p-2 ">
-                                <a href="#"
-                                    class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
-                                    <span class="block mt-3">
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                    </span>
-                                    <span
-                                        class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu Toggle Button -->
-                    <!-- Mobile Menu Toggle Button -->
-                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
-                        <i class="fas fa-bars fa-lg"></i>
-                    </button>
-                </div>
-
-                <!-- Mobile Menu (hidden by default) -->
-                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
-                    <div class="bg-black p-2 rounded-xl">
-                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <div data-scroll-container>
-            <div data-scroll-section>
-                <div class="bg-black">
-                    <!-- Hero Section  -->
-                    <section class="container mx-auto bgfont2">
-                        <div class="flex justify-between mt-20">
-                            <div>
-                                <div class="text-yellow-300 text-8xl font-medium">We always think</div>
-                            </div>
-                            <div class="text-white text-xl w-3/6">
-                                <p>Delve into a treasure trove of marketing knowledge and stay updated with the latest
-                                    trends.
-                                    Immerse
-                                    yourself in engaging stories, tips and insights through our blogs.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Blogs Section  -->
-                    <section>
-                        <div class="bgfont2 p-20">
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                <!-- Blog 1 -->
-                                <a href="Blog1.html">
-                                    <div class="bg-white p-6 ">
-                                        <img src="assets/Blog_1.webp" alt="Blog 1"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">05/08/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-8 pt-5 text-3xl font-medium">Why Every Startup Should
-                                            Invest In A Professional Web Development Company</p>
-                                        <div class="pt-6">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 2 -->
-                                <a href="Blog2.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_2.webp" alt="Blog 2"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">31/07/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Role Of A Website
-                                            Design
-                                            Company In
-                                            Boosting
-                                            Your E-Commerce Success</p>
-                                        <div class="pt-1 ">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 3 -->
-                                <a href="Blog3.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_3.webp" alt="Blog 3"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">26/07/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Business Needs
-                                            A
-                                            Reputation
-                                            Management Agency Today</p>
-                                        <div class="pt-10">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 4 -->
-                                <a href="Blog4.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_4.webp" alt="Blog 4"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">19/07/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">How An Instagram
-                                            Marketing
-                                            Company Can
-                                            Skyrocket Your Brand's Online Presence</p>
-
-                                        <div class="pt-1">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 5 -->
-                                <a href="Blog5.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_5.webp" alt="Blog 5"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">12/07/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Maximising Your Local
-                                            Reach:
-                                            Top
-                                            Local
-                                            Business SEO Services For 2024</p>
-                                        <div class="pt-10">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-
-                                </a>
-                                <!-- Blog 6 -->
-                                <a href="Blog6.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_6.webp" alt="Blog 6"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">05/07/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Art of Digital
-                                            Craftsmanship: Inside
-                                            the
-                                            World of Web Design Companies</p>
-                                        <div class="pt-1">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 7 -->
-                                <a href="Blog7.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_7.webp" alt="Blog 7"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">30/06/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Navigating the Digital
-                                            Frontier:
-                                            The
-                                            Essential Role of Web Development Companies
-                                        </p>
-                                        <div class="pt-1">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 8 -->
-                                <a href="Blog8.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_8.webp" alt="Blog 8"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36 p-1">
-                                                <div class="text-left text-gray-500">27/06/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unlocking the Potential
-                                            The
-                                            Power of
-                                            Social
-                                            Media Marketing Agencies</p>
-                                        <div class="pt-8">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 9 -->
-                                <a href="Blog9.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_9_up.webp" alt="Blog 9"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">18/06/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Digital Market
-                                            Revolution:
-                                            Unleashing
-                                            the
-                                            Power of Local Business SEO Services
-                                        </p>
-                                        <div class="pt-1">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog 10 -->
-                                <a href="Blog10.html">
-                                    <div class="bg-white p-6">
-                                        <img src="assets/Blog_10.webp" alt="Blog 10"
-                                            class="w-full h-48 object-cover mb-4">
-                                        <div class="mt-28">
-                                            <div class="w-36">
-                                                <div class="text-left text-gray-500">12/06/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unveiling the Global
-                                            Path:
-                                            Through SEO
-                                            Technical Audit Service
-                                        </p>
-                                        <div class="pt-9">
-                                            <hr class="text-gray-500">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- Work with us -->
-                <section>
-
-                </section>
-                <section class="pt-32 bg-yellow-300">
-                    <div class="flex justify-center items-center">
-                        <div class="border-gray-700 border rounded-3xl p-2 ">
-                            <div class="flex justify-center items-center">
-                                <div class="bgfont text-center pt-1">WORK WITH US</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <div class="mt-10 bgfont2">
-                            <div class="text-6xl ">We would love to hear <br>
-                                more about your project</div>
-                        </div>
-                    </div>
-                    <div class="flex justify-center items-center ">
-                        <div class="group mt-32 bgfont2 cursor-pointer">
-                            <div
-                                class="border-gray-700 border w-48 rounded-full p-14 transition duration-500 ease-in-out bg-black group-hover:bg-white group-hover:scale-105">
-                                <div
-                                    class="text-center text-lg text-yellow-300 transition duration-500 ease-in-out group-hover:text-black">
-                                    Let's talk US?
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Digital Marketing Image -->
-                    <section>
-                        <div class="mt-10 flex justify-end">
-                            <div class="w-5/6">
-                                <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
-                            </div>
-                        </div>
-
-                    </section>
-                </section>
-
-                <!-- Footer  -->
-                <section>
-                    <div class="bg-black bgfont2 p-10">
-                        <div>
-                            <div class="flex justify-around">
-                                <div class="mt-20">
-                                    <div>
-                                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                                    </div>
-                                    <div class="mt-10 ">
-                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                            <br>and
-                                            digital
-                                            marketing
-                                            agency based
-                                            in Gurgaon, India.
-                                            <br>With a team of over 40+, we are an award-winning <br>full-stack digital
-                                            marketing
-                                            agency
-                                            offering <br>
-                                            creative and innovative <br>digital and brand solutions for brands <br>
-                                            looking to
-                                            grow
-                                            their
-                                            businesses.
-                                        </p>
-                                    </div>
-                                    <div class="mt-10 flex gap-5">
-                                        <div>
-                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3 mt-10 w-72 ">
-                                        <div>
-                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
-                                                class="rounded-sm">
-                                        </div>
-                                        <div>
-                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                                        </div>
-                                    </div>
-                                    <div class="flex mt-10 gap-1">
-                                        <div class="cursor-pointer">
-                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                                        </div>
-                                        <div class="text-white">Chennai's Leading Digital Agency</div>
-                                        <div> |</div>
-                                        <div class="flex">
-                                            <div class="text-yellow-300">30+</div>
-                                            <div>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Information</div>
-                                    <ul class="text-gray-500 space-y-3 mt-5">
-                                        <li>Brand Solutions</li>
-                                        <li>Digital Marketing Solutions</li>
-                                        <li>Who We Are</li>
-                                        <li>Sample Work</li>
-                                        <li>Our Clients</li>
-                                        <li>Industries We Serve</li>
-                                        <li>Careers</li>
-                                        <li>Blog</li>
-                                        <li>Contact</li>
-                                    </ul>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Contact US</div>
-                                    <div class="text-gray-500 mt-5">
-                                        Ayn Technologies Pvt. Ltd.,<br>
-                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
-                                        Ullagaram, Madipakkam, Chennai- 600091.
-                                    </div>
-                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
-                                <div class="bg-gray-950 p-10">
-                                    <div class="flex justify-center items-center mt-20">
-                                        <div class="">
-                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-center items-center mt-10">
-                                        <div
-                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
-                                            <div class="text-center">Contact US</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                                        <div class="text-gray-500 text-center">Monday to Friday</div>
-                                    </div>
-                                    <div class="text-gray-500  mt-16 text-justify">
-                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                                        agency
-                                        brings
-                                        <br>invaluable
-                                        industry insights and <br>
-                                        international <br>know-how to your brand's success.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+              <!-- Dropdown Menu -->
+              <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                <ul class="py-2">
+                  <li>
+                    <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                      Solutions</a>
+                  </li>
+                  <li>
+                    <a href="digitalmarketing.html" class="block px-4 py-2 text-black hover:bg-gray-200">Digital
+                      Marketing
+                      Solutions</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="relative inline-block text-black cursor-pointer group z-50">
+              <a href="aboutus.html" class="text-black cursor-pointer">
+                ABOUTUS
+              </a>
+              <!-- Dropdown Menu -->
+              <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                <ul class="py-2">
+                  <li>
+                    <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                      we work</a>
+                  </li>
+                  <li>
+                    <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we do</a>
+                  </li>
+
+                  <li>
+                    <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our LeaderShip</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+              <span class="block">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+              </span>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+              </span>
+            </a>
+            <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+              <span class="block">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+              </span>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+              </span>
+            </a>
+            <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+              <span class="block">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+              </span>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+              </span>
+            </a>
+            <div class="flex justify-center items-center">
+              <div class="bg-black p-2">
+                <a href="#"
+                  class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                  <span class="block mt-3">
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                  </span>
+                  <span
+                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <!-- Mobile Menu Toggle Button -->
+          <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
         </div>
-        <span class="cursor"></span>
-        <span class="cursor-trail"></span>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 hidden pb-5">
+          <a href="index.html" class="text-black">HOME</a>
+          <!-- SERVICES with Dropdown -->
+          <div class="relative">
+            <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+            <div class="w-full ">
+              <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+                <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+                <hr />
+                <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+                <hr />
+                <li><a href="#" class="">Service 3</a></li>
+                <hr />
+              </ul>
+            </div>
+          </div>
+
+          <!-- ABOUT US with Dropdown -->
+          <div class="relative">
+            <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+            <div class="">
+              <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+                <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+                <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+                <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+          <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+          <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+          <div class="bg-black p-2 rounded-xl">
+            <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div data-scroll-container>
+      <div data-scroll-section>
+        <div class="bg-black">
+          <!-- Hero Section  -->
+          <section class="container mx-auto bgfont2">
+            <div class="flex justify-between flex-wrap md:flex-nowrap mt-20 p-5">
+              <div>
+                <div class="text-yellow-300 text-6xl lg:text-8xl font-medium">We always think</div>
+              </div>
+              <div class="text-white text-xl md:w-5/6 lg:w-3/6 mt-5 lg:mt-0">
+                <p>Delve into a treasure trove of marketing knowledge and stay updated with the latest
+                  trends.
+                  Immerse
+                  yourself in engaging stories, tips and insights through our blogs.</p>
+              </div>
+            </div>
+          </section>
+          <!-- Blogs Section  -->
+          <section>
+            <div class="bgfont2 p-5 md:p-5 xl:p-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- LinkedIN Blog  -->
+                <a href="linkedin.html">
+                  <div class="bg-white p-6 ">
+                    <img src="assets/LinkedIn_Blog_Image.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">17/09/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-8 pt-5 text-3xl font-medium">Why Every B2B Brand Needs A Linkedin
+                      Advertising Company For Lead Generation</p>
+                    <div class="pt-6">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Web Developmrnt Blog  -->
+                <a href="webdev.html">
+                  <div class="bg-white p-6 ">
+                    <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">02/09/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-8 pt-5 text-3xl font-medium">How A Web Development Company Can
+                      Future-Proof Your Website</p>
+                    <div class="pt-6 lg:pt-[60px]">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 1 -->
+                <a href="Blog1.html">
+                  <div class="bg-white p-6 ">
+                    <img src="assets/Blog_1.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">05/08/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-8 pt-5 text-3xl font-medium">Why Every Startup Should
+                      Invest In A Professional Web Development Company</p>
+                    <div class="pt-6 lg:pt-[60px]">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 2 -->
+                <a href="Blog2.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_2.webp" alt="Blog 2" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">31/07/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Role Of A Website
+                      Design
+                      Company In
+                      Boosting
+                      Your E-Commerce Success</p>
+                    <div class="md:pt-[75px] lg:pt-9 xl:pt-1 ">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 3 -->
+                <a href="Blog3.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_3.webp" alt="Blog 3" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">26/07/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Business Needs
+                      A
+                      Reputation
+                      Management Agency Today</p>
+                    <div class="pt-10">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 4 -->
+                <a href="Blog4.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_4.webp" alt="Blog 4" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">19/07/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">How An Instagram
+                      Marketing
+                      Company Can
+                      Skyrocket Your Brand's Online Presence</p>
+
+                    <div class="pt-1">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 5 -->
+                <a href="Blog5.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_5.webp" alt="Blog 5" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">12/07/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Maximising Your Local
+                      Reach:
+                      Top
+                      Local
+                      Business SEO Services For 2024</p>
+                    <div class="pt-10">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+
+                </a>
+                <!-- Blog 6 -->
+                <a href="Blog6.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_6.webp" alt="Blog 6" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">05/07/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Art of Digital
+                      Craftsmanship: Inside
+                      the
+                      World of Web Design Companies</p>
+                    <div class="pt-1 lg:pt-10">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 7 -->
+                <a href="Blog7.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_7.webp" alt="Blog 7" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">30/06/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Navigating the Digital
+                      Frontier:
+                      The
+                      Essential Role of Web Development Companies
+                    </p>
+                    <div class="pt-1">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 8 -->
+                <a href="Blog8.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_8.webp" alt="Blog 8" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36 p-1">
+                        <div class="text-left text-gray-500">27/06/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unlocking the Potential
+                      The
+                      Power of
+                      Social
+                      Media Marketing Agencies</p>
+                    <div class="pt-8">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 9 -->
+                <a href="Blog9.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_9_up.webp" alt="Blog 9" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">18/06/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">The Digital Market
+                      Revolution:
+                      Unleashing
+                      the
+                      Power of Local Business SEO Services
+                    </p>
+                    <div class="pt-1">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+                <!-- Blog 10 -->
+                <a href="Blog10.html">
+                  <div class="bg-white p-6">
+                    <img src="assets/Blog_10.webp" alt="Blog 10" class="w-full h-48 object-cover mb-4">
+                    <div class="mt-28">
+                      <div class="w-36">
+                        <div class="text-left text-gray-500">12/06/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Unveiling the Global
+                      Path:
+                      Through SEO
+                      Technical Audit Service
+                    </p>
+                    <div class="pt-9">
+                      <hr class="text-gray-500">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Work with us -->
+        <section>
+
+        </section>
+        <section class="pt-32 bg-yellow-300">
+          <div class="flex justify-center items-center">
+            <div class="border-gray-700 border rounded-3xl p-2 ">
+              <div class="flex justify-center items-center">
+                <div class="bgfont text-center pt-1">WORK WITH US</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="mt-10 bgfont2">
+              <div class="md:text-5xl lg:text-6xl ">We would love to hear <br>
+                more about your project</div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center ">
+            <div class="group mt-32 bgfont2 cursor-pointer">
+              <div
+                class="border-gray-700 border w-48 rounded-full p-14 transition duration-500 ease-in-out bg-black group-hover:bg-white group-hover:scale-105">
+                <div
+                  class="text-center text-lg text-yellow-300 transition duration-500 ease-in-out group-hover:text-black">
+                  Let's talk US?
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Digital Marketing Image -->
+          <section>
+            <div class="mt-10 flex justify-end">
+              <div class="w-5/6">
+                <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+              </div>
+            </div>
+
+          </section>
+        </section>
+
+        <!-- Footer  -->
+        <section>
+          <div class="bg-black bgfont2 p-10">
+            <div>
+              <div class="flex justify-around">
+                <div class="mt-20">
+                  <div>
+                    <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+                  </div>
+                  <div class="mt-10 ">
+                    <p class="text-white text-justify">The Brand Bee is an integrated branding
+                      <br>and
+                      digital
+                      marketing
+                      agency based
+                      in Gurgaon, India.
+                      <br>With a team of over 40+, we are an award-winning <br>full-stack digital
+                      marketing
+                      agency
+                      offering <br>
+                      creative and innovative <br>digital and brand solutions for brands <br>
+                      looking to
+                      grow
+                      their
+                      businesses.
+                    </p>
+                  </div>
+                  <div class="mt-10 flex gap-5">
+                    <div>
+                      <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+                    </div>
+                    <div>
+                      <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+                    </div>
+                    <div>
+                      <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+                    </div>
+                    <div>
+                      <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+                    </div>
+                    <div>
+                      <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
+                    </div>
+                  </div>
+                  <div class="flex gap-3 mt-10 w-72 ">
+                    <div>
+                      <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
+                    </div>
+                    <div>
+                      <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+                    </div>
+                  </div>
+                  <div class="flex mt-10 gap-1">
+                    <div class="cursor-pointer">
+                      <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+                    </div>
+                    <div class="text-white">Chennai's Leading Digital Agency</div>
+                    <div> |</div>
+                    <div class="flex">
+                      <div class="text-yellow-300">30+</div>
+                      <div>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-white pt-20">
+                  <div class="font-bold text-xl">Information</div>
+                  <ul class="text-gray-500 space-y-3 mt-5">
+                    <li>Brand Solutions</li>
+                    <li>Digital Marketing Solutions</li>
+                    <li>Who We Are</li>
+                    <li>Sample Work</li>
+                    <li>Our Clients</li>
+                    <li>Industries We Serve</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                  </ul>
+                </div>
+                <div class="text-white pt-20">
+                  <div class="font-bold text-xl">Contact US</div>
+                  <div class="text-gray-500 mt-5">
+                    Ayn Technologies Pvt. Ltd.,<br>
+                    No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                    Ullagaram, Madipakkam, Chennai- 600091.
+                  </div>
+                  <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                  <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div class="bg-gray-950 p-10">
+                  <div class="flex justify-center items-center mt-20">
+                    <div class="">
+                      <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center mt-10">
+                    <div
+                      class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                      <div class="text-center">Contact US</div>
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+                    <div class="text-gray-500 text-center">Monday to Friday</div>
+                  </div>
+                  <div class="text-gray-500  mt-16 text-justify">
+                    With extensive expertise <br>spanning in Chennai <br> our digital marketing
+                    agency
+                    brings
+                    <br>invaluable
+                    industry insights and <br>
+                    international <br>know-how to your brand's success.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </div>
-    <!-- Locomotive Smooth Scroll  -->
-    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true
-            });
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <!-- JavaScript to toggle the mobile menu -->
-    <script>
-        document.getElementById('navbar-toggle').onclick = function () {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-    <!-- Cursor Effects  -->
-    <script>
-        var timeout
+    <span class="cursor"></span>
+    <span class="cursor-trail"></span>
+  </div>
+  <!-- Locomotive Smooth Scroll 
+  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+      });
+    });
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <!---- JavaScript to toggle the mobile menu -->
+  <script>
+    document.getElementById('navbar-toggle').onclick = function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('services-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('aboutus-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+  </script>
+  <!-- Cursor Effects  -->
+  <script>
+    var timeout
 
-        function fancyCursor(e) {
+    function fancyCursor(e) {
 
-            let halfCursorSize = 12; // For .cursor
-            let halfTrailSize = 40; // For .cursor-trail
+      let halfCursorSize = 12; // For .cursor
+      let halfTrailSize = 40; // For .cursor-trail
 
-            let scaleMin = 0.35
-            let scaleMax = 1.0
-            let finalX = e.pageX - halfCursorSize
-            let finalY = e.pageY - halfCursorSize
-            let finalTrailX = e.pageX - halfTrailSize
-            let finalTrailY = e.pageY - halfTrailSize
+      let scaleMin = 0.35
+      let scaleMax = 1.0
+      let finalX = e.pageX - halfCursorSize
+      let finalY = e.pageY - halfCursorSize
+      let finalTrailX = e.pageX - halfTrailSize
+      let finalTrailY = e.pageY - halfTrailSize
 
-            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+      document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
 
-            setTimeout(() => {
-                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
-            }, 100)
+      setTimeout(() => {
+        document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+      }, 100)
 
-            if (timeout !== undefined) {
-                window.clearTimeout(timeout)
-            }
+      if (timeout !== undefined) {
+        window.clearTimeout(timeout)
+      }
 
-            timeout = window.setTimeout(function () {
-                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
-                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
-            }, 250)
-            document.querySelector('.cursor').style.opacity = '1'
-            document.querySelector('.cursor-trail').style.opacity = '1'
-        }
+      timeout = window.setTimeout(function () {
+        document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+        document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+      }, 250)
+      document.querySelector('.cursor').style.opacity = '1'
+      document.querySelector('.cursor-trail').style.opacity = '1'
+    }
 
-        function cursorLoader() {
-            if (document.querySelector('.cursor__wrapper')) {
-                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
-                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
-                    document.querySelector('.cursor').style.opacity = '0'
-                    document.querySelector('.cursor-trail').style.opacity = '0'
-                }, false)
-                window.addEventListener('scroll', function (e) {
-                    document.querySelector('.cursor').style.opacity = '0'
-                    document.querySelector('.cursor-trail').style.opacity = '0'
-                })
-            }
-        }
-
-        window.addEventListener('load', function () {
-            cursorLoader()
-            function animate() {
-                requestAnimationFrame(animate)
-            }
-            animate()
+    function cursorLoader() {
+      if (document.querySelector('.cursor__wrapper')) {
+        document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+        document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+          document.querySelector('.cursor').style.opacity = '0'
+          document.querySelector('.cursor-trail').style.opacity = '0'
+        }, false)
+        window.addEventListener('scroll', function (e) {
+          document.querySelector('.cursor').style.opacity = '0'
+          document.querySelector('.cursor-trail').style.opacity = '0'
         })
-    </script>
+      }
+    }
+
+    window.addEventListener('load', function () {
+      cursorLoader()
+      function animate() {
+        requestAnimationFrame(animate)
+      }
+      animate()
+    })
+  </script>
 </body>
 
 </html>

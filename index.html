@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -198,7 +198,7 @@
     /* CEO_Image Parallax Animation */
     .parallax-section {
         width: 100%;
-        height: 700px;
+        height: 585px;
         overflow: hidden;
         position: relative;
     }
@@ -217,7 +217,21 @@
         /* Center the image horizontally */
     }
 
+    /* Responsive CSS for Who we are  */
+    /* Media query for smaller devices */
+    @media (max-width: 768px) {
+        .parallax2 {
+            height: 700px;
+            /* Adjust height for smaller devices */
+        }
+    }
 
+    @media (max-width: 480px) {
+        .parallax2 {
+            height: 500px;
+            /* Further adjust for extra small devices */
+        }
+    }
 
     .parallax-container {
         height: 150vh;
@@ -269,6 +283,12 @@
         padding: 0;
         overflow-x: hidden;
     }
+
+    /* Infinte SLider  */
+    .infinite_slider {
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 
 <body>
@@ -279,10 +299,10 @@
                 <div class="container mx-auto flex justify-between">
                     <!-- Logo -->
                     <div class="flex items-center">
-                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
                     </div>
                     <!-- Centered Navbar Links (hidden on mobile) -->
-                    <div class="p-5 hidden md:flex justify-center items-center gap-16">
+                    <div class="p-5 hidden lg:flex justify-center items-center xl:gap-16 lg:gap-7">
                         <a href="index.html"
                             class="text-black group relative inline-block overflow-hidden cursor-pointer">
                             <span class="block text-black">
@@ -305,8 +325,8 @@
                                         class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
                                     <span
                                         class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
                                 </span>
+                            </span>
                         </a>
                         <div class="relative inline-block text-black cursor-pointer group z-50">
                             <a href="brandsolutions.html" class="block text-black font-medium">
@@ -317,51 +337,43 @@
                             <div
                                 class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
                                 <ul class="py-2">
-                                    <li><a href="brandsolutions.html"
+                                    <li>
+                                        <a href="brandsolutions.html"
                                             class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a>
                                     </li>
-                                    <li><a href="digitalmarketing.html"
+                                    <li>
+                                        <a href="digitalmarketing.html"
                                             class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
-                                            Solutions</a></li>
+                                            Solutions</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <a href="aboutus.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                        </a>
+                        <div class="relative inline-block text-black cursor-pointer group z-50">
+                            <a href="aboutus.html" class="text-black cursor-pointer">
+                                ABOUTUS
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <div
+                                class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                                            we work</a>
+                                    </li>
+                                    <li>
+                                        <a href="whatwedo.html"
+                                            class="block px-4 py-2 text-black hover:bg-gray-200">What we do</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="ourleadership.html"
+                                            class="block px-4 py-2 text-black hover:bg-gray-200">Our LeaderShip</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <a href="samplework.html"
                             class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
@@ -483,8 +495,8 @@
                             </span>
                         </a>
                         <div class="flex justify-center items-center">
-                            <div class="bg-black p-2 ">
-                                <a href="#"
+                            <div class="bg-black p-2">
+                                <a href="contactus.html"
                                     class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
                                     <span class="block mt-3">
                                         <span
@@ -529,44 +541,76 @@
                     </div>
                     <!-- Mobile Menu Toggle Button -->
                     <!-- Mobile Menu Toggle Button -->
-                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
+                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
-
                 <!-- Mobile Menu (hidden by default) -->
-                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
+                <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 hidden pb-5">
+                    <a href="index.html" class="text-black">HOME</a>
+                    <!-- SERVICES with Dropdown -->
+                    <div class="relative">
+                        <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+                        <div class="w-full ">
+                            <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+                                <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+                                <hr />
+                                <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+                                <hr />
+                                <li><a href="#" class="">Service 3</a></li>
+                                <hr />
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT US with Dropdown -->
+                    <div class="relative">
+                        <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+                        <div class="">
+                            <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+                                <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+                                <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+                                <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
                     <div class="bg-black p-2 rounded-xl">
-                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
+                        <a href="contactus.html" class="text-white hover:text-gray-400">LET'S TALK</a>
                     </div>
                 </div>
             </nav>
         </section>
         <div>
-            <div data-scroll-container>
-                <section class="bg-black bgfont relative z-0">
-                    <div class="container mx-auto">
+            <div>
+                <section class="bg-black bgfont">
+                    <div class="container mx-auto p-5 sm:p-5">
                         <div>
                             <img src="assets/Ayn_Media.webp" alt="">
                         </div>
-                        <div class="text-white font-bold textsize3 ml-12 text-animate">BEE</div>
+                        <div class="text-white font-bold textsize3 lg:ml-12 text-animate">BEE</div>
                         <div class="relative overflow-hidden" id="trigger-section">
                             <!-- "EVERY" text with letter-by-letter slide-in -->
-                            <div class="text-yellow-300 font-bold textsize1 ml-10 flex space-x-1">
+                            <!-- Mobile  View -->
+                            <div class="">
+                                <div
+                                    class="md:block text-yellow-300  text-animate font-bold text-7xl md:text-9xl lg:hidden">
+                                    EVERY
+                                </div>
+                            </div>
+                            <!-- DeskTop View  -->
+                            <div
+                                class="hidden lg:block xl:block text-yellow-300 font-bold textsize1 lg:text-[150px] xl:text-[230px] ml-10">
                                 <span class="inline-block letter" data-delay="100">E</span>
                                 <span class="inline-block letter" data-delay="200">V</span>
                                 <span class="inline-block letter" data-delay="300">E</span>
                                 <span class="inline-block letter" data-delay="400">R</span>
                                 <span class="inline-block letter" data-delay="500">Y</span>
                             </div>
-                            <a href="assets/AynMedia-Video.mp4">
-                                <div class="absolute top-40 left-3/4">
+                            <a href="aboutus.html">
+                                <div class="hidden lg:block absolute lg:top-10 lg:left-3/4 xl:top-20  xl:left-3/4">
                                     <div class="flex gap-3">
                                         <div class="border border-white rounded-full w-36 cursor-pointer p-14">
                                             <div class="flex justify-center items-center">
@@ -577,11 +621,17 @@
                                         </div>
                                         <div class="text-white mt-10">WATCH VIDEO<br>INTRO</div>
                                     </div>
-                                    <<<<<<< HEAD=======>>>>>>> 9e9fd9bbb7399caf10a4ea1c5cababc056ecdc50
                                 </div>
                             </a>
                             <!-- "THING" text with letter-by-letter slide-in -->
-                            <div class="text-white font-bold textsize2 text-right -mt-32 flex space-x-1 justify-end">
+                            <!-- Mobile  -->
+                            <div>
+                                <div
+                                    class="block md:block lg:hidden text-white font-bold text-7xl md:text-9xl text-right text-animate">
+                                    THING</div>
+                            </div>
+                            <div
+                                class="hidden lg:block xl:block text-white font-bold textsize2 lg:text-[150px] xl:text-[230px] text-right md:-mt-10 xl:-mt-32 space-x-1 justify-end">
                                 <span class="inline-block letter" data-delay="100">T</span>
                                 <span class="inline-block letter" data-delay="200">H</span>
                                 <span class="inline-block letter" data-delay="300">I</span>
@@ -590,55 +640,58 @@
                             </div>
                         </div>
 
-                        <div class="text-white lg:w-96 relative -top-96 ml-14">
-                            <h1 class="font-bold text-xl text-white">Welcome to AYN Media & Technologies: Your Trusted
-                                Digital
-                                Marketing Agency</h1>
-                            <p class="bgfont2 mt-3 font-medium">Boost your online visibility with our
-                                knowledgeable digital marketing services At AYN Media, we drive results that matter,
-                                helping your
-                                business grow with cutting-edge strategies tailored to your unique needs. Partner with
-                                the best <span class="text-yellow-300 font-bold">digital marketing agency</span> and
-                                watch your brand reach new heights.
+                        <div
+                            class="w-full md:block text-white lg:w-96 xl:w-96 relative lg:-top-[190px] xl:-top-72 lg:ml-14 sm:p-5">
+                            <h1 class="font-bold text-xl text-white">Best Digital Marketing Agency in Chennai:
+                                Innovative Digital Marketing</h1>
+                            <p class="bgfont2 mt-3 font-medium">Innovative Digital Marketing refers to the use of
+                                creative and cutting-edge strategies to promote products or services
+                                online. As the <span class="text-yellow-300 font-bold">Best Digital marketing agency in
+                                    Chennai,</span> we excel at utilizing various
+                                digital channels such as social
+                                media, email marketing, SEO, and content marketing. Our approach involves continuously
+                                exploring new ideas and
+                                technologies to engage with customers and help businesses stand out from competitors in
+                                the ever-evolving digital
+                                landscape. With our expertise, we ensure your brand reaches the right audience and
+                                achieves measurable success.
                             </p>
                         </div>
                     </div>
-                    <div class="relative">
-                        <div class="absolute right-0 -top-72">
-                            <img src="assets/DG_Image_Updated.webp" alt="DG_Image_Updated" class="w-full h-72">
+                    <div class="relative md:mt-10 md:float-right lg:float-right xl:float-right">
+                        <div class="relative md:top-0 lg:-mt-52 xl:-mt-72 right-0">
+                            <img src="assets/DG_Image_Updated.webp" alt="DG_Image_Updated"
+                                class="w-full sm:w-full md:w-full lg:w-1/2 xl:w-[990px] h-auto object-cover">
                         </div>
                     </div>
                 </section>
                 <!-- Our Clients  -->
                 <section class="bg-yellow-300 pt-20 pb-20">
-                    <div class="text-center font-medium text-5xl bgfont2 text-animate2">Our Clients</div>
-                    <div class="bgfont2 text-center  font-medium mt-5 text-animate2">WE DON'T BELIEVE IN MONOGAMY.
-                        WE KEEP
-                        ALL OUR
-                        CLIENTS
-                        HAPPY
-                        AT THE
-                        SAME TIME.
+                    <div class="p-5">
+                        <div class="text-center font-medium text-5xl bgfont2 text-animate2">Our Clients</div>
+                        <div class="bgfont2 text-center  font-medium mt-5 text-animate2">No exclusivity here. We believe
+                            in making all our clients feel like VIPs
+                        </div>
                     </div>
                     <!-- Infinte Slider CSS -->
-                    <section class="mt-5 p-5">
+                    <section class="mt-5 p-3">
                         <div class="infinite_slider">
                             <!-- Slide 1 -->
                             <div class="flex justify-center items-center">
-                                <div class="w-52">
+                                <div class="w-32 md:w-48 lg:w-52 xl:w-52 mt-5 sm:mt-0">
                                     <img src="assets/MiStyle.webp" alt="Client 1"
                                         class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
                                 </div>
                             </div>
                             <!-- Slide 2 -->
                             <div class="flex justify-center items-center">
-                                <div class="w-52">
+                                <div class="w-32 md:w-48 lg:w-52 xl:w-52 mt-5 sm:mt-0">
                                     <img src="assets/Nailhub.webp" alt="Client 2"
                                         class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
                                 </div>
                             </div>
                             <div class="flex justify-center items-center">
-                                <div class="w-52">
+                                <div class="w-32 md:w-48 lg:w-52 xl:w-52 mt-5 ">
                                     <img src="assets/EVM 1 copy.webp" alt="Client 2"
                                         class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
                                 </div>
@@ -865,7 +918,7 @@
                 <!-- Who we are -->
                 <section class="bg-black pb-100">
                     <div class="container mx-auto p-10 pt-20 bgfont">
-                        <div class="flex flex-wrap md:flex-nowrap justify-around">
+                        <div class="flex flex-wrap md:flex-nowrap md:gap-10 justify-around">
                             <!-- Left Side: Parallax Image -->
                             <!-- <div class="parallax w-full md:w-1/2">
                                 <div class="parallax-image"></div>
@@ -877,21 +930,31 @@
                                 </div>
                             </div>
                             <!-- Right Side: Content -->
-                            <div class="content w-full md:w-1/2">
+                            <div class="content w-full md:w-1/2 mt-10 sm:mt-0">
                                 <div class="text-white font-semibold text-3xl text-animate3">WHO WE ARE</div>
-                                <!-- <div class="text-white text-5xl font-semibold mt-5 text-animate3">
-                                    EVERYTHING IS NOT <br> ABOUT <br>MARKETING.
-                                    SOMETIMES <br>YOU <br>JUST HAVE TO BEE YOU.
-                                </div> -->
+                                <div class="text-white text-5xl font-semibold mt-5 text-animate3">
+                                    It's not always about strategy. Sometimes, you just have to trust the journey
+                                </div>
                                 <div class="w-5/6 bgfont2">
                                     <p class="text-white mt-10 text-animate2">
-                                        AYN Media & Technologies is a leading <span class="text-yellow-300">Digital
-                                            Marketing Agency</span> dedicated to helping
-                                        businesses of all sizes succeed online. With a team of experienced
-                                        professionals, we offer complete digital marketing services, including SEO,
-                                        social media marketing, web development, content creation, and PPC advertising.
-                                        Our customized strategies are designed to enhance your brand's visibility and
-                                        drive targeted traffic to your website.
+                                        Ayn Media is part of Ayn Technologies Pvt. Ltd., founded in 2020. We are a
+                                        creative brand builder and strategist,
+                                        helping organizations achieve <span>REVENUE</span> with more leads and business
+                                        growth. Our
+                                        expertise lies in helping brands
+                                        capitalize on opportunities to drive sales and growth. As a full-service digital
+                                        marketing agency, we offer 24/7
+                                        services, including <span class="text-yellow-300 font-bold">advertising, search
+                                            engine marketing, content
+                                            marketing,
+                                            website development,SEO, social media, and
+                                            more.</span>
+                                    </p>
+                                    <p class="text-white mt-10 text-animate2">
+                                        Our young team is a full-service branding, digital marketing, and ad film firm
+                                        agency based in Chennai. We work on
+                                        various results-driven projects in the digital marketing industry, ensuring
+                                        success for all our clients.
                                     </p>
                                 </div>
                                 <a href="aboutus.html">
@@ -909,25 +972,35 @@
                     </div>
                     <!-- Services  -->
                     <section>
-                        <div class="bg-yellow-300 p-10">
-                            <div class="container mx-auto bgfont2  flex justify-between mt-20">
-                                <div class="text-animate2">
-                                    <div class="text-gray-700 text-xl">Services</div>
-                                    <div class="text-black font-medium text-5xl mt-5">What Can We Do Together?
+                        <div class="bg-yellow-300 p-5">
+                            <div
+                                class="container mx-auto bgfont2 text-center flex flex-col md:flex-row justify-between items-center md:items-start mt-10 md:mt-20 p-4">
+                                <!-- Left Section (Services) -->
+                                <div class="md:text-left mb-6 md:mb-0">
+                                    <div class="text-gray-700 text-lg sm:text-xl">Services</div>
+                                    <div class="text-black font-medium text-3xl sm:text-4xl md:text-5xl mt-3 sm:mt-5">
+                                        What Can We Do Together?
                                     </div>
                                 </div>
+
+                                <!-- Right Section (Trends, Technology, and Tactics) -->
                                 <div class="flex justify-center items-center">
-                                    <div class="text-gray-700 text-xl">Trends, Technology and Tactics are <br>
-                                        never stagnant and neither are we</div>
+                                    <div
+                                        class="text-gray-700 text-base sm:text-lg md:text-xl text-center md:text-right">
+                                        Trends, Technology, and Tactics are <br>
+                                        never stagnant, and neither are we.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="container mx-auto mt-20">
                                 <div class="bg-black flex justify-around flex-wrap md:flex-nowrap mb-20">
                                     <!-- BRAND SOLUTIONS Section -->
                                     <div class="group w-full h-full">
-                                        <div class="relative transition duration-300 ease-in-out p-20 pb-16">
+                                        <div class="relative transition duration-300 ease-in-out p-10 lg:p-20 pb-16">
                                             <div>
-                                                <div class="text-7xl font-bold bgfont2 text-yellow-300">BRAND
+                                                <div class="text-3xl lg:text-7xl font-bold bgfont2 text-yellow-300">
+                                                    BRAND
                                                     <br>SOLUTIONS
                                                 </div>
                                                 <p class="bgfont2 text-white">
@@ -938,7 +1011,7 @@
                                             </div>
                                             <!-- Hidden List Section for BRAND SOLUTIONS -->
                                             <div
-                                                class="bgfont2 absolute inset-0  bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
+                                                class="bgfont2 absolute inset-0 bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
                                                 <div class="flex justify-start items-start w-full h-full">
                                                     <ul class="container mx-auto p-10">
                                                         <div class="flex gap-3">
@@ -947,72 +1020,45 @@
                                                             </div>
                                                             <div>
                                                                 <li class="mb-2 ">
-                                                                    <a href="">Brand Strategy / Positioning</a>
+                                                                    <a href="brandstrategy.html">Brand Strategy /
+                                                                        Positioning</a>
                                                                 </li>
                                                             </div>
                                                         </div>
+
                                                         <div class="flex gap-3">
                                                             <div>
                                                                 <i class="fa-solid fa-hand-point-right"></i>
                                                             </div>
                                                             <div>
-                                                                <li class="mb-2">Brand Identity Development</li>
+                                                                <li class="mb-2">
+                                                                    <a href="corporate.html">Corporate
+                                                                        Communications</a>
+                                                                </li>
                                                             </div>
                                                         </div>
+
                                                         <div class="flex gap-3">
                                                             <div>
                                                                 <i class="fa-solid fa-hand-point-right"></i>
                                                             </div>
                                                             <div>
-                                                                <li class="mb-2">Corporate Communications</li>
+                                                                <li class="mb-2">
+                                                                    <a href="communication.html">Brand Communication &
+                                                                        Design</a>
+                                                                </li>
                                                             </div>
                                                         </div>
+
                                                         <div class="flex gap-3">
                                                             <div>
                                                                 <i class="fa-solid fa-hand-point-right"></i>
                                                             </div>
                                                             <div>
-                                                                <li class="mb-2">Brand Refresh / Rebranding</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Brand Communication & Design</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Content Development Services</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Brand Experience Design</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Photoshoots & Video Shoots</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Brand Conformance (IPR)</li>
+                                                                <li class="mb-2">
+                                                                    <a href="photoshoot.html">Photoshoots & Video
+                                                                        Shoots</a>
+                                                                </li>
                                                             </div>
                                                         </div>
                                                     </ul>
@@ -1027,9 +1073,10 @@
                                     <!-- DIGITAL SOLUTIONS Section -->
                                     <div class="group w-full h-full">
                                         <div
-                                            class="relative transition duration-300 ease-in-out  p-20 w-full h-full pb-16">
+                                            class="relative transition duration-300 ease-in-out p-10 lg:p-20 w-full h-full pb-16">
                                             <div>
-                                                <div class="text-7xl font-bold bgfont2 text-yellow-300">DIGITAL
+                                                <div class="text-3xl lg:text-7xl font-bold bgfont2 text-yellow-300">
+                                                    DIGITAL
                                                     <br>SOLUTIONS
                                                 </div>
                                                 <p class="bgfont2 text-white">
@@ -1042,82 +1089,98 @@
 
                                             <!-- Hidden List Section for DIGITAL SOLUTIONS -->
                                             <div
-                                                class=" bgfont2 absolute inset-0 bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
+                                                class="bgfont2 absolute inset-0 bg-white text-black hidden group-hover:block transition duration-300 ease-in-out">
                                                 <div class="flex justify-start items-start w-full h-full">
-                                                    <ul class="container mx-auto p-10">
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                    <div class="p-10 md:p-10">
+                                                        <ul class="container mx-auto ">
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="website&mobile.html">Website & Mobile
+                                                                            App
+                                                                            Development</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                            <div>
-                                                                <li class="mb-2">Website & Mobile App Development</li>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="socialmedia.html">Social Media
+                                                                            Marketing</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="seo.html">Search Engine Optimisation
+                                                                            (SEO)</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                            <div>
-                                                                <li class="mb-2">Social Media Marketing</li>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="contentmarketing.html">Content
+                                                                            Marketing</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="performance.html">Performance
+                                                                            Marketing</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                            <div>
-                                                                <li class="mb-2">Search Engine Optimisation (SEO)</li>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="community.html">Community / Influencer
+                                                                            Marketing</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="videomarketing.html">Video Marketing</a></li>
+                                                                </div>
                                                             </div>
-                                                            <div>
-                                                                <li class="mb-2">Content Marketing</li>
+                                                            <div class="flex gap-3">
+                                                                <div>
+                                                                    <i class="fa-solid fa-hand-point-right"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <li class="mb-2 text-sm">
+                                                                        <a href="emailmarketing.html">Email Marketing</a>
+                                                                    </li>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Performance Marketing</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Community / Influencer Marketing</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Video Marketing</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Email Marketing</li>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex gap-3">
-                                                            <div>
-                                                                <i class="fa-solid fa-hand-point-right"></i>
-                                                            </div>
-                                                            <div>
-                                                                <li class="mb-2">Online Reputation Management</li>
-                                                            </div>
-                                                        </div>
-                                                    </ul>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1125,7 +1188,7 @@
                                 </div>
                             </div>
                             <!-- Mission, Vision, Core Values Section -->
-                            <div class="container mx-auto my-12 px-4 mt-20">
+                            <div class="my-12 px-4 mt-20 p-10">
                                 <div class="bgfont2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                                     <!-- Mission Card -->
                                     <div class="bg-black shadow-lg rounded-lg p-10">
@@ -1142,7 +1205,6 @@
                                     </div>
 
                                     <!-- Vision Card -->
-
                                     <div class="bg-black shadow-lg rounded-lg p-10">
                                         <div class="bgfont2 font-bold text-center text-3xl text-yellow-300">Vision:
                                         </div>
@@ -1236,18 +1298,20 @@
                     <!-- Brands and Campaigns  -->
                     <section class="bg-white">
                         <div class="container mx-auto pt-20 p-20">
-                            <div class="text-3xl font-medium text-center bgfont2">
-                                <div>We are passionate to create connected brands and campaigns to enable stable
-                                    and successful relationships between businesses and customers.</div>
+                            <div class="text-lg lg:text-3xl font-medium text-center bgfont2">
+                                <div>We're driven to craft meaningful brands and dynamic campaigns that build lasting,
+                                    impactful connections between
+                                    businesses and their audiences</div>
                             </div>
                         </div>
-                        <div class="pb-20 container mx-auto flex flex-wrap md:flex-nowrap gap-32 bgfont2 mt-10">
-                            <div class="w-5/6">
+                        <div
+                            class="pb-20 p-5 sm:p-0 container mx-auto flex flex-wrap md:flex-nowrap lg:gap-32 bgfont2 lg:mt-10">
+                            <div class="w-5/6 mx-auto">
                                 <div class="parallax-section">
                                     <div class="parallax2"></div>
                                 </div>
                             </div>
-                            <div class="w-full text-gray-700 mt-10">
+                            <div class="w-full text-gray-700 mt-10 lg:mt-10">
                                 <div>Our award-winning team uses strategy, design, SEO,
                                     paid ads, and social media to connect with current
                                     and potential customers, generate more leads, and
@@ -1261,9 +1325,6 @@
                                 <div class="w-52">
                                     <img src="assets/CEO_Sign.png" alt="CEO_Sign">
                                 </div>
-                                <!-- <div class="float-right mt-5 ">
-                        <img src="assets/DJB-small.webp" alt="DJB-small" class="">
-                    </div> -->
                             </div>
                             <div class="w-3/6 mt-32">
                                 <img src="assets/Ayn-logo.webp" alt="Ayn-logo" class="w-full">
@@ -1272,7 +1333,7 @@
                     </section>
                     <!-- Testimonials  -->
                     <section class="bgfont2 bg-black">
-                        <div class="pt-32">
+                        <div class="pt-32 p-5">
                             <div class="flex justify-center items-center">
                                 <div class="border-white border rounded-full cursor-pointer p-2">
                                     <div class="text-gray-300">Testimonials</div>
@@ -1421,23 +1482,31 @@
                     <!-- Begin your transformation -->
                     <section class="bg-yellow-300 pb-20">
                         <div class="bgfont2 mt-20 ">
-                            <div
-                                class="bg-gray-200 rounded-lg container mx-auto flex justify-around flex-wrap md:flex-nowrap p-10">
-                                <div class="w-52">
-                                    <img src="assets/Together.jpg" alt="Begin_Your_Transform">
-                                </div>
-                                <div class="flex justify-center items-center">
-                                    <div class="text-5xl font-medium">Let's make <br> something great <br> together
+                            <div class="bg-gray-200 rounded-lg container mx-auto  p-10">
+                                <div class="flex gap-5 flex-wrap md:flex-nowrap">
+                                    <div class="w-52 lg:w-96">
+                                        <img src="assets/Together.jpg" alt="Begin_Your_Transform">
                                     </div>
-                                </div>
-                                <div class="flex justify-center items-center">
-                                    <div class="">
-                                        <div class="text-xl">Still waiting for us to make the first MOVE? <br>Don't BEE
-                                            shy,
-                                            get in
-                                            TOUCH</div>
-                                        <div class="bg-yellow-300 rounded-xl w-72 p-3 mt-5 cursor-pointer">
-                                            <div class="text-center font-medium">Begin Your Transformation Today</div>
+                                    <div class="flex justify-center items-center mt-10 lg:mt-0">
+                                        <div
+                                            class="text-3xl lg:text-5xl font-medium text-center md:text-left lg:text-left">
+                                            Why Wait for
+                                            Magic to Happen?
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center items-center">
+                                        <div class="text-center md:text-left">
+                                            <div class="text-xl">Don't hesitate—let's create something amazing together.
+                                                Reach out today and let's make your brand shine!</div>
+                                            <div class="flex justify-center md:justify-start items-center">
+                                                <div class="">
+                                                    <div class="bg-yellow-300 rounded-xl w-72 p-3 mt-5 cursor-pointer">
+                                                        <div class="text-center font-medium">Begin Your Transformation
+                                                            Today</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1449,8 +1518,9 @@
                     <section>
                         <div class="bg-white">
                             <div class="bgfont2 pt-32">
-                                <div class="container mx-auto flex">
-                                    <div class="w-3/6">
+                                <div
+                                    class="p-5 sm:p-5 container mx-auto flex flex-wrap md:flex-nowrap justify-center items-center">
+                                    <div class="lg:w-3/6">
                                         <div class="border-black border w-32 rounded-lg">
                                             <div class="tet-gray-300 text-center">Recent Blog</div>
                                         </div>
@@ -1469,128 +1539,100 @@
                                         </div>
                                     </div>
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        <!-- Blog 1 -->
-                                        <div class="bg-white rounded-lg shadow-xl p-6">
-                                            <img src="assets/Blog_1.webp" alt="Blog 1"
-                                                class="w-full h-48 object-cover rounded-lg mb-4">
-                                            <div class="mt-10">
-                                                <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                    <div class="text-center">05/08/2024</div>
+                                        <!-- LinkedIN Blog  -->
+                                        <a href="linkedin.html">
+                                            <div class="bg-white  p-6">
+                                                <img src="assets/LinkedIn_Blog_Image.webp" alt="Blog 1"
+                                                    class="w-full h-48 object-cover mb-4">
+                                                <div class="mt-10">
+                                                    <div class="bg-gray-100 w-36 rounded-xl p-1">
+                                                        <div class="text-center">17/09/2024</div>
+                                                    </div>
                                                 </div>
+                                                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every B2B
+                                                    Brand
+                                                    Needs A Linkedin Advertising Company For Lead Generation</p>
                                             </div>
-                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup
-                                                Should
-                                                Invest
-                                                In A
-                                                Professional Web
-                                                Development Company</p>
-                                            <a href="#" class="text-yellow-300 font-medium hover:underline">Read
-                                                More</a>
-                                        </div>
-                                        <!-- Blog 2 -->
-                                        <div class="bg-white rounded-lg shadow-lg p-6">
-                                            <img src="assets/Blog_2.webp" alt="Blog 2"
-                                                class="w-full h-48 object-cover rounded-lg mb-4">
-                                            <div class="mt-10">
-                                                <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                    <div class="text-center">31/07/2024</div>
+                                        </a>
+
+                                        <!-- Web Development Blog  -->
+                                        <a href="webdev.html">
+                                            <div class="bg-white p-6">
+                                                <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 2"
+                                                    class="w-full h-48 object-cover mb-4">
+                                                <div class="mt-10">
+                                                    <div class="bg-gray-100 w-36 rounded-xl p-1">
+                                                        <div class="text-center">02/09/2024</div>
+                                                    </div>
                                                 </div>
+                                                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How A Web
+                                                    Development
+                                                    Company Can Future-Proof Your Website</p>
+
                                             </div>
-                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
-                                                Design
-                                                Company
-                                                In Boosting Your
-                                                E-Commerce Success</p>
-                                            <a href="#" class="text-yellow-300 font-medium hover:underline">Read
-                                                More</a>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="mt-10 flex justify-end">
-                                    <div class="w-5/6">
-                                        <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+                                    <div class="w-full sm:w-5/6">
+                                        <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full h-auto">
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </section>
                     <!-- Footer  -->
                     <section>
-                        <div class="bg-black bgfont2 p-10">
+                        <div class="bg-black bgfont2 p-5">
                             <div>
-                                <div class="flex justify-around">
-                                    <div class="mt-20">
+                                <div class="flex flex-wrap md:flex-nowrap justify-around">
+                                    <!-- First Section -->
+                                    <div class="mt-10 lg:mt-20 w-full md:w-1/2 lg:w-1/4">
                                         <div>
-                                            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+                                            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo">
                                         </div>
-                                        <div class="mt-10 ">
-                                            <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                                <br>and
-                                                digital
-                                                marketing
-                                                agency based
-                                                in Gurgaon, India.
-                                                <br>With a team of over 40+, we are an award-winning <br>full-stack
-                                                digital
-                                                marketing
-                                                agency
-                                                offering <br>
-                                                creative and innovative <br>digital and brand solutions for brands <br>
-                                                looking to
-                                                grow
-                                                their
-                                                businesses.
+                                        <div class="mt-5 lg:mt-10">
+                                            <p class="text-white text-justify">
+                                                The Ayn Technologies is an integrated branding and digital marketing
+                                                <br>
+                                                agency based in Chennai, India. With a team of over <br>
+                                                40+, we are an award-winning full-stack digital marketing agency <br>
+                                                offering creative and innovative digital and brand <br>
+                                                solutions for brands looking to grow their businesses
                                             </p>
                                         </div>
-                                        <div class="mt-10 flex gap-5">
-                                            <div>
-                                                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                                            </div>
-                                            <div>
-                                                <i class="fa--brands fa-y-twitter" style="color: #c6c8cd;"></i>
-                                            </div>
+                                        <div class="mt-5 lg:mt-10 flex gap-5">
+                                            <i class="fa-brands fa-facebook-f text-gray-400"></i>
+                                            <i class="fa-brands fa-instagram text-gray-400"></i>
+                                            <i class="fa-brands fa-linkedin text-gray-400"></i>
+                                            <i class="fa-brands fa-youtube text-gray-400"></i>
+                                            <i class="fa-brands fa-twitter text-gray-400"></i>
                                         </div>
-                                        <div class="flex gap-3 mt-10 w-72 ">
-                                            <div>
-                                                <img src="assets/Googole_partner.webp" alt="Googole_partner"
-                                                    class="rounded-sm">
-                                            </div>
-                                            <div>
-                                                <img src="assets/Meta-partner.webp" alt="Meta-partner"
-                                                    class="rounded-sm">
-                                            </div>
+                                        <div class="flex gap-3 mt-5 lg:mt-10 w-full">
+                                            <img src="assets/Googole_partner.webp" alt="Google Partner"
+                                                class="rounded-sm w-1/2 h-auto object-contain">
+                                            <img src="assets/Meta-partner.webp" alt="Meta Partner"
+                                                class="rounded-sm w-32 h-auto object-contain">
                                         </div>
-                                        <div class="flex mt-10 gap-1">
-                                            <div class="cursor-pointer">
-                                                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                                            </div>
-                                            <div class="text-white">Chennai's Leading Digital Agency</div>
-                                            <div> |</div>
-                                            <div class="flex">
-                                                <div class="text-yellow-300">30+</div>
-                                                <div>
-                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
 
-                                                </div>
+                                        <div class="flex flex-wrap items-center mt-5 lg:mt-10 gap-2">
+                                            <img src="assets/Goggle_Icon.webp" alt="Google Icon" class="cursor-pointer">
+                                            <div class="text-white">Chennai's Leading Digital Agency</div>
+                                            <div>|</div>
+                                            <div class="flex gap-1">
+                                                <div class="text-yellow-300">30+</div>
+                                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                                <i class="fa-solid fa-star text-yellow-400"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-white pt-20">
-                                        <div class="font-bold text-xl">Information</div>
+
+                                    <!-- Information Section -->
+                                    <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                                        <div class="font-bold text-xl sm:text-lg">Information</div>
                                         <ul class="text-gray-500 space-y-3 mt-5">
                                             <li>Brand Solutions</li>
                                             <li>Digital Marketing Solutions</li>
@@ -1603,8 +1645,10 @@
                                             <li>Contact</li>
                                         </ul>
                                     </div>
-                                    <div class="text-white pt-20">
-                                        <div class="font-bold text-xl">Contact US</div>
+
+                                    <!-- Contact Section -->
+                                    <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                                        <div class="font-bold text-xl">Contact Us</div>
                                         <div class="text-gray-500 mt-5">
                                             Ayn Technologies Pvt. Ltd.,<br>
                                             No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
@@ -1613,36 +1657,36 @@
                                         <div class="text-gray-500 mt-3">+91-89259 22232</div>
                                         <div class="text-gray-500 mt-3">info@ayntech.in</div>
                                     </div>
-                                    <div>
 
-                                    </div>
-                                    <div>
-
-                                    </div>
-                                    <div class="bg-gray-950 p-10 w-2/6">
-                                        <div class="flex justify-center items-center mt-20">
-                                            <div class="mt-10">
-                                                <div class="text-yellow-300 text-lg font-medium text-center">Ready to
-                                                    Grow Your <br> Business with the Best?</div>
+                                    <!-- Call-to-Action Section -->
+                                    <div class="bg-gray-950 p-5 lg:p-10 w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0">
+                                        <div class="flex justify-center items-center mt-5 lg:mt-20">
+                                            <div>
+                                                <div class="text-yellow-300 text-lg font-medium text-center">
+                                                    Ready to Grow Your <br> Business with the Best?
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="flex justify-center items-center mt-10">
                                             <div
-                                                class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
-                                                <div class="text-center">Contact US Today</div>
+                                                class="cursor-pointer bg-white w-56 p-5 lg:p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                                <div class="text-center">Contact Us Today</div>
                                             </div>
                                         </div>
-
-                                        <div class="text-gray-500  mt-16 text-justify">
+                                        <div class="text-gray-500 mt-5 lg:mt-16 text-justify">
                                             Partner with AYN Media, the <span class="text-yellow-300 font-bold">Digital
-                                                Marketing Company in Chennai</span> that puts
-                                            your business first. Whether you’re looking to boost youronline
-                                            visibility or drive more traffic to your website,we’ve got you covered.
+                                                Marketing Company in
+                                                Chennai</span>
+                                            that puts your business first. Whether you’re looking to boost your online
+                                            visibility or drive more
+                                            traffic
+                                            to your website, we’ve got you covered.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </section>
             </div>
         </div>
@@ -1654,20 +1698,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Initialize Locomotive Scroll
-            const scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true,
-            });
-
-            // Locomotive Scroll will call this when the section enters the viewport
-            scroll.on('call', (func, state) => {
-                if (func === 'triggerAnimation' && state === 'enter') {
-                    triggerAnimation();
-                }
-            });
-
-            // Add animation to letters
+            // Function to trigger animation
             function triggerAnimation() {
                 const letters = document.querySelectorAll('#trigger-section .letter');
                 letters.forEach((letter, index) => {
@@ -1678,111 +1709,92 @@
                 });
             }
 
-            // Tell Locomotive Scroll to watch for when the #trigger-section enters
-            scroll.on('scroll', (instance) => {
-                const section = document.getElementById('trigger-section');
-                const sectionRect = section.getBoundingClientRect();
-
-                if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
-                    triggerAnimation();
-                }
+            // Create an IntersectionObserver to watch when #trigger-section enters the viewport
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Trigger the animation when the section is in view
+                        triggerAnimation();
+                        // Optionally stop observing after the first trigger
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5 // Trigger when 50% of the section is in view
             });
+
+            // Observe the #trigger-section element
+            const section = document.getElementById('trigger-section');
+            if (section) {
+                observer.observe(section);
+            }
         });
     </script>
-    <!-- Locomotive Smooth Scroll  -->
-    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
     <script>
-        // Initialize Locomotive Scroll
-        const locoScroll = new LocomotiveScroll({
-            el: document.querySelector("[data-scroll-container]"),
-            smooth: true
-        });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Register GSAP's ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
 
-        // Integrate GSAP's ScrollTrigger with Locomotive Scroll
-        gsap.registerPlugin(ScrollTrigger);
+            // Parallax effect for .Who_we_are_BG
+            gsap.to(".Who_we_are_BG", {
+                yPercent: -30, // Moves the element upwards as you scroll
+                ease: "none",  // No easing for a smooth parallax effect
+                scrollTrigger: {
+                    trigger: ".whoweare",  // The section that will trigger the animation
+                    start: "top bottom",  // Animation starts when the top of the section hits the bottom of the viewport
+                    end: "bottom top",    // Animation ends when the bottom of the section hits the top of the viewport
+                    scrub: true,          // Smooth scrubbing based on scroll position
+                }
+            });
 
-        locoScroll.on("scroll", ScrollTrigger.update);
-
-        ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-            scrollTop(value) {
-                return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-            },
-            getBoundingClientRect() {
-                return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-            },
-            pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
-        });
-
-        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-        ScrollTrigger.refresh();
-
-        // Parallax effect with GSAP
-        gsap.to(".Who_we_are_BG", {
-            yPercent: -30,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".whoweare",
-                start: "top bottom",
-                end: "bottom top",
-                scrub: true,
-                scroller: "[data-scroll-container]" // Use the scroller from Locomotive Scroll
-            }
-        });
-
-        gsap.to(".parallax-bg", {
-            y: "-30%", /* Moves the background image upwards as you scroll */
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".parallax-section",
-                start: "top bottom", /* Start when the top of the section hits the bottom of the viewport */
-                end: "bottom top", /* End when the bottom of the section hits the top of the viewport */
-                scrub: true
-            }
+            // Parallax effect for .parallax-bg
+            gsap.to(".parallax-bg", {
+                y: "-30%", // Moves the background image upwards as you scroll
+                ease: "none", // Smooth scrolling effect
+                scrollTrigger: {
+                    trigger: ".parallax-section", // The section that triggers the animation
+                    start: "top bottom", // Animation starts when the section top hits the bottom of the viewport
+                    end: "bottom top",   // Ends when the section bottom hits the top of the viewport
+                    scrub: true,         // Makes it dependent on scroll position
+                }
+            });
         });
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Initialize Locomotive Scroll
-            const locoScroll = new LocomotiveScroll({
-                el: document.querySelector("[data-scroll-container]"),
-                smooth: true
-            });
-
-            // Sync ScrollTrigger with Locomotive Scroll
+            // Register GSAP's ScrollTrigger plugin
             gsap.registerPlugin(ScrollTrigger);
-            ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-                scrollTop(value) {
-                    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-                },
-                getBoundingClientRect() {
-                    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-                },
-                pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
-            });
 
             // Parallax animation (Top to Bottom)
             gsap.to(".parallax2", {
                 yPercent: -30, // Negative value for top to bottom movement
-                ease: "none", // Smooth linear effect
+                ease: "none",  // Linear smooth effect for the scroll
                 scrollTrigger: {
-                    trigger: ".parallax-section",
-                    scroller: "[data-scroll-container]", // Locomotive Scroll container
-                    start: "top bottom", // When the section enters the viewport
-                    end: "bottom top", // When the section leaves the viewport
-                    scrub: true // Smooth animation on scroll
+                    trigger: ".parallax-section", // Section that triggers the animation
+                    start: "top bottom",  // Animation starts when the top of the section reaches the bottom of the viewport
+                    end: "bottom top",    // Animation ends when the bottom of the section reaches the top of the viewport
+                    scrub: true,          // Smoothly scrubs the animation based on scroll position
                 }
             });
 
-            // Refresh ScrollTrigger after Locomotive Scroll updates
-            locoScroll.on("scroll", ScrollTrigger.update);
-            ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-            ScrollTrigger.refresh();
+            // Parallax animation for another element (if needed)
+            gsap.to(".parallax-bg", {
+                y: "-30%", // Moves upwards when scrolling
+                ease: "none", // Smooth linear movement
+                scrollTrigger: {
+                    trigger: ".parallax-section", // Same or different section depending on your layout
+                    start: "top bottom", // Starts when the section enters the viewport
+                    end: "bottom top",   // Ends when it leaves the viewport
+                    scrub: true,         // Smooth animation tied to scrolling
+                }
+            });
         });
     </script>
 
+    <!-- Cursor Effects  -->
     <script>
         var timeout
 
@@ -1844,13 +1856,27 @@
             var menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         }
+        // Toggle the SERVICES dropdown
+        document.getElementById('services-toggle').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            const dropdown = document.getElementById('services-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+        // Toggle the ABOUT US dropdown
+        document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            const dropdown = document.getElementById('aboutus-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
     </script>
 
+
+
+    <!-- Infinte Slider CSS -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick Slider JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Infinite Slider  -->
     <script>
         $(document).ready(function () {
             $('.infinite_slider').slick({
@@ -1858,73 +1884,21 @@
                 autoplaySpeed: 0,
                 speed: 5000,
                 arrows: false,
-                swipe: false,
+                swipe: true,
                 slidesToShow: 4,
                 cssEase: 'linear',
                 pauseOnFocus: false,
-                pauseOnHover: true,
+                pauseOnHover: false,
             });
         });
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.mySwiper', {
-
-                loop: true,
-
-
-                freeMode: {
-                    enabled: true,
-                    momentum: true,
-                    momentumRatio: 1,
-                    momentumBounce: false
-                },
-
-
-                autoplay: {
-                    delay: 0,
-                    disableOnInteraction: false,
-                },
-
-
-                speed: 1000, // Adjust this value for desired scroll speed
-
-                // Disable swiping interactions to maintain smooth autoplay
-                allowTouchMove: false,
-
-                // Adjust slides per view based on screen size for responsiveness
-                slidesPerView: 'auto',
-                spaceBetween: 10,
-
-                // Breakpoints for responsiveness
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 5
-                    },
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 10
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 15
-                    },
-                    1280: {
-                        slidesPerView: 4,
-                        spaceBetween: 20
-                    }
-                },
-            });
-        });
-    </script>
     <!-- Feature Work  -->
     <script>
         document.addEventListener('scroll', function () {
             const scrollPosition = window.scrollY;
             const body = document.body;
-            if (scrollPosition > 100) { // Adjust this value as needed
+            if (scrollPosition > 100) {
                 body.classList.add('scrolling');
             } else {
                 body.classList.remove('scrolling');
@@ -1949,7 +1923,6 @@
             });
         });
     </script>
-
     <script>
         // GSAP Animation for Zooming the Text
         gsap.to("#parallax-bg .text-white", {
@@ -2003,27 +1976,6 @@
 
 
     </script>
-    <!-- <script>
-        // Zoom Effect on Scroll
-        const text = document.querySelector('.zoom-text');
-        window.addEventListener('scroll', () => {
-            let scale = 1 + window.scrollY / 1000; // Adjust the division value to change the zoom speed
-            text.style.transform = `scale(${scale})`;
-        });
-
-        // Zigzag Scrolling Effect for Images
-        const zigzagImages = document.querySelectorAll('.zigzag-right, .zigzag-left');
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-
-            zigzagImages.forEach((img) => {
-                const speed = img.getAttribute('data-speed');
-                const direction = img.classList.contains('zigzag-right') ? 1 : -1;
-
-                img.style.transform = `translateY(${scrollY * speed * direction * 0.1}px)`;
-            });
-        });
-    </script> -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             gsap.from('.text-animate', {

@@ -20,7 +20,7 @@
 </head>
 <style>
     /* Locomotive Smooth Scroll  */
-    html,
+    /* html,
     body {
         height: 100%;
         margin: 0;
@@ -36,7 +36,7 @@
         min-height: 200vh;
         justify-content: center;
         align-items: center;
-    }
+    } */
 </style>
 
 <body>
@@ -47,12 +47,11 @@
                 <div class="container mx-auto flex justify-between">
                     <!-- Logo -->
                     <div class="flex items-center">
-                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
                     </div>
                     <!-- Centered Navbar Links (hidden on mobile) -->
-                    <div class="p-5 hidden md:flex justify-center items-center gap-16">
-                        <a href="index.html"
-                            class="text-black group relative inline-block overflow-hidden cursor-pointer">
+                    <div class="p-5 hidden lg:flex justify-center items-center xl:gap-16 lg:gap-7">
+                        <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
                             <span class="block text-black">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
@@ -62,7 +61,7 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
+        
                                 <span
                                     class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
                                     <span
@@ -73,65 +72,54 @@
                                         class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
                                     <span
                                         class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
                                 </span>
+                            </span>
                         </a>
                         <div class="relative inline-block text-black cursor-pointer group z-50">
                             <a href="brandsolutions.html" class="block text-black font-medium">
                                 SERVICES
                             </a>
-
+        
                             <!-- Dropdown Menu -->
-                            <div
-                                class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
                                 <ul class="py-2">
-                                    <li><a href="brandsolutions.html"
-                                            class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a>
+                                    <li>
+                                        <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                                            Solutions</a>
                                     </li>
-                                    <li><a href="digitalmarketing.html"
+                                    <li>
+                                        <a href="digitalmarketing.html"
                                             class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
-                                            Solutions</a></li>
+                                            Solutions</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <a href="aboutus.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                        </a>
-                        <a href="samplework.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <div class="relative inline-block text-black cursor-pointer group z-50">
+                            <a href="aboutus.html" class="text-black cursor-pointer">
+                                ABOUTUS
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                                            we work</a>
+                                    </li>
+                                    <li>
+                                        <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                                            do</a>
+                                    </li>
+        
+                                    <li>
+                                        <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                                            LeaderShip</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
@@ -178,8 +166,7 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
                             </span>
                         </a>
-                        <a href="client.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
@@ -226,8 +213,7 @@
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
                             </span>
                         </a>
-                        <a href="blog.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                        <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
                             <span class="block">
                                 <span
                                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
@@ -251,7 +237,7 @@
                             </span>
                         </a>
                         <div class="flex justify-center items-center">
-                            <div class="bg-black p-2 ">
+                            <div class="bg-black p-2">
                                 <a href="#"
                                     class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
                                     <span class="block mt-3">
@@ -297,21 +283,44 @@
                     </div>
                     <!-- Mobile Menu Toggle Button -->
                     <!-- Mobile Menu Toggle Button -->
-                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
+                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
                 </div>
-
                 <!-- Mobile Menu (hidden by default) -->
-                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
+                <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 hidden pb-5">
+                    <a href="index.html" class="text-black">HOME</a>
+                    <!-- SERVICES with Dropdown -->
+                    <div class="relative">
+                        <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+                        <div class="w-full ">
+                            <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+                                <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+                                <hr />
+                                <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+                                <hr />
+                                <li><a href="#" class="">Service 3</a></li>
+                                <hr />
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- ABOUT US with Dropdown -->
+                    <div class="relative">
+                        <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+                        <div class="">
+                            <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+                                <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+                                <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+                                <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
                     <div class="bg-black p-2 rounded-xl">
-                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
+                        <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
                     </div>
                 </div>
             </nav>
@@ -319,13 +328,13 @@
         <div data-scroll-container>
             <div data-scroll-section>
                 <div class="bg-black pb-14">
-                    <section class="container mx-auto ">
+                    <section class="container mx-auto p-5">
                         <div class="bgfont2 mt-20">
                             <div class="">
                                 <div class="text-left text-white">31/07/2024</div>
                             </div>
                             <div class="">
-                                <p class="text-yellow-300 mb-4 mt-5 text-5xl font-medium">The Role Of A Website Design
+                                <p class="text-yellow-300 mb-4 mt-5 text-2xl md:text-3xl lg:text-5xl font-medium">The Role Of A Website Design
                                     Company In Boosting Your E-Commerce Success
                                 </p>
                             </div>
@@ -338,7 +347,7 @@
                         <div class="container mx-auto w-5/6">
                             <div class="bgfont2 mt-10 ">
                                 <div class="text-justify">
-                                    <p class="text-white text-xl">Building a thriving e-commerce business requires
+                                    <p class="text-white text-xltext-md lg:text-xl">Building a thriving e-commerce business requires
                                         more
                                         than offering excellent products. The design and functionality of your website
                                         are
@@ -349,10 +358,10 @@
                                         agency offers comprehensive solutions to elevate your online store.</p>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-yellow-300 text-xl font-bold">The Importance of First Impressions
+                                    <div class="text-yellow-300 text-md lg:text-xl font-bold">The Importance of First Impressions
                                     </div>
                                     <div class="mt-5">
-                                        <p class="text-white text-xl">A well-designed website serves as the face of
+                                        <p class="text-white text-md lg:text-xl">A well-designed website serves as the face of
                                             your
                                             e-commerce business. It's often the first point of interaction between you
                                             and
@@ -366,9 +375,9 @@
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-yellow-300 text-xl font-bold">Enhancing User Experience</div>
+                                    <div class="text-yellow-300 text-md lg:text-xl font-bold">Enhancing User Experience</div>
                                     <div class="mt-5">
-                                        <p class="text-white text-xl">User experience (UX) is a crucial element for
+                                        <p class="text-white text-md lg:text-xl">User experience (UX) is a crucial element for
                                             the
                                             success of every e-commerce website. A professional web design company
                                             understands the importance of intuitive navigation, fast loading times and
@@ -379,9 +388,9 @@
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-yellow-300 text-xl font-bold">Mobile Optimisation</div>
+                                    <div class="text-yellow-300 text-md lg:text-xl font-bold">Mobile Optimisation</div>
                                     <div class="mt-5">
-                                        <p class="text-white text-xl">With a significant portion of online shopping
+                                        <p class="text-white text-md lg:text-xl">With a significant portion of online shopping
                                             being
                                             done on mobile devices, having a mobile-optimised website is no longer
                                             optional.
@@ -396,9 +405,9 @@
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-yellow-300 text-xl font-bold">Building Trust and Credibility</div>
+                                    <div class="text-yellow-300 text-md lg:text-xl font-bold">Building Trust and Credibility</div>
                                     <div class="mt-5">
-                                        <p class="text-white text-xl">Trust is a crucial element in e-commerce.
+                                        <p class="text-white text-md lg:text-xl">Trust is a crucial element in e-commerce.
                                             Customers
                                             must feel confident that their personal information and payment details are
                                             safe
@@ -413,10 +422,10 @@
                                     </div>
                                 </div>
                                 <div class="mt-10">
-                                    <div class="text-yellow-300 text-xl font-bold">Search Engine Optimisation (SEO)
+                                    <div class="text-yellow-300 text-md lg:text-xl font-bold">Search Engine Optimisation (SEO)
                                     </div>
                                     <div class="mt-5">
-                                        <p class="text-white text-xl">A beautifully designed website is of little use
+                                        <p class="text-white text-md lg:text-xl">A beautifully designed website is of little use
                                             if
                                             customers can't find it. SEO is pivotal for enhancing the visibility of your
                                             website on search engines. A web design company not only creates an
@@ -430,10 +439,10 @@
                                             increasing your chances of success.</p>
                                     </div>
                                     <div class="mt-10">
-                                        <div class="text-yellow-300 text-xl font-bold">Integrating E-commerce Platforms
+                                        <div class="text-yellow-300 text-md lg:text-xl font-bold">Integrating E-commerce Platforms
                                         </div>
                                         <div class="mt-5">
-                                            <p class="text-white text-xl">A key aspect of building a successful
+                                            <p class="text-white text-md lg:text-xl">A key aspect of building a successful
                                                 online
                                                 store is choosing the right e-commerce platform. Whether it's Shopify,
                                                 WooCommerce or Magento, a web design agency has the expertise to
@@ -447,10 +456,10 @@
                                         </div>
                                     </div>
                                     <div class="mt-10">
-                                        <div class="text-yellow-300 text-xl font-bold">Customisation and Scalability
+                                        <div class="text-yellow-300 text-md lg:text-xl font-bold">Customisation and Scalability
                                         </div>
                                         <div class="mt-5">
-                                            <p class="text-white text-xl">Every e-commerce business is unique and a
+                                            <p class="text-white text-md lg:text-xl">Every e-commerce business is unique and a
                                                 one-size-fits-all approach doesn't work. A web design agency provides
                                                 personalised solutions crafted for your unique needs and objectives.
                                                 They
@@ -465,12 +474,12 @@
                                         </div>
                                     </div>
                                     <div class="mt-10">
-                                        <div class="text-yellow-300 text-xl font-bold">The Brand Bee's Expertise in Web
+                                        <div class="text-yellow-300 text-md lg:text-xl font-bold">The Brand Bee's Expertise in Web
                                             Design
                                         </div>
-                                        <div class="text-yellow-300 text-xl font-bold mt-10">User-Centric Design</div>
+                                        <div class="text-yellow-300 text-md lg:text-xl font-bold mt-10">User-Centric Design</div>
                                         <div class="mt-5">
-                                            <p class="text-white text-xl">At The Brand Bee, we recognise the crucial
+                                            <p class="text-white text-md lg:text-xl">At The Brand Bee, we recognise the crucial
                                                 role
                                                 that a web design agency plays in the success of an e-commerce business.
                                                 Our
@@ -485,9 +494,9 @@
                                         </div>
                                     </div>
                                     <div class="mt-10">
-                                        <div class="text-yellow-300 text-xl font-bold">The End Note!</div>
+                                        <div class="text-yellow-300 text-md lg:text-xl font-bold">The End Note!</div>
                                         <div class="mt-5">
-                                            <p class="text-white text-xl">Partnering with a <a href=""
+                                            <p class="text-white text-md lg:text-xl">Partnering with a <a href=""
                                                     class="text-blue-500">website design
                                                     company</a> is an
                                                 investment in the future success of your e-commerce business. From
@@ -507,17 +516,17 @@
                                     </div>
                                     <div class="">
                                         <div class="mt-10">
-                                            <div class="text-yellow-300 text-xl">Also Read:-</div>
-                                            <div class="text-blue-500 text-xl mt-5">Why Every Business Needs A
+                                            <div class="text-yellow-300 text-md lg:text-xl">Also Read:-</div>
+                                            <div class="text-blue-500 text-md lg:text-xl mt-5">Why Every Business Needs A
                                                 Reputation Management Agency Today</div>
-                                            <div class="text-blue-500 text-xl mt-5">The Digital Market Revolution:
+                                            <div class="text-blue-500 text-md lg:text-xl mt-5">The Digital Market Revolution:
                                                 Unleashing the Power of Local Business SEO Services</div>
-                                            <div class="text-yellow-300 text-xl mt-5">More Useful Links:-</div>
+                                            <div class="text-yellow-300 text-md lg:text-xl mt-5">More Useful Links:-</div>
                                             <div class="mt-5">
-                                                <a href="" class="text-blue-500 text-xl">Content Marketing Agency</a> |
-                                                <a href="" class="text-blue-500 text-xl">Performance Marketing Agency
+                                                <a href="" class="text-blue-500 text-md lg:text-xl">Content Marketing Agency</a> |
+                                                <a href="" class="text-blue-500 text-md lg:text-xl">Performance Marketing Agency
                                                 </a> |
-                                                <a href="" class="text-blue-500 text-xl">B2B Lead Generation Company</a>
+                                                <a href="" class="text-blue-500 text-md lg:text-xl">B2B Lead Generation Company</a>
                                             </div>
                                         </div>
                                     </div>
@@ -525,8 +534,8 @@
                             </div>
                         </div>
                         <div class="mt-52 bgfont2">
-                            <div class="container mx-auto ">
-                                <div class="text-yellow-300 mb-4 mt-5 text-5xl font-medium">Related Articles</div>
+                            <div class="container mx-auto p-5">
+                                <div class="text-yellow-300 mb-4 mt-5 text-3xl lg:text-5xl font-medium">Related Articles</div>
                                 <div class=" mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                     <!-- Blog 3 -->
                                     <a href="Blog3.html">
@@ -538,7 +547,7 @@
                                                     <div class="text-left text-gray-500">26/07/2024</div>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Why Every Business
+                                            <p class="text-gray-900 mb-4 mt-5 text-xl lg:text-3xl font-medium">Why Every Business
                                                 Needs
                                                 A
                                                 Reputation
@@ -558,7 +567,7 @@
                                                     <div class="text-left text-gray-500">19/07/2024</div>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">How An Instagram
+                                            <p class="text-gray-900 mb-4 mt-5 text-xl lg:text-3xl font-medium">How An Instagram
                                                 Marketing
                                                 Company Can
                                                 Skyrocket Your Brand's Online Presence</p>
@@ -578,7 +587,7 @@
                                                     <div class="text-left text-gray-500">12/07/2024</div>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-900 mb-4 mt-5 text-3xl font-medium">Maximising Your
+                                            <p class="text-gray-900 mb-4 mt-5 text-xl lg:text-3xl font-medium">Maximising Your
                                                 Local
                                                 Reach:
                                                 Top
@@ -606,7 +615,7 @@
                     </div>
                     <div class="flex justify-center items-center">
                         <div class="mt-10 bgfont2">
-                            <div class="text-6xl text-black">We would love to hear <br>
+                            <div class="text-3xl md:text-4xl lg:text-6xl text-black">We would love to hear <br>
                                 more about your project</div>
                         </div>
                     </div>
@@ -768,7 +777,7 @@
         <span class="cursor"></span>
         <span class="cursor-trail"></span>
     </div>
-    <!-- Locomotive Smooth Scroll  -->
+    <!-- Locomotive Smooth Scroll 
     <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -777,16 +786,27 @@
                 smooth: true
             });
         });
-    </script>
+    </script> -->
 
-    <!-- JavaScript to toggle the mobile menu -->
-    <script>
-        document.getElementById('navbar-toggle').onclick = function () {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-
+    <!---- JavaScript to toggle the mobile menu -->
+  <script>
+    document.getElementById('navbar-toggle').onclick = function () {
+        var menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        const dropdown = document.getElementById('services-dropdown');
+        dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        const dropdown = document.getElementById('aboutus-dropdown');
+        dropdown.classList.toggle('hidden');
+    });
+</script>
     <!-- Cursor Effects  -->
     <script>
         var timeout

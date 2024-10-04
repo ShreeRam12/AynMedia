@@ -2,1056 +2,1121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website & Mobile App Development</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="./output.css" rel="stylesheet">
-    <link href="/dist/main.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website & Mobile App Development</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <section class="sticky top-0 left-0 z-50 shadow-lg">
-        <!-- Navbar -->
-        <nav class="bg-yellow-300 shadow-lg bgfont">
-            <div class="container mx-auto flex justify-between">
-                <!-- Logo -->
+  <section class="sticky top-0 left-0 z-50 shadow-lg">
+    <!-- Navbar -->
+    <nav class="bg-yellow-300 shadow-lg bgfont">
+      <div class="container mx-auto flex justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
+        </div>
+        <!-- Centered Navbar Links (hidden on mobile) -->
+        <div class="p-5 hidden lg:flex justify-center items-center gap-16">
+          <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+            <span class="block text-black">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              </span>
+            </span>
+          </a>
+          <div class="relative inline-block text-black cursor-pointer group z-50">
+            <a href="brandsolutions.html" class="block text-black font-medium">
+              SERVICES
+            </a>
+
+            <!-- Dropdown Menu -->
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+              <ul class="py-2">
+                <li>
+                  <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                    Solutions</a>
+                </li>
+                <li>
+                  <a href="digitalmarketing.html" class="block px-4 py-2 text-black hover:bg-gray-200">Digital
+                    Marketing
+                    Solutions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative inline-block text-black cursor-pointer group z-50">
+            <a href="aboutus.html" class="text-black cursor-pointer">
+              ABOUTUS
+            </a>
+            <!-- Dropdown Menu -->
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+              <ul class="py-2">
+                <li>
+                  <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                    we work</a>
+                </li>
+                <li>
+                  <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                    do</a>
+                </li>
+
+                <li>
+                  <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                    LeaderShip</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+            </span>
+          </a>
+          <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+            </span>
+          </a>
+          <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+            </span>
+          </a>
+          <div class="flex justify-center items-center">
+            <div class="bg-black p-2">
+              <a href="#"
+                class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                <span class="block mt-3">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                </span>
+                <span
+                  class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu Toggle Button -->
+        <!-- Mobile Menu Toggle Button -->
+        <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 pb-5">
+        <a href="index.html" class="text-black">HOME</a>
+        <!-- SERVICES with Dropdown -->
+        <div class="relative">
+          <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+          <div class="w-full ">
+            <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+              <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+              <hr />
+              <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+              <hr />
+              <li><a href="#" class="">Service 3</a></li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+
+        <!-- ABOUT US with Dropdown -->
+        <div class="relative">
+          <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+          <div class="">
+            <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+              <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+              <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+              <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+        <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+        <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+        <div class="bg-black p-2 rounded-xl">
+          <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero Section  -->
+  <section class="bg-black pb-20 p-5">
+    <div class="container mx-auto">
+      <div class=" flex  flex-wrap lg:flex-nowrap gap-5 bgfont2 pt-20">
+        <div class="w-5/6">
+          <div class="text-yellow-300 font-medium text-5xl">Website & App Development</div>
+          <div class="text-gray-200 font-medium text-xl mt-10">Our Website and App Development solutions turn your <br>
+            digital aspirations into reality, enabling you to "Be Online" in a
+            way that reflects your unique identity.
+          </div>
+        </div>
+        <div class="w-full md:w-full">
+          <div class="bgfont2">
+            <div class="flex gap-20">
+              <div class="text-white">
+                If you’re seeking the ideal digital partnership, our Website and App Development services are just what
+                you need. Like
+                any great romance, we believe that creating a standout online presence requires dedication and a
+                thoughtful approach.
+              </div>
+              <div class="text-white">
+                At The Brand Bee, we focus on helping you forge meaningful connections with your customers by building a
+                strong
+                foundation that transcends aesthetics. Let us be your digital matchmakers and craft a brand identity
+                that ignites
+                admiration and fosters lasting relationships.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="mt-10 flex gap-20 bgfont2">
+            <ul class="space-y-3">
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">Website/App Audit</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">Content Strategy</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">Dynamic Websites</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">Interactive Infographics</div>
+              </div>
+              <a href="shopify.html">
+                <div class="flex gap-3">
+                  <div>
+                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                  </div>
+                  <div class="text-white">Shopify Development </div>
+                </div>
+              </a>
+            </ul>
+            <ul class="space-y-3">
+              <a href="uiux.html">
+                <div class="flex gap-3">
+                  <div>
+                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                  </div>
+                  <div class="text-white">
+                    UI/UX Design </div>
+                </div>
+              </a>
+
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white"> Corporate Websites</div>
+              </div>
+              <a href="ecommerce.html">
+                <div class="flex gap-3">
+                  <div>
+                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                  </div>
+                  <div class="text-white">
+                    E-Commerce Websites </div>
+                </div>
+              </a>
+              <a href="customapplication.html">
+                <div class="flex gap-3">
+                  <div>
+                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                  </div>
+                  <div class="text-white">
+                    Custom Application </div>
+                </div>
+              </a>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content  -->
+  <section class="bg-yellow-300 pb-20">
+    <!-- Content Section  -->
+    <section class="pt-20 p-5">
+      <div class="bgfont2 container mx-auto">
+        <div class="flex flex-wrap lg:flex-nowrap gap-10">
+          <div>
+            <div class="font-medium text-xl">Website/App Audit</div>
+            <div class="font-medium text-xl">Be Insightful</div>
+            <div class="text-gray-700 mt-5">
+              Embark on an enlightening journey with our Website/App Audit service, where we explore the depths of your
+              brand's
+              potential. Our team of creative analysts will uncover the secrets, interpret the nuances, and reveal the
+              hidden
+              treasures that make your brand truly exceptional.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">UI Design</div>
+            <div class="font-medium text-xl">Be Impactful</div>
+            <div class="text-gray-700 mt-5">
+              Enter the enchanting realm of UI Design, where our visionary designers create stunning, pixel-perfect
+              websites that make
+              a memorable impact. By harmonizing functionality and aesthetics, we’ll elevate your online presence,
+              ensuring your
+              website truly reflects your brand's essence and stands out in the digital landscape.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">UX Design</div>
+            <div class="font-medium text-xl">Be Engaging</div>
+            <div class="text-gray-700 mt-5">
+              Dive into our UX Design service, where we craft user experiences that radiate creativity and charm. With a
+              playful touch
+              and a commitment to intuitive interfaces, we design digital journeys that captivate users and bring smiles
+              to their
+              faces. Unlock the true potential of your digital presence with UX designs that transform every interaction
+              into a
+              delightful adventure.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">Content Strategy</div>
+            <div class="font-medium text-xl">Be Persuasive</div>
+            <div class="text-gray-700 mt-5">
+              Energize your brand with our Content Strategy Service! Our team of word wizards combines strategic
+              insight, creative
+              flair, and a splash of fun to develop a content plan that resonates with your audience. We aim to engage
+              their hearts
+              and foster meaningful connections. Captivate, inspire, and elevate your brand with a thoughtfully crafted
+              content
+              strategy that creates a lasting impact.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Content Section  -->
+    <section class="pt-20 p-5">
+      <div class="bgfont2 container mx-auto">
+        <div class="flex flex-wrap lg:flex-nowrap gap-5 md:gap-5 lg:gap-10">
+          <div>
+            <div class="font-medium text-xl">Corporate Websites</div>
+            <div class="font-medium text-xl">Be Authentic</div>
+            <div class="text-gray-700 mt-5">
+              Ignite your brand's presence with our Corporate Website Service. Our skilled wordsmiths create engaging
+              content that
+              forges connections, piques curiosity, and leaves a memorable mark on your audience. Prepare to captivate
+              your visitors,
+              inspire action, and elevate your website to new heights of brilliance!
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">Dynamic Websites</div>
+            <div class="font-medium text-xl">Be Compelling</div>
+            <div class="text-gray-700 mt-5">
+              Harness the energy of innovation with our Dynamic Website Service. Our expert digital architects design
+              immersive online
+              experiences that evolve and adapt in real-time. With interactive elements and personalized journeys,
+              you’ll elevate
+              engagement, empower your brand, and bring your website to life with captivating dynamism.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">E-Commerce Websites</div>
+            <div class="font-medium text-xl">Bee Lucrative</div>
+            <div class="text-gray-700 mt-5">
+              Dive into a digital retail adventure with our E-Commerce Website Service. Our skilled team of digital
+              merchants creates
+              an engaging online marketplace that invites shoppers to explore, indulge, and discover. Get ready to
+              showcase your
+              virtual storefront, enhance your product offerings, and deliver a seamless shopping experience that keeps
+              customers
+              coming back for more
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">Interactive Infographics</div>
+            <div class="font-medium text-xl">Be Narrative</div>
+            <div class="text-gray-700 mt-5">
+              Unlock the magic of visual storytelling with our Interactive Infographic Service. Our talented creatives
+              fuse data,
+              design, and interactivity to produce captivating infographics that draw in your audience. We transform
+              complex
+              information into an engaging narrative, bringing your data to life in a way that fascinates and informs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Ready to Bee Everything  -->
+  <section class="pt-10 md:pt-20 pb-10 md:pb-20">
+    <!-- First Section -->
+    <section>
+      <div class="bgfont2 container mx-auto">
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center p-5 gap-8 md:gap-0">
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2">
+            <div class="text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-center md:text-left">
+              We empower you to dominate the digital landscape with our<br class="hidden md:block"> EXPERTLY CRAFTED,
+              SEAMLESS, and INNOVATIVELY DESIGNED Website and App Development solutions.
+            </div>
+          </div>
+          <!-- Call to Action -->
+          <div class="w-full md:w-auto">
+            <div class="bg-yellow-300 w-44 md:w-56 p-8 md:p-14 rounded-full cursor-pointer mx-auto md:mx-0">
+              <div class="text-black text-center">
+                Ready to <span class="font-semibold">become everything</span> you aspire to be?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section>
+      <div class="container mx-auto bgfont2 mt-10 md:mt-20">
+        <div class="w-full lg:w-5/6 mx-auto">
+          <div class="flex flex-wrap md:flex-nowrap gap-10 p-5">
+            <!-- Text Block 1 -->
+            <div class="w-full md:w-1/2 text-gray-500 leading-relaxed">
+              Blending creativity and functionality, our website and app development service is a masterful creation
+              that brings your
+              digital aspirations to life. Our team of tech artisans utilizes cutting-edge technologies and innovative
+              thinking to
+              design stunning websites and intuitive mobile apps that leave a lasting impression. We infuse a bit of
+              magic into the
+              user experience, ensuring seamless navigation, captivating visuals, and engaging interactions
+            </div>
+            <!-- Text Block 2 -->
+            <div class="w-full md:w-1/2 text-gray-500 leading-relaxed">
+              From initial wireframes to final execution, we embark on a collaborative journey, tuning in to your unique
+              needs and
+              weaving them into a digital masterpiece. Our coding experts optimize performance, enhance security, and
+              ensure
+              compatibility across all devices. Prepare to impress your audience, capture their attention, and leave
+              them wanting more
+              with our enchanting website and app development service. Together, we’ll transform your digital dreams
+              into an
+              extraordinary reality
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <div class="bg-black bgfont2 pt-20 pb-10 p-5">
+      <div class="container mx-auto ">
+        <div class="text-yellow-300 text-3xl md:text-4xl lg:text-5xl text-center">HIGHLIGHTING THE IMPORTANCE OF WEBSITE
+          AND APP DEVELOPMENT
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="">
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Enhanced User Experience:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">A well-designed website or app provides intuitive
+                navigation and engaging
+                interactions, ensuring users have a seamless
+                and enjoyable experience that keeps them coming back.
+              </div>
+            </div>
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Brand Credibility:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">A professional online presence builds trust with
+                your audience. A visually
+                appealing and functional website or app
+                reinforces your brand identity and establishes credibility in your market.
+              </div>
+            </div>
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Increased Accessibility:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">With more consumers relying on mobile devices,
+                having a responsive website
+                and user-friendly app ensures that your brand
+                is accessible anytime, anywhere, reaching a broader audience.
+              </div>
+            </div>
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Data Insights and Growth</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">Effective web and app development allows for the
+                integration of analytics
+                tools, enabling you to track user behavior and
+                gather insights. This data can inform your marketing strategies and drive continuous improvement and
+                growth.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Call-to-Action Section -->
+        <div class="flex justify-center items-center mt-10">
+          <div
+            class="w-44 md:w-52 lg:w-72 p-3 cursor-pointer bg-yellow-300 rounded-lg hover:bg-white duration-500 ease-in-out">
+            <div class="text-center text-black text-md">Ready to <span class="font-semibold">become everything</span>
+              you aspire to be?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sample Work  -->
+  <section>
+    <div class="bgfont2 pt-10 pb-10">
+      <div class="text-center">SAMPLE WORK</div>
+    </div>
+  </section>
+  <!-- Get in Touch  -->
+  <section>
+    <div class="bg-yellow-300 bgfont2 p-20 pt-20">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
+            <div class="text-2xl md:text-3xl lg:text-5xl  font-medium mb-4 text-gray-900">STILL, WAITING FOR
+              <br>US
+              TO
+              MAKE
+              THE
+              <br> FIRST MOVE?
+            </div>
+            <div class="text-gray-900 text-xl mt-10 lg:mt-20">Don't be shy, get in touch.</div>
+            <div class="mt-32 float-right">
+              <div class="w-full">
+                <img src="assets/Border_Img.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Form Section -->
+          <div class="w-full md:w-1/2 lg:w-3/5">
+            <form class="space-y-12">
+              <!-- Name Field -->
+              <div>
+                <label for="name" class="block text-sm font-bold mb-2"></label>
+
+                <input type="text" id="name" name="name" placeholder="Your Name*:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+              </div>
+              <!-- Email Field -->
+              <div>
+                <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                <input type="email" id="email" name="email" placeholder="Email Id:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+
+              </div>
+              <div>
+                <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                <input type="number" id="email" name="number" placeholder="Phone Number:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+              </div>
+              <!-- Company Name  -->
+              <div>
+                <label for="name" class="block  text-sm font-bold"></label>
+                <input type="text" id="name" name="name" placeholder="Company Name:"
+                  class=" bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+              </div>
+
+              <div class="mt-4">
+                <label for="dropdown1" class="block text-sm font-bold"></label>
+                <select id="dropdown1" name="dropdown1"
+                  class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+                  <option value="" disabled selected hidden>Choose Service</option>
+                  <option value="option1" class="text-black">Branding Solutions</option>
+                  <option value="option2" class="text-black">Corporate Rebranding</option>
+                  <option value="option3" class="text-black">Photoshoots & Video Shoots
+                  </option>
+                  <option value="option3" class="text-black">social Media Marketing
+                  </option>
+                  <option value="option3" class="text-black">Ecommerce Solutions</option>
+                  <option value="option3" class="text-black">Website Development &
+                    Management</option>
+                  <option value="option3" class="text-black">Ads/Perfomrance Marketing
+                  </option>
+                  <option value="option3" class="text-black">SEO (Search Engine
+                    Optimization)</option>
+                  <option value="option3" class="text-black">Content Marketing Solutions
+                  </option>
+                  <option value="option3" class="text-black">Email Marketing & Automation
+                  </option>
+                  <option value="option3" class="text-black">Marketing & Automation
+                  </option>
+                  <option value="option3" class="text-black">Online Reputation Management
+                  </option>
+                  <option value="option3" class="text-black">Influencer Marketing &
+                    Community Building
+                  </option>
+                  <option value="option3" class="text-black">Other </option>
+
+                </select>
+              </div>
+
+              <div class="mt-4">
+                <label for="dropdown2" class="block text-sm font-bold"></label>
+                <select id="dropdown2" name="dropdown2"
+                  class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+                  <option value="" disabled selected hidden>Estimated Monthly Budget
+                  </option>
+                  <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
+                  </option>
+                  <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
+                  </option>
+                  <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
+                  </option>
+                  <option value="option3" class="text-black"> INR 25Lacs and above
+                  </option>
+                </select>
+              </div>
+              <!-- Message Field -->
+              <div class="">
+                <label for="message" class="block text-gray-700 text-sm font-bold"></label>
+                <textarea id="message" name="message"
+                  placeholder="Please leave us a brief of your requirements and services you are interested in*:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-700"
+                  required></textarea>
+              </div>
+              <div class="mt-4 flex flex-row lg:flex-row items-center bg-white lg:w-72 p-5 gap-10 lg:gap-10">
                 <div class="flex items-center">
-                    <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+                  <input type="checkbox" id="not-a-robot" name="not-a-robot"
+                    class="text-white focus:ring-2 focus:ring-white h-5 w-5">
+                  <label for="not-a-robot" class="ml-2 text-black text-sm">I am not a robot</label>
                 </div>
-                <!-- Centered Navbar Links (hidden on mobile) -->
-                <div class="p-5 hidden md:flex justify-center items-center gap-16">
-                    <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
-                        <span class="block text-black">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
-                            </span>
-                    </a>
-                    <div class="relative inline-block text-black cursor-pointer group z-50">
-                        <a href="brandsolutions.html" class="block text-black font-medium">
-                            SERVICES
-                        </a>
-
-                        <!-- Dropdown Menu -->
-                        <div
-                            class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                            <ul class="py-2">
-                                <li><a href="brandsolutions.html"
-                                        class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a></li>
-                                <li><a href="digitalmarketing.html"
-                                        class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
-                                        Solutions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="aboutus.html"
-                        class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                    </a>
-                    <a href="samplework.html"
-                        class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                        </span>
-                    </a>
-                    <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                    </a>
-                    <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                        </span>
-                    </a>
-                    <div class="flex justify-center items-center">
-                        <div class="bg-black p-2 ">
-                            <a href="#"
-                                class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
-                                <span class="block mt-3">
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                </span>
-                                <span
-                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile Menu Toggle Button -->
-                <!-- Mobile Menu Toggle Button -->
-                <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
-                    <i class="fas fa-bars fa-lg"></i>
-                </button>
-            </div>
-
-            <!-- Mobile Menu (hidden by default) -->
-            <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                <a href="#" class="text-black hover:text-gray-400">BLOG</a>
-                <div class="bg-black p-2 rounded-xl">
-                    <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <!-- Hero Section  -->
-    <section class="bg-black pb-20">
-        <div class="container mx-auto ">
-            <div class=" flex gap-5 bgfont2 pt-20">
-                <div class="w-5/6">
-                    <div class="text-yellow-300 font-medium text-5xl">Website & App Development</div>
-                    <div class="text-gray-200 font-medium text-xl mt-10">Our Website &App Development solutions bring
-                        <br>
-                        your digital dreams to life, helping you "Bee <br> Online" in a way that's uniquely you.
-                    </div>
-                </div>
-                <div class="w-full md:w-full">
-                    <div class="bgfont2">
-                        <div class="flex gap-20">
-                            <div class="text-white">
-                                If you're searching for the perfect digital union, look no further than our Website and
-                                App Development services. Just like true love, we understand that building a remarkable
-                                online presence requires commitment and the right strategy.
-                            </div>
-                            <div class="text-white">
-                                At The Brand Bee, we're here to help you establish a deep connection with your customers
-                                by crafting a solid foundation that goes beyond mere visuals. Let us be your digital
-                                matchmakers and create a brand personality that sparks lasting admiration and
-                                connection.
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="my-4">
-                    <div class="mt-10 flex gap-20 bgfont2">
-                        <ul class="space-y-3">
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">Website/App Audit</div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">Content Strategy</div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">Dynamic Websites</div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">Interactive Infographics</div>
-                            </div>
-                            <a href="shopify.html">
-                                <div class="flex gap-3">
-                                    <div>
-                                        <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                    </div>
-                                    <div class="text-white">Shopify Development </div>
-                                </div>
-                            </a>
-                        </ul>
-                        <ul class="space-y-3">
-                            <a href="uiux.html">
-                                <div class="flex gap-3">
-                                    <div>
-                                        <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                    </div>
-                                    <div class="text-white">
-                                        UI/UX Design </div>
-                                </div>
-                            </a>
-
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white"> Corporate Websites</div>
-                            </div>
-                            <a href="ecommerce.html">
-                                <div class="flex gap-3">
-                                    <div>
-                                        <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                    </div>
-                                    <div class="text-white">
-                                        E-Commerce Websites </div>
-                                </div>
-                            </a>
-                            <a href="customapplication.html">
-                                <div class="flex gap-3">
-                                    <div>
-                                        <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                    </div>
-                                    <div class="text-white">
-                                        Custom Application </div>
-                                </div>
-                            </a>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Content  -->
-    <section class="bg-yellow-300 pb-20">
-        <!-- Content Section  -->
-        <section class="pt-20">
-            <div class="bgfont2 container mx-auto">
-                <div class="flex gap-10">
-                    <div>
-                        <div class="font-medium text-xl">Website/App Audit</div>
-                        <div class="font-medium text-xl">Bee Insightful</div>
-                        <div class="text-gray-700 mt-5">
-                            Embark on a captivating journey with our Brand Audit service, where we dive deep into the
-                            enchantment of your brand. Our team of imaginative detectives will unravel the mysteries,
-                            decode the whispers, and unveil the hidden gems that make your brand shine.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">UI Design</div>
-                        <div class="font-medium text-xl">Bee Impactful</div>
-                        <div class="text-gray-700 mt-5">
-                            Step into the digital wonderland of Website Design, where our design trailblazers craft
-                            pixel-perfect websites that leave a lasting impression, blending functionality and
-                            aesthetics seamlessly. Elevate your online presence in the digital jungle and stand out with
-                            a website that captures your brand essence.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">UX Design</div>
-                        <div class="font-medium text-xl">Bee Engaging</div>
-                        <div class="text-gray-700 mt-5">
-                            Our UX Design service creates user experiences that sparkle with creativity and charm. With
-                            a touch of playfulness and a focus on intuitive interfaces, we craft digital journeys that
-                            captivate and leave a smile on your users' faces. Unleash the full potential of your digital
-                            presence with UX designs that make every interaction a joyful adventure.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">Content Strategy</div>
-                        <div class="font-medium text-xl">Bee Persuasive</div>
-                        <div class="text-gray-700 mt-5">
-                            Ignite your brand with our Content Strategy Service. Our team of word wizards sprinkles a
-                            touch of strategy, a pinch of creativity, and a whole lot of fun to craft a content plan
-                            that speaks to your audience, engages their hearts and sparks meaningful connections.
-                            Captivate, inspire, and ignite your brand with a well-crafted content strategy that leaves a
-                            lasting impression.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- Content Section  -->
-        <section class="pt-20">
-            <div class="bgfont2 container mx-auto">
-                <div class="flex gap-10">
-                    <div>
-                        <div class="font-medium text-xl">Corporate Websites</div>
-                        <div class="font-medium text-xl">Bee Authentic</div>
-                        <div class="text-gray-700 mt-5">
-                            Set your brand ablaze with our Website Content Service. Our expert wordsmiths craft
-                            captivating content that sparks connections, ignites curiosity, and leaves a lasting
-                            impression. Get ready to enchant your visitors, inspire action, and make your website shine
-                            like never before.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">Dynamic Websites</div>
-                        <div class="font-medium text-xl">Bee Compelling</div>
-                        <div class="text-gray-700 mt-5">
-                            Unleash the power of dynamism with our Dynamic Website Service. Our team of digital
-                            architects creates immersive online experiences that evolve and adapt in real-time. From
-                            interactive elements to personalized journeys, get ready to amplify engagement, empower your
-                            brand, and make your website come alive with dynamic wonders.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">E-Commerce Websites</div>
-                        <div class="font-medium text-xl">Bee Lucrative</div>
-                        <div class="text-gray-700 mt-5">
-                            Embark on a digital retail adventure with our E-commerce Website Service. Our team of
-                            digital merchants crafts an immersive online marketplace that beckons shoppers to explore,
-                            indulge, and discover. Get ready to unveil your virtual storefront, amplify your product
-                            offerings, and create a seamless shopping experience.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">Interactive Infographics</div>
-                        <div class="font-medium text-xl">Bee Narrative</div>
-                        <div class="text-gray-700 mt-5">
-                            Unleash the power of visual storytelling with our Interactive Infographic service. Our
-                            creative maestros blend data, design, and interactivity to create visually stunning and
-                            interactive infographics that captivate your audience's imagination. Transform complex
-                            information into an engaging narrative, making your data come alive.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!-- Ready to Bee Everything  -->
-    <section class="pt-20 pb-20">
-        <section class="">
-            <div class="bgfont2 container mx-auto">
-                <div class="flex justify-between">
-                    <div>
-                        <div class="text-3xl font-medium">We help you conquer the digital realm,<br>
-                            with EXPERT, FLAWLESS <br>
-                            INNOVATIVELY-ENGINEERED Website & <br>
-                            App Development</div>
-                    </div>
-                    <a href="contactus.html">
-                        <div class="bgfont2">
-                            <div class="bg-yellow-300 w-40 p-10 rounded-full cursor-pointer">
-                                <div class="text-black text-center">Ready To Bee Everything?</div>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container mx-auto bgfont2 mt-20">
-                <div class="w-5/6">
-                    <div class="flex gap-10 flex-wrap md:flex-nowrap">
-                        <div class="text-gray-500">Weaving the threads of creativity and functionality, our website and
-                            app development service is like a masterful tapestry that brings your digital vision to
-                            life. Our team of tech artisans leverages cutting-edge technologies and out-of-the-box
-                            thinking to craft stunning websites and intuitive mobile apps that leave a lasting
-                            impression. We'll sprinkle a touch of magic into the user experience, ensuring seamless
-                            navigation, captivating visuals, and engaging interactions.</div>
-                        <div class="text-gray-500">
-                            From wireframes to final execution, we embark on a collaborative journey, listening to your
-                            unique requirements and weaving them into a digital masterpiece. Our code wizards work their
-                            magic, optimizing performance, enhancing security, and ensuring compatibility across
-                            devices. Get ready to dazzle your audience, captivate their attention, and leave them
-                            craving for more with our enchanting website and app development service. Let's turn your
-                            digital dreams into an extraordinary reality.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </section>
-
-    <section>
-        <div class="bg-black bgfont2 pt-20 pb-10">
-            <div class="container mx-auto ">
-                <div class="text-white text-3xl text-center">SScared of committing with us?
-                    Have a look at these stats….</div>
                 <div class="flex justify-center items-center">
-                    <div class="">
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">88%</div>
-                            <div class="text-white text-xl">88% of online consumers are less likely to return to a
-                                website after <br> a bad user experience.
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">53%</div>
-                            <div class="text-white text-xl">Approximately 53% of mobile users abandon a website if it
-                                takes <br> more than 3 seconds to load.
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">79%</div>
-                            <div class="text-white text-xl">79% of users will retry a mobile app only once or twice if
-                                it fails to work the first time.
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">90%</div>
-                            <div class="text-white text-xl">90% of users stop using an app due to poor performance or
-                                stability issues.
-                            </div>
-                        </div>
-                    </div>
+                  <img src="assets/Captchaa.png" alt="Captchaa" class="h-10 w-10 lg:w-auto">
                 </div>
-                <a href="contactus.html">
-                    <div class="flex justify-center items-center mt-10">
-                        <div
-                            class="bgfont2 w-52 p-3 cursor-pointer bg-yellow-300 rounded-lg hover:bg-white duration-500 ease-in-out">
-                            <div class="text-center">Ready to Bee Everything</div>
-                        </div>
-                    </div>
-                </a>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="flex justify-start items-start">
+                <div class="text-center mt-10">
+                  <button type="submit"
+                    class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                    Your Transformation Today</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section  -->
+  <section>
+    <div class="bg-black pt-20 pb-10">
+      <div class=" bgfont2 container mx-auto p-5">
+        <h2 class="text-5xl text-white text-center mb-10">FAQs</h2>
+        <div class="flex justify-center items-center">
+          <div class="w-4/6">
+            <!-- FAQ Item 1 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(1)">
+                <h3 class="font-semibold text-lg text-white">1. What services does your website development company in
+                  Chennai offer?</h3>
+                <span id="symbol1" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer1" class="hidden mt-2 p-4 text-white">
+                <p>We provide a comprehensive range of services, including custom website design, e-commerce solutions,
+                  responsive web development, UI/UX design, and ongoing website maintenance to ensure your online
+                  presence
+                  remains effective and engaging.</p>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- Sample Work  -->
-    <section>
-        <div class="bgfont2 pt-10 pb-10">
-            <div class="text-center">SAMPLE WORK</div>
-        </div>
-    </section>
-    <!-- Get in Touch  -->
-    <section>
-        <div class="bg-yellow-300 bgfont2 p-20 pt-20">
-            <div class="container mx-auto">
-                <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
-                    <!-- Text Section -->
-                    <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
-                        <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-900">STILL, WAITING FOR
-                            <br>US
-                            TO
-                            MAKE
-                            THE
-                            <br> FIRST MOVE?
-                        </div>
-                        <div class="text-gray-900 text-xl mt-20">Don't be shy, get in touch.</div>
-                        <div class="mt-32 float-right">
-                            <div class="w-full">
-                                <img src="assets/Border_Img.webp" alt="">
-                            </div>
-                        </div>
 
-                    </div>
-
-                    <!-- Form Section -->
-                    <div class="w-full md:w-1/2 lg:w-3/5">
-                        <form class="space-y-12">
-                            <!-- Name Field -->
-                            <div>
-                                <label for="name" class="block  text-sm font-bold mb-2"></label>
-
-                                <input type="text" id="name" name="name" placeholder="Your Name*:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                            </div>
-                            <!-- Email Field -->
-                            <div>
-                                <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                <input type="email" id="email" name="email" placeholder="Email Id:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-
-                            </div>
-                            <div>
-                                <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                <input type="number" id="email" name="number" placeholder="Phone Number:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                            </div>
-                            <!-- Company Name  -->
-                            <div>
-                                <label for="name" class="block  text-sm font-bold"></label>
-                                <input type="text" id="name" name="name" placeholder="Company Name:"
-                                    class=" bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                            </div>
-
-                            <div class="mt-4">
-                                <label for="dropdown1" class="block text-sm font-bold"></label>
-                                <select id="dropdown1" name="dropdown1"
-                                    class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                                    <option value="" disabled selected hidden>Choose Service</option>
-                                    <option value="option1" class="text-black">Branding Solutions</option>
-                                    <option value="option2" class="text-black">Corporate Rebranding</option>
-                                    <option value="option3" class="text-black">Photoshoots & Video Shoots
-                                    </option>
-                                    <option value="option3" class="text-black">social Media Marketing
-                                    </option>
-                                    <option value="option3" class="text-black">Ecommerce Solutions</option>
-                                    <option value="option3" class="text-black">Website Development &
-                                        Management</option>
-                                    <option value="option3" class="text-black">Ads/Perfomrance Marketing
-                                    </option>
-                                    <option value="option3" class="text-black">SEO (Search Engine
-                                        Optimization)</option>
-                                    <option value="option3" class="text-black">Content Marketing Solutions
-                                    </option>
-                                    <option value="option3" class="text-black">Email Marketing & Automation
-                                    </option>
-                                    <option value="option3" class="text-black">Marketing & Automation
-                                    </option>
-                                    <option value="option3" class="text-black">Online Reputation Management
-                                    </option>
-                                    <option value="option3" class="text-black">Influencer Marketing &
-                                        Community Building
-                                    </option>
-                                    <option value="option3" class="text-black">Other </option>
-
-                                </select>
-                            </div>
-
-                            <div class="mt-4">
-                                <label for="dropdown2" class="block text-sm font-bold"></label>
-                                <select id="dropdown2" name="dropdown2"
-                                    class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                                    <option value="" disabled selected hidden>Estimated Monthly Budget
-                                    </option>
-                                    <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
-                                    </option>
-                                    <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
-                                    </option>
-                                    <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
-                                    </option>
-                                    <option value="option3" class="text-black"> INR 25Lacs and above
-                                    </option>
-                                </select>
-                            </div>
-                            <!-- Message Field -->
-                            <div class="">
-                                <label for="message" class="block text-gray-700 text-sm font-bold"></label>
-                                <textarea id="message" name="message"
-                                    placeholder="Please leave us a brief of your requirements and services you are interested in*:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-700"
-                                    required></textarea>
-                            </div>
-                            <div class="mt-4 flex items-center bg-white w-72 p-5">
-                                <input type="checkbox" id="not-a-robot" name="not-a-robot"
-                                    class="text-white focus:ring-2 focus:ring-white h-5 w-5">
-                                <div class="flex gap-14 justify-center items-center">
-                                    <div>
-                                        <label for="not-a-robot" class="ml-2 text-black text-sm">I am not
-                                            a
-                                            robot</label>
-                                    </div>
-                                    <div>
-                                        <img src="assets/Captchaa.png" alt="Captchaa">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="flex justify-start items-start">
-                                <div class="text-center mt-10">
-                                    <button type="submit"
-                                        class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
-                                        Your Transformation Today</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <!-- FAQ Item 2 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(2)">
+                <h3 class="font-semibold text-lg text-white">2. Why should I choose Ayn Media as my website development
+                  company in Chennai?</h3>
+                <span id="symbol2" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer2" class="hidden mt-2 p-4 text-white">
+                <p>Ayn Media stands out for our commitment to quality, innovative solutions, and personalized service.
+                  Our
+                  experienced team combines creativity with technical expertise to deliver websites that not only look
+                  great but also perform exceptionally.</p>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- FAQ Section  -->
-    <section>
-        <div class="bg-black pt-20 pb-10">
-            <div class="bgfont2 container mx-auto p-5">
-                <h2 class="text-5xl text-white text-center mb-10">FAQs</h2>
-                <div class="">
-                    <div class="flex justify-center items-center">
-                        <div class="w-4/6">
-                            <!-- FAQ Item 1 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(1)">
-                                    <h3 class="font-semibold text-lg text-white">What website and app development
-                                        services does The Brand Bee offer?</h3>
-                                    <span id="symbol1" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer1" class="hidden mt-2 p-4 text-white">
-                                    <p>At The Brand Bee, we offer comprehensive website and app development services
-                                        tailored to your unique business needs. Whether you require a new website, a
-                                        mobile app or both, our experienced team of developers will work closely with
-                                        you to create a custom solution that aligns with your brand identity and
-                                        objectives.</p>
-                                </div>
-                            </div>
 
-                            <!-- FAQ Item 2 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(2)">
-                                    <h3 class="font-semibold text-lg text-white">What sets The Brand Bee apart from
-                                        other website and app development agencies?</h3>
-                                    <span id="symbol2" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer2" class="hidden mt-2 p-4 text-white">
-                                    <p>What sets us apart is our focus on delivering not just visually appealing
-                                        websites and apps but also user-friendly and highly functional solutions. We
-                                        prioritise creating seamless user experiences, optimising performance and
-                                        ensuring that your website or app is responsive across different devices and
-                                        platforms. With our expertise in design, development and user experience, we go
-                                        the extra mile to exceed your expectations.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 3 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(3)">
-                                    <h3 class="font-semibold text-lg text-white">Can The Brand Bee help with e-commerce
-                                        website development?</h3>
-                                    <span id="symbol3" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer3" class="hidden mt-2 p-4 text-white">
-                                    <p>Absolutely! We have extensive experience in developing e-commerce websites that
-                                        are tailored to meet the unique needs of your online business. Whether you're
-                                        starting from scratch or looking to enhance your existing e-commerce platform,
-                                        we can build a secure, user-friendly and visually appealing online store that
-                                        helps you drive sales and grow your business.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 4 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(4)">
-                                    <h3 class="font-semibold text-lg text-white">How involved will I be in the website
-                                        and app development process?</h3>
-                                    <span id="symbol4" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer4" class="hidden mt-2 p-4 text-white">
-                                    <p>We believe in transparent and collaborative partnerships with our clients.
-                                        Throughout the development process, we will keep you involved and informed at
-                                        every stage. We value your input and feedback, ensuring that your vision and
-                                        goals are reflected in the final product. Our team will provide regular updates
-                                        and seek your approval at key milestones, guaranteeing that we are on track to
-                                        deliver a website or app that aligns with your expectations.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 5 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(5)">
-                                    <h3 class="font-semibold text-lg text-white">What post-development support and
-                                        maintenance services does The Brand Bee offer?</h3>
-                                    <span id="symbol5" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer5" class="hidden mt-2 p-4 text-white">
-                                    <p>Our partnership doesn't end with the completion of your website or app. We offer
-                                        post-development support and maintenance services to ensure that your digital
-                                        assets continue to perform optimally. From troubleshooting and bug fixes to
-                                        regular updates and security enhancements, we will be there to provide ongoing
-                                        support and ensure that your website or app remains secure, up-to-date and
-                                        aligned with the latest industry standards.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <!-- FAQ Item 3 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(3)">
+                <h3 class="font-semibold text-lg text-white">3. How long does it take to develop a website with Ayn
+                  Media?
+                </h3>
+                <span id="symbol3" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer3" class="hidden mt-2 p-4 text-white">
+                <p>The timeline for website development varies based on the complexity and specific requirements of your
+                  project. Typically, we provide a detailed timeline during the initial consultation, ensuring you have
+                  a
+                  clear understanding of the process.</p>
+                <div class="mt-3">
+                  <ul>
+                    <li class="flex gap-3">
+                      <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                      <p class="text-white">Brand positioning involves defining how your brand is distinct and relevant
+                        in
+                        the marketplace.</p>
+                    </li>
+                    <li class="flex gap-3">
+                      <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                      <p class="text-white">Brand messaging involves crafting compelling and consistent messages that
+                        effectively communicate your brand's value and resonate with your target audience.</p>
+                    </li>
+                    <li class="flex gap-3">
+                      <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                      <p class="text-white">Brand identity includes visual elements such as logos, colors, and
+                        typography
+                        that represent your brand.</p>
+                    </li>
+                    <li class="flex gap-3">
+                      <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                      <p class="text-white">Brand experience focuses on creating positive and memorable interactions
+                        with
+                        your brand at every touchpoint.</p>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- News and Blogs -->
-    <section>
-        <div class="bg-white">
-            <div class="bgfont2 pt-32">
-                <div class="container mx-auto flex flex-wrap md:flex-nowrap">
-                    <div class="w-3/6">
-                        <div class="border-black border w-32 rounded-lg">
-                            <div class="tet-gray-300 text-center text-black">Recent Blog</div>
-                        </div>
-                        <div class="mt-5">
-                            <div class="text-5xl font-medium text-black">Whats New? <br>News and Blogs</div>
-                        </div>
-                        <div class="mt-10">
-                            <p class="text-black">We don't mind sharing the secret.
-                                <br> Read our blogs and stay updated
-                                <br> about the latest trends of the
-                                digital world.
-                            </p>
-                        </div>
-                        <div class="group mt-10 w-32 cursor-pointer">
-                            <div class="bg-yellow-300 rounded-lg duration-500 ease-in-out group-hover:bg-white p-4">
-                                <div class="text-black text-center font-medium group-hover:text-black">
-                                    All Articles
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Blog 1 -->
-                        <div class="bg-white rounded-lg shadow-xl p-6">
-                            <img src="assets/Blog_1.webp" alt="Blog 1" class="w-full h-48 object-cover rounded-lg mb-4">
-                            <div class="mt-10">
-                                <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                    <div class="text-center">05/08/2024</div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup Should
-                                Invest
-                                In A
-                                Professional Web
-                                Development Company</p>
-                            <a href="#" class="text-gray-900 font-medium hover:underline">Read More</a>
-                        </div>
 
-                        <!-- Blog 2 -->
-                        <div class="bg-white rounded-lg shadow-lg p-6">
-                            <img src="assets/Blog_2.webp" alt="Blog 2" class="w-full h-48 object-cover rounded-lg mb-4">
-                            <div class="mt-10">
-                                <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                    <div class="text-center">31/07/2024</div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
-                                Design
-                                Company
-                                In Boosting Your
-                                E-Commerce Success</p>
-                            <a href="#" class="text-gray-900 font-medium hover:underline">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-10 flex justify-end">
-                    <div class="w-5/6">
-                        <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
-                    </div>
-                </div>
+            <!-- FAQ Item 4 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(4)">
+                <h3 class="font-semibold text-lg text-white">4. Can you create e-commerce websites?</h3>
+                <span id="symbol4" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer4" class="hidden mt-2 p-4 text-white">
+                <p>Yes! As a leading website development company in Chennai, we specialize in creating robust e-commerce
+                  websites that provide seamless shopping experiences. We integrate payment gateways, inventory
+                  management, and user-friendly interfaces to enhance your online retail operations.</p>
+              </div>
             </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(5)">
+                <h3 class="font-semibold text-lg text-white">5. How do you ensure my website is optimized for search
+                  engines?</h3>
+                <span id="symbol5" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer5" class="hidden mt-2 p-4 text-white">
+                <p>At Ayn Media, we implement SEO best practices during the website development process. This includes
+                  optimizing site speed, using clean code, incorporating relevant keywords, and creating a
+                  mobile-friendly
+                  design to help improve your visibility in search engine results.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- Footer  -->
-    <section>
-        <div class="bg-black bgfont2 p-10">
+      </div>
+    </div>
+  </section>
+  <!-- News and Blogs -->
+  <section>
+    <div class="bg-white">
+      <div class="bgfont2 pt-32">
+        <div class="p-5 sm:p-5 container mx-auto flex flex-wrap lg:flex-nowrap justify-center items-center">
+          <div class="lg:w-3/6">
+            <div class="border-black border w-32 rounded-lg">
+              <div class="tet-gray-300 text-center">Recent Blog</div>
+            </div>
+            <div class="mt-5">
+              <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
+            </div>
+            <div class="mt-10">
+              <p class="text-gray-400">We don't mind sharing the secret.
+                <br> Read our blogs and stay updated
+                <br> about the latest trends of the
+                digital world.
+              </p>
+            </div>
+            <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+              <div class="text-black text-center font-medium">All Articles</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- LinkedIN Blog  -->
+            <a href="linkedin.html">
+              <div class="bg-white  p-6">
+                <img src="assets/LinkedIn_Blog_Image.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
+                <div class="mt-10">
+                  <div class="bg-gray-100 w-36 rounded-xl p-1">
+                    <div class="text-center">17/09/2024</div>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every B2B
+                  Brand
+                  Needs A Linkedin Advertising Company For Lead Generation</p>
+              </div>
+            </a>
+
+            <!-- Web Development Blog  -->
+            <a href="webdev.html">
+              <div class="bg-white p-6">
+                <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 2" class="w-full h-48 object-cover mb-4">
+                <div class="mt-10">
+                  <div class="bg-gray-100 w-36 rounded-xl p-1">
+                    <div class="text-center">02/09/2024</div>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How A Web
+                  Development
+                  Company Can Future-Proof Your Website</p>
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 flex justify-end">
+          <div class="w-5/6">
+            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer  -->
+  <section>
+    <div class="bg-black bgfont2 p-10">
+      <div>
+        <div class="flex justify-around flex-wrap md:flex-wrap">
+          <div class="mt-20">
             <div>
-                <div class="flex justify-around flex-wrap md:flex-wrap">
-                    <div class="mt-20">
-                        <div>
-                            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                        </div>
-                        <div class="mt-10 ">
-                            <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                <br>and
-                                digital
-                                marketing
-                                agency based
-                                in Gurgaon, India.
-                                <br>With a team of over 40+, we are an award-winning <br>full-stack digital
-                                marketing
-                                agency
-                                offering <br>
-                                creative and innovative <br>digital and brand solutions for brands <br>
-                                looking
-                                to
-                                grow
-                                their
-                                businesses.
-                            </p>
-                        </div>
-                        <div class="mt-10 flex gap-5">
-                            <div>
-                                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
-                            </div>
-                        </div>
-                        <div class="flex gap-3 mt-10 w-72 ">
-                            <div>
-                                <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
-                            </div>
-                            <div>
-                                <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                            </div>
-                        </div>
-                        <div class="flex mt-10 gap-1">
-                            <div class="cursor-pointer">
-                                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                            </div>
-                            <div class="text-white">Chennai's Leading Digital Agency</div>
-                            <div> |</div>
-                            <div class="flex">
-                                <div class="text-yellow-300">30+</div>
-                                <div>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-white pt-20">
-                        <div class="font-bold text-xl">Information</div>
-                        <ul class="text-gray-500 space-y-3 mt-5">
-                            <li>Brand Solutions</li>
-                            <li>Digital Marketing Solutions</li>
-                            <li>Who We Are</li>
-                            <li>Sample Work</li>
-                            <li>Our Clients</li>
-                            <li>Industries We Serve</li>
-                            <li>Careers</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div class="text-white pt-20">
-                        <div class="font-bold text-xl">Contact US</div>
-                        <div class="text-gray-500 mt-5">
-                            Ayn Technologies Pvt. Ltd.,<br>
-                            No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
-                            Ullagaram, Madipakkam, Chennai- 600091.
-                        </div>
-                        <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                        <div class="text-gray-500 mt-3">info@ayntech.in</div>
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="bg-gray-950 p-10">
-                        <div class="flex justify-center items-center mt-20">
-                            <div class="">
-                                <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-center mt-10">
-                            <div
-                                class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
-                                <div class="text-center">Contact US</div>
-                            </div>
-                        </div>
-                        <div class="mt-10">
-                            <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                            <div class="text-gray-500 text-center">Monday to Friday</div>
-                        </div>
-                        <div class="text-gray-500  mt-16 text-justify">
-                            With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                            agency
-                            brings
-                            <br>invaluable
-                            industry insights and <br>
-                            international <br>know-how to your brand's success.
-                        </div>
-                    </div>
-                </div>
+              <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
             </div>
+            <div class="mt-10 ">
+              <p class="text-white text-justify">The Brand Bee is an integrated branding
+                <br>and
+                digital
+                marketing
+                agency based
+                in Gurgaon, India.
+                <br>With a team of over 40+, we are an award-winning <br>full-stack digital
+                marketing
+                agency
+                offering <br>
+                creative and innovative <br>digital and brand solutions for brands <br>
+                looking
+                to
+                grow
+                their
+                businesses.
+              </p>
+            </div>
+            <div class="mt-10 flex gap-5">
+              <div>
+                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-10 w-72 ">
+              <div>
+                <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
+              </div>
+              <div>
+                <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+              </div>
+            </div>
+            <div class="flex mt-10 gap-1">
+              <div class="cursor-pointer">
+                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+              </div>
+              <div class="text-white">Chennai's Leading Digital Agency</div>
+              <div> |</div>
+              <div class="flex">
+                <div class="text-yellow-300">30+</div>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-white pt-20">
+            <div class="font-bold text-xl">Information</div>
+            <ul class="text-gray-500 space-y-3 mt-5">
+              <li>Brand Solutions</li>
+              <li>Digital Marketing Solutions</li>
+              <li>Who We Are</li>
+              <li>Sample Work</li>
+              <li>Our Clients</li>
+              <li>Industries We Serve</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="text-white pt-20">
+            <div class="font-bold text-xl">Contact US</div>
+            <div class="text-gray-500 mt-5">
+              Ayn Technologies Pvt. Ltd.,<br>
+              No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+              Ullagaram, Madipakkam, Chennai- 600091.
+            </div>
+            <div class="text-gray-500 mt-3">+91-89259 22232</div>
+            <div class="text-gray-500 mt-3">info@ayntech.in</div>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <div class="bg-gray-950 p-10">
+            <div class="flex justify-center items-center mt-20">
+              <div class="">
+                <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center mt-10">
+              <div class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
+                <div class="text-center">Contact US</div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+              <div class="text-gray-500 text-center">Monday to Friday</div>
+            </div>
+            <div class="text-gray-500  mt-16 text-justify">
+              With extensive expertise <br>spanning in Chennai <br> our digital marketing
+              agency
+              brings
+              <br>invaluable
+              industry insights and <br>
+              international <br>know-how to your brand's success.
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- FAQ Section  -->
-    <script>
-        function toggleFAQ(faqNumber) {
-            const answer = document.getElementById(`answer${faqNumber}`);
-            const symbol = document.getElementById(`symbol${faqNumber}`);
-
-            // Toggle the hidden class to show/hide the answer
-            answer.classList.toggle('hidden');
-
-            // Toggle the plus/minus symbol
-            if (answer.classList.contains('hidden')) {
-                symbol.textContent = '+';
-            } else {
-                symbol.textContent = '–';
-            }
-        }
-    </script>
+      </div>
+    </div>
+  </section>
+  <!---- JavaScript to toggle the mobile menu -->
+  <script>
+    document.getElementById('navbar-toggle').onclick = function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('services-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('aboutus-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+  </script>
+  <!-- FAQ Section  -->
+  <script>
+    function toggleFAQ(faqNumber) {
+      const answer = document.getElementById(`answer${faqNumber}`);
+      const symbol = document.getElementById(`symbol${faqNumber}`);
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        symbol.textContent = '-';
+      } else {
+        answer.classList.add('hidden');
+        symbol.textContent = '+';
+      }
+    }
+  </script>
 </body>
 
 </html>

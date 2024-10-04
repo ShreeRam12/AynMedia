@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our LeaderShip</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+  /* CEO_Image Parallax Animation */
+  .parallax-section {
+    width: 100%;
+    height: 585px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .parallax2 {
+    width: 200%;
+    height: 120%;
+    background-image: url('assets/Ayntech_CEO.webp');
+    background-size: contain;
+    background-position: center 10%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    /* Move the image to the center */
+    transform: translateX(-50%);
+    /* Center the image horizontally */
+  }
+</style>
+
+<body>
+  <section class="sticky top-0 left-0 z-50 shadow-lg">
+    <!-- Navbar -->
+    <nav class="bg-yellow-300 shadow-lg bgfont">
+      <div class="container mx-auto flex justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
+        </div>
+        <!-- Centered Navbar Links (hidden on mobile) -->
+        <div class="p-5 hidden lg:flex justify-center items-center gap-16">
+          <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+            <span class="block text-black">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              </span>
+            </span>
+          </a>
+          <div class="relative inline-block text-black cursor-pointer group z-50">
+            <a href="brandsolutions.html" class="block text-black font-medium">
+              SERVICES
+            </a>
+
+            <!-- Dropdown Menu -->
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+              <ul class="py-2">
+                <li>
+                  <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                    Solutions</a>
+                </li>
+                <li>
+                  <a href="digitalmarketing.html" class="block px-4 py-2 text-black hover:bg-gray-200">Digital
+                    Marketing
+                    Solutions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative inline-block text-black cursor-pointer group z-50">
+            <a href="aboutus.html" class="text-black cursor-pointer">
+              ABOUTUS
+            </a>
+            <!-- Dropdown Menu -->
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+              <ul class="py-2">
+                <li>
+                  <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                    we work</a>
+                </li>
+                <li>
+                  <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                    do</a>
+                </li>
+
+                <li>
+                  <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                    LeaderShip</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+            </span>
+          </a>
+          <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+            </span>
+          </a>
+          <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+            </span>
+          </a>
+          <div class="flex justify-center items-center">
+            <div class="bg-black p-2">
+              <a href="#"
+                class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                <span class="block mt-3">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                </span>
+                <span
+                  class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu Toggle Button -->
+        <!-- Mobile Menu Toggle Button -->
+        <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 pb-5">
+        <a href="index.html" class="text-black">HOME</a>
+        <!-- SERVICES with Dropdown -->
+        <div class="relative">
+          <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+          <div class="w-full ">
+            <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+              <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+              <hr />
+              <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+              <hr />
+              <li><a href="#" class="">Service 3</a></li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+
+        <!-- ABOUT US with Dropdown -->
+        <div class="relative">
+          <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+          <div class="">
+            <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+              <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+              <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+              <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+        <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+        <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+        <div class="bg-black p-2 rounded-xl">
+          <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero Section  -->
+  <section class="bg-black pb-20 p-5">
+    <div class="container mx-auto">
+      <div class="  gap-5 bgfont2 pt-20">
+        <div class=" text-center">
+          <div class="text-yellow-300 font-medium text-5xl">Our Leadership</div>
+        </div>
+        <div class="w-full md:w-full mt-10">
+          <div class="bgfont2 flex flex-col md:flex-row items-center md:items-start gap-10">
+            <!-- Image Section -->
+            <div class="w-full md:w-1/2">
+              <div class="parallax-section">
+                <div class="parallax2"></div>
+              </div>
+            </div>
+            <!-- Content Section -->
+            <div class="w-full md:w-1/2">
+              <div class="text-white space-y-6">
+                <div class="text-3xl font-medium">Mr.Ayn Gajendran</div>
+                <div class="text-2xl font-medium">Founder & CEO</div>
+                <div class="w-48">
+                  <hr>
+                </div>
+                <p class="mt-10">
+                  Introducing Ayn Gajendran, the visionary founder and CEO of Ayn Technologies. Like a diligent be,
+                  Deeptanshu
+                  established the hive in 2020, driven by a deep passion for business and brand alignment. With 15+
+                  buzzing years of
+                  combined experience in brand management, marketing analytics, business consulting, and investment
+                  banking, Deeptanshu
+                  brings a unique blend of expertise to the table. With an MBA in Marketing & Finance from the
+                  prestigious Simon School of
+                  Business at the University of Rochester, Deeptanshu guides our hive's strategic growth and creates a
+                  sweet symphony of
+                  success for our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Digital Marketing Team  -->
+  <section class="bg-white bgfont2 pb-20">
+    <section class="container mx-auto py-12">
+      <h2 class="text-3xl font-bold text-center mb-8">Dive-Hive with Ayn Gajendran…… Ok, Whatever… let's keep it simple!
+        In Conversation With The CEO</h2>
+
+      <!-- Grid Layout for Leadership -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+        <!-- Leader Box 1 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">What is your strongest belief?</h3>
+            <p class="text-gray-600">What is your strongest belief?
+              I strongly believe in MELIORA!</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 2 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">What do you like best about what you do?</h3>
+            <p class="text-gray-600">My team with whom I work each day!</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 3 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">What's your holy grail of brands to work on?</h3>
+            <p class="text-gray-600">The brands that we work with now as they are the ones that have put their faith in us.</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 4 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Who's your hero?</h3>
+            <p class="text-gray-600">My family, I couldn't live without them!</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 5 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">What's your secret superpower?</h3>
+            <p class="text-gray-600">My attention to detail... it's bordering on OCD!</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 6 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">What never fails to make you laugh?</h3>
+            <p class="text-gray-600">My daughter!</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 7 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">In four words, describe yourself.</h3>
+            <p class="text-gray-600">Fighter, perfectionist, humble, balanced.</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 8 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Career high point so far?</h3>
+            <p class="text-gray-600">Taking the AYN MEDIA & TECHNOLOGIES to what it is today, but a lot to still accomplish, we're on a mission.</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 9 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4 text-center">
+            <h3 class="font-semibold text-lg">Early bird or night owl?</h3>
+            <p class="text-gray-600">Early bird. (sometimes I email my team at 5 am when they have just gone to sleep)</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 10 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">What's your hidden Talent?</h3>
+            <p class="text-gray-600">Cooking. I can cook any cuisine. Love to grill.
+            My wife learned cooking from me.</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 11 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">The greatest lesson you've learned at AYN MEDIA & TECHNOLOGIES so far?</h3>
+            <p class="text-gray-600">It's all about the team, get the combination right and success follows!</p>
+          </div>
+        </div>
+
+        <!-- Leader Box 12 -->
+        <div class="bg-yellow-300 shadow-md rounded-lg overflow-hidden">
+          <div class="p-4 text-center">
+            <h3 class="font-semibold text-lg">The greatest lesson you've learned in LIFE so far?</h3>
+            <p class="text-gray-600">Never give up!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <section class="pt-32 bg-yellow-300 pb-32">
+    <div class="flex justify-center items-center">
+      <div class="border-gray-700 border rounded-3xl p-2 ">
+        <div class="flex justify-center items-center">
+          <div class="bgfont text-center pt-1">WORK WITH US</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center">
+      <div class="mt-10 bgfont2">
+        <div class="md:text-5xl lg:text-6xl ">We would love to hear <br>
+          more about your project</div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center ">
+      <div class="group mt-32 bgfont2 cursor-pointer">
+        <div
+          class="border-gray-700 border w-48 rounded-full p-14 transition duration-500 ease-in-out bg-black group-hover:bg-white group-hover:scale-105">
+          <div class="text-center text-lg text-yellow-300 transition duration-500 ease-in-out group-hover:text-black">
+            Let's talk US?
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News and Blogs -->
+  <section>
+    <div class="bg-white">
+      <div class="bgfont2 pt-32">
+        <div class="p-5 sm:p-5 container mx-auto flex flex-wrap lg:flex-nowrap justify-center items-center">
+          <div class="lg:w-3/6">
+            <div class="border-black border w-32 rounded-lg">
+              <div class="tet-gray-300 text-center">Recent Blog</div>
+            </div>
+            <div class="mt-5">
+              <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
+            </div>
+            <div class="mt-10">
+              <p class="text-gray-400">We don't mind sharing the secret.
+                <br> Read our blogs and stay updated
+                <br> about the latest trends of the
+                digital world.
+              </p>
+            </div>
+            <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+              <div class="text-black text-center font-medium">All Articles</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- LinkedIN Blog  -->
+            <a href="linkedin.html">
+              <div class="bg-white  p-6">
+                <img src="assets/LinkedIn_Blog_Image.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
+                <div class="mt-10">
+                  <div class="bg-gray-100 w-36 rounded-xl p-1">
+                    <div class="text-center">17/09/2024</div>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every B2B
+                  Brand
+                  Needs A Linkedin Advertising Company For Lead Generation</p>
+              </div>
+            </a>
+
+            <!-- Web Development Blog  -->
+            <a href="webdev.html">
+              <div class="bg-white p-6">
+                <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 2" class="w-full h-48 object-cover mb-4">
+                <div class="mt-10">
+                  <div class="bg-gray-100 w-36 rounded-xl p-1">
+                    <div class="text-center">02/09/2024</div>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How A Web
+                  Development
+                  Company Can Future-Proof Your Website</p>
+
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 flex justify-end">
+          <div class="w-5/6">
+            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer  -->
+  <section>
+    <div class="bg-black bgfont2 p-10">
+      <div>
+        <div class="flex justify-around flex-wrap md:flex-wrap">
+          <div class="mt-20">
+            <div>
+              <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+            </div>
+            <div class="mt-10 ">
+              <p class="text-white text-justify">The Brand Bee is an integrated branding
+                <br>and
+                digital
+                marketing
+                agency based
+                in Gurgaon, India.
+                <br>With a team of over 40+, we are an award-winning <br>full-stack digital
+                marketing
+                agency
+                offering <br>
+                creative and innovative <br>digital and brand solutions for brands <br>
+                looking
+                to
+                grow
+                their
+                businesses.
+              </p>
+            </div>
+            <div class="mt-10 flex gap-5">
+              <div>
+                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-10 w-72 ">
+              <div>
+                <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
+              </div>
+              <div>
+                <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+              </div>
+            </div>
+            <div class="flex mt-10 gap-1">
+              <div class="cursor-pointer">
+                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+              </div>
+              <div class="text-white">Chennai's Leading Digital Agency</div>
+              <div> |</div>
+              <div class="flex">
+                <div class="text-yellow-300">30+</div>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-white pt-20">
+            <div class="font-bold text-xl">Information</div>
+            <ul class="text-gray-500 space-y-3 mt-5">
+              <li>Brand Solutions</li>
+              <li>Digital Marketing Solutions</li>
+              <li>Who We Are</li>
+              <li>Sample Work</li>
+              <li>Our Clients</li>
+              <li>Industries We Serve</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="text-white pt-20">
+            <div class="font-bold text-xl">Contact US</div>
+            <div class="text-gray-500 mt-5">
+              Ayn Technologies Pvt. Ltd.,<br>
+              No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+              Ullagaram, Madipakkam, Chennai- 600091.
+            </div>
+            <div class="text-gray-500 mt-3">+91-89259 22232</div>
+            <div class="text-gray-500 mt-3">info@ayntech.in</div>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <div class="bg-gray-950 p-10">
+            <div class="flex justify-center items-center mt-20">
+              <div class="">
+                <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center mt-10">
+              <div class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
+                <div class="text-center">Contact US</div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+              <div class="text-gray-500 text-center">Monday to Friday</div>
+            </div>
+            <div class="text-gray-500  mt-16 text-justify">
+              With extensive expertise <br>spanning in Chennai <br> our digital marketing
+              agency
+              brings
+              <br>invaluable
+              industry insights and <br>
+              international <br>know-how to your brand's success.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---- JavaScript to toggle the mobile menu -->
+  <script>
+    document.getElementById('navbar-toggle').onclick = function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('services-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('aboutus-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+  </script>
+  <!-- Parallax Animation  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Register GSAP's ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Parallax effect for .Who_we_are_BG
+      gsap.to(".Who_we_are_BG", {
+        yPercent: -30, // Moves the element upwards as you scroll
+        ease: "none",  // No easing for a smooth parallax effect
+        scrollTrigger: {
+          trigger: ".whoweare",  // The section that will trigger the animation
+          start: "top bottom",  // Animation starts when the top of the section hits the bottom of the viewport
+          end: "bottom top",    // Animation ends when the bottom of the section hits the top of the viewport
+          scrub: true,          // Smooth scrubbing based on scroll position
+        }
+      });
+
+      // Parallax effect for .parallax-bg
+      gsap.to(".parallax-bg", {
+        y: "-30%", // Moves the background image upwards as you scroll
+        ease: "none", // Smooth scrolling effect
+        scrollTrigger: {
+          trigger: ".parallax-section", // The section that triggers the animation
+          start: "top bottom", // Animation starts when the section top hits the bottom of the viewport
+          end: "bottom top",   // Ends when the section bottom hits the top of the viewport
+          scrub: true,         // Makes it dependent on scroll position
+        }
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Register GSAP's ScrollTrigger plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Parallax animation (Top to Bottom)
+      gsap.to(".parallax2", {
+        yPercent: -30, // Negative value for top to bottom movement
+        ease: "none",  // Linear smooth effect for the scroll
+        scrollTrigger: {
+          trigger: ".parallax-section", // Section that triggers the animation
+          start: "top bottom",  // Animation starts when the top of the section reaches the bottom of the viewport
+          end: "bottom top",    // Animation ends when the bottom of the section reaches the top of the viewport
+          scrub: true,          // Smoothly scrubs the animation based on scroll position
+        }
+      });
+
+      // Parallax animation for another element (if needed)
+      gsap.to(".parallax-bg", {
+        y: "-30%", // Moves upwards when scrolling
+        ease: "none", // Smooth linear movement
+        scrollTrigger: {
+          trigger: ".parallax-section", // Same or different section depending on your layout
+          start: "top bottom", // Starts when the section enters the viewport
+          end: "bottom top",   // Ends when it leaves the viewport
+          scrub: true,         // Smooth animation tied to scrolling
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

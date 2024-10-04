@@ -2,1173 +2,1064 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Engine Optimisation (SEO)</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="./output.css" rel="stylesheet">
-    <link href="/dist/main.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Engine Optimization</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <section class="sticky top-0 left-0 z-50 shadow-lg">
-        <!-- Navbar -->
-        <nav class="bg-yellow-300 shadow-lg bgfont">
-            <div class="container mx-auto flex justify-between">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                </div>
-                <!-- Centered Navbar Links (hidden on mobile) -->
-                <div class="p-5 hidden md:flex justify-center items-center gap-16">
-                    <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
-                        <span class="block text-black">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-
-                            </span>
-                    </a>
-                    <div class="relative inline-block text-black cursor-pointer group z-50">
-                        <a href="brandsolutions.html" class="block text-black font-medium">
-                            SERVICES
-                        </a>
-                        <!-- Dropdown Menu -->
-                        <div
-                            class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                            <ul class="py-2">
-                                <li><a href="brandsolutions.html"
-                                        class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a></li>
-                                <li><a href="digitalmarketing.html"
-                                        class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
-                                        Solutions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="aboutus.html"
-                        class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                    </a>
-                    <a href="samplework.html"
-                        class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                        </span>
-                    </a>
-                    <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                        </span>
-                    </a>
-                    <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                        <span class="block">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                        </span>
-                        <span
-                            class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                            <span
-                                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                        </span>
-                    </a>
-                    <div class="flex justify-center items-center">
-                        <div class="bg-black p-2 ">
-                            <a href="#"
-                                class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
-                                <span class="block mt-3">
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                </span>
-                                <span
-                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile Menu Toggle Button -->
-                <!-- Mobile Menu Toggle Button -->
-                <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
-                    <i class="fas fa-bars fa-lg"></i>
-                </button>
-            </div>
-
-            <!-- Mobile Menu (hidden by default) -->
-            <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                <a href="#" class="text-black hover:text-gray-400">BLOG</a>
-                <div class="bg-black p-2 rounded-xl">
-                    <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <!-- Hero Section  -->
-    <section class="bg-black pb-20">
-        <div class="container mx-auto ">
-            <div class=" flex gap-5 bgfont2 pt-20">
-                <div class="w-5/6">
-                    <div class="text-yellow-300 font-medium text-5xl">Search Engine Optimisation (SEO)</div>
-                    <div class="text-gray-200 font-medium text-xl mt-10">
-                        Unleash the buzz of Search Engine Optimization (SEO) and let your brand's authenticity "Bee
-                        Everywhere" in the digital landscape.
-                    </div>
-                </div>
-                <div class="w-full md:w-full">
-                    <div class="bgfont2">
-                        <div class="flex gap-20">
-                            <div class="text-white">
-                                In the digital realm, our SEO service goes beyond rankings. We build genuine
-                                relationships with search engines, crafting personalized strategies to engage your
-                                audience. With meticulous keyword research and technical optimizations, we propel your
-                                brand's organic growth.
-                            </div>
-                            <div class="text-white">
-                                Our passionate team combines technical expertise with creativity, delivering captivating
-                                content and ethical practices. Let's forge a strong bond, elevating visibility and
-                                nurturing lasting connections with search engines and your online audience.
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="my-4">
-                    <div class="mt-10 flex gap-20 bgfont2">
-                        <ul class="space-y-3">
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">
-                                    Global SEO </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white"> Local SEO </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white"> E-Commerce SEO </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">SEO Audit</div>
-                            </div>
-                        </ul>
-                        <ul class="space-y-3">
-                            <a href="uiux.html">
-                                <div class="flex gap-3">
-                                    <div>
-                                        <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                    </div>
-                                    <div class="text-white">
-                                        National SEO</div>
-                                </div>
-                            </a>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">
-
-                                    Enterprise SEO</div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">
-                                    Start-Up SEO</div>
-                            </div>
-                            <div class="flex gap-3">
-                                <div>
-                                    <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
-                                </div>
-                                <div class="text-white">
-                                    Technical Seo </div>
-                            </div>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
+  <section class="sticky top-0 left-0 z-50 shadow-lg">
+    <!-- Navbar -->
+    <nav class="bg-yellow-300 shadow-lg bgfont">
+      <div class="container mx-auto flex justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
         </div>
-    </section>
-    <!-- Content  -->
-    <section class="bg-yellow-300 pb-20">
-        <!-- Content Section  -->
-        <section class="pt-20">
-            <div class="bgfont2 container mx-auto">
-                <div class="flex gap-10">
-                    <div>
-                        <div class="font-medium text-xl">Global SEO</div>
-                        <div class="font-medium text-xl">Bee Globally-Popular</div>
-                        <div class="text-gray-700 mt-5">
-                            We forge powerful connections between your business and audiences across the globe, ensuring
-                            your online visibility resonates on an international scale. Through meticulous keyword
-                            research, localized content strategies, and technical optimizations, we position your brand
-                            for success in diverse markets. Together, we'll propel your brand to new horizons and
-                            capture the hearts of customers across borders.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">National SEO</div>
-                        <div class="font-medium text-xl">Bee Nationally-Popular</div>
-                        <div class="text-gray-700 mt-5">
-                            Conquer the digital landscape and establish your national dominance with our top-tier
-                            National SEO services. We'll develop a robust SEO strategy tailored to your specific target
-                            audience and geographical reach. From optimizing your website for local search to building
-                            high-quality backlinks, we'll ensure your brand shines bright in search engine results
-                            across the nation.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">Local SEO
-                        </div>
-                        <div class="font-medium text-xl">Be Locally-Popular
-                        </div>
-                        <div class="text-gray-700 mt-5">
-                            We cultivate strong relationships between your business and the local community, ensuring
-                            your online visibility aligns with the needs and desires of nearby customers. Through
-                            targeted optimizations and strategic local listings, we establish a bond that drives foot
-                            traffic, fosters trust, and amplifies your brand's impact within the local marketplace.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">Enterprise SEO
-                        </div>
-                        <div class="font-medium text-xl">Bee Searchable</div>
-                        <div class="text-gray-700 mt-5">
-                            Unlock the full potential of your enterprise website with our comprehensive SEO services.
-                            We'll optimize every nook and cranny, ensuring your online presence stands tall amidst the
-                            digital landscape. From technical optimizations to strategic keyword placement, our team
-                            will pave the way to higher rankings and increased organic traffic.
-                        </div>
-                    </div>
-                </div>
+        <!-- Centered Navbar Links (hidden on mobile) -->
+        <div class="p-5 hidden lg:flex justify-center items-center gap-16">
+          <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+            <span class="block text-black">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              </span>
+            </span>
+          </a>
+          <div class="relative inline-block text-black cursor-pointer group z-50">
+            <a href="brandsolutions.html" class="block text-black font-medium">
+              SERVICES
+            </a>
+
+            <!-- Dropdown Menu -->
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+              <ul class="py-2">
+                <li>
+                  <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                    Solutions</a>
+                </li>
+                <li>
+                  <a href="digitalmarketing.html" class="block px-4 py-2 text-black hover:bg-gray-200">Digital
+                    Marketing
+                    Solutions</a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="relative inline-block text-black cursor-pointer group z-50">
+            <a href="aboutus.html" class="text-black cursor-pointer">
+              ABOUTUS
+            </a>
+            <!-- Dropdown Menu -->
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+              <ul class="py-2">
+                <li>
+                  <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                    we work</a>
+                </li>
+                <li>
+                  <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                    do</a>
+                </li>
 
-        </section>
-        <!-- Content Section  -->
-        <section class="pt-20">
-            <div class="bgfont2 container mx-auto">
-                <div class="flex gap-10">
-                    <div>
-                        <div class="font-medium text-xl">E-commerce SEO</div>
-                        <div class="font-medium text-xl">Bee Rankable
-
-                        </div>
-                        <div class="text-gray-700 mt-5">
-                            Elevate your e-commerce empire to new heights with our specialized E-commerce SEO services.
-                            We'll meticulously fine-tune your product pages, ignite conversion-boosting keywords, and
-                            construct a seamless user experience that keeps customers coming back for more. Get ready to
-                            dominate search engine rankings, increase visibility, and witness a surge in online sales.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">Start-Up SEO
-                        </div>
-                        <div class="font-medium text-xl">Bee Optimised
-                        </div>
-                        <div class="text-gray-700 mt-5">
-                            Fuel your start-up's growth with our dynamic Start-Up SEO services. We'll craft a powerful
-                            online presence that puts your brand on the map and drives targeted traffic to your website.
-                            From strategic keyword research to on-page optimization, we'll lay the foundation for your
-                            digital success. Watch your start-up flourish as we navigate the ever-changing SEO
-                            landscape, outrank competitors, and attract eager customers to your doorstep.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-medium text-xl">SEO Audit</div>
-                        <div class="font-medium text-xl">Bee Auditable
-                        </div>
-                        <div class="text-gray-700 mt-5">
-                            Our team of SEO detectives will uncover hidden opportunities and reveal areas for
-                            improvement to boost your search engine rankings. From uncovering keyword mysteries to
-                            optimizing your site's structure, we'll ensure your website is in top-notch shape. We will
-                            be your SEO superheroes, wielding our analytical tools to deliver an impactful audit that
-                            unlocks your website's true potential.
-                        </div>
-                    </div>
-                </div>
+                <li>
+                  <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                    LeaderShip</a>
+                </li>
+              </ul>
             </div>
-        </section>
-    </section>
-    <!-- Free SEO Audit  -->
-    <section class="bg-black pt-20 pb-20">
-        <div class="container mx-auto bgfont2">
-            <div class="text-yellow-300 text-3xl text-center">Free SEO Audit</div>
-            <div class="mt-5 flex justify-center items-center gap-1">
-                <!-- Input Field -->
-                <div class="w-full max-w-md">
-                    <input type="text" class="w-full px-4 py-3 border border-gray-300 outline-none"
-                        placeholder="Enter your website">
-                </div>
+          </div>
 
-                <!-- Submit Button -->
+          <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+            </span>
+          </a>
+          <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+            </span>
+          </a>
+          <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+            <span class="block">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+            </span>
+            <span
+              class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+              <span
+                class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+            </span>
+          </a>
+          <div class="flex justify-center items-center">
+            <div class="bg-black p-2">
+              <a href="#"
+                class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                <span class="block mt-3">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                </span>
+                <span
+                  class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Menu Toggle Button -->
+        <!-- Mobile Menu Toggle Button -->
+        <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 pb-5">
+        <a href="index.html" class="text-black">HOME</a>
+        <!-- SERVICES with Dropdown -->
+        <div class="relative">
+          <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+          <div class="w-full ">
+            <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+              <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+              <hr />
+              <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+              <hr />
+              <li><a href="#" class="">Service 3</a></li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+
+        <!-- ABOUT US with Dropdown -->
+        <div class="relative">
+          <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+          <div class="">
+            <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+              <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+              <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+              <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+        <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+        <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+        <div class="bg-black p-2 rounded-xl">
+          <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Hero Section  -->
+  <section class="bg-black pb-20 p-5">
+    <div class="container mx-auto">
+      <div class=" flex  flex-wrap lg:flex-nowrap gap-5 bgfont2 pt-20">
+        <div class="w-5/6">
+          <div class="text-yellow-300 font-medium text-5xl">Search Engine Optimization (SEO)</div>
+          <div class="text-gray-200 font-medium text-xl mt-10">Unleash the power of Search Engine Optimization (SEO)
+            with Ayn Media and let your brand's authenticity "Shine Bright" in
+            the digital landscape.
+          </div>
+        </div>
+        <div class="w-full md:w-full">
+          <div class="bgfont2">
+            <div class="flex gap-20">
+              <div class="text-white">
+                In the digital realm, our SEO services go beyond just improving rankings. We focus on building genuine
+                relationships
+                with search engines by crafting personalized strategies that engage your audience. Through meticulous
+                keyword research
+                and technical optimizations, we drive your brand's organic growth.
+              </div>
+              <div class="text-white">
+                Our passionate team blends technical expertise with creativity to deliver captivating content while
+                adhering to ethical
+                practices. Together, let’s forge a strong bond that elevates your visibility and nurtures lasting
+                connections with both
+                search engines and your online audience.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="mt-10 flex gap-20 bgfont2">
+            <ul class="space-y-3">
+              <div class="flex gap-3">
                 <div>
-                    <div class="bg-yellow-300 w-52 p-[13px] cursor-pointer">
-                        <div class="text-black text-center">Submit</div>
-                    </div>
-
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
                 </div>
-            </div>
-            <div class="flex justify-center items-center mt-10">
-                <div class="text-white text-center">
-                    Our SEO analysts who will assess your website's SEO performance, delivering a detailed report
-                    enriched
-                    with invaluable insights, identifying areas of improvement, untapped opportunities and practical
-                    tips
-                    for optimization.
+                <div class="text-white">Global SEO</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
                 </div>
+                <div class="text-white">Local SEO</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">E-Commerce SEO</div>
+              </div>
+            </ul>
+            <ul class="space-y-3">
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">
+                  National SEO</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">
+                  Enterprise SEO</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">
+                  Start-Up SEO</div>
+              </div>
+              <div class="flex gap-3">
+                <div>
+                  <i class="fa-solid fa-plus" style="color: #fae20c;"></i>
+                </div>
+                <div class="text-white">
+                  Technical Seo</div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content  -->
+  <section class="bg-yellow-300 pb-20">
+    <!-- Content Section  -->
+    <section class="pt-20 p-5">
+      <div class="bgfont2 container mx-auto">
+        <div class="flex flex-wrap lg:flex-nowrap gap-10">
+          <div>
+            <div class="font-medium text-xl">Global SEO</div>
+            <div class="font-medium text-xl">Be Globally Popular</div>
+            <div class="text-gray-700 mt-5">
+              We establish strong connections between your business and audiences worldwide, ensuring your online
+              visibility makes an
+              impact on an international scale. Through thorough keyword research, tailored content strategies, and
+              technical
+              optimizations, we position your brand for success in diverse markets. Together, we’ll elevate your brand
+              to new heights
+              and capture the hearts of customers across borders.
             </div>
-
+          </div>
+          <div>
+            <div class="font-medium text-xl">National SEO</div>
+            <div class="font-medium text-xl">Be Nationally Popular</div>
+            <div class="text-gray-700 mt-5">
+              Dominate the digital landscape and establish your national presence with our premier National SEO
+              services. We’ll create
+              a robust SEO strategy specifically tailored to your target audience and geographical focus. From
+              optimizing your website
+              for local search to building high-quality backlinks, we’ll ensure your brand stands out in search engine
+              results across
+              the country.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">Local SEO</div>
+            <div class="font-medium text-xl">Be Locally Popular</div>
+            <div class="text-gray-700 mt-5">
+              We foster strong connections between your business and the local community, ensuring your online
+              visibility resonates
+              with the needs and desires of nearby customers. Through targeted optimizations and strategic local
+              listings, we create a
+              bond that drives foot traffic, builds trust, and amplifies your brand's presence in the local marketplace.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">Enterprise SEO</div>
+            <div class="font-medium text-xl">Be Searchable</div>
+            <div class="text-gray-700 mt-5">
+              Maximize the potential of your enterprise website with our all-encompassing SEO services. We’ll optimize
+              every aspect of
+              your online presence, ensuring you stand out in the digital landscape. From technical enhancements to
+              strategic keyword
+              placement, our team will lay the groundwork for higher rankings and a boost in organic traffic.
+            </div>
+          </div>
+          <div>
+            <div class="font-medium text-xl">E-commerce SEO</div>
+            <div class="font-medium text-xl">Be Rankable</div>
+            <div class="text-gray-700 mt-5">
+              Take your e-commerce empire to new heights with our specialized E-commerce SEO services. We’ll
+              meticulously optimize
+              your product pages, activate conversion-driving keywords, and create a seamless user experience that keeps
+              customers
+              returning. Get ready to dominate search engine rankings, enhance visibility, and experience a significant
+              increase in
+              online sales.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Ready to Bee Everything  -->
-    <section class="pt-20 pb-20">
-        <section class="">
-            <div class="bgfont2 container mx-auto">
-                <div class="flex justify-between">
-                    <div>
-                        <div class="text-3xl font-medium">Unleash the potential of our SEO <br>
-                            Marketing service as we forge <br>
-                            IMPACTFUL STRATEGIES, propelling <br>
-                            your brand's reach and resonance.</div>
-                    </div>
-                    <a href="contactus.html">
-                        <div class="bgfont2">
-                            <div class="bg-yellow-300 w-40 p-10 rounded-full cursor-pointer">
-                                <div class="text-black text-center">Ready To Bee Everything?</div>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
+    <!-- Content Section  -->
+    <section class="pt-20 p-5">
+      <div class="bgfont2 container mx-auto">
+        <div class="flex flex-wrap lg:flex-nowrap gap-10">
+          <div>
+            <div class="font-medium text-xl">Start-Up SEO</div>
+            <div class="font-medium text-xl">Be Optimized</div>
+            <div class="text-gray-700 mt-5">
+              Ignite your start-up's growth with our dynamic Start-Up SEO services. We’ll build a robust online presence
+              that places
+              your brand on the map and drives targeted traffic to your website. From strategic keyword research to
+              on-page
+              optimization, we’ll establish the foundation for your digital success. Watch your start-up thrive as we
+              navigate the
+              evolving SEO landscape, surpass competitors, and attract eager customers to your door.
             </div>
-        </section>
-        <section>
-            <div class="container mx-auto bgfont2 mt-20">
-                <div class="w-5/6">
-                    <div class="flex gap-10 flex-wrap md:flex-nowrap">
-                        <div class="text-gray-500">Are you ready to embark on a digital love affair? At The Brand Bee,
-                            we understand that social media is all about building meaningful connections, and we're here
-                            to be your cupid in the digital realm. Our Social Media Marketing services are designed to
-                            make your brand the heartthrob of Instagram, Facebook, YouTube, LinkedIn, Twitter,
-                            Pinterest, and TikTok.</div>
-                        <div class="text-gray-500">
-                            Let us be your wingbees on Instagram, where we'll help you capture hearts with visually
-                            stunning content, captivating captions, and the perfect blend of hashtags. Get ready to
-                            create a buzz on Facebook as we craft engaging posts, ignite conversations, and build a
-                            community that can't get enough of your brand.
-                        </div>
-                    </div>
-                </div>
-
+          </div>
+          <div>
+            <div class="font-medium text-xl">SEO Audit</div>
+            <div class="font-medium text-xl">Be Auditable</div>
+            <div class="text-gray-700 mt-5">
+              Our team of SEO detectives will uncover hidden opportunities and identify areas for improvement to enhance
+              your search
+              engine rankings. From revealing keyword insights to optimizing your site's structure, we’ll ensure your
+              website is in
+              peak condition. Think of us as your SEO superheroes, using our analytical tools to provide a comprehensive
+              audit that
+              unlocks your website's true potential.
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Ready to Bee Everything  -->
+  <section class="pt-10 md:pt-20 pb-10 md:pb-20">
+    <!-- First Section -->
+    <section>
+      <div class="bgfont2 container mx-auto">
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center p-5 gap-8 md:gap-0">
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2">
+            <div class="text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-center md:text-left">
+              Unleash the power of our SEO marketing services as we craft<br class="hidden md:block">IMPACTFUL
+              STRATEGIES that elevate your brand's reach and resonance.
+            </div>
+          </div>
+          <!-- Call to Action -->
+          <div class="w-full md:w-auto">
+            <div class="bg-yellow-300 w-44 md:w-56 p-8 md:p-14 rounded-full cursor-pointer mx-auto md:mx-0">
+              <div class="text-black text-center">
+                Ready to <span class="font-semibold">become everything</span> you aspire to be?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- The Path to SEO Sucess: Unleashing the Power of Our SEO Service  -->
-    <section class="bg-yellow-300 pt-20 pb-20">
-        <div class="bgfont2 container mx-auto">
-            <div class="text-center">
-                <div class="text-black text-3xl">The Path to SEO Success: Unleashing the Power of Our SEO Service</div>
+    <!-- Second Section -->
+    <section>
+      <div class="container mx-auto bgfont2 mt-10 md:mt-20">
+        <div class="w-full lg:w-5/6 mx-auto">
+          <div class="flex flex-wrap md:flex-nowrap gap-10 p-5">
+            <!-- Text Block 1 -->
+            <div class="w-full md:w-1/2 text-gray-500 leading-relaxed">
+              Welcome to Ayn Media's SEO Service, where we cultivate meaningful connections between your brand and
+              search engines. Our
+              Keyword Analysis service identifies the ideal keywords to make your website irresistible, while our
+              Content Marketing
+              creates engaging narratives that resonate with your audience. From the local charm of Local SEO to the
+              expansive reach
+              of Global SEO, we ensure your online presence shines brightly.
+            </div>
+            <!-- Text Block 2 -->
+            <div class="w-full md:w-1/2 text-gray-500 leading-relaxed">
+              But that’s not all! With On-Page SEO, we optimize every aspect of your website, and Off-Page SEO fosters
+              connections
+              throughout the web. At Ayn Media, we believe in the power of relationships to make your brand thrive. Get
+              ready to fall
+              in love with our SEO services and watch your brand flourish!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <div class="bg-black bgfont2 pt-20 pb-10 p-5">
+      <div class="container mx-auto ">
+        <div class="text-yellow-300 text-3xl md:text-4xl lg:text-5xl text-center">The Importance of Search Engine
+          Optimization (SEO) for businesses
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="">
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Increased Organic Traffic:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">SEO helps improve your website's visibility on
+                search engines, leading to higher organic traffic. By optimizing for
+                relevant keywords, you can attract potential customers actively searching for your products or services
+              </div>
+            </div>
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Enhanced User Experience:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">Effective SEO practices focus on improving the
+                overall user experience on your website. This includes optimizing page
+                speed, mobile-friendliness, and site structure, which can lead to lower bounce rates and higher
+                engagement.
+              </div>
+            </div>
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Cost-Effective Marketing:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">Compared to traditional advertising methods, SEO
+                is a cost-effective strategy that offers long-term benefits. Once
+                optimized, your website can continue to attract organic traffic without ongoing ad spend, making it a
+                sustainable
+                marketing solution.
+              </div>
+            </div>
+            <div class="mt-10 gap-10">
+              <div class="text-yellow-300 text-xl md:text-xl lg:text-3xl font-bold">Building Brand Credibility and
+                Trust:</div>
+              <div class="text-white text-md lg:text-xl mt-3 md:mt-5">High search engine rankings can enhance your
+                brand's credibility. Users tend to trust websites that appear on the first
+                page of search results, and a strong SEO strategy can position your brand as an authority in your
+                industry, fostering
+                trust among potential customers.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Call-to-Action Section -->
+        <div class="flex justify-center items-center mt-10">
+          <div
+            class="w-44 md:w-52 lg:w-72 p-3 cursor-pointer bg-yellow-300 rounded-lg hover:bg-white duration-500 ease-in-out">
+            <div class="text-center text-black text-md">Ready to <span class="font-semibold">become everything</span>
+              you aspire to be?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sample Work  -->
+  <section>
+    <div class="bgfont2 pt-10 pb-10">
+      <div class="text-center">SAMPLE WORK</div>
+    </div>
+  </section>
+  <!-- Get in Touch  -->
+  <section>
+    <div class="bg-yellow-300 bgfont2 p-20 pt-20">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
+            <div class="text-2xl md:text-3xl lg:text-5xl  font-medium mb-4 text-gray-900">STILL, WAITING FOR
+              <br>US
+              TO
+              MAKE
+              THE
+              <br> FIRST MOVE?
+            </div>
+            <div class="text-gray-900 text-xl mt-10 lg:mt-20">Don't be shy, get in touch.</div>
+            <div class="mt-32 float-right">
+              <div class="w-full">
+                <img src="assets/Border_Img.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Form Section -->
+          <div class="w-full md:w-1/2 lg:w-3/5">
+            <form class="space-y-12">
+              <!-- Name Field -->
+              <div>
+                <label for="name" class="block text-sm font-bold mb-2"></label>
+
+                <input type="text" id="name" name="name" placeholder="Your Name*:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+              </div>
+              <!-- Email Field -->
+              <div>
+                <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                <input type="email" id="email" name="email" placeholder="Email Id:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+
+              </div>
+              <div>
+                <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                <input type="number" id="email" name="number" placeholder="Phone Number:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+              </div>
+              <!-- Company Name  -->
+              <div>
+                <label for="name" class="block  text-sm font-bold"></label>
+                <input type="text" id="name" name="name" placeholder="Company Name:"
+                  class=" bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+              </div>
+
+              <div class="mt-4">
+                <label for="dropdown1" class="block text-sm font-bold"></label>
+                <select id="dropdown1" name="dropdown1"
+                  class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+                  <option value="" disabled selected hidden>Choose Service</option>
+                  <option value="option1" class="text-black">Branding Solutions</option>
+                  <option value="option2" class="text-black">Corporate Rebranding</option>
+                  <option value="option3" class="text-black">Photoshoots & Video Shoots
+                  </option>
+                  <option value="option3" class="text-black">social Media Marketing
+                  </option>
+                  <option value="option3" class="text-black">Ecommerce Solutions</option>
+                  <option value="option3" class="text-black">Website Development &
+                    Management</option>
+                  <option value="option3" class="text-black">Ads/Perfomrance Marketing
+                  </option>
+                  <option value="option3" class="text-black">SEO (Search Engine
+                    Optimization)</option>
+                  <option value="option3" class="text-black">Content Marketing Solutions
+                  </option>
+                  <option value="option3" class="text-black">Email Marketing & Automation
+                  </option>
+                  <option value="option3" class="text-black">Marketing & Automation
+                  </option>
+                  <option value="option3" class="text-black">Online Reputation Management
+                  </option>
+                  <option value="option3" class="text-black">Influencer Marketing &
+                    Community Building
+                  </option>
+                  <option value="option3" class="text-black">Other </option>
+
+                </select>
+              </div>
+
+              <div class="mt-4">
+                <label for="dropdown2" class="block text-sm font-bold"></label>
+                <select id="dropdown2" name="dropdown2"
+                  class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                  required>
+                  <option value="" disabled selected hidden>Estimated Monthly Budget
+                  </option>
+                  <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
+                  </option>
+                  <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
+                  </option>
+                  <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
+                  </option>
+                  <option value="option3" class="text-black"> INR 25Lacs and above
+                  </option>
+                </select>
+              </div>
+              <!-- Message Field -->
+              <div class="">
+                <label for="message" class="block text-gray-700 text-sm font-bold"></label>
+                <textarea id="message" name="message"
+                  placeholder="Please leave us a brief of your requirements and services you are interested in*:"
+                  class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-700"
+                  required></textarea>
+              </div>
+              <div class="mt-4 flex flex-row lg:flex-row items-center bg-white lg:w-72 p-5 gap-10 lg:gap-10">
+                <div class="flex items-center">
+                  <input type="checkbox" id="not-a-robot" name="not-a-robot"
+                    class="text-white focus:ring-2 focus:ring-white h-5 w-5">
+                  <label for="not-a-robot" class="ml-2 text-black text-sm">I am not a robot</label>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img src="assets/Captchaa.png" alt="Captchaa" class="h-10 w-10 lg:w-auto">
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="flex justify-start items-start">
+                <div class="text-center mt-10">
+                  <button type="submit"
+                    class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                    Your Transformation Today</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section  -->
+  <section>
+    <div class="bg-black pt-20 pb-10">
+      <div class=" bgfont2 container mx-auto p-5">
+        <h2 class="text-5xl text-white text-center mb-10">FAQ</h2>
+        <div class="flex justify-center items-center">
+          <div class="w-4/6">
+            <!-- FAQ Item 1 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(1)">
+                <h3 class="font-semibold text-lg text-white"> Why is SEO important for my business?</h3>
+                <span id="symbol1" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer1" class="hidden mt-2 p-4 text-white">
+                <p>SEO is crucial for improving your website's visibility in search engine results, driving organic
+                  traffic, and attracting
+                  potential customers. It helps establish your brand as an authority in your industry and enhances the
+                  overall user
+                  experience.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(2)">
+                <h3 class="font-semibold text-lg text-white">2. What services does Ayn Media offer for SEO?</h3>
+                <span id="symbol2" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer2" class="hidden mt-2 p-4 text-white">
+                <p>Ayn Media provides a comprehensive range of SEO services in chennai, including keyword analysis,
+                  on-page optimization,
+                  content marketing, local and global SEO strategies, technical SEO audits, and off-page link-building
+                  to enhance your
+                  online presence.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(3)">
+                <h3 class="font-semibold text-lg text-white">3. How long does it take to see results from SEO efforts?
+                </h3>
+                <span id="symbol3" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer3" class="hidden mt-2 p-4 text-white">
+                <p>SEO is a long-term strategy, and results can typically be seen within three to six months. However,
+                  the timeline may
+                  vary depending on factors such as competition, industry, and the current state of your website.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(4)">
+                <h3 class="font-semibold text-lg text-white">4.How do you determine which keywords to target?</h3>
+                <span id="symbol4" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer4" class="hidden mt-2 p-4 text-white">
+                <p>We conduct thorough keyword analysis using various tools to identify relevant keywords with high
+                  search volume and low
+                  competition. We focus on terms that align with your business goals and resonate with your target
+                  audience.</p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="border border-white rounded-md pb-4 mb-4">
+              <div class="flex justify-between items-center cursor-pointer p-4" onclick="toggleFAQ(5)">
+                <h3 class="font-semibold text-lg text-white">5. Can I do SEO on my own, or do I need a professional
+                  agency?
+                </h3>
+                <span id="symbol5" class="text-2xl text-white">+</span>
+              </div>
+              <div id="answer5" class="hidden mt-2 p-4 text-white">
+                <p>While it is possible to implement basic SEO practices on your own, working with a professional agency
+                  like Ayn Media can
+                  provide you with expert insights, advanced strategies, and ongoing support to maximize your results
+                  and keep up with the
+                  constantly evolving SEO landscape</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News and Blogs -->
+  <section>
+    <div class="bg-white">
+      <div class="bgfont2 pt-32">
+        <div class="p-5 sm:p-5 container mx-auto flex flex-wrap lg:flex-nowrap justify-center items-center">
+          <div class="lg:w-3/6">
+            <div class="border-black border w-32 rounded-lg">
+              <div class="tet-gray-300 text-center">Recent Blog</div>
+            </div>
+            <div class="mt-5">
+              <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
             </div>
             <div class="mt-10">
-                <div class="text-black text-center">Embark on a transformative journey towards digital success with our
-                    comprehensive
-                    SEO service. From
-                    in-depth website audits to strategic content creation, we'll guide you through a results-driven
-                    process
-                    designed to boost your online visibility and drive organic traffic. Begin this SEO journey with us,
-                    and
-                    witness your website soar to new heights in search engine rankings while attracting a steady stream
-                    of
-                    targeted visitors. Here's how we make it happen:</div>
+              <p class="text-gray-400">We don't mind sharing the secret.
+                <br> Read our blogs and stay updated
+                <br> about the latest trends of the
+                digital world.
+              </p>
             </div>
-            <div class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-                <!-- Card 1 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2">Website Audit:</h3>
-                    <ol class="list-decimal pl-5 mt-2 text-gray-600">
-                        <li>Thoroughly analyze your website's structure, performance, and user experience.</li>
-                        <li>Identify technical issues, broken links, and opportunities for improvement.</li>
-                        <li>Create a solid foundation for SEO optimization.</li>
-                    </ol>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2">Keyword Research & Analysis:</h3>
-                    <ol class="list-decimal pl-5 mt-2 text-gray-600">
-                        <li>Conduct extensive research to uncover relevant and high-performing keywords.</li>
-                        <li>Analyze search volumes, competition and user intent.</li>
-                        <li>Develop a targeted keyword strategy to optimize your content and improve rankings.</li>
-                    </ol>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2">Link Building:</h3>
-                    <ol class="list-decimal pl-5 mt-2 text-gray-600">
-                        <li>Strategically build high-quality backlinks from authoritative websites.</li>
-                        <li>Foster relationships with industry influencers and engage in guest posting.</li>
-                        <li>Enhance your website's credibility and boost organic rankings.</li>
-                    </ol>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2">Keywords & URL Optimization:</h3>
-                    <ol class="list-decimal pl-5 mt-2 text-gray-600">
-                        <li>Optimize your website's URLs, meta tags, and headers with targeted keywords.</li>
-                        <li>Ensure proper keyword placement throughout your content.</li>
-                        <li>Maximize your website's visibility in search engine results.</li>
-                    </ol>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2">Website Content Creation:</h3>
-                    <ol class="list-decimal pl-5 mt-2 text-gray-600">
-                        <li>Craft engaging, informative, and SEO-friendly content that resonates with your target
-                            audience.</li>
-                        <li>Develop a content calendar and produce regular, high-quality articles, blogs, and landing
-                            pages.</li>
-                        <li>Drive organic traffic and establish your brand as an industry thought leader.</li>
-                    </ol>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                    <h3 class="text-xl font-bold mb-2">Result-Oriented Analytical Report:</h3>
-                    <ol class="list-decimal pl-5 mt-2 text-gray-600">
-                        <li>Provide comprehensive reports that track your SEO performance.</li>
-                        <li>Measure keyword rankings, organic traffic, and conversion metrics.</li>
-                        <li>Gain valuable insights to refine your SEO strategy and drive continuous improvement.</li>
-                    </ol>
-                </div>
+            <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+              <div class="text-black text-center font-medium">All Articles</div>
             </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div class="bg-black bgfont2 pt-20 pb-10">
-            <div class="container mx-auto ">
-                <div class="text-white text-3xl text-center">Not sure why building bonds over
-                    social media is important? Have a
-                    look at these stats….</div>
-                <div class="flex justify-center items-center">
-                    <div class="">
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">92%</div>
-                            <div class="text-white text-xl">92% of marketers indicated that social media marketing is
-                                <br>
-                                important for their business.
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">80%</div>
-                            <div class="text-white text-xl">Video content on social media generates 12 times more shares
-                                than <br>text and image posts combined, highlighting the growing <br> importance of
-                                visual
-                                content in social media marketing.
-
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">55%</div>
-                            <div class="text-white text-xl">LinkedIn has reported a 55% year-over-year increase in
-                                engagement rates, indicating the platform's rising popularity among professionals and
-                                businesses.
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">75%</div>
-                            <div class="text-white text-xl">Over 75% of social media marketers use Instagram as part of
-                                their <br> marketing strategy, making it one of the top platforms for brand
-                                <br>promotion.
-                            </div>
-                        </div>
-                        <div class="mt-10 flex gap-10">
-                            <div class="text-yellow-300 text-5xl font-bold">75%</div>
-                            <div class="text-white text-xl">O71% of consumers who have had a positive experience with a
-                                brand <br> on social media are likely to recommend it to others, emphasizing <br> the
-                                importance
-                                of building strong connections with the audience.
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- LinkedIN Blog  -->
+            <a href="linkedin.html">
+              <div class="bg-white  p-6">
+                <img src="assets/LinkedIn_Blog_Image.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
+                <div class="mt-10">
+                  <div class="bg-gray-100 w-36 rounded-xl p-1">
+                    <div class="text-center">17/09/2024</div>
+                  </div>
                 </div>
-                <a href="contactus.html">
-                    <div class="flex justify-center items-center mt-10">
-                        <div
-                            class="bgfont2 w-52 p-3 cursor-pointer bg-yellow-300 rounded-lg hover:bg-white duration-500 ease-in-out">
-                            <div class="text-center">Ready to Bee Everything</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- Sample Work  -->
-    <section>
-        <div class="bgfont2 pt-10 pb-10">
-            <div class="text-center">SAMPLE WORK</div>
-        </div>
-    </section>
-    <!-- Get in Touch  -->
-    <section>
-        <div class="bg-yellow-300 bgfont2 p-20 pt-20">
-            <div class="container mx-auto">
-                <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
-                    <!-- Text Section -->
-                    <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
-                        <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-900">STILL, WAITING FOR
-                            <br>US
-                            TO
-                            MAKE
-                            THE
-                            <br> FIRST MOVE?
-                        </div>
-                        <div class="text-gray-900 text-xl mt-20">Don't be shy, get in touch.</div>
-                        <div class="mt-32 float-right">
-                            <div class="w-full">
-                                <img src="assets/Border_Img.webp" alt="">
-                            </div>
-                        </div>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every B2B
+                  Brand
+                  Needs A Linkedin Advertising Company For Lead Generation</p>
+              </div>
+            </a>
 
-                    </div>
-
-                    <!-- Form Section -->
-                    <div class="w-full md:w-1/2 lg:w-3/5">
-                        <form class="space-y-12">
-                            <!-- Name Field -->
-                            <div>
-                                <label for="name" class="block  text-sm font-bold mb-2"></label>
-
-                                <input type="text" id="name" name="name" placeholder="Your Name*:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                            </div>
-                            <!-- Email Field -->
-                            <div>
-                                <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                <input type="email" id="email" name="email" placeholder="Email Id:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-
-                            </div>
-                            <div>
-                                <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                <input type="number" id="email" name="number" placeholder="Phone Number:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                            </div>
-                            <!-- Company Name  -->
-                            <div>
-                                <label for="name" class="block  text-sm font-bold"></label>
-                                <input type="text" id="name" name="name" placeholder="Company Name:"
-                                    class=" bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                            </div>
-
-                            <div class="mt-4">
-                                <label for="dropdown1" class="block text-sm font-bold"></label>
-                                <select id="dropdown1" name="dropdown1"
-                                    class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                                    <option value="" disabled selected hidden>Choose Service</option>
-                                    <option value="option1" class="text-black">Branding Solutions</option>
-                                    <option value="option2" class="text-black">Corporate Rebranding</option>
-                                    <option value="option3" class="text-black">Photoshoots & Video Shoots
-                                    </option>
-                                    <option value="option3" class="text-black">social Media Marketing
-                                    </option>
-                                    <option value="option3" class="text-black">Ecommerce Solutions</option>
-                                    <option value="option3" class="text-black">Website Development &
-                                        Management</option>
-                                    <option value="option3" class="text-black">Ads/Perfomrance Marketing
-                                    </option>
-                                    <option value="option3" class="text-black">SEO (Search Engine
-                                        Optimization)</option>
-                                    <option value="option3" class="text-black">Content Marketing Solutions
-                                    </option>
-                                    <option value="option3" class="text-black">Email Marketing & Automation
-                                    </option>
-                                    <option value="option3" class="text-black">Marketing & Automation
-                                    </option>
-                                    <option value="option3" class="text-black">Online Reputation Management
-                                    </option>
-                                    <option value="option3" class="text-black">Influencer Marketing &
-                                        Community Building
-                                    </option>
-                                    <option value="option3" class="text-black">Other </option>
-
-                                </select>
-                            </div>
-
-                            <div class="mt-4">
-                                <label for="dropdown2" class="block text-sm font-bold"></label>
-                                <select id="dropdown2" name="dropdown2"
-                                    class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
-                                    required>
-                                    <option value="" disabled selected hidden>Estimated Monthly Budget
-                                    </option>
-                                    <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
-                                    </option>
-                                    <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
-                                    </option>
-                                    <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
-                                    </option>
-                                    <option value="option3" class="text-black"> INR 25Lacs and above
-                                    </option>
-                                </select>
-                            </div>
-                            <!-- Message Field -->
-                            <div class="">
-                                <label for="message" class="block text-gray-700 text-sm font-bold"></label>
-                                <textarea id="message" name="message"
-                                    placeholder="Please leave us a brief of your requirements and services you are interested in*:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-700"
-                                    required></textarea>
-                            </div>
-                            <div class="mt-4 flex items-center bg-white w-72 p-5">
-                                <input type="checkbox" id="not-a-robot" name="not-a-robot"
-                                    class="text-white focus:ring-2 focus:ring-white h-5 w-5">
-                                <div class="flex gap-14 justify-center items-center">
-                                    <div>
-                                        <label for="not-a-robot" class="ml-2 text-black text-sm">I am not
-                                            a
-                                            robot</label>
-                                    </div>
-                                    <div>
-                                        <img src="assets/Captchaa.png" alt="Captchaa">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="flex justify-start items-start">
-                                <div class="text-center mt-10">
-                                    <button type="submit"
-                                        class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
-                                        Your Transformation Today</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+            <!-- Web Development Blog  -->
+            <a href="webdev.html">
+              <div class="bg-white p-6">
+                <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 2" class="w-full h-48 object-cover mb-4">
+                <div class="mt-10">
+                  <div class="bg-gray-100 w-36 rounded-xl p-1">
+                    <div class="text-center">02/09/2024</div>
+                  </div>
                 </div>
-            </div>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How A Web
+                  Development
+                  Company Can Future-Proof Your Website</p>
+
+              </div>
+            </a>
+          </div>
         </div>
-    </section>
-    <!-- FAQ Section  -->
-    <section>
-        <div class="bg-black pt-20 pb-10">
-            <div class="bgfont2 container mx-auto p-5">
-                <h2 class="text-5xl text-white text-center mb-10">FAQs</h2>
-                <div class="">
-                    <div class="flex justify-center items-center">
-                        <div class="w-4/6">
-                            <!-- FAQ Item 1 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(1)">
-                                    <h3 class="font-semibold text-lg text-white">How can The Brand Bee help with social
-                                        media marketing for my business?</h3>
-                                    <span id="symbol1" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer1" class="hidden mt-2 p-4 text-white">
-                                    <p>At The Brand Bee, we specialise in social media marketing to help businesses
-                                        maximise their online presence and reach their target audience effectively. We
-                                        offer comprehensive services that include developing social media strategies,
-                                        creating engaging content, managing social media accounts, running targeted ad
-                                        campaigns and analysing performance to drive meaningful results for your
-                                        business.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 2 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(2)">
-                                    <h3 class="font-semibold text-lg text-white">WWhich social media platforms does The
-                                        Brand Bee work with?</h3>
-                                    <span id="symbol2" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer2" class="hidden mt-2 p-4 text-white">
-                                    <p>We work with a wide range of social media platforms, including but not limited to
-                                        Facebook, Instagram, Twitter, LinkedIn and YouTube. We tailor our social media
-                                        marketing strategies to the platforms most relevant to your business and target
-                                        audience, ensuring that we reach your potential customers where they are most
-                                        active.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 3 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(3)">
-                                    <h3 class="font-semibold text-lg text-white">How will The Brand Bee ensure that my
-                                        social media marketing efforts align with my brand identity?</h3>
-                                    <span id="symbol3" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer3" class="hidden mt-2 p-4 text-white">
-                                    <p>We understand the importance of maintaining a consistent brand identity across
-                                        all marketing channels, including social media. Our team will collaborate
-                                        closely with you to understand your brand values, tone of voice and visual
-                                        identity. We will develop a social media marketing strategy that reflects your
-                                        brand personality and resonates with your target audience, ensuring that every
-                                        post, caption and interaction is in line with your brand identity.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 4 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(4)">
-                                    <h3 class="font-semibold text-lg text-white">Can The Brand Bee help me with social
-                                        media advertising?</h3>
-                                    <span id="symbol4" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer4" class="hidden mt-2 p-4 text-white">
-                                    <p>Absolutely! Social media advertising is a powerful tool to reach a wider audience
-                                        and drive targeted traffic to your website or landing pages. We have expertise
-                                        in running successful social media ad campaigns across various platforms. From
-                                        creating compelling ad creatives to defining precise audience targeting, we will
-                                        help you optimise your ad spend and achieve your marketing goals through social
-                                        media advertising.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 5 -->
-                            <div class="border border-white rounded-md pb-4 mb-4">
-                                <div class="flex justify-between items-center cursor-pointer p-4"
-                                    onclick="toggleFAQ(5)">
-                                    <h3 class="font-semibold text-lg text-white">How will The Brand Bee measure the
-                                        success of my social media marketing campaigns?</h3>
-                                    <span id="symbol5" class="text-2xl text-white">+</span>
-                                </div>
-                                <div id="answer5" class="hidden mt-2 p-4 text-white">
-                                    <p>We believe in data-driven marketing and regularly analyse the performance of your
-                                        social media marketing campaigns. We use advanced analytics tools to track key
-                                        metrics such as reach, engagement, conversions and return on investment (ROI).
-                                        Based on these insights, we provide detailed reports that highlight the success
-                                        of your campaigns and identify areas for improvement. We will work with you to
-                                        refine your social media strategy and optimise your results over time.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="mt-10 flex justify-end">
+          <div class="w-5/6">
+            <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
+          </div>
         </div>
-    </section>
-    <!-- News and Blogs -->
-    <section>
-        <div class="bg-white">
-            <div class="bgfont2 pt-32">
-                <div class="container mx-auto flex flex-wrap md:flex-nowrap">
-                    <div class="w-3/6">
-                        <div class="border-black border w-32 rounded-lg">
-                            <div class="tet-gray-300 text-center text-black">Recent Blog</div>
-                        </div>
-                        <div class="mt-5">
-                            <div class="text-5xl font-medium text-black">Whats New? <br>News and Blogs</div>
-                        </div>
-                        <div class="mt-10">
-                            <p class="text-black">We don't mind sharing the secret.
-                                <br> Read our blogs and stay updated
-                                <br> about the latest trends of the
-                                digital world.
-                            </p>
-                        </div>
-                        <div class="group mt-10 w-32 cursor-pointer">
-                            <div class="bg-yellow-300 rounded-lg duration-500 ease-in-out group-hover:bg-white p-4">
-                                <div class="text-black text-center font-medium group-hover:text-black">
-                                    All Articles
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Blog 1 -->
-                        <div class="bg-white rounded-lg shadow-xl p-6">
-                            <img src="assets/Blog_1.webp" alt="Blog 1" class="w-full h-48 object-cover rounded-lg mb-4">
-                            <div class="mt-10">
-                                <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                    <div class="text-center">05/08/2024</div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup Should
-                                Invest
-                                In A
-                                Professional Web
-                                Development Company</p>
-                            <a href="#" class="text-gray-900 font-medium hover:underline">Read More</a>
-                        </div>
-
-                        <!-- Blog 2 -->
-                        <div class="bg-white rounded-lg shadow-lg p-6">
-                            <img src="assets/Blog_2.webp" alt="Blog 2" class="w-full h-48 object-cover rounded-lg mb-4">
-                            <div class="mt-10">
-                                <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                    <div class="text-center">31/07/2024</div>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
-                                Design
-                                Company
-                                In Boosting Your
-                                E-Commerce Success</p>
-                            <a href="#" class="text-gray-900 font-medium hover:underline">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-10 flex justify-end">
-                    <div class="w-5/6">
-                        <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer  -->
-    <section>
-        <div class="bg-black bgfont2 p-10">
+      </div>
+    </div>
+  </section>
+  <!-- Footer  -->
+  <section>
+    <div class="bg-black bgfont2 p-10">
+      <div>
+        <div class="flex justify-around flex-wrap md:flex-wrap">
+          <div class="mt-20">
             <div>
-                <div class="flex justify-around flex-wrap md:flex-wrap">
-                    <div class="mt-20">
-                        <div>
-                            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                        </div>
-                        <div class="mt-10 ">
-                            <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                <br>and
-                                digital
-                                marketing
-                                agency based
-                                in Gurgaon, India.
-                                <br>With a team of over 40+, we are an award-winning <br>full-stack digital
-                                marketing
-                                agency
-                                offering <br>
-                                creative and innovative <br>digital and brand solutions for brands <br>
-                                looking
-                                to
-                                grow
-                                their
-                                businesses.
-                            </p>
-                        </div>
-                        <div class="mt-10 flex gap-5">
-                            <div>
-                                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
-                            </div>
-                        </div>
-                        <div class="flex gap-3 mt-10 w-72 ">
-                            <div>
-                                <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
-                            </div>
-                            <div>
-                                <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                            </div>
-                        </div>
-                        <div class="flex mt-10 gap-1">
-                            <div class="cursor-pointer">
-                                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                            </div>
-                            <div class="text-white">Chennai's Leading Digital Agency</div>
-                            <div> |</div>
-                            <div class="flex">
-                                <div class="text-yellow-300">30+</div>
-                                <div>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-white pt-20">
-                        <div class="font-bold text-xl">Information</div>
-                        <ul class="text-gray-500 space-y-3 mt-5">
-                            <li>Brand Solutions</li>
-                            <li>Digital Marketing Solutions</li>
-                            <li>Who We Are</li>
-                            <li>Sample Work</li>
-                            <li>Our Clients</li>
-                            <li>Industries We Serve</li>
-                            <li>Careers</li>
-                            <li>Blog</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div class="text-white pt-20">
-                        <div class="font-bold text-xl">Contact US</div>
-                        <div class="text-gray-500 mt-5">
-                            Ayn Technologies Pvt. Ltd.,<br>
-                            No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
-                            Ullagaram, Madipakkam, Chennai- 600091.
-                        </div>
-                        <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                        <div class="text-gray-500 mt-3">info@ayntech.in</div>
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="bg-gray-950 p-10">
-                        <div class="flex justify-center items-center mt-20">
-                            <div class="">
-                                <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center items-center mt-10">
-                            <div
-                                class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
-                                <div class="text-center">Contact US</div>
-                            </div>
-                        </div>
-                        <div class="mt-10">
-                            <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                            <div class="text-gray-500 text-center">Monday to Friday</div>
-                        </div>
-                        <div class="text-gray-500  mt-16 text-justify">
-                            With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                            agency
-                            brings
-                            <br>invaluable
-                            industry insights and <br>
-                            international <br>know-how to your brand's success.
-                        </div>
-                    </div>
-                </div>
+              <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
             </div>
+            <div class="mt-10 ">
+              <p class="text-white text-justify">The Brand Bee is an integrated branding
+                <br>and
+                digital
+                marketing
+                agency based
+                in Gurgaon, India.
+                <br>With a team of over 40+, we are an award-winning <br>full-stack digital
+                marketing
+                agency
+                offering <br>
+                creative and innovative <br>digital and brand solutions for brands <br>
+                looking
+                to
+                grow
+                their
+                businesses.
+              </p>
+            </div>
+            <div class="mt-10 flex gap-5">
+              <div>
+                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
+              </div>
+            </div>
+            <div class="flex gap-3 mt-10 w-72 ">
+              <div>
+                <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
+              </div>
+              <div>
+                <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
+              </div>
+            </div>
+            <div class="flex mt-10 gap-1">
+              <div class="cursor-pointer">
+                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
+              </div>
+              <div class="text-white">Chennai's Leading Digital Agency</div>
+              <div> |</div>
+              <div class="flex">
+                <div class="text-yellow-300">30+</div>
+                <div>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-white pt-20">
+            <div class="font-bold text-xl">Information</div>
+            <ul class="text-gray-500 space-y-3 mt-5">
+              <li>Brand Solutions</li>
+              <li>Digital Marketing Solutions</li>
+              <li>Who We Are</li>
+              <li>Sample Work</li>
+              <li>Our Clients</li>
+              <li>Industries We Serve</li>
+              <li>Careers</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="text-white pt-20">
+            <div class="font-bold text-xl">Contact US</div>
+            <div class="text-gray-500 mt-5">
+              Ayn Technologies Pvt. Ltd.,<br>
+              No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+              Ullagaram, Madipakkam, Chennai- 600091.
+            </div>
+            <div class="text-gray-500 mt-3">+91-89259 22232</div>
+            <div class="text-gray-500 mt-3">info@ayntech.in</div>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <div class="bg-gray-950 p-10">
+            <div class="flex justify-center items-center mt-20">
+              <div class="">
+                <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center mt-10">
+              <div class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
+                <div class="text-center">Contact US</div>
+              </div>
+            </div>
+            <div class="mt-10">
+              <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
+              <div class="text-gray-500 text-center">Monday to Friday</div>
+            </div>
+            <div class="text-gray-500  mt-16 text-justify">
+              With extensive expertise <br>spanning in Chennai <br> our digital marketing
+              agency
+              brings
+              <br>invaluable
+              industry insights and <br>
+              international <br>know-how to your brand's success.
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- FAQ Section  -->
-    <script>
-        function toggleFAQ(faqNumber) {
-            const answer = document.getElementById(`answer${faqNumber}`);
-            const symbol = document.getElementById(`symbol${faqNumber}`);
-
-            // Toggle the hidden class to show/hide the answer
-            answer.classList.toggle('hidden');
-
-            // Toggle the plus/minus symbol
-            if (answer.classList.contains('hidden')) {
-                symbol.textContent = '+';
-            } else {
-                symbol.textContent = '–';
-            }
-        }
-    </script>
+      </div>
+    </div>
+  </section>
+  <!---- JavaScript to toggle the mobile menu -->
+  <script>
+    document.getElementById('navbar-toggle').onclick = function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('services-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('aboutus-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+  </script>
+  <!-- FAQ Section  -->
+  <script>
+    function toggleFAQ(faqNumber) {
+      const answer = document.getElementById(`answer${faqNumber}`);
+      const symbol = document.getElementById(`symbol${faqNumber}`);
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+        symbol.textContent = '-';
+      } else {
+        answer.classList.add('hidden');
+        symbol.textContent = '+';
+      }
+    }
+  </script>
 </body>
 
 </html>

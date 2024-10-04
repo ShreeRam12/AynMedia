@@ -2,1177 +2,1150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Clients</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="./output.css" rel="stylesheet">
-    <link href="/dist/main.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Locomotive Scroll  -->
-    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Clients</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Locomotive Scroll  -->
+  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <style>
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-    }
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
 
-    [data-scroll-container] {
-        overflow: hidden;
-    }
+  [data-scroll-container] {
+    overflow: hidden;
+  }
 
-    [data-scroll-section] {
-        position: relative;
-        min-height: 200vh;
-        justify-content: center;
-        align-items: center;
-    }
+  [data-scroll-section] {
+    position: relative;
+    min-height: 200vh;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 12px;
-    }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
 
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background-color: #bebcbc;
-        /* border-radius: 10px; */
-    }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #bebcbc;
+    /* border-radius: 10px; */
+  }
 
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: rgb(240, 240, 75);
-        /* border-radius: 10px; */
-    }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(240, 240, 75);
+    /* border-radius: 10px; */
+  }
 </style>
 
 <body>
-    <div class="cursor__wrapper">
-        <section class="sticky top-0 left-0 z-50 shadow-lg">
-            <!-- Navbar -->
-            <nav class="bg-yellow-300 shadow-lg bgfont">
-                <div class="container mx-auto flex justify-between">
-                    <!-- Logo -->
-                    <div class="flex items-center">
-                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                    </div>
-                    <!-- Centered Navbar Links (hidden on mobile) -->
-                    <div class="p-5 hidden md:flex justify-center items-center gap-16">
-                        <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
-                            <span class="block text-black">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-    
-                                <span
-                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                    <span
-                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-    
-                                </span>
-                        </a>
-                        <div class="relative inline-block text-black cursor-pointer group z-50">
-                            <a href="brandsolutions.html" class="block text-black font-medium">
-                                SERVICES
-                            </a>
-    
-                            <!-- Dropdown Menu -->
-                            <div
-                                class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
-                                <ul class="py-2">
-                                    <li><a href="brandsolutions.html"
-                                            class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a></li>
-                                    <li><a href="digitalmarketing.html"
-                                            class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
-                                            Solutions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="aboutus.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                        </a>
-                        <a href="samplework.html"
-                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
-                            </span>
-                        </a>
-                        <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
-                            </span>
-                        </a>
-                        <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-                            <span class="block">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                            </span>
-                            <span
-                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
-                                <span
-                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
-                            </span>
-                        </a>
-                        <div class="flex justify-center items-center">
-                            <div class="bg-black p-2 ">
-                                <a href="#"
-                                    class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
-                                    <span class="block mt-3">
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                    </span>
-                                    <span
-                                        class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
-                                        <span
-                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu Toggle Button -->
-                    <!-- Mobile Menu Toggle Button -->
-                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none md:hidden">
-                        <i class="fas fa-bars fa-lg"></i>
-                    </button>
-                </div>
-    
-                <!-- Mobile Menu (hidden by default) -->
-                <div id="mobile-menu" class="md:hidden flex flex-col items-center text-center gap-4">
-                    <a href="index.html" class="text-black hover:text-gray-400">HOME</a>
-                    <a href="#" class="text-black hover:text-gray-400">SERVICES</a>
-                    <a href="aboutus.html" class="text-black hover:text-gray-400">ABOUT US</a>
-                    <a href="#" class="text-black hover:text-gray-400">SAMPLE WORK</a>
-                    <a href="#" class="text-black hover:text-gray-400">OUR CLIENTS</a>
-                    <a href="#" class="text-black hover:text-gray-400">BLOG</a>
-                    <div class="bg-black p-2 rounded-xl">
-                        <a href="#" class="text-white hover:text-gray-400">LETS TALK</a>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        <div data-scroll-container>
-            <div data-scroll-section>
-                <div class="bg-white">
-                    <!-- Our Esteemed Clients  -->
-                    <section class="">
-                        <div class="mt-20">
-                            <div class="bgfont2 text-black font-medium text-center text-5xl animate__animated animate__fadeInUp"
-                                id="clients-text">Our Esteemed Clients</div>
-                        </div>
-                    </section>
-                    <!-- Categories and Clients  -->
-                    <section class="container mx-auto mt-10">
-                        <div class="bgfont2 font-medium flex-wrap md:flex-nowrap flex justify-between">
-                            <div class="overflow-y-auto h-96 py-4 px-6 pr-16 custom-scrollbar">
-                                <div>
-                                    <div class="text-lg text-black">Show All</div>
-                                    <div class="bg-yellow-300 w-20">
-                                        <div class="h-0.5"></div>
-                                    </div>
-                                </div>
-                                <div class="mt-5">
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">HealthCare</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Education</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">FMCG</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Real Estate & Infra</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Beauty Care</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Kids</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Wellness</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">F&B</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Industrial</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Automobile</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Business Services</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Hospitality</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Banking</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Government & UN</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Consumer Electronics</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Aviation</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Agriculture</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Logistics</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">IT</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Fashion</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Home</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Consumer Retail</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Media</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Photography</p>
-                                        </div>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="">
-                                            <p class="text-lg text-black font-normal">Others</p>
-                                        </div>
-                                    </div>
-                                </div>
+  <div class="cursor__wrapper">
+    <section class="sticky top-0 left-0 z-50 shadow-lg">
+      <!-- Navbar -->
+      <nav class="bg-yellow-300 shadow-lg bgfont">
+        <div class="container mx-auto flex justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
+          </div>
+          <!-- Centered Navbar Links (hidden on mobile) -->
+          <div class="p-5 hidden lg:flex justify-center items-center gap-16">
+            <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
+              <span class="block text-black">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
 
-                            </div>
-                            <div class="w-5/6">
-                                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
-                                    <div
-                                        class="flex justify-center items-center  animate__animated animate__fadeInUp duration-100 ease-in-out delay-0">
-                                        <div class="w-40">
-                                            <img src="assets/MiStyle.webp" alt="Client 1"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-75">
-                                        <div class="w-40">
-                                            <img src="assets/Nailhub.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-40">
-                                            <img src="assets/EVM 1 copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-40">
-                                            <img src="assets/H&M hospital.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-40">
-                                            <img src="assets/peak copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/BN Constructions - logo square copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-52">
-                                            <img src="assets/new rukmani copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-40">
-                                            <img src="assets/parambaryam copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-40">
-                                            <img src="assets/selligo copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Optilenz png copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
+                <span
+                  class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                  <span
+                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                </span>
+              </span>
+            </a>
+            <div class="relative inline-block text-black cursor-pointer group z-50">
+              <a href="brandsolutions.html" class="block text-black font-medium">
+                SERVICES
+              </a>
 
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/vip copy.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/srt creative copy.webp" alt="srt creative"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Silver Logo copy.webp" alt="Silver"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/waffle.webp" alt="Client 2"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/scr.webp" alt="scr" class="w-full h-auto object-cover">
-                                        </div>
-
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/magic.webp" alt="magic" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/inc.webp" alt="inc" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/iface.webp" alt="iface" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/event.webp" alt="event" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Alpha.webp" alt="event" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-">
-                                            <img src="assets/Amildams.png" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-">
-                                            <img src="assets/Armony.png" alt="event" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/BlueMoon.webp" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-">
-                                            <img src="assets/WashWrap.png" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-">
-                                            <img src="assets/Trizilla.png" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Venkateswara Diagnostic Centre.webp" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Subham.png" alt="event" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Surabi-removebg-preview.png" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Smart.png" alt="event" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Shivalaya School.webp" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Sanchu.png" alt="event" class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Plan_Your_Destinations-removebg-preview.png" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/Prime Forex - AeroHub Mall-East.webp" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
-                                        <div class="w-44">
-                                            <img src="assets/OSL.png" alt="event"
-                                                class="w-full h-auto object-cover">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Get in Touch  -->
-                <section>
-                    <div class="bg-yellow-300 bgfont2 p-20 pt-10">
-                        <div class="container mx-auto">
-                            <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
-                                <!-- Text Section -->
-                                <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
-                                    <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-900">STILL, WAITING FOR
-                                        <br>US
-                                        TO
-                                        MAKE
-                                        THE
-                                        <br> FIRST MOVE?
-                                    </div>
-                                    <div class="text-gray-900 text-xl mt-20">Don't be shy, get in touch.</div>
-                                    <div class="mt-32 float-right">
-                                        <div class="w-full">
-                                            <img src="assets/Border_Img.webp" alt="">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <!-- Form Section -->
-                                <div class="w-full md:w-1/2 lg:w-3/5">
-                                    <form class="space-y-12">
-                                        <!-- Name Field -->
-                                        <div>
-                                            <label for="name" class="block  text-sm font-bold mb-2"></label>
-
-                                            <input type="text" id="name" name="name" placeholder="Your Name*:"
-                                                class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
-                                                required>
-                                        </div>
-                                        <!-- Email Field -->
-                                        <div>
-                                            <label for="email"
-                                                class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                            <input type="email" id="email" name="email" placeholder="Email Id:"
-                                                class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
-                                                required>
-
-                                        </div>
-                                        <div>
-                                            <label for="number"
-                                                class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                            <input type="number" id="email" name="number" placeholder="Phone Number:"
-                                                class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
-                                                required>
-                                        </div>
-                                        <!-- Company Name  -->
-                                        <div>
-                                            <label for="name" class="block  text-sm font-bold"></label>
-                                            <input type="text" id="name" name="name" placeholder="Company Name:"
-                                                class=" bg-transparent w-full border-b text-gray-900  border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
-                                                required>
-                                        </div>
-
-                                        <div class="mt-4">
-                                            <label for="dropdown1" class="block text-sm font-bold"></label>
-                                            <select id="dropdown1" name="dropdown1"
-                                                class="bg-transparent w-full border-b text-gray-900 border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
-                                                required>
-                                                <option value="" disabled selected hidden>Choose Service</option>
-                                                <option value="option1" class="text-black">Branding Solutions</option>
-                                                <option value="option2" class="text-black">Corporate Rebranding</option>
-                                                <option value="option3" class="text-black">Photoshoots & Video Shoots
-                                                </option>
-                                                <option value="option3" class="text-black">social Media Marketing
-                                                </option>
-                                                <option value="option3" class="text-black">Ecommerce Solutions</option>
-                                                <option value="option3" class="text-black">Website Development &
-                                                    Management</option>
-                                                <option value="option3" class="text-black">Ads/Perfomrance Marketing
-                                                </option>
-                                                <option value="option3" class="text-black">SEO (Search Engine
-                                                    Optimization)</option>
-                                                <option value="option3" class="text-black">Content Marketing Solutions
-                                                </option>
-                                                <option value="option3" class="text-black">Email Marketing & Automation
-                                                </option>
-                                                <option value="option3" class="text-black">Marketing & Automation
-                                                </option>
-                                                <option value="option3" class="text-black">Online Reputation Management
-                                                </option>
-                                                <option value="option3" class="text-black">Influencer Marketing &
-                                                    Community Building
-                                                </option>
-                                                <option value="option3" class="text-black">Other </option>
-
-                                            </select>
-                                        </div>
-
-                                        <div class="mt-4">
-                                            <label for="dropdown2" class="block text-sm font-bold"></label>
-                                            <select id="dropdown2" name="dropdown2"
-                                                class="bg-transparent w-full border-b text-gray-900 border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
-                                                required>
-                                                <option value="" disabled selected hidden>Estimated Monthly Budget
-                                                </option>
-                                                <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
-                                                </option>
-                                                <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
-                                                </option>
-                                                <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
-                                                </option>
-                                                <option value="option3" class="text-black"> INR 25Lacs and above
-                                                </option>
-                                            </select>
-                                        </div>
-                                        <!-- Message Field -->
-                                        <div class="">
-                                            <label for="message" class="block text-gray-900 text-sm font-bold"></label>
-                                            <textarea id="message" name="message"
-                                                placeholder="Please leave us a brief of your requirements and services you are interested in*:"
-                                                class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-900"
-                                                required></textarea>
-                                        </div>
-                                        <div class="mt-4 flex items-center bg-white w-72 p-5">
-                                            <input type="checkbox" id="not-a-robot" name="not-a-robot"
-                                                class="text-white focus:ring-2 focus:ring-white h-5 w-5">
-                                            <div class="flex gap-14 justify-center items-center">
-                                                <div>
-                                                    <label for="not-a-robot" class="ml-2 text-black text-sm">I am not
-                                                        a
-                                                        robot</label>
-                                                </div>
-
-                                                <div>
-                                                    <img src="assets/Captchaa.png" alt="Captchaa">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- Submit Button -->
-                                        <div class="flex justify-start items-start">
-                                            <div class="text-center mt-10">
-                                                <button type="submit"
-                                                    class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
-                                                    Your Transformation Today</button>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- News and Blogs -->
-                <section>
-                    <div class="bg-white">
-                        <div class="bgfont2 pt-32">
-                            <div class="container mx-auto flex flex-wrap md:flex-nowrap">
-                                <div class="w-3/6">
-                                    <div class="border-black border w-32 rounded-lg">
-                                        <div class="tet-gray-300 text-center text-black">Recent Blog</div>
-                                    </div>
-                                    <div class="mt-5">
-                                        <div class="text-5xl font-medium text-black">Whats New? <br>News and Blogs</div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <p class="text-black">We don't mind sharing the secret.
-                                            <br> Read our blogs and stay updated
-                                            <br> about the latest trends of the
-                                            digital world.
-                                        </p>
-                                    </div>
-                                    <div class="group mt-10 w-32 cursor-pointer">
-                                        <div
-                                            class="bg-yellow-300 rounded-lg duration-500 ease-in-out group-hover:bg-white p-4">
-                                            <div class="text-black text-center font-medium group-hover:text-black">
-                                                All Articles
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <!-- Blog 1 -->
-                                    <div class="bg-white rounded-lg shadow-xl p-6">
-                                        <img src="assets/Blog_1.webp" alt="Blog 1"
-                                            class="w-full h-48 object-cover rounded-lg mb-4">
-                                        <div class="mt-10">
-                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                <div class="text-center">05/08/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup Should
-                                            Invest
-                                            In A
-                                            Professional Web
-                                            Development Company</p>
-                                        <a href="#" class="text-yellow-300 font-medium hover:underline">Read More</a>
-                                    </div>
-
-                                    <!-- Blog 2 -->
-                                    <div class="bg-white rounded-lg shadow-lg p-6">
-                                        <img src="assets/Blog_2.webp" alt="Blog 2"
-                                            class="w-full h-48 object-cover rounded-lg mb-4">
-                                        <div class="mt-10">
-                                            <div class="bg-gray-300 w-36 rounded-xl p-1">
-                                                <div class="text-center">31/07/2024</div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
-                                            Design
-                                            Company
-                                            In Boosting Your
-                                            E-Commerce Success</p>
-                                        <a href="#" class="text-yellow-300 font-medium hover:underline">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-10 flex justify-end">
-                                <div class="w-5/6">
-                                    <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Footer  -->
-                <section>
-                    <div class="bg-black bgfont2 p-10">
-                        <div>
-                            <div class="flex justify-around flex-wrap md:flex-wrap">
-                                <div class="mt-20">
-                                    <div>
-                                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
-                                    </div>
-                                    <div class="mt-10 ">
-                                        <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                            <br>and
-                                            digital
-                                            marketing
-                                            agency based
-                                            in Gurgaon, India.
-                                            <br>With a team of over 40+, we are an award-winning <br>full-stack digital
-                                            marketing
-                                            agency
-                                            offering <br>
-                                            creative and innovative <br>digital and brand solutions for brands <br>
-                                            looking
-                                            to
-                                            grow
-                                            their
-                                            businesses.
-                                        </p>
-                                    </div>
-                                    <div class="mt-10 flex gap-5">
-                                        <div>
-                                            <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                                        </div>
-                                        <div>
-                                            <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-3 mt-10 w-72 ">
-                                        <div>
-                                            <img src="assets/Googole_partner.webp" alt="Googole_partner"
-                                                class="rounded-sm">
-                                        </div>
-                                        <div>
-                                            <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                                        </div>
-                                    </div>
-                                    <div class="flex mt-10 gap-1">
-                                        <div class="cursor-pointer">
-                                            <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                                        </div>
-                                        <div class="text-white">Chennai's Leading Digital Agency</div>
-                                        <div> |</div>
-                                        <div class="flex">
-                                            <div class="text-yellow-300">30+</div>
-                                            <div>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Information</div>
-                                    <ul class="text-gray-500 space-y-3 mt-5">
-                                        <li>Brand Solutions</li>
-                                        <li>Digital Marketing Solutions</li>
-                                        <li>Who We Are</li>
-                                        <li>Sample Work</li>
-                                        <li>Our Clients</li>
-                                        <li>Industries We Serve</li>
-                                        <li>Careers</li>
-                                        <li>Blog</li>
-                                        <li>Contact</li>
-                                    </ul>
-                                </div>
-                                <div class="text-white pt-20">
-                                    <div class="font-bold text-xl">Contact US</div>
-                                    <div class="text-gray-500 mt-5">
-                                        Ayn Technologies Pvt. Ltd.,<br>
-                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
-                                        Ullagaram, Madipakkam, Chennai- 600091.
-                                    </div>
-                                    <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                                    <div class="text-gray-500 mt-3">info@ayntech.in</div>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div>
-
-                                </div>
-                                <div class="bg-gray-950 p-10">
-                                    <div class="flex justify-center items-center mt-20">
-                                        <div class="">
-                                            <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-center items-center mt-10">
-                                        <div
-                                            class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
-                                            <div class="text-center">Contact US</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-10">
-                                        <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                                        <div class="text-gray-500 text-center">Monday to Friday</div>
-                                    </div>
-                                    <div class="text-gray-500  mt-16 text-justify">
-                                        With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                                        agency
-                                        brings
-                                        <br>invaluable
-                                        industry insights and <br>
-                                        international <br>know-how to your brand's success.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </section>
+              <!-- Dropdown Menu -->
+              <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                <ul class="py-2">
+                  <li>
+                    <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                      Solutions</a>
+                  </li>
+                  <li>
+                    <a href="digitalmarketing.html" class="block px-4 py-2 text-black hover:bg-gray-200">Digital
+                      Marketing
+                      Solutions</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <span class="cursor"></span>
-            <span class="cursor-trail"></span>
+            <div class="relative inline-block text-black cursor-pointer group z-50">
+              <a href="aboutus.html" class="text-black cursor-pointer">
+                ABOUTUS
+              </a>
+              <!-- Dropdown Menu -->
+              <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                <ul class="py-2">
+                  <li>
+                    <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">How
+                      we work</a>
+                  </li>
+                  <li>
+                    <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                      do</a>
+                  </li>
+
+                  <li>
+                    <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                      LeaderShip</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+              <span class="block">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+              </span>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+              </span>
+            </a>
+            <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+              <span class="block">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+              </span>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+              </span>
+            </a>
+            <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
+              <span class="block">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+              </span>
+              <span
+                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                <span
+                  class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+              </span>
+            </a>
+            <div class="flex justify-center items-center">
+              <div class="bg-black p-2">
+                <a href="#"
+                  class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                  <span class="block mt-3">
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                  </span>
+                  <span
+                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                    <span
+                      class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <!-- Mobile Menu Toggle Button -->
+          <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4  pb-5">
+          <a href="index.html" class="text-black">HOME</a>
+          <!-- SERVICES with Dropdown -->
+          <div class="relative">
+            <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+            <div class="w-full ">
+              <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+                <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+                <hr />
+                <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+                <hr />
+                <li><a href="#" class="">Service 3</a></li>
+                <hr />
+              </ul>
+            </div>
+          </div>
+
+          <!-- ABOUT US with Dropdown -->
+          <div class="relative">
+            <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+            <div class="">
+              <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+                <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+                <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+                <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+          <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+          <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+          <div class="bg-black p-2 rounded-xl">
+            <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div data-scroll-container>
+      <div data-scroll-section>
+        <div class="bg-white">
+          <!-- Our Esteemed Clients  -->
+          <section class="">
+            <div class="mt-20">
+              <div class="bgfont2 text-black font-medium text-center text-5xl animate__animated animate__fadeInUp"
+                id="clients-text">Our Esteemed Clients</div>
+            </div>
+          </section>
+          <!-- Categories and Clients  -->
+          <section class="container mx-auto mt-10">
+            <div class="bgfont2 font-medium flex-wrap md:flex-nowrap flex justify-between">
+              <div class="overflow-y-auto h-96 py-4 px-6 pr-16 custom-scrollbar">
+                <div>
+                  <div class="text-lg text-black">Show All</div>
+                  <div class="bg-yellow-300 w-20">
+                    <div class="h-0.5"></div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">HealthCare</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Education</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">FMCG</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Real Estate & Infra</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Beauty Care</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Kids</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Wellness</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">F&B</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Industrial</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Automobile</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Business Services</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Hospitality</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Banking</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Government & UN</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Consumer Electronics</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Aviation</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Agriculture</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Logistics</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">IT</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Fashion</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Home</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Consumer Retail</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Media</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Photography</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="">
+                      <p class="text-lg text-black font-normal">Others</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="w-5/6">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+                  <div
+                    class="flex justify-center items-center  animate__animated animate__fadeInUp duration-100 ease-in-out delay-0">
+                    <div class="w-40">
+                      <img src="assets/MiStyle.webp" alt="Client 1" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-75">
+                    <div class="w-40">
+                      <img src="assets/Nailhub.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-40">
+                      <img src="assets/EVM 1 copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-40">
+                      <img src="assets/H&M hospital.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-40">
+                      <img src="assets/peak copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/BN Constructions - logo square copy.webp" alt="Client 2"
+                        class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-52">
+                      <img src="assets/new rukmani copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-40">
+                      <img src="assets/parambaryam copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-40">
+                      <img src="assets/selligo copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Optilenz png copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/vip copy.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/srt creative copy.webp" alt="srt creative" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Silver Logo copy.webp" alt="Silver" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/waffle.webp" alt="Client 2" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/scr.webp" alt="scr" class="w-full h-auto object-cover">
+                    </div>
+
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/magic.webp" alt="magic" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/inc.webp" alt="inc" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/iface.webp" alt="iface" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/event.webp" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Alpha.webp" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-">
+                      <img src="assets/Amildams.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-">
+                      <img src="assets/Armony.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/BlueMoon.webp" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-">
+                      <img src="assets/WashWrap.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-">
+                      <img src="assets/Trizilla.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Venkateswara Diagnostic Centre.webp" alt="event"
+                        class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Subham.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Surabi-removebg-preview.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Smart.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Shivalaya School.webp" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Sanchu.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Plan_Your_Destinations-removebg-preview.png" alt="event"
+                        class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/Prime Forex - AeroHub Mall-East.webp" alt="event"
+                        class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center items-center animate__animated animate__fadeInUp duration-500 ease-in-out delay-100">
+                    <div class="w-44">
+                      <img src="assets/OSL.png" alt="event" class="w-full h-auto object-cover">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
 
+        <!-- Get in Touch  -->
+        <section>
+          <div class="bg-yellow-300 bgfont2 p-20 pt-10">
+            <div class="container mx-auto">
+              <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
+                <!-- Text Section -->
+                <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
+                  <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-900">STILL, WAITING FOR
+                    <br>US
+                    TO
+                    MAKE
+                    THE
+                    <br> FIRST MOVE?
+                  </div>
+                  <div class="text-gray-900 text-xl mt-20">Don't be shy, get in touch.</div>
+                  <div class="mt-32 float-right">
+                    <div class="w-full">
+                      <img src="assets/Border_Img.webp" alt="">
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Form Section -->
+                <div class="w-full md:w-1/2 lg:w-3/5">
+                  <form class="space-y-12">
+                    <!-- Name Field -->
+                    <div>
+                      <label for="name" class="block  text-sm font-bold mb-2"></label>
+
+                      <input type="text" id="name" name="name" placeholder="Your Name*:"
+                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        required>
+                    </div>
+                    <!-- Email Field -->
+                    <div>
+                      <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                      <input type="email" id="email" name="email" placeholder="Email Id:"
+                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        required>
+
+                    </div>
+                    <div>
+                      <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                      <input type="number" id="email" name="number" placeholder="Phone Number:"
+                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        required>
+                    </div>
+                    <!-- Company Name  -->
+                    <div>
+                      <label for="name" class="block  text-sm font-bold"></label>
+                      <input type="text" id="name" name="name" placeholder="Company Name:"
+                        class=" bg-transparent w-full border-b text-gray-900  border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        required>
+                    </div>
+
+                    <div class="mt-4">
+                      <label for="dropdown1" class="block text-sm font-bold"></label>
+                      <select id="dropdown1" name="dropdown1"
+                        class="bg-transparent w-full border-b text-gray-900 border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        required>
+                        <option value="" disabled selected hidden>Choose Service</option>
+                        <option value="option1" class="text-black">Branding Solutions</option>
+                        <option value="option2" class="text-black">Corporate Rebranding</option>
+                        <option value="option3" class="text-black">Photoshoots & Video Shoots
+                        </option>
+                        <option value="option3" class="text-black">social Media Marketing
+                        </option>
+                        <option value="option3" class="text-black">Ecommerce Solutions</option>
+                        <option value="option3" class="text-black">Website Development &
+                          Management</option>
+                        <option value="option3" class="text-black">Ads/Perfomrance Marketing
+                        </option>
+                        <option value="option3" class="text-black">SEO (Search Engine
+                          Optimization)</option>
+                        <option value="option3" class="text-black">Content Marketing Solutions
+                        </option>
+                        <option value="option3" class="text-black">Email Marketing & Automation
+                        </option>
+                        <option value="option3" class="text-black">Marketing & Automation
+                        </option>
+                        <option value="option3" class="text-black">Online Reputation Management
+                        </option>
+                        <option value="option3" class="text-black">Influencer Marketing &
+                          Community Building
+                        </option>
+                        <option value="option3" class="text-black">Other </option>
+
+                      </select>
+                    </div>
+
+                    <div class="mt-4">
+                      <label for="dropdown2" class="block text-sm font-bold"></label>
+                      <select id="dropdown2" name="dropdown2"
+                        class="bg-transparent w-full border-b text-gray-900 border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        required>
+                        <option value="" disabled selected hidden>Estimated Monthly Budget
+                        </option>
+                        <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
+                        </option>
+                        <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
+                        </option>
+                        <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
+                        </option>
+                        <option value="option3" class="text-black"> INR 25Lacs and above
+                        </option>
+                      </select>
+                    </div>
+                    <!-- Message Field -->
+                    <div class="">
+                      <label for="message" class="block text-gray-900 text-sm font-bold"></label>
+                      <textarea id="message" name="message"
+                        placeholder="Please leave us a brief of your requirements and services you are interested in*:"
+                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-900"
+                        required></textarea>
+                    </div>
+                    <div class="mt-4 flex items-center bg-white w-72 p-5">
+                      <input type="checkbox" id="not-a-robot" name="not-a-robot"
+                        class="text-white focus:ring-2 focus:ring-white h-5 w-5">
+                      <div class="flex gap-14 justify-center items-center">
+                        <div>
+                          <label for="not-a-robot" class="ml-2 text-black text-sm">I am not
+                            a
+                            robot</label>
+                        </div>
+
+                        <div>
+                          <img src="assets/Captchaa.png" alt="Captchaa">
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="flex justify-start items-start">
+                      <div class="text-center mt-10">
+                        <button type="submit"
+                          class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                          Your Transformation Today</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- News and Blogs -->
+        <section>
+          <div class="bg-white">
+            <div class="bgfont2 pt-32">
+              <div class="p-5 sm:p-5 container mx-auto flex flex-wrap md:flex-nowrap justify-center items-center">
+                <div class="lg:w-3/6">
+                  <div class="border-black border w-32 rounded-lg">
+                    <div class="tet-gray-300 text-center">Recent Blog</div>
+                  </div>
+                  <div class="mt-5">
+                    <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
+                  </div>
+                  <div class="mt-10">
+                    <p class="text-gray-400">We don't mind sharing the secret.
+                      <br> Read our blogs and stay updated
+                      <br> about the latest trends of the
+                      digital world.
+                    </p>
+                  </div>
+                  <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+                    <div class="text-black text-center font-medium">All Articles</div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <!-- Blog 1 -->
+                  <div class="bg-white rounded-lg shadow-xl p-6">
+                    <img src="assets/Blog_1.webp" alt="Blog 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="mt-10">
+                      <div class="bg-gray-300 w-36 rounded-xl p-1">
+                        <div class="text-center">05/08/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Why Every Startup
+                      Should
+                      Invest
+                      In A
+                      Professional Web
+                      Development Company</p>
+                    <a href="#" class="text-yellow-300 font-medium hover:underline">Read
+                      More</a>
+                  </div>
+                  <!-- Blog 2 -->
+                  <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="assets/Blog_2.webp" alt="Blog 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="mt-10">
+                      <div class="bg-gray-300 w-36 rounded-xl p-1">
+                        <div class="text-center">31/07/2024</div>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">The Role Of A Website
+                      Design
+                      Company
+                      In Boosting Your
+                      E-Commerce Success</p>
+                    <a href="#" class="text-yellow-300 font-medium hover:underline">Read
+                      More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10 flex justify-end">
+                <div class="w-full sm:w-5/6">
+                  <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full h-auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer  -->
+        <section>
+          <div class="bg-black bgfont2 p-5">
+            <div>
+              <div class="flex flex-wrap md:flex-nowrap justify-around">
+                <!-- First Section -->
+                <div class="mt-10 lg:mt-20 w-full md:w-1/2 lg:w-1/4">
+                  <div>
+                    <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo">
+                  </div>
+                  <div class="mt-5 lg:mt-10">
+                    <p class="text-white text-justify">
+                      The Brand Bee is an integrated branding<br>and digital marketing agency
+                      based in Gurgaon,
+                      India.<br>
+                      With a team of over 40+, we are an award-winning full-stack digital
+                      marketing agency
+                      offering<br>
+                      creative and innovative digital and brand solutions for brands looking
+                      to grow their businesses.
+                    </p>
+                  </div>
+                  <div class="mt-5 lg:mt-10 flex gap-5">
+                    <i class="fa-brands fa-facebook-f text-gray-400"></i>
+                    <i class="fa-brands fa-instagram text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin text-gray-400"></i>
+                    <i class="fa-brands fa-youtube text-gray-400"></i>
+                    <i class="fa-brands fa-twitter text-gray-400"></i>
+                  </div>
+                  <div class="flex gap-3 mt-5 lg:mt-10 w-full">
+                    <img src="assets/Googole_partner.webp" alt="Google Partner"
+                      class="rounded-sm w-1/2 h-auto object-contain">
+                    <img src="assets/Meta-partner.webp" alt="Meta Partner"
+                      class="rounded-sm w-32 h-auto object-contain">
+                  </div>
+
+                  <div class="flex flex-wrap items-center mt-5 lg:mt-10 gap-2">
+                    <img src="assets/Goggle_Icon.webp" alt="Google Icon" class="cursor-pointer">
+                    <div class="text-white">Chennai's Leading Digital Agency</div>
+                    <div>|</div>
+                    <div class="flex gap-1">
+                      <div class="text-yellow-300">30+</div>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Information Section -->
+                <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                  <div class="font-bold text-xl sm:text-lg">Information</div>
+                  <ul class="text-gray-500 space-y-3 mt-5">
+                    <li>Brand Solutions</li>
+                    <li>Digital Marketing Solutions</li>
+                    <li>Who We Are</li>
+                    <li>Sample Work</li>
+                    <li>Our Clients</li>
+                    <li>Industries We Serve</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                  </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                  <div class="font-bold text-xl">Contact Us</div>
+                  <div class="text-gray-500 mt-5">
+                    Ayn Technologies Pvt. Ltd.,<br>
+                    No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                    Ullagaram, Madipakkam, Chennai- 600091.
+                  </div>
+                  <div class="text-gray-500 mt-3">+91-89259 22232</div>
+                  <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                </div>
+
+                <!-- Call-to-Action Section -->
+                <div class="bg-gray-950 p-5 lg:p-10 w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0">
+                  <div class="flex justify-center items-center mt-5 lg:mt-20">
+                    <div>
+                      <div class="text-yellow-300 text-lg font-medium text-center">
+                        Ready to Grow Your <br> Business with the Best?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center mt-10">
+                    <div
+                      class="cursor-pointer bg-white w-56 p-5 lg:p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                      <div class="text-center">Contact Us Today</div>
+                    </div>
+                  </div>
+                  <div class="text-gray-500 mt-5 lg:mt-16 text-justify">
+                    Partner with AYN Media, the <span class="text-yellow-300 font-bold">Digital
+                      Marketing Company in
+                      Chennai</span>
+                    that puts your business first. Whether you’re looking to boost your online
+                    visibility or drive more
+                    traffic
+                    to your website, we’ve got you covered.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <span class="cursor"></span>
+      <span class="cursor-trail"></span>
     </div>
-    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true
-            });
-        });
-    </script>
+
+  </div>
+  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+      });
+    });
+  </script>
 
 
 
-    <!-- Cursor Effects  -->
-    <script>
-        var timeout
+  <!-- Cursor Effects  -->
+  <script>
+    var timeout
 
-        function fancyCursor(e) {
+    function fancyCursor(e) {
 
-            let halfCursorSize = 12; // For .cursor
-            let halfTrailSize = 40; // For .cursor-trail
+      let halfCursorSize = 12; // For .cursor
+      let halfTrailSize = 40; // For .cursor-trail
 
-            let scaleMin = 0.35
-            let scaleMax = 1.0
-            let finalX = e.pageX - halfCursorSize
-            let finalY = e.pageY - halfCursorSize
-            let finalTrailX = e.pageX - halfTrailSize
-            let finalTrailY = e.pageY - halfTrailSize
+      let scaleMin = 0.35
+      let scaleMax = 1.0
+      let finalX = e.pageX - halfCursorSize
+      let finalY = e.pageY - halfCursorSize
+      let finalTrailX = e.pageX - halfTrailSize
+      let finalTrailY = e.pageY - halfTrailSize
 
-            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+      document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
 
-            setTimeout(() => {
-                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
-            }, 100)
+      setTimeout(() => {
+        document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+      }, 100)
 
-            if (timeout !== undefined) {
-                window.clearTimeout(timeout)
-            }
+      if (timeout !== undefined) {
+        window.clearTimeout(timeout)
+      }
 
-            timeout = window.setTimeout(function () {
-                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
-                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
-            }, 250)
-            document.querySelector('.cursor').style.opacity = '1'
-            document.querySelector('.cursor-trail').style.opacity = '1'
-        }
+      timeout = window.setTimeout(function () {
+        document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+        document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+      }, 250)
+      document.querySelector('.cursor').style.opacity = '1'
+      document.querySelector('.cursor-trail').style.opacity = '1'
+    }
 
-        function cursorLoader() {
-            if (document.querySelector('.cursor__wrapper')) {
-                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
-                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
-                    document.querySelector('.cursor').style.opacity = '0'
-                    document.querySelector('.cursor-trail').style.opacity = '0'
-                }, false)
-                window.addEventListener('scroll', function (e) {
-                    document.querySelector('.cursor').style.opacity = '0'
-                    document.querySelector('.cursor-trail').style.opacity = '0'
-                })
-            }
-        }
-
-        window.addEventListener('load', function () {
-            cursorLoader()
-            function animate() {
-                requestAnimationFrame(animate)
-            }
-            animate()
+    function cursorLoader() {
+      if (document.querySelector('.cursor__wrapper')) {
+        document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+        document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+          document.querySelector('.cursor').style.opacity = '0'
+          document.querySelector('.cursor-trail').style.opacity = '0'
+        }, false)
+        window.addEventListener('scroll', function (e) {
+          document.querySelector('.cursor').style.opacity = '0'
+          document.querySelector('.cursor-trail').style.opacity = '0'
         })
-    </script>
-    <script>
-        gsap.from(".overflow-y-auto div", {
-            opacity: 0,
-            y: 20,
-            duration: 1,
-            stagger: 0.2,
-            scrollTrigger: {
-                trigger: ".overflow-y-auto",
-                start: "top bottom",
-                end: "bottom top",
-                scrub: true,
-            }
-        });
-    </script>
+      }
+    }
 
-    <script>
-        gsap.from("#clients-text", {
-            opacity: 0,
-            scale: 0.5,
-            duration: 1.5,
-            ease: "power3.out",
-            y: 50,
-        });
-    </script>
-    <!-- JavaScript to toggle the mobile menu -->
-    <script>
-        document.getElementById('navbar-toggle').onclick = function () {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
+    window.addEventListener('load', function () {
+      cursorLoader()
+      function animate() {
+        requestAnimationFrame(animate)
+      }
+      animate()
+    })
+  </script>
+  <script>
+    gsap.from(".overflow-y-auto div", {
+      opacity: 0,
+      y: 20,
+      duration: 1,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".overflow-y-auto",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      }
+    });
+  </script>
+
+  <script>
+    gsap.from("#clients-text", {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1.5,
+      ease: "power3.out",
+      y: 50,
+    });
+  </script>
+  <!-- JavaScript to toggle the mobile menu -->
+  <script>
+    document.getElementById('navbar-toggle').onclick = function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+    // Toggle the SERVICES dropdown
+    document.getElementById('services-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('services-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+    // Toggle the ABOUT US dropdown
+    document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const dropdown = document.getElementById('aboutus-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>
