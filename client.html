@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <style>
-  html,
+  /* html,
   body {
     height: 100%;
     margin: 0;
@@ -36,7 +36,7 @@
     min-height: 200vh;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .custom-scrollbar::-webkit-scrollbar {
     width: 12px;
@@ -48,7 +48,7 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgb(240, 240, 75);
+    background-color: rgb(15, 15, 15);
     /* border-radius: 10px; */
   }
 </style>
@@ -339,9 +339,9 @@
         </div>
       </nav>
     </section>
-    <div data-scroll-container>
-      <div data-scroll-section>
-        <div class="bg-white">
+    <div>
+      <div>
+        <div class="bg-yellow-300">
           <!-- Our Esteemed Clients  -->
           <section class="">
             <div class="mt-20">
@@ -355,7 +355,7 @@
               <div class="overflow-y-auto h-96 py-4 px-6 pr-16 custom-scrollbar">
                 <div>
                   <div class="text-lg text-black">Show All</div>
-                  <div class="bg-yellow-300 w-20">
+                  <div class="bg-black w-20">
                     <div class="h-0.5"></div>
                   </div>
                 </div>
@@ -708,64 +708,62 @@
 
         <!-- Get in Touch  -->
         <section>
-          <div class="bg-yellow-300 bgfont2 p-20 pt-10">
+          <div class="bg-black bgfont2 p-20 pt-20">
             <div class="container mx-auto">
               <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
                 <!-- Text Section -->
                 <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
-                  <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-900">STILL, WAITING FOR
+                  <div class="text-3xl md:text-3xl lg:text-3xl font-medium mb-4 text-yellow-300">STILL, WAITING FOR
                     <br>US
                     TO
                     MAKE
                     THE
                     <br> FIRST MOVE?
                   </div>
-                  <div class="text-gray-900 text-xl mt-20">Don't be shy, get in touch.</div>
+                  <div class="text-white text-xl mt-20">Don't be shy, get in touch.</div>
                   <div class="mt-32 float-right">
                     <div class="w-full">
                       <img src="assets/Border_Img.webp" alt="">
                     </div>
                   </div>
-
                 </div>
-
                 <!-- Form Section -->
-                <div class="w-full md:w-1/2 lg:w-3/5">
+                <div class=" w-full md:w-1/2 lg:w-3/5">
                   <form class="space-y-12">
                     <!-- Name Field -->
                     <div>
                       <label for="name" class="block  text-sm font-bold mb-2"></label>
 
                       <input type="text" id="name" name="name" placeholder="Your Name*:"
-                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        class="bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                         required>
                     </div>
                     <!-- Email Field -->
                     <div>
-                      <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                      <label for="email" class="block text-gray-100 text-sm font-bold mb-2"></label>
                       <input type="email" id="email" name="email" placeholder="Email Id:"
-                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        class="bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                         required>
 
                     </div>
                     <div>
                       <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
-                      <input type="number" id="email" name="number" placeholder="Phone Number:"
-                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                      <input type="number" id="email" name="number" placeholder="Phone Number:" max="10"
+                        class="bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                         required>
                     </div>
                     <!-- Company Name  -->
                     <div>
                       <label for="name" class="block  text-sm font-bold"></label>
                       <input type="text" id="name" name="name" placeholder="Company Name:"
-                        class=" bg-transparent w-full border-b text-gray-900  border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        class=" bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                         required>
                     </div>
 
                     <div class="mt-4">
                       <label for="dropdown1" class="block text-sm font-bold"></label>
                       <select id="dropdown1" name="dropdown1"
-                        class="bg-transparent w-full border-b text-gray-900 border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        class="bg-transparent w-full border-b text-gray-100 border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                         required>
                         <option value="" disabled selected hidden>Choose Service</option>
                         <option value="option1" class="text-black">Branding Solutions</option>
@@ -800,53 +798,44 @@
                     <div class="mt-4">
                       <label for="dropdown2" class="block text-sm font-bold"></label>
                       <select id="dropdown2" name="dropdown2"
-                        class="bg-transparent w-full border-b text-gray-900 border-gray-900 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-900"
+                        class="bg-transparent w-full border-b text-gray-100 border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                         required>
                         <option value="" disabled selected hidden>Estimated Monthly Budget
                         </option>
-                        <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
+                        <option value="option1" class="text-black">INR 35K - INR 60K
                         </option>
-                        <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
+                        <option value="option2" class="text-black">INR 60k - INR 1 Lakh
                         </option>
-                        <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
-                        </option>
-                        <option value="option3" class="text-black"> INR 25Lacs and above
+                        <option value="option3" class="text-black"> INR 1 Lakh & Above
                         </option>
                       </select>
                     </div>
                     <!-- Message Field -->
                     <div class="">
-                      <label for="message" class="block text-gray-900 text-sm font-bold"></label>
+                      <label for="message" class="block text-gray-100 text-sm font-bold"></label>
                       <textarea id="message" name="message"
                         placeholder="Please leave us a brief of your requirements and services you are interested in*:"
-                        class="bg-transparent w-full border-b border-gray-900 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-900"
+                        class="bg-transparent text-white w-full border-b border-gray-100 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-100"
                         required></textarea>
                     </div>
-                    <div class="mt-4 flex items-center bg-white w-72 p-5">
-                      <input type="checkbox" id="not-a-robot" name="not-a-robot"
-                        class="text-white focus:ring-2 focus:ring-white h-5 w-5">
-                      <div class="flex gap-14 justify-center items-center">
-                        <div>
-                          <label for="not-a-robot" class="ml-2 text-black text-sm">I am not
-                            a
-                            robot</label>
-                        </div>
-
-                        <div>
-                          <img src="assets/Captchaa.png" alt="Captchaa">
-                        </div>
+                    <div class="mt-4 flex flex-row lg:flex-row items-center bg-white lg:w-72 p-5 gap-10 lg:gap-10">
+                      <div class="flex items-center">
+                        <input type="checkbox" id="not-a-robot" name="not-a-robot"
+                          class="text-white focus:ring-2 focus:ring-white h-5 w-5">
+                        <label for="not-a-robot" class="ml-2 text-black text-sm">I am not a robot</label>
                       </div>
-
+                      <div class="flex justify-center items-center">
+                        <img src="assets/Captchaa.png" alt="Captchaa" class="h-10 w-10 lg:w-auto">
+                      </div>
                     </div>
                     <!-- Submit Button -->
                     <div class="flex justify-start items-start">
                       <div class="text-center mt-10">
                         <button type="submit"
-                          class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                          class="bg-yellow-300 text-black py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
                           Your Transformation Today</button>
                       </div>
                     </div>
-
                   </form>
                 </div>
               </div>
@@ -855,7 +844,7 @@
         </section>
         <!-- News and Blogs -->
         <section>
-          <div class="bg-white">
+          <div class="bg-yellow-300">
             <div class="bgfont2 pt-32">
               <div class="p-5 sm:p-5 container mx-auto flex flex-wrap md:flex-nowrap justify-center items-center">
                 <div class="lg:w-3/6">
@@ -866,14 +855,14 @@
                     <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
                   </div>
                   <div class="mt-10">
-                    <p class="text-gray-400">We don't mind sharing the secret.
+                    <p class="text-gray-800">We don't mind sharing the secret.
                       <br> Read our blogs and stay updated
                       <br> about the latest trends of the
                       digital world.
                     </p>
                   </div>
-                  <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
-                    <div class="text-black text-center font-medium">All Articles</div>
+                  <div class="bg-black w-32 p-4 cursor-pointer rounded-lg mt-10">
+                    <div class="text-yellow-300 text-center font-medium">All Articles</div>
                   </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -932,14 +921,12 @@
                   </div>
                   <div class="mt-5 lg:mt-10">
                     <p class="text-white text-justify">
-                      The Brand Bee is an integrated branding<br>and digital marketing agency
-                      based in Gurgaon,
-                      India.<br>
-                      With a team of over 40+, we are an award-winning full-stack digital
-                      marketing agency
-                      offering<br>
-                      creative and innovative digital and brand solutions for brands looking
-                      to grow their businesses.
+                      The Ayn Technologies is an integrated branding and digital marketing
+                      <br>
+                      agency based in Chennai, India. With a team of over <br>
+                      40+, we are an award-winning full-stack digital marketing agency <br>
+                      offering creative and innovative digital and brand <br>
+                      solutions for brands looking to grow their businesses
                     </p>
                   </div>
                   <div class="mt-5 lg:mt-10 flex gap-5">
@@ -972,9 +959,9 @@
                 </div>
 
                 <!-- Information Section -->
-                <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4 lg:w-1/6">
                   <div class="font-bold text-xl sm:text-lg">Information</div>
-                  <ul class="text-gray-500 space-y-3 mt-5">
+                  <ul class="text-gray-200 space-y-3 mt-5">
                     <li>Brand Solutions</li>
                     <li>Digital Marketing Solutions</li>
                     <li>Who We Are</li>
@@ -990,13 +977,13 @@
                 <!-- Contact Section -->
                 <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
                   <div class="font-bold text-xl">Contact Us</div>
-                  <div class="text-gray-500 mt-5">
+                  <div class="text-gray-200 mt-5">
                     Ayn Technologies Pvt. Ltd.,<br>
                     No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
                     Ullagaram, Madipakkam, Chennai- 600091.
                   </div>
-                  <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                  <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                  <div class="text-gray-200 mt-3">+91-89259 22232</div>
+                  <div class="text-gray-200 mt-3">info@ayntech.in</div>
                 </div>
 
                 <!-- Call-to-Action Section -->
@@ -1035,7 +1022,7 @@
     </div>
 
   </div>
-  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  <!-- <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const scroll = new LocomotiveScroll({
@@ -1043,7 +1030,7 @@
         smooth: true
       });
     });
-  </script>
+  </script> -->
 
 
 

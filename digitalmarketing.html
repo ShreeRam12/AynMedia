@@ -12,6 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 
 <body>
     <section class="sticky top-0 left-0 z-50 shadow-lg">
@@ -344,21 +349,26 @@
     <!-- Types  -->
     <section>
         <div class="bg-black bgfont2 pt-10 pb-10">
-            <div class="container mx-auto sticky top-0 left-0 p-5">
-                <div class="flex justify-between">
-                    <div class="hidden lg:block space-y-10">
-                        <div class="text-white text-3xl">Website & Mobile App Development</div>
-                        <div class="text-white text-3xl">Social Media Marketing</div>
-                        <div class="text-white text-3xl">Search Engine Optimization (SEO)</div>
-                        <div class="text-white text-3xl">Content Marketing</div>
-                        <div class="text-white text-3xl">Performance Marketing</div>
-                        <div class="text-white text-3xl">Community / Influencer Marketing</div>
-                        <div class="text-white text-3xl">Video Marketing</div>
-                        <div class="text-white text-3xl">Email Marketing</div>
-
+            <div class="container mx-auto text-center p-5">
+                <div class="">
+                    <div class="hidden lg:block">
+                        <ul class="space-y-10">
+                            <li><a href="#website" class="text-white text-3xl">Website & Mobile App Development</a></li>
+                            <li><a href="#social" class="text-white text-3xl">Social Media Marketing</a></li>
+                            <li><a href="#seo" class="text-white text-3xl">Search Engine Optimization (SEO)</a></li>
+                            <li><a href="#content" class="text-white text-3xl">Content Marketing</a></li>
+                            <li><a href="#performance" class="text-white text-3xl">Performance Marketing</a></li>
+                            <li><a href="#community" class="text-white text-3xl">Community / Influencer Marketing</a>
+                            </li>
+                            <li><a href="#video" class="text-white text-3xl">Video Marketing</a></li>
+                            <li><a href="#email" class="text-white text-3xl">Email Marketing</a></li>
+                        </ul>
                     </div>
-                    <div class="w-full lg:w-3/6 ">
-                        <div class="text-white text-3xl">Website & Mobile App Development</div>
+                </div>
+                <div class="">
+                    <div class="w-full mt-32 ">
+                        <div class="text-white text-3xl" id="website" style="scroll-margin-top: 200px;">Website & Mobile
+                            App Development</div>
                         <div class="text-gray-500 mt-10">Elevate your online presence with Ayn Media's Website & Mobile
                             App Development service! We're not just developers; we’re
                             visionary creators who infuse creativity and innovation into every pixel. With our tech
@@ -367,7 +377,7 @@
                             apart from the competition.
                         </div>
                         <div
-                            class="mt-5 lg:mt-10 flex justify-between  flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                            class="mt-5 lg:mt-10 flex justify-around  flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -409,24 +419,24 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="website&mobile.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
-
+                        <div class="flex justify-center items-center">
+                            <a href="website&mobile.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="">
-                    <div class="w-full lg:w-3/6 mt-20 lg:mt-32">
-                        <div class="text-white text-3xl">Social Media Marketing</div>
+                    <div class="w-full mt-20 lg:mt-32">
+                        <div class="text-white text-3xl" id="social" style="scroll-margin-top: 200px;">Social Media
+                            Marketing</div>
                         <div class="text-gray-500 mt-10">Enter the dynamic world of Ayn Media's Social Media Marketing
                             services! Get ready to be captivated as we create powerful
                             and engaging social media campaigns tailored to your brand. From scroll-stopping content to
                             innovative strategies, we’ll
                             craft campaigns that resonate with your audience and elevate your brand's presence across
                             all platforms.</div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -468,15 +478,17 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="socialmedia.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
-
+                        <div class="flex justify-center items-center">
+                            <a href="socialmedia.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="w-full lg:w-3/6 mt-32">
-                        <div class="text-white text-3xl">Search Engine Optimization (SEO)</div>
+                    <div class="w-full mt-32">
+                        <div class="text-white text-3xl" id="seo" style="scroll-margin-top: 200px;">Search Engine
+                            Optimization (SEO)</div>
                         <div class="text-gray-500 mt-10">Unleash the power of visibility with Ayn Media's Search Engine
                             Optimization services! Using expert strategies and
                             innovative techniques, we'll optimize your website to climb the ranks of search engines,
@@ -485,7 +497,7 @@
                             discoverability and grow your audience
                             with precision SEO.
                         </div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -527,14 +539,18 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="seo.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <a href="seo.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="w-full lg:w-3/6 mt-32">
-                        <div class="text-white text-3xl">Content Marketing</div>
+                    <div class="w-full  mt-32">
+                        <div class="text-white text-3xl" id="content" style="scroll-margin-top: 200px;">Content
+                            Marketing</div>
                         <div class="text-gray-500 mt-10">Welcome to the World of Words with Ayn Media, where we turn
                             content into captivating experiences! Our team of skilled
                             wordsmiths is ready to infuse creativity and charm into your brand's story. Expect engaging
@@ -543,7 +559,7 @@
                             impactful content elevate
                             your brand to new heights!
                         </div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -597,14 +613,18 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="contentmarketing.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <a href="contentmarketing.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="w-full lg:w-3/6 mt-32">
-                        <div class="text-white text-3xl">Performance Marketing</div>
+                    <div class="w-full  mt-32">
+                        <div class="text-white text-3xl" id="performance" style="scroll-margin-top: 200px;">Performance
+                            Marketing</div>
                         <div class="text-gray-500 mt-10">Get ready for the ultimate performance with Ayn Media’s
                             Performance Marketing service! Our team of data-driven
                             strategists will fine-tune your campaigns into a powerhouse of results. From dynamic ads to
@@ -613,7 +633,7 @@
                             from the competition. Let us
                             orchestrate your brand's success and steal the spotlight!
                         </div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -667,15 +687,17 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="performance.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <a href="performance.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="w-full lg:w-3/6 mt-32">
-                        <div class="text-white text-3xl">Community / Influencer Marketing</div>
+                    <div class="w-full  mt-32">
+                        <div class="text-white text-3xl" id="community" style="scroll-margin-top: 200px;">Community /
+                            Influencer Marketing</div>
                         <div class="text-gray-500 mt-10">Step into the Influence Fête with Ayn Media, where we transform
                             communities into thriving kingdoms! Our team of expert
                             brand ambassadors will infuse creativity and flair into your influencer marketing strategy.
@@ -684,7 +706,7 @@
                             build a loyal tribe that
                             elevates your brand to new heights.
                         </div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -732,15 +754,17 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="community.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <a href="community.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="w-full lg:w-3/6 mt-32">
-                        <div class="text-white text-3xl">Video Marketingg</div>
+                    <div class="w-full  mt-32">
+                        <div class="text-white text-3xl" id="video" style="scroll-margin-top: 200px;">Video Marketing
+                        </div>
                         <div class="text-gray-500 mt-10">Lights, camera, action! Step into Ayn Media's Video Circus,
                             where we turn your brand into the next big blockbuster! Our
                             imaginative directors and creative visionaries will craft captivating video content that
@@ -749,7 +773,7 @@
                             your brand to life with our
                             magical video marketing services!
                         </div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -797,15 +821,17 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="videomarketing.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <a href="videomarketing.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="w-full lg:w-3/6 mt-32">
-                        <div class="text-white text-3xl">Email Marketing</div>
+                    <div class="w-full  mt-32">
+                        <div class="text-white text-3xl" id="email" style="scroll-margin-top: 200px;">Email Marketing
+                        </div>
                         <div class="text-gray-500 mt-10">Welcome to Ayn Media's Inbox Wonderland, where emails come
                             alive with creativity and charm! Our team of email experts
                             will craft engaging messages that cut through the clutter and spark meaningful connections.
@@ -814,7 +840,7 @@
                             into the Inbox Wonderland and
                             watch your emails shine brighter than ever!
                         </div>
-                        <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                        <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                             <ul class="space-y-3">
                                 <div class="flex gap-3">
                                     <div>
@@ -850,31 +876,31 @@
                                 </div>
                             </ul>
                         </div>
-                        <a href="emailmarketing.html" class="block">
-                            <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
-                                <div class="text-center">Get free Quote Today</div>
-                            </div>
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <a href="emailmarketing.html" class="block">
+                                <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
+                                    <div class="text-center">Get free Quote Today</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
     <!-- FAQ Section  -->
     <section>
-        <div class="bg-white pt-20">
+        <div class="bg-yellow-300 pt-20">
             <div class="bgfont2 container mx-auto p-5">
-                <h2 class="text-5xl  text-center mb-10">FAQ</h2>
+                <h2 class="text-5xl text-black text-center mb-10">FAQ</h2>
                 <div>
                     <!-- FAQ Item 1 -->
-                    <div class="border-b border-gray-500 pb-4 mb-4">
+                    <div class="border-b border-gray-900 pb-4 mb-4">
                         <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(1)">
                             <h3 class="font-semibold text-lg text-black">1. What is digital marketing?</h3>
                             <span id="symbol1" class="text-2xl">+</span>
                         </div>
-                        <div id="answer1" class="hidden mt-2 text-gray-600">
+                        <div id="answer1" class="hidden mt-2 text-gray-800">
                             <p>Digital marketing encompasses all online marketing efforts to promote your brand and
                                 connect with your audience through
                                 various digital channels.</p>
@@ -882,13 +908,13 @@
                     </div>
 
                     <!-- FAQ Item 2 -->
-                    <div class="border-b border-gray-500 pb-4 mb-4">
+                    <div class="border-b border-gray-900 pb-4 mb-4">
                         <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(2)">
                             <h3 class="font-semibold text-lg">2. How can digital marketing benefit my business?
                             </h3>
                             <span id="symbol2" class="text-2xl">+</span>
                         </div>
-                        <div id="answer2" class="hidden mt-2 text-gray-600">
+                        <div id="answer2" class="hidden mt-2 text-gray-800">
                             <p>It helps increase brand visibility, drive traffic, generate leads, and ultimately boost
                                 sales by targeting your audience
                                 effectively across multiple platforms..</p>
@@ -896,14 +922,14 @@
                     </div>
 
                     <!-- FAQ Item 3 -->
-                    <div class="border-b border-gray-500 pb-4 mb-4">
+                    <div class="border-b border-gray-900 pb-4 mb-4">
                         <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(3)">
                             <h3 class="font-semibold text-lg">3. What digital marketing services in chennai does Ayn
                                 Media offer?
                             </h3>
                             <span id="symbol3" class="text-2xl">+</span>
                         </div>
-                        <div id="answer3" class="hidden mt-2 text-gray-600">
+                        <div id="answer3" class="hidden mt-2 text-gray-800">
                             <p>We offer a range of services including SEO, social media marketing, email marketing,
                                 content marketing, and performance
                                 marketing tailored to your business needs.</p>
@@ -911,13 +937,13 @@
                     </div>
 
                     <!-- FAQ Item 4 -->
-                    <div class="border-b border-gray-500 pb-4 mb-4">
+                    <div class="border-b border-gray-900 pb-4 mb-4">
                         <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(4)">
                             <h3 class="font-semibold text-lg">4. How do you measure the success of digital marketing
                                 campaigns?</h3>
                             <span id="symbol4" class="text-2xl">+</span>
                         </div>
-                        <div id="answer4" class="hidden mt-2 text-gray-600">
+                        <div id="answer4" class="hidden mt-2 text-gray-800">
                             <p>TWe track key performance indicators (KPIs) such as traffic, engagement, conversion
                                 rates, and ROI to evaluate the
                                 effectiveness of our campaigns and make data-driven improvements.
@@ -926,14 +952,14 @@
                     </div>
 
                     <!-- FAQ Item 5 -->
-                    <div class="border-b border-gray-500 pb-4 mb-4">
+                    <div class="border-b border-gray-900 pb-4 mb-4">
                         <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(5)">
                             <h3 class="font-semibold text-lg">5. Can you create a customized digital marketing strategy
                                 for my business?
                             </h3>
                             <span id="symbol5" class="text-2xl">+</span>
                         </div>
-                        <div id="answer5" class="hidden mt-2 text-gray-600">
+                        <div id="answer5" class="hidden mt-2 text-gray-800">
                             <p>Absolutely! We work closely with you to understand your goals and audience, crafting a
                                 tailored digital marketing
                                 strategy that aligns with your brand objectives.
@@ -946,64 +972,63 @@
     </section>
     <!-- Get in Touch  -->
     <section>
-        <div class="bg-yellow-300 bgfont2 p-20 pt-20">
+        <div class="bg-black bgfont2 p-20 pt-20">
             <div class="container mx-auto">
                 <div class="flex flex-wrap md:flex-nowrap flex-col md:flex-row md:space-x-8">
                     <!-- Text Section -->
                     <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
-                        <div class="text-3xl md:text-3xl lg:text-3xl font-medium mb-4 text-gray-900">STILL, WAITING FOR
+                        <div class="text-3xl md:text-3xl lg:text-3xl font-medium mb-4 text-yellow-300">STILL, WAITING
+                            FOR
                             <br>US
                             TO
                             MAKE
                             THE
                             <br> FIRST MOVE?
                         </div>
-                        <div class="text-gray-900 text-xl mt-20">Don't be shy, get in touch.</div>
+                        <div class="text-white text-xl mt-20">Don't be shy, get in touch.</div>
                         <div class="mt-32 float-right">
                             <div class="w-full">
                                 <img src="assets/Border_Img.webp" alt="">
                             </div>
                         </div>
-
                     </div>
-
                     <!-- Form Section -->
-                    <div class="w-full md:w-1/2 lg:w-3/5">
+                    <div class=" w-full md:w-1/2 lg:w-3/5">
                         <form class="space-y-12">
                             <!-- Name Field -->
                             <div>
                                 <label for="name" class="block  text-sm font-bold mb-2"></label>
 
                                 <input type="text" id="name" name="name" placeholder="Your Name*:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                    class="bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                                     required>
                             </div>
                             <!-- Email Field -->
                             <div>
-                                <label for="email" class="block text-gray-900 text-sm font-bold mb-2"></label>
+                                <label for="email" class="block text-gray-100 text-sm font-bold mb-2"></label>
                                 <input type="email" id="email" name="email" placeholder="Email Id:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                    class="bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                                     required>
 
                             </div>
                             <div>
                                 <label for="number" class="block text-gray-900 text-sm font-bold mb-2"></label>
-                                <input type="number" id="email" name="number" placeholder="Phone Number:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                <input type="number" id="email" name="number" placeholder="Phone Number:" max="10"
+                                    class="bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                                     required>
                             </div>
                             <!-- Company Name  -->
                             <div>
                                 <label for="name" class="block  text-sm font-bold"></label>
                                 <input type="text" id="name" name="name" placeholder="Company Name:"
-                                    class=" bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                    class=" bg-transparent w-full border-b text-white border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                                     required>
                             </div>
 
                             <div class="mt-4">
                                 <label for="dropdown1" class="block text-sm font-bold"></label>
                                 <select id="dropdown1" name="dropdown1"
-                                    class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                    class="bg-transparent w-full border-b text-gray-100 border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                                     required>
                                     <option value="" disabled selected hidden>Choose Service</option>
                                     <option value="option1" class="text-black">Branding Solutions</option>
@@ -1038,26 +1063,24 @@
                             <div class="mt-4">
                                 <label for="dropdown2" class="block text-sm font-bold"></label>
                                 <select id="dropdown2" name="dropdown2"
-                                    class="bg-transparent w-full border-b text-gray-700 border-gray-700 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-700"
+                                    class="bg-transparent w-full border-b text-gray-100 border-gray-100 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-100"
                                     required>
                                     <option value="" disabled selected hidden>Estimated Monthly Budget
                                     </option>
-                                    <option value="option1" class="text-black">INR 75K - INR 1.5Lacs
+                                    <option value="option1" class="text-black">INR 35K - INR 60K
                                     </option>
-                                    <option value="option2" class="text-black">INR 1.5Lacs - INR 5 Lacs
+                                    <option value="option2" class="text-black">INR 60k - INR 1 Lakh
                                     </option>
-                                    <option value="option3" class="text-black"> INR 5 Lacs - INR 25 Lacs
-                                    </option>
-                                    <option value="option3" class="text-black"> INR 25Lacs and above
+                                    <option value="option3" class="text-black"> INR 1 Lakh & Above
                                     </option>
                                 </select>
                             </div>
                             <!-- Message Field -->
                             <div class="">
-                                <label for="message" class="block text-gray-700 text-sm font-bold"></label>
+                                <label for="message" class="block text-gray-100 text-sm font-bold"></label>
                                 <textarea id="message" name="message"
                                     placeholder="Please leave us a brief of your requirements and services you are interested in*:"
-                                    class="bg-transparent w-full border-b border-gray-700 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-700"
+                                    class="bg-transparent text-white w-full border-b border-gray-100 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-100"
                                     required></textarea>
                             </div>
                             <div
@@ -1075,9 +1098,8 @@
                             <div class="flex justify-start items-start">
                                 <div class="text-center mt-10">
                                     <button type="submit"
-                                        class="bg-black text-yellow-300 py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
-                                        Your Transformation Today
-                                    </button>
+                                        class="bg-yellow-300 text-black py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                                        Your Transformation Today</button>
                                 </div>
                             </div>
                         </form>
@@ -1090,7 +1112,7 @@
 
     <!-- News and Blogs -->
     <section>
-        <div class="bg-white">
+        <div class="bg-yellow-300">
             <div class="bgfont2 pt-32">
                 <div class="p-5 sm:p-5 container mx-auto flex flex-wrap lg:flex-nowrap justify-center items-center">
                     <div class="lg:w-3/6">
@@ -1101,14 +1123,14 @@
                             <div class="text-5xl font-medium">Whats New? <br>News and Blogs</div>
                         </div>
                         <div class="mt-10">
-                            <p class="text-gray-400">We don't mind sharing the secret.
+                            <p class="text-gray-800">We don't mind sharing the secret.
                                 <br> Read our blogs and stay updated
                                 <br> about the latest trends of the
                                 digital world.
                             </p>
                         </div>
-                        <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
-                            <div class="text-black text-center font-medium">All Articles</div>
+                        <div class="bg-black w-32 p-4 cursor-pointer rounded-lg mt-10">
+                            <div class="text-yellow-300 text-center font-medium">All Articles</div>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1156,79 +1178,57 @@
     </section>
     <!-- Footer  -->
     <section>
-        <div class="bg-black bgfont2 p-10">
+        <div class="bg-black bgfont2 p-5">
             <div>
-                <div class="flex justify-around flex-wrap md:flex-wrap">
-                    <div class="mt-20">
+                <div class="flex flex-wrap md:flex-nowrap justify-around">
+                    <!-- First Section -->
+                    <div class="mt-10 lg:mt-20 w-full md:w-1/2 lg:w-1/4">
                         <div>
-                            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="">
+                            <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo">
                         </div>
-                        <div class="mt-10 ">
-                            <p class="text-white text-justify">The Brand Bee is an integrated branding
-                                <br>and
-                                digital
-                                marketing
-                                agency based
-                                in Gurgaon, India.
-                                <br>With a team of over 40+, we are an award-winning <br>full-stack digital
-                                marketing
-                                agency
-                                offering <br>
-                                creative and innovative <br>digital and brand solutions for brands <br>
-                                looking
-                                to
-                                grow
-                                their
-                                businesses.
+                        <div class="mt-5 lg:mt-10">
+                            <p class="text-white text-justify">
+                                The Ayn Technologies is an integrated branding and digital marketing
+                                <br>
+                                agency based in Chennai, India. With a team of over <br>
+                                40+, we are an award-winning full-stack digital marketing agency <br>
+                                offering creative and innovative digital and brand <br>
+                                solutions for brands looking to grow their businesses
                             </p>
                         </div>
-                        <div class="mt-10 flex gap-5">
-                            <div>
-                                <i class="fa-brands fa-facebook-f" style="color: #c4c6ca;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-instagram" style="color: #cfd1d3;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-linkedin" style="color: #cfd0d3;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-youtube" style="color: #d0d1d2;"></i>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-x-twitter" style="color: #c6c8cd;"></i>
-                            </div>
+                        <div class="mt-5 lg:mt-10 flex gap-5">
+                            <i class="fa-brands fa-facebook-f text-gray-400"></i>
+                            <i class="fa-brands fa-instagram text-gray-400"></i>
+                            <i class="fa-brands fa-linkedin text-gray-400"></i>
+                            <i class="fa-brands fa-youtube text-gray-400"></i>
+                            <i class="fa-brands fa-twitter text-gray-400"></i>
                         </div>
-                        <div class="flex gap-3 mt-10 w-72 ">
-                            <div>
-                                <img src="assets/Googole_partner.webp" alt="Googole_partner" class="rounded-sm">
-                            </div>
-                            <div>
-                                <img src="assets/Meta-partner.webp" alt="Meta-partner" class="rounded-sm">
-                            </div>
+                        <div class="flex gap-3 mt-5 lg:mt-10 w-full">
+                            <img src="assets/Googole_partner.webp" alt="Google Partner"
+                                class="rounded-sm w-1/2 h-auto object-contain">
+                            <img src="assets/Meta-partner.webp" alt="Meta Partner"
+                                class="rounded-sm w-32 h-auto object-contain">
                         </div>
-                        <div class="flex mt-10 gap-1">
-                            <div class="cursor-pointer">
-                                <img src="assets/Goggle_Icon.webp" alt="Goggle_Icon">
-                            </div>
-                            <div class="text-white">Chennai's Leading Digital Agency</div>
-                            <div> |</div>
-                            <div class="flex">
-                                <div class="text-yellow-300">30+</div>
-                                <div>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
 
-                                </div>
+                        <div class="flex flex-wrap items-center mt-5 lg:mt-10 gap-2">
+                            <img src="assets/Goggle_Icon.webp" alt="Google Icon" class="cursor-pointer">
+                            <div class="text-white">Chennai's Leading Digital Agency</div>
+                            <div>|</div>
+                            <div class="flex gap-1">
+                                <div class="text-yellow-300">30+</div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="text-white pt-20">
-                        <div class="font-bold text-xl">Information</div>
-                        <ul class="text-gray-500 space-y-3 mt-5">
+
+                    <!-- Information Section -->
+                    <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4 lg:w-1/6">
+                        <div class="font-bold text-xl sm:text-lg">Information</div>
+                        <ul class="text-gray-200 space-y-3 mt-5">
                             <li>Brand Solutions</li>
                             <li>Digital Marketing Solutions</li>
                             <li>Who We Are</li>
@@ -1240,50 +1240,48 @@
                             <li>Contact</li>
                         </ul>
                     </div>
-                    <div class="text-white pt-20">
-                        <div class="font-bold text-xl">Contact US</div>
-                        <div class="text-gray-500 mt-5">
+
+                    <!-- Contact Section -->
+                    <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                        <div class="font-bold text-xl">Contact Us</div>
+                        <div class="text-gray-200 mt-5">
                             Ayn Technologies Pvt. Ltd.,<br>
                             No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
                             Ullagaram, Madipakkam, Chennai- 600091.
                         </div>
-                        <div class="text-gray-500 mt-3">+91-89259 22232</div>
-                        <div class="text-gray-500 mt-3">info@ayntech.in</div>
+                        <div class="text-gray-200 mt-3">+91-89259 22232</div>
+                        <div class="text-gray-200 mt-3">info@ayntech.in</div>
                     </div>
-                    <div>
 
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="bg-gray-950 p-10">
-                        <div class="flex justify-center items-center mt-20">
-                            <div class="">
-                                <div class="text-white text-3xl text-center">Do you want to <br> Bee?</div>
+                    <!-- Call-to-Action Section -->
+                    <div class="bg-gray-950 p-5 lg:p-10 w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0">
+                        <div class="flex justify-center items-center mt-5 lg:mt-20">
+                            <div>
+                                <div class="text-yellow-300 text-lg font-medium text-center">
+                                    Ready to Grow Your <br> Business with the Best?
+                                </div>
                             </div>
                         </div>
                         <div class="flex justify-center items-center mt-10">
                             <div
-                                class="cursor-pointer bg-white w-56 p-20 rounded-full hover:bg-yellow-300 duration-700 ease-in-out">
-                                <div class="text-center">Contact US</div>
+                                class="cursor-pointer bg-white w-56 p-5 lg:p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                <div class="text-center">Contact Us Today</div>
                             </div>
                         </div>
-                        <div class="mt-10">
-                            <div class="text-white font-medium text-center">09 : 00 AM - 7 : 00 PM</div>
-                            <div class="text-gray-500 text-center">Monday to Friday</div>
-                        </div>
-                        <div class="text-gray-500  mt-16 text-justify">
-                            With extensive expertise <br>spanning in Chennai <br> our digital marketing
-                            agency
-                            brings
-                            <br>invaluable
-                            industry insights and <br>
-                            international <br>know-how to your brand's success.
+                        <div class="text-gray-500 mt-5 lg:mt-16 text-justify">
+                            Partner with AYN Media, the <span class="text-yellow-300 font-bold">Digital
+                                Marketing Company in
+                                Chennai</span>
+                            that puts your business first. Whether you’re looking to boost your online
+                            visibility or drive more
+                            traffic
+                            to your website, we’ve got you covered.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <!---- JavaScript to toggle the mobile menu -->
     <script>
@@ -1319,6 +1317,19 @@
                 symbol.textContent = '–';
             }
         }
+    </script>
+    <!-- JavaScript Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
     </script>
 </body>
 
