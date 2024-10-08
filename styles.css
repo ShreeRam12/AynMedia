@@ -376,14 +376,14 @@ h1 {
 .navfont {
   font-family: "Poppins", sans-serif;
 }
-/* Form  */
+/* Form   */
 
 .container .text {
   text-align: center;
   font-size: 41px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  /* background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea); */
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -457,7 +457,6 @@ form .form-row .textarea {
   content: "";
   height: 2px;
   width: 100%;
-  /* background: #3498db; */
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;

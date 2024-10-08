@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Are</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="./output.css" rel="stylesheet">
+    <link href="/dist/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Locomotive Scroll  -->
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<style>
+    /* Locomotive Smooth Scroll  */
+    /* html,
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  [data-scroll-container] {
+    overflow: hidden;
+  }
+
+  [data-scroll-section] {
+    position: relative;
+    min-height: 200vh;
+    justify-content: center;
+    align-items: center;
+  } */
+
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        width: auto;
+        /* Ensures slides auto-resize based on content */
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+
+<body class="">
+    <section class="cursor__wrapper" id="">
+        <section class="sticky top-0 left-0 z-50 shadow-lg">
+            <!-- Navbar -->
+            <nav class="bg-yellow-300 shadow-lg bgfont">
+                <div class="container mx-auto flex justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo" class="" />
+                    </div>
+                    <!-- Centered Navbar Links (hidden on mobile) -->
+                    <div class="p-5 hidden lg:flex justify-center items-center gap-16">
+                        <a href="index.html"
+                            class="text-black group relative inline-block overflow-hidden cursor-pointer">
+                            <span class="block text-black">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+
+                                <span
+                                    class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                    <span
+                                        class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="relative inline-block text-black cursor-pointer group z-50">
+                            <a href="brandsolutions.html" class="block text-black font-medium">
+                                SERVICES
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                                class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="brandsolutions.html"
+                                            class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                                            Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="digitalmarketing.html"
+                                            class="block px-4 py-2 text-black hover:bg-gray-200">Digital
+                                            Marketing
+                                            Solutions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="relative inline-block text-black cursor-pointer group z-50">
+                            <!-- ABOUT US link -->
+                            <a href="aboutus.html" class="text-black cursor-pointer">
+                                ABOUTUS
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                                class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-50">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="whoweare.html" class="block px-4 py-2 text-black hover:bg-gray-200">
+                                            Who we are
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="howework.html" class="block px-4 py-2 text-black hover:bg-gray-200">
+                                            How we work
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">
+                                            What we do
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ourleadership.html"
+                                            class="block px-4 py-2 text-black hover:bg-gray-200">
+                                            Our Leadership
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <a href="samplework.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">A</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">M</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">P</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">W</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">K</span>
+                            </span>
+                        </a>
+                        <a href="client.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">U</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">R</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">C</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">I</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">N</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">T</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">S</span>
+                            </span>
+                        </a>
+                        <a href="blog.html"
+                            class="group relative inline-block overflow-hidden text-black cursor-pointer">
+                            <span class="block">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                            </span>
+                            <span
+                                class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">L</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">O</span>
+                                <span
+                                    class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">G</span>
+                            </span>
+                        </a>
+                        <div class="flex justify-center items-center">
+                            <div class="bg-black p-2">
+                                <a href="#"
+                                    class="text-white hover:text-yellow-400 duration-700 ease-in-out group relative inline-block overflow-hidden cursor-pointer">
+                                    <span class="block mt-3">
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                    </span>
+                                    <span
+                                        class="absolute inset-0 flex items-center justify-center text-black transform -translate-y-full transition-transform duration-500 ease-in-out group-hover:translate-x-0">
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[100ms]">E</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[500ms]">A</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[600ms]">L</span>
+                                        <span
+                                            class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[700ms]">K</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Toggle Button -->
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="navbar-toggle" class="text-gray-700 focus:outline-none lg:hidden p-5">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+                <!-- Mobile Menu (hidden by default) -->
+                <div id="mobile-menu" class="lg:hidden flex flex-col items-center text-center gap-4 hidden pb-5">
+                    <a href="index.html" class="text-black">HOME</a>
+                    <!-- SERVICES with Dropdown -->
+                    <div class="relative">
+                        <a href="#" id="services-toggle" class="text-black">SERVICES</a>
+                        <div class="w-full ">
+                            <ul id="services-dropdown" class="hidden flex-col text-black space-y-2 p-10 mt-2 bg-white">
+                                <li><a href="brandsolutions.html" class="">Brand Solutions</a></li>
+                                <hr />
+                                <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
+                                <hr />
+                                <li><a href="#" class="">Service 3</a></li>
+                                <hr />
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT US with Dropdown -->
+                    <div class="relative">
+                        <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
+                        <div class="">
+                            <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+                                <li><a href="whoweare.html" class="hover:text-gray-400">who We Are</a></li>
+                                <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
+                                <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
+                                <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="samplework.html" class="text-black hover:text-gray-400">SAMPLE WORK</a>
+                    <a href="client.html" class="text-black hover:text-gray-400">OUR CLIENTS</a>
+                    <a href="blog.html" class="text-black hover:text-gray-400">BLOG</a>
+                    <div class="bg-black p-2">
+                        <a href="#" class="text-white hover:text-gray-400">LET'S TALK</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- WHO WE ARE ? -->
+        <div>
+            <div>
+                <section class="bgfont2 bg-white pb-20">
+                    <div class="container mx-auto mt-20 p-5 sm:p-0">
+                        <div>
+                            <div class="text-5xl font-medium text-black ">About AYN Media & Technologies</div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="mt-10 text-black text-left">AYN Media & Technologies
+                                Pvt. Ltd., was founded in 2020 and has quickly established itself as a leading
+                                <span class="font-bold text-black">Digital
+                                    Marketing Agency</span> Our young and dynamic team offers full-service
+                                branding,
+                                digital marketing, and ad film production, delivering results-driven projects that help
+                                businesses thrive in the competitive digital landscape.
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="mt-10 text-black text-left">As a creative brand builder and strategist,
+                                AYN Media & Technologies empowers organizations to increase revenue by generating more
+                                leads and
+                                driving business growth. We help brands capitalize on opportunities to boost sales and
+                                expand their reach. Our digital marketing services focus on crafting innovative
+                                strategies, implementing cutting-edge technologies, and delivering solutions that
+                                maximize business success and growth.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Video Section -->
+                <section class="bg-white">
+                    <section class="container mx-auto">
+                        <div class="flex justify-center items-center mt-20 pb-20 p-5">
+                            <div class="w-full md:w-3/4 lg:w-2/3 xl:w-full">
+                                <div class="relative" style="padding-top: 56.25%;">
+                                    <!-- Aspect ratio is maintained here (16:9) -->
+                                    <iframe src="assets/AynMedia-Video.mp4" frameborder="0"
+                                        class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+
+
+                <!-- Digital Everything -->
+                <section class="bg-white pb-10">
+                    <div class="container mx-auto">
+                        <div class="pt-10 flex justify-around flex-wrap md:flex-nowrap ">
+                            <div class="w-full md:w-4/6 xl:w-3/6 p-5">
+                                <div class="bgfont2 text-black text-center md:text-center lg:text-left">We Help You to
+                                </div>
+                                <div
+                                    class="bgfont2 text-black text-5xl font-medium mt-5 text-center md:text-center lg:text-left">
+                                    REACH EVERY WHERE</div>
+                                <div class="mt-10 flex justify-center">
+                                    <img src="assets/Who_we_are_2.webp" alt="Who_we_are_2"
+                                        class="w-full md:w-3/6 lg:w-4/6 xl:w-5/6">
+                                </div>
+
+                            </div>
+                            <div class="mt-10 bgfont2 xl:w-4/6 p-5">
+                                <div class="">
+                                    <p class="text-black">
+                                        Our busy hive of experienced thinkers, writers, and designers is dedicated to
+                                        buzzing
+                                        alongside
+                                        you, transforming your business goals into focused brand strategies. We believe
+                                        in
+                                        nurturing
+                                        our
+                                        clients with the utmost care and responsibility, providing them with strategized
+                                        platforms
+                                        to
+                                        thrive like youthful bees. Together, we'll launch your brand with an identity
+                                        that
+                                        sets
+                                        you
+                                        apart from the swarm. With a bold, honest, and imaginative approach, we deliver
+                                        the
+                                        sweet
+                                        results our clients crave, building lasting relationships on the wings of
+                                        creativity.
+                                    </p>
+                                    <p class="mt-5 text-black">
+                                        Founded in 2020, based in Chennai India we serve clients not only across the
+                                        nation
+                                        but
+                                        also
+                                        on
+                                        an international
+                                        scale. Our wings span far and wide, spreading our unique brand of creativity and
+                                        expertise
+                                        to
+                                        help businesses thrive and bloom globally.
+
+                                    <div class="mt-5 text-black">Strategy, Creation and Performance are key
+                                        parts
+                                        of
+                                        what
+                                        we do.
+                                    </div>
+                                    </p>
+                                </div>
+                                <div class="mt-10">
+                                    <div class="font-medium text-black text-2xl">STRATEGY</div>
+                                    <p class="mt-3 text-black">We craft winning strategies by aligning your
+                                        brand
+                                        to
+                                        your
+                                        business vision and help you achieve
+                                        your goals with branding and marketing through a research driven methodology, as
+                                        well as
+                                        creative advocacy through internal strength and external partnerships.</p>
+                                </div>
+                                <div class=" mt-5">
+                                    <div class="font-medium text-black text-2xl">CREATION</div>
+                                    <p class="mt-3 text-black">Once your strategy is crafted, we make your
+                                        brand
+                                        come
+                                        to
+                                        life
+                                        through visual identity and
+                                        collaterals, promotional and goal-driven campaigns, web architecture and design,
+                                        creative
+                                        content and storytelling.</p>
+                                </div>
+                                <div class=" mt-5">
+                                    <div class="font-medium text-black text-2xl">PERFORMANCE</div>
+                                    <p class="mt-3 text-black">Serving your strategy and ‘creation’ goals
+                                        with
+                                        action,
+                                        and
+                                        helping you achieve a competitive
+                                        advantage in the marketplace while attaining profitable growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid Images  -->
+                    <div class="mt-10">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-5">
+                            <div class="bg-gray-200">
+                                <img src="assets/Who_we_are_3.webp" alt="Who_we_are_1"
+                                    class="w-full h-full object-cover rounded-lg max-h-64">
+                            </div>
+                            <div class="bg-gray-200">
+                                <img src="assets/DG_2.webp" alt="DG_2"
+                                    class="w-full h-full object-cover rounded-lg max-h-64">
+                            </div>
+                            <div class="bg-gray-200">
+                                <img src="assets/Who_we_are_4.webp" alt="Who_we_are_4"
+                                    class="w-full h-full object-cover rounded-lg max-h-64">
+                            </div>
+                            <div class="bg-gray-200">
+                                <img src="assets/DG_4.webp" alt="DG_4"
+                                    class="w-full h-full object-cover rounded-lg max-h-64">
+                            </div>
+                            <div class="bg-gray-200">
+                                <img src="assets/Social_Media2.webp" alt="Social_Media"
+                                    class="w-full h-full object-cover rounded-lg max-h-64">
+                            </div>
+                            <div class="bg-gray-200">
+                                <img src="assets/DG_4.webp" alt="DG_4"
+                                    class="w-full h-full object-cover rounded-lg max-h-64">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Clients and Projects  -->
+                    <div class="pt-10 pb-10">
+                        <div class="container mx-auto md:p-20 lg:p-24">
+                            <div class="bgfont2 flex justify-around flex-wrap md:flex-nowrap">
+                                <div>
+                                    <div class="text-3xl md:text-6xl lg:text-8xl font-light text-black">300+</div>
+                                    <div class="text-black text-center">Clients</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl md:text-6xl lg:text-8xl font-light text-black">2K+</div>
+                                    <div class="text-black text-center">Projects</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl md:text-6xl lg:text-8xl font-light text-black">5</div>
+                                    <div class="text-black text-center">Countries</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl md:text-6xl lg:text-8xl font-light text-black">50+</div>
+                                    <div class="text-black text-center">Industries</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Our Clients  -->
+                    <section class="bg-white pt-20 pb-20">
+                        <div class="text-center font-medium text-5xl bgfont2 text-animate2">Our Clients</div>
+                        <div class="bgfont2 text-center font-medium mt-5 text-animate2">WE DON'T BELIEVE IN
+                            MONOGAMY.
+                            WE
+                            KEEP
+                            ALL OUR
+                            CLIENTS
+                            HAPPY
+                            AT THE
+                            SAME TIME.
+                        </div>
+                        <!-- Swiper Carousel -->
+                        <!-- Infinte Slider CSS -->
+                        <section class="mt-5 p-5">
+                            <div class="infinite_slider">
+                                <!-- Slide 1 -->
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52">
+                                        <img src="assets/MiStyle.webp" alt="Client 1"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52">
+                                        <img src="assets/Nailhub.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52">
+                                        <img src="assets/EVM 1 copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-44 mt-14">
+                                        <img src="assets/H&M hospital.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52">
+                                        <img src="assets/peak copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-3">
+                                        <img src="assets/BN Constructions - logo square copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-[250px]">
+                                        <img src="assets/new rukmani copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52">
+                                        <img src="assets/parambaryam copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-5">
+                                        <img src="assets/selligo copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-5">
+                                        <img src="assets/Optilenz png copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-5">
+                                        <img src="assets/vip copy.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-48 mt-7">
+                                        <img src="assets/srt creative copy.webp" alt="srt creative"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-5">
+                                        <img src="assets/Silver Logo copy.webp" alt="Silver"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-5">
+                                        <img src="assets/waffle.webp" alt="Client 2"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-48 mt-10">
+                                        <img src="assets/scr.webp" alt="scr"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-48 mt-10">
+                                        <img src="assets/magic.webp" alt="magic"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-72 ">
+                                        <img src="assets/inc.webp" alt="inc"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-44 mt-10">
+                                        <img src="assets/iface.webp" alt="iface"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-44 mt-10">
+                                        <img src="assets/event.webp" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-36 mt-14">
+                                        <img src="assets/Shivalaya School.webp" alt="event"
+                                            class="w-full bg-transparent h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-36 mt-14">
+                                        <img src="assets/Prime Forex - AeroHub Mall-East.webp" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-36 mt-14">
+                                        <img src="assets/Venkateswara Diagnostic Centre.webp" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-44 mt-10">
+                                        <img src="assets/happy copy.webp" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-44 mt-10">
+                                        <img src="assets/Plan_Your_Destinations-removebg-preview.png" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-10">
+                                        <img src="assets/Crackers.png" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-52 mt-20">
+                                        <img src="assets/Cavinkare.png" alt="event"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-48 mt-20">
+                                        <img src="assets/BlueMoon.webp" alt="BlueMoon"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-44 mt-10">
+                                        <img src="assets/Alpha.webp" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="-mt-20">
+                                        <img src="assets/Amildams.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="-mt-20">
+                                        <img src="assets/Armony.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="-mt-20">
+                                        <img src="assets/MrBurger.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class=" -mt-20">
+                                        <img src="assets/MrConsultant.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-72 -mt-10">
+                                        <img src="assets/Smart.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="-mt-20">
+                                        <img src="assets/Sanchu.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="w-72 -mt-10">
+                                        <img src="assets/Subham.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="-mt-20">
+                                        <img src="assets/Trizilla.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="-mt-20">
+                                        <img src="assets/WashWrap.png" alt="Alpha"
+                                            class="w-full h-auto object-cover filter grayscale hover:filter-none transition duration-700 ease-in-out">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="bgfont2 flex justify-center items-center">
+                            <div class="group cursor-pointer">
+                                <div
+                                    class="bg-yellow-300 p-3 w-40 text-center rounded-md transition duration-300 ease-in-out group-hover:bg-black">
+                                    <div class="text-xl group-hover:text-yellow-300 text-black">View More</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- Get in Touch  -->
+                <div class="bg-yellow-300 bgfont2 p-20">
+                    <div class="container mx-auto">
+                        <div class="flex flex-col md:flex-row md:space-x-8">
+                            <!-- Text Section -->
+                            <div class="w-full md:w-1/2 lg:w-3/4 text-center md:text-left mb-8 md:mb-0">
+                                <div class="text-3xl md:text-5xl font-medium mb-4 text-gray-800">STILL, WAITING FOR
+                                    <br>US
+                                    TO
+                                    MAKE
+                                    THE
+                                    <br> FIRST MOVE?
+                                </div>
+                                <div class="text-gray-800 text-xl mt-20">Don't be shy, get in touch.</div>
+                                <div class="mt-32 float-right">
+                                    <div class="w-full">
+                                        <img src="assets/Border_Img.webp" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Form Section -->
+                            <div class="w-full md:w-1/2 lg:w-3/5">
+                                <form class="space-y-12">
+                                    <!-- Name Field -->
+                                    <div>
+                                        <label for="name" class="block  text-sm font-bold mb-2"></label>
+
+                                        <input type="text" id="name" name="name" placeholder="Your Name*:"
+                                            class="bg-transparent w-full border-b border-gray-800 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-800 "
+                                            required>
+                                    </div>
+                                    <!-- Email Field -->
+                                    <div>
+                                        <label for="email" class="block text-gray-800 text-sm font-bold mb-2"></label>
+                                        <input type="email" id="email" name="email" placeholder="Email Id:"
+                                            class="bg-transparent w-full border-b border-gray-800 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-800 "
+                                            required>
+
+                                    </div>
+                                    <div>
+                                        <label for="number" class="block text-gray-800 text-sm font-bold mb-2"></label>
+                                        <input type="number" id="email" name="number" placeholder="Phone Number:"
+                                            class="bg-transparent w-full border-b border-gray-800 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-800 "
+                                            required>
+                                    </div>
+                                    <!-- Company Name  -->
+                                    <div>
+                                        <label for="name" class="block  text-sm font-bold"></label>
+                                        <input type="text" id="name" name="name" placeholder="Company Name:"
+                                            class=" bg-transparent w-full border-b text-gray-800  border-gray-800 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-800 "
+                                            required>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <label for="dropdown1" class="block text-sm font-bold"></label>
+                                        <select id="dropdown1" name="dropdown1"
+                                            class="bg-transparent w-full border-b text-gray-800 border-gray-800 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-800 "
+                                            required>
+                                            <option value="" disabled selected hidden>Choose Service</option>
+                                            <option value="option1" class="text-gray-800">Branding Solutions</option>
+                                            <option value="option2" class="text-gray-800">Corporate Rebranding</option>
+                                            <option value="option3" class="text-gray-800">Photoshoots & Video Shoots
+                                            </option>
+                                            <option value="option3" class="text-gray-800">social Media Marketing
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Ecommerce Solutions</option>
+                                            <option value="option3" class="text-gray-800">Website Development &
+                                                Management
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Ads/Perfomrance Marketing
+                                            </option>
+                                            <option value="option3" class="text-gray-800">SEO (Search Engine
+                                                Optimization)
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Content Marketing Solutions
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Email Marketing & Automation
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Marketing & Automation
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Online Reputation Management
+                                            </option>
+                                            <option value="option3" class="text-gray-800">Influencer Marketing &
+                                                Community
+                                                Building </option>
+                                            <option value="option3" class="text-gray-800">Other </option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <label for="dropdown2" class="block text-sm font-bold"></label>
+                                        <select id="dropdown2" name="dropdown2"
+                                            class="bg-transparent w-full border-b text-gray-800 border-gray-800 rounded-none focus:outline-none focus:border-b-2 placeholder-gray-800"
+                                            required>
+                                            <option value="" disabled selected hidden>Estimated Monthly Budget</option>
+                                            <option value="option1" class="text-gray-800">INR 35K - INR 60K</option>
+                                            <option value="option2" class="text-gray-800">INR 60K - INR 1 Lakh</option>
+                                            <option value="option3" class="text-gray-800"> INR 1 Lakh & above</option>
+                                        </select>
+                                    </div>
+                                    <!-- Message Field -->
+                                    <div class="">
+                                        <label for="message" class="block text-gray- text-sm font-bold"></label>
+                                        <textarea id="message" name="message"
+                                            placeholder="Please leave us a brief of your requirements and services you are interested in*:"
+                                            class="bg-transparent w-full border-b border-gray-800 rounded-none focus:outline-none focus:border-b-2 h-32 placeholder-gray-800"
+                                            required></textarea>
+                                    </div>
+                                    <div class="mt-4 flex items-center bg-white w-72 p-5">
+                                        <input type="checkbox" id="not-a-robot" name="not-a-robot"
+                                            class="text-gray-700 focus:ring-2 focus:ring-gray-700 h-5 w-5">
+                                        <div class="flex gap-14 justify-center items-center">
+                                            <div>
+                                                <label for="not-a-robot" class="ml-2 text-gray-700 text-sm">I am not a
+                                                    robot</label>
+                                            </div>
+                                            <div>
+                                                <img src="assets/Captchaa.png" alt="Captchaa">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- Submit Button -->
+                                    <div class="flex justify-start items-start">
+                                        <div class="text-center mt-10">
+                                            <button type="submit"
+                                                class="bg-yellow-300 text-black py-3 px-6 rounded-lg hover:bg-white hover:text-black duration-700 ease-in-out focus:outline-none">Begin
+                                                Your Transformation Today</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- News and Blogs -->
+                <section>
+                    <div class="bg-white">
+                        <div class="bgfont2 pt-32">
+                            <div
+                                class="p-5 sm:p-5 container mx-auto flex flex-wrap md:flex-nowrap justify-center items-center">
+                                <div class="lg:w-3/6">
+                                    <div class="border-black border w-32 rounded-lg">
+                                        <div class="tet-gray-300 text-center">Featured Blog</div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="text-5xl font-medium">Our Featured <br>News and Blogs</div>
+                                    </div>
+                                    <div class="mt-10">
+                                        <p class="text-gray-400">Unlock the Knowledge We’ve Gained <br>
+                                            Stay informed by reading our blogs and get the latest insights on the
+                                            ever-evolving trends in the digital world.
+                                        </p>
+                                    </div>
+                                    <a href="blog.html">
+                                        <div class="bg-yellow-300 w-32 p-4 cursor-pointer rounded-lg mt-10">
+                                            <div class="text-black text-center font-medium">All Blogs</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <!-- LinkedIN Blog  -->
+                                    <a href="linkedin.html">
+                                        <div class="bg-white  p-6">
+                                            <img src="assets/Blog1_Img.webp" alt="Blog 1"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-10">
+                                                <div class="bg-gray-100 w-36 rounded-xl p-1">
+                                                    <div class="text-center">17/09/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Paid Advertising
+                                                vs. Organic Growth: Which is Best for Your Business?</p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Web Development Blog  -->
+                                    <a href="webdev.html">
+                                        <div class="bg-white p-6">
+                                            <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 2"
+                                                class="w-full h-48 object-cover mb-4">
+                                            <div class="mt-10">
+                                                <div class="bg-gray-100 w-36 rounded-xl p-1">
+                                                    <div class="text-center">02/09/2024</div>
+                                                </div>
+                                            </div>
+                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How A Web
+                                                Development
+                                                Company Can Future-Proof Your Website</p>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-10 flex justify-end">
+                                <div class="w-full sm:w-5/6">
+                                    <img src="assets/Home_DG.jpg" alt="Home_DG" class="w-full h-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Footer  -->
+                <section>
+                    <div class="bg-black bgfont2 p-5">
+                        <div>
+                            <div class="flex flex-wrap md:flex-nowrap justify-around">
+                                <!-- First Section -->
+                                <div class="mt-10 lg:mt-20 w-full md:w-1/2 lg:w-1/4">
+                                    <div>
+                                        <img src="assets/Website-Ayntech.webp" alt="AynMedia_Logo">
+                                    </div>
+                                    <div class="mt-5 lg:mt-10">
+                                        <p class="text-white text-justify">
+                                            The Ayn Technologies is an integrated branding and digital marketing
+                                            agency based in Chennai, India. With a team of over
+                                            40+, we are an award-winning full-stack digital marketing agency
+                                            offering creative and innovative digital and brand
+                                            solutions for brands looking to grow their businesses
+                                        </p>
+                                    </div>
+                                    <div class="mt-5 lg:mt-10 flex gap-5">
+                                        <i class="fa-brands fa-facebook-f text-gray-400"></i>
+                                        <i class="fa-brands fa-instagram text-gray-400"></i>
+                                        <i class="fa-brands fa-linkedin text-gray-400"></i>
+                                        <i class="fa-brands fa-youtube text-gray-400"></i>
+                                        <i class="fa-brands fa-twitter text-gray-400"></i>
+                                    </div>
+                                    <div class="flex gap-3 mt-5 lg:mt-10 w-full">
+                                        <img src="assets/Googole_partner.webp" alt="Google Partner"
+                                            class="rounded-sm w-1/2 h-auto object-contain">
+                                        <img src="assets/Meta-partner.webp" alt="Meta Partner"
+                                            class="rounded-sm w-32 h-auto object-contain">
+                                    </div>
+
+                                    <div class="flex flex-wrap items-center mt-5 lg:mt-10 gap-2">
+                                        <img src="assets/Goggle_Icon.webp" alt="Google Icon" class="cursor-pointer">
+                                        <div class="text-white">Chennai's Leading Digital Agency</div>
+                                        <div>|</div>
+                                        <div class="flex gap-1">
+                                            <div class="text-yellow-300">30+</div>
+                                            <i class="fa-solid fa-star text-yellow-400"></i>
+                                            <i class="fa-solid fa-star text-yellow-400"></i>
+                                            <i class="fa-solid fa-star text-yellow-400"></i>
+                                            <i class="fa-solid fa-star text-yellow-400"></i>
+                                            <i class="fa-solid fa-star text-yellow-400"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Information Section -->
+                                <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4 lg:w-40">
+                                    <div class="font-bold text-xl sm:text-lg">Information</div>
+                                    <ul class="text-gray-200 space-y-3 mt-5">
+                                        <li>Brand Solutions</li>
+                                        <li>Digital Marketing Solutions</li>
+                                        <li>Who We Are</li>
+                                        <li>Sample Work</li>
+                                        <li>Our Clients</li>
+                                        <li>Blog</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Contact Section -->
+                                <div class="text-white pt-5 lg:pt-20 w-full md:w-1/4">
+                                    <div class="font-bold text-xl">Contact Us</div>
+                                    <div class="text-gray-200 mt-5">
+                                        Ayn Technologies Pvt. Ltd.,<br>
+                                        No.4, 2nd Floor, Vembuli Amman Koil Street,<br>
+                                        Ullagaram, Madipakkam, Chennai- 600091.
+                                    </div>
+                                    <div class="text-gray-200 mt-3">+91-89259 22232</div>
+                                    <div class="text-gray-200 mt-3">info@ayntech.in</div>
+                                </div>
+
+                                <!-- Call-to-Action Section -->
+                                <div class="bg-gray-950 p-5 lg:p-10 w-full md:w-1/2 lg:w-1/4 mt-10 lg:mt-0">
+                                    <div class="flex justify-center items-center mt-5 lg:mt-20">
+                                        <div>
+                                            <div class="text-white text-lg font-medium text-center">
+                                                Ready to Grow Your <br> Business with the Best?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center items-center mt-10">
+                                        <div
+                                            class="cursor-pointer bg-white w-56 p-5 lg:p-20 rounded-full hover:bg-yellow-400 duration-700 ease-in-out">
+                                            <div class="text-center">Contact Us Today</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-gray-500 mt-5 lg:mt-16 text-justify">
+                                        Partner with AYN Media, the <span class="text-white font-bold">Digital
+                                            Marketing Company in
+                                            Chennai</span>
+                                        that puts your business first. Whether you’re looking to boost your online
+                                        visibility or drive more
+                                        traffic
+                                        to your website, we’ve got you covered.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <span class="cursor"></span>
+        <span class="cursor-trail"></span>
+    </section>
+    <!-- Cursor Effects  -->
+    <script>
+        var timeout
+
+        function fancyCursor(e) {
+
+            let halfCursorSize = 12; // For .cursor
+            let halfTrailSize = 40; // For .cursor-trail
+
+            let scaleMin = 0.35
+            let scaleMax = 1.0
+            let finalX = e.pageX - halfCursorSize
+            let finalY = e.pageY - halfCursorSize
+            let finalTrailX = e.pageX - halfTrailSize
+            let finalTrailY = e.pageY - halfTrailSize
+
+            document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMin + ')'
+
+            setTimeout(() => {
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMin + ')'
+            }, 100)
+
+            if (timeout !== undefined) {
+                window.clearTimeout(timeout)
+            }
+
+            timeout = window.setTimeout(function () {
+                document.querySelector('.cursor').style.transform = 'translate(' + finalX + 'px,' + finalY + 'px) scale(' + scaleMax + ')'
+                document.querySelector('.cursor-trail').style.transform = 'translate(' + finalTrailX + 'px,' + finalTrailY + 'px) scale(' + scaleMax + ')'
+            }, 250)
+            document.querySelector('.cursor').style.opacity = '1'
+            document.querySelector('.cursor-trail').style.opacity = '1'
+        }
+
+        function cursorLoader() {
+            if (document.querySelector('.cursor__wrapper')) {
+                document.querySelector('.cursor__wrapper').addEventListener('mousemove', fancyCursor)
+                document.querySelector('.cursor__wrapper').addEventListener('mouseleave', () => {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                }, false)
+                window.addEventListener('scroll', function (e) {
+                    document.querySelector('.cursor').style.opacity = '0'
+                    document.querySelector('.cursor-trail').style.opacity = '0'
+                })
+            }
+        }
+
+        window.addEventListener('load', function () {
+            cursorLoader()
+            function animate() {
+                requestAnimationFrame(animate)
+            }
+            animate()
+        })
+    </script>
+    <!-- Locomotive Smooth Scroll  -->
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[]'),
+                smooth: true
+            });
+        });
+    </script>
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        document.getElementById('navbar-toggle').onclick = function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        // Toggle the SERVICES dropdown
+        document.getElementById('services-toggle').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            const dropdown = document.getElementById('services-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+        // Toggle the ABOUT US dropdown
+        document.getElementById('aboutus-toggle').addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            const dropdown = document.getElementById('aboutus-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+    </script>
+    <!-- Our Clients Infinte CSS  -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Infinite Slider  -->
+    <script>
+        $(document).ready(function () {
+            $('.infinite_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 5000,
+                arrows: false,
+                swipe: false,
+                slidesToShow: 4,
+                cssEase: 'linear',
+                pauseOnFocus: false,
+                pauseOnHover: false,
+            });
+        });
+    </script>
+
+    <!-- Our Clients Swiper JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.mySwiper', {
+                // Enable looping
+                loop: true,
+
+                // Enable free mode for smooth, continuous scrolling
+                freeMode: {
+                    enabled: true,
+                    momentum: true,       // Allows the scroll to continue smoothly
+                    momentumRatio: 1,     // Adjusts the momentum speed
+                    momentumBounce: false // Prevents the scroll from bouncing back
+                },
+
+                // Autoplay settings
+                autoplay: {
+                    delay: 0,                // No delay between transitions
+                    disableOnInteraction: false, // Continue autoplay after user interactions
+                },
+
+                // Transition speed (in milliseconds)
+                speed: 1000, // Adjust this value for desired scroll speed
+
+                // Disable swiping interactions to maintain smooth autoplay
+                allowTouchMove: false,
+
+                // Adjust slides per view based on screen size for responsiveness
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+
+                // Breakpoints for responsiveness
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 5
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 15
+                    },
+                    1280: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    }
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
