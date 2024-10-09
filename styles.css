@@ -371,10 +371,12 @@ h1 {
   width: 50%;
 }
 
-/* ContactUS  */
-/* Navbar */
-.navfont {
-  font-family: "Poppins", sans-serif;
+/* Services Section  */
+/* Brand Solutions Banner Image */
+.brandbg {
+  background-image: url("assets/Brand_Solutons_Banner.webp");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* Form   */
-/* 

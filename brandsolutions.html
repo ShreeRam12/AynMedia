@@ -21,9 +21,10 @@
 </style>
 
 <body>
-  <section class="sticky top-0 left-0 z-50">
+  <!-- NAVBAR  -->
+  <section class="sticky top-0 left-0 z-50 shadow-lg">
     <!-- Navbar -->
-    <nav class="bg-yellow-300 shadow-lg bgfont  ">
+    <nav class="bg-yellow-300 shadow-lg bgfont">
       <div class="container mx-auto flex justify-between">
         <!-- Logo -->
         <div class="flex items-center">
@@ -32,7 +33,7 @@
         <!-- Centered Navbar Links (hidden on mobile) -->
         <div class="p-5 hidden lg:flex justify-center items-center xl:gap-16 lg:gap-7">
           <a href="index.html" class="text-black group relative inline-block overflow-hidden cursor-pointer">
-            <span class="block text-black">
+            <span class="block text-black tracking-tighter">
               <span
                 class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">H</span>
               <span
@@ -55,16 +56,18 @@
               </span>
             </span>
           </a>
+
           <div class="relative inline-block text-black cursor-pointer group z-50">
-            <a href="brandsolutions.html" class="block text-black font-medium">
+            <a href="" class="block text-black font-medium">
               SERVICES
             </a>
 
             <!-- Dropdown Menu -->
-            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
+            <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40 z-auto">
               <ul class="py-2">
                 <li>
-                  <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand Solutions</a>
+                  <a href="brandsolutions.html" class="block px-4 py-2 text-black hover:bg-gray-200">Brand
+                    Solutions</a>
                 </li>
                 <li>
                   <a href="digitalmarketing.html" class="block px-4 py-2 text-black hover:bg-gray-200">Digital Marketing
@@ -73,9 +76,10 @@
               </ul>
             </div>
           </div>
+
           <div class="relative inline-block text-black cursor-pointer group z-50">
             <a href="" class="text-black cursor-pointer">
-              ABOUTUS
+              ABOUT US
             </a>
             <!-- Dropdown Menu -->
             <div class="absolute top-3 left-0 mt-2 hidden group-hover:block bg-white shadow-lg rounded-md w-40">
@@ -89,18 +93,20 @@
                     we work</a>
                 </li>
                 <li>
-                  <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we do</a>
+                  <a href="whatwedo.html" class="block px-4 py-2 text-black hover:bg-gray-200">What we
+                    do</a>
                 </li>
 
                 <li>
-                  <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our LeaderShip</a>
+                  <a href="ourleadership.html" class="block px-4 py-2 text-black hover:bg-gray-200">Our
+                    Management</a>
                 </li>
               </ul>
             </div>
           </div>
 
           <a href="samplework.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-            <span class="block">
+            <span class="block tracking-tighter">
               <span
                 class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">S</span>
               <span
@@ -147,7 +153,7 @@
             </span>
           </a>
           <a href="client.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-            <span class="block">
+            <span class="block tracking-tighter">
               <span
                 class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">O</span>
               <span
@@ -194,7 +200,7 @@
             </span>
           </a>
           <a href="blog.html" class="group relative inline-block overflow-hidden text-black cursor-pointer">
-            <span class="block">
+            <span class="block tracking-tighter">
               <span
                 class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full">B</span>
               <span
@@ -229,6 +235,7 @@
                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[200ms]">T</span>
                   <span
                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[300ms]">S</span>
+
                   <span
                     class="inline-block transform transition-transform duration-500 ease-in-out group-hover:translate-y-full delay-[400ms]">T</span>
                   <span
@@ -279,8 +286,6 @@
               <hr />
               <li><a href="digitalmarketing.html" class="">Digital Marketing Solutions</a></li>
               <hr />
-              <li><a href="#" class="">Service 3</a></li>
-              <hr />
             </ul>
           </div>
         </div>
@@ -290,9 +295,10 @@
           <a href="#" id="aboutus-toggle" class="text-black hover:text-gray-400">ABOUT US</a>
           <div class="">
             <ul id="aboutus-dropdown" class="hidden flex-col text-black space-y-2 mt-2 p-10 bg-white">
+              <li><a href="whoweare.html" class="hover:text-gray-400">Who We Are</a></li>
               <li><a href="howework.html" class="hover:text-gray-400">How We Work</a></li>
               <li><a href="whatwedo.html" class="hover:text-gray-400">What we Do</a></li>
-              <li><a href="ourleadership.html" class="hover:text-gray-400">Our Leadership</a></li>
+              <li><a href="ourleadership.html" class="hover:text-gray-400">Our Management</a></li>
             </ul>
           </div>
         </div>
@@ -307,24 +313,24 @@
   </section>
 
   <!-- Hero Section  -->
-  <section class="bg-white pb-20">
-    <div class="container mx-auto pt-20 p-5">
+  <section class="bg-white pb-20 brandbg">
+    <div class="pt-20 p-5 md:p-10 lg:p-10 ">
 
       <!-- Top Image Section -->
       <div class="hidden md:block w-full flex justify-center md:justify-start lg:justify-start">
-        <img src="assets/Brand_BG.jpg" alt="" class="w-40 md:w-60 lg:w-80 lg:h-52">
+        <img src="assets/Brand_BG.jpg" alt="" class="w-40 md:w-60 lg:w-96 lg:h-96">
       </div>
       <div class="w-full">
         <!-- Hero Title -->
         <div
-          class="bgfont2 text-4xl md:text-5xl xl:text-7xl font-medium text-center md:flex justify-end lg:justify-center md:-mt-40 lg:-mt-40">
-          Brand Solutions
+          class="bgfont2 text-4xl lg:text-left xl:text-left md:text-5xl xl:text-8xl font-semibold text-center md:flex justify-end lg:justify-center md:-mt-40 lg:-mt-40">
+          Brand<br>Solutions
         </div>
 
         <!-- Hero Description -->
         <div class="flex justify-center items-center md:justify-end lg:justify-center mt-10">
           <div
-            class="text-center lg:text-left bgfont2 text-gray-700 text-lg lg:text-xl leading-relaxed max-w-3xl lg:ml-10">
+            class="text-center lg:text-left bgfont2 text-gray-700 text-lg lg:text-xl leading-relaxed max-w-3xl lg:ml-10 xl:ml-32">
             Elevate Your Success with Ayn Media – <br>
             The Experts in Brand & Business Alignment <br>
             Collaborate with us to Strategize, Design, <br>
@@ -340,7 +346,7 @@
       </div>
 
       <!-- Bottom Left Image -->
-      <div class="w-full  lg:w-52 md:w-60 md:mt-32 mx-auto md:ml-52">
+      <div class="w-full  lg:w-52 md:w-60 md:mt-32 mx-auto relative md:ml-52 lg:-top-40">
         <img src="assets/Brand_solutions_3.jpg" alt="">
       </div>
 
@@ -369,28 +375,45 @@
   <section>
     <div class="bg-black bgfont2 pt-10 pb-10">
       <div class="text-center">
-        <div class="container mx-auto p-5">
-          <div class="">
+        <div class="p-5  lg:p-10">
+          <div class="flex justify-between">
             <div class="hidden lg:flex justify-center">
-              <ul class="space-y-10 text-center">
+              <ul class="space-y-10 text-center lg:w-full lg:text-left">
                 <li>
-                  <a href="#brandstrategy" class="text-white text-3xl cursor-pointer">Brand Strategy/Positioning</a>
+                  <a href="#brandstrategy" onclick="scrollToSection('brandstrategy')"
+                    class="text-white text-3xl cursor-pointer">Brand Strategy/Positioning</a>
                 </li>
                 <li>
-                  <a href="#corporate" class="text-white text-3xl cursor-pointer">Corporate Communications</a>
+                  <a href="#corporate" onclick="scrollToSection('corporate')"
+                    class="text-white text-3xl cursor-pointer">Corporate Communications</a>
                 </li>
                 <li>
-                  <a href="#brandcommunication" class="text-white text-3xl cursor-pointer">Brand Communications &
+                  <a href="#brandcommunication" onclick="scrollToSection('brandcommunication')"
+                    class="text-white text-3xl cursor-pointer">Brand Communications &
                     Design</a>
                 </li>
                 <li>
-                  <a href="#photoshoots" class="text-white text-3xl cursor-pointer">PhotoShoots & Video Shorts</a>
+                  <a href="#photoshoots" onclick="scrollToSection('photoshoots')"
+                    class="text-white text-3xl cursor-pointer">PhotoShoots & Video Shorts</a>
                 </li>
               </ul>
             </div>
-
-            <div class="w-full mt-32">
-              <div class="">
+            <div>
+              <div class="w-72">
+                <img src="assets/Brand_Strategy_BG.webp" alt="">
+              </div>
+              <div class="w-72">
+                <img src="assets/Corporate_BG.webp" alt="">
+              </div>
+              <div class="w-72">
+                <img src="assets/Brand_Communication_BG.webp" alt="">
+              </div>
+              <div class="w-72">
+                <img src="assets/Photshoot_Shorts_BG.webp" alt="">
+              </div>
+            </div>
+            <div class="w-full lg:w-3/6 h-screen overflow-y-auto p-10">
+              <div class="lg:text-left">
                 <div class="text-white text-3xl" id="brandstrategy" style="scroll-margin-top: 200px;">Brand
                   Strategy/Positioning</div>
                 <div class="text-gray-500 mt-10">Unleash the Power of Branding with Ayn Media's Strategy Service! We're
@@ -454,7 +477,7 @@
                     </div>
                   </ul>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center lg:justify-start">
                   <a href="brandstrategy.html" class="block">
                     <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
                       <div class="text-center">Get free Quote Today</div>
@@ -462,7 +485,7 @@
                   </a>
                 </div>
               </div>
-              <div class="mt-32" id="corporate" style="scroll-margin-top: 200px;">
+              <div class="mt-32 lg:mt-10 lg:text-left" id="corporate" style="scroll-margin-top: 200px;">
                 <div class="text-white text-3xl">Corporate Communication</div>
                 <div class="text-gray-500 mt-10">We're the creative wordsmiths at Ayn Media, blending artistry and
                   strategy
@@ -474,7 +497,7 @@
                   impression
                   on every
                   customer.</div>
-                <div class="mt-10 flex justify-around flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
+                <div class="mt-10 flex justify-between flex-wrap md:flex-nowrap gap-5 md:gap-20 lg:gap-20">
                   <ul class="space-y-3">
                     <div class="flex gap-3">
                       <div>
@@ -528,7 +551,7 @@
                     </div>
                   </ul>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center lg:justify-start">
                   <a href="corporate.html" class="block">
                     <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
                       <div class="text-center">Get free Quote Today</div>
@@ -536,7 +559,7 @@
                   </a>
                 </div>
               </div>
-              <div class="mt-32" id="brandcommunication" style="scroll-margin-top: 200px;">
+              <div class="mt-32 lg:mt-10 lg:text-left" id="brandcommunication" style="scroll-margin-top: 200px;">
                 <div class="text-white text-3xl">Brand Communication & Design</div>
                 <div class="text-gray-500 mt-10">At Ayn Media, we’re the creative visionaries who fuse storytelling and
                   design to make your brand unforgettable. Our
@@ -599,7 +622,7 @@
                     </div>
                   </ul>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center lg:justify-start">
                   <a href="communication.html" class="block">
                     <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
                       <div class="text-center">Get free Quote Today</div>
@@ -608,7 +631,7 @@
                 </div>
 
               </div>
-              <div class="mt-32" id="photoshoots" style="scroll-margin-top: 200px;">
+              <div class="mt-32 lg:mt-10 lg:text-left" id="photoshoots" style="scroll-margin-top: 200px;">
                 <div class="text-white text-3xl">Photoshoots & Video Shoots</div>
                 <div class="text-gray-500 mt-10">At Ayn Media, we're the creative maestros who transform your brand’s
                   vision
@@ -650,7 +673,7 @@
                     </div>
                   </ul>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center lg:justify-start">
                   <a href="photoshoot.html" class="block">
                     <div class="bg-white w-52 mt-10 bgfont2 p-5 cursor-pointer mx-auto md:mx-0">
                       <div class="text-center">Get free Quote Today</div>
@@ -887,9 +910,6 @@
       </div>
     </div>
   </div>
-
-  <!-- FAQ Section  -->
-
   <!-- News and Blogs -->
   <section>
     <div class="bg-white">
@@ -921,7 +941,7 @@
                 <img src="assets/Blog1_Img.webp" alt="Blog 1" class="w-full h-48 object-cover mb-4">
                 <div class="mt-10">
                   <div class="bg-gray-100 w-36 rounded-xl p-1">
-                    <div class="text-center">17/09/2024</div>
+                    <div class="text-center">30/09/2024</div>
                   </div>
                 </div>
                 <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Paid Advertising
@@ -932,15 +952,14 @@
             <!-- Web Development Blog  -->
             <a href="webdev.html">
               <div class="bg-white p-6">
-                <img src="assets/Web_Dev_Blog_Image.webp" alt="Blog 2" class="w-full h-48 object-cover mb-4">
+                <img src="assets/Blog2_Img.webp" alt="Blog 2" class="w-full h-48 object-cover mb-4">
                 <div class="mt-10">
                   <div class="bg-gray-100 w-36 rounded-xl p-1">
-                    <div class="text-center">02/09/2024</div>
+                    <div class="text-center">05/10/2024</div>
                   </div>
                 </div>
-                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How A Web
-                  Development
-                  Company Can Future-Proof Your Website</p>
+                <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How to Optimize
+                  Campaigns for Maximum ROI</p>
 
               </div>
             </a>
@@ -1057,6 +1076,14 @@
     </div>
 
   </section>
+  <!-- JavaScript for Smooth Scroll -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
   <!---- JavaScript to toggle the mobile menu -->
   <script>
     document.getElementById('navbar-toggle').onclick = function () {
