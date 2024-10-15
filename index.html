@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
     <!-- Locomotive Scroll  -->
     <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
     <!-- AOS CSS -->
@@ -296,36 +297,8 @@
         justify-content: space-between;
     }
 
-    #ceoImage_container {
-        position: relative;
 
-    }
-
-
-    #ceoImage_container img {
-        width: auto;
-        position: absolute;
-        object-fit: cover;
-    }
-
-    .image-ceo {
-        position: relative;
-        overflow: hidden;
-        background-color: red;
-        width: 30vw;
-        height: 30vw;
-    }
-
-    .image-ceo img {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 170%;
-        object-fit: cover;
-        object-position: center;
-        padding: 0;
-    }
+    
 </style>
 
 <body>
@@ -1383,9 +1356,9 @@
                     <div
                         class="pb-20 p-5 sm:p-0 container mx-auto flex flex-wrap md:flex-nowrap lg:gap-32 bgfont2 lg:mt-10">
                         <div class="w-5/6 mx-auto">
-                            <div class="image-ceo h-[80%] w-[100%] relative">
+                            <div class="image-ceo relative h-full w-full overflow-hidden">
                                 <img src="assets/Ayntech_CEO.webp" alt="Ayn-logo"
-                                    class="absolute h-full w-full object-cover">
+                                    class="absolute h-100% w-100% object-cover ">
                             </div>
 
                         </div>
@@ -1431,21 +1404,51 @@
                 <script>
                     gsap.registerPlugin(ScrollTrigger);
 
-                    gsap.utils.toArray(".image-ceo").forEach(function (container) {
-                        let image = container.querySelector("img");
+const lenis = new Lenis({
+  lerp: 0.07
+});
 
-                        gsap.to(image, {
-                            y: () => image.offsetHeight - container.offsetHeight,
-                            ease: "none",
-                            scrollTrigger: {
-                                trigger: container,
-                                scrub: true,
-                                pin: false,
-                                invalidateOnRefresh: true
-                            },
-                        });
-                    });
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+// Images parallax
+gsap.utils.toArray('.image-ceo').forEach(container => {
+  const img = container.querySelector('img');
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      scrub: true,
+      pin: false,
+      markers: true,
+          invalidateOnRefresh: true
+    }
+  });
+
+  tl.fromTo(img, {
+    yPercent: -20,
+    ease: 'none'
+  }, {
+    yPercent: 20,
+    ease: 'none'
+  });
+});
                 </script>
+
+                <style>
+                    .img-ceo img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1.4);
+  transform-origin: 50% 50%;
+}
+                </style>
 
                 <!-- Testimonials  -->
                 <section class="bgfont2 bg-black">
