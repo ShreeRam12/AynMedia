@@ -213,7 +213,7 @@
         background-image: url('assets/Ayntech_CEO.webp');
         background-size: cover;
         background-position: center;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 50%;
         /* Move the image to the center */
@@ -292,6 +292,32 @@
     .infinite_slider {
         display: flex;
         justify-content: space-between;
+    }
+
+    #ceoImage_container {
+        display: flex;
+        min-height: 100dvh
+    }
+
+    #ceoImage_container img {
+        position: relative;
+    }
+
+    #ceoImage_container .img-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 32px;
+        padding-top: 80%;
+
+    }
+
+    #ceoImage_container .img-container img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        transform: translate(-50%) scale(1.4);
+        transform-origin: 50% 50%;
     }
 </style>
 
@@ -1350,9 +1376,15 @@
                     <div
                         class="pb-20 p-5 sm:p-0 container mx-auto flex flex-wrap md:flex-nowrap lg:gap-32 bgfont2 lg:mt-10">
                         <div class="w-5/6 mx-auto">
-                            <div class="parallax-section">
-                                <div class="parallax2"></div>
+                            <div class="" id="ceoImage_container">
+                                <!-- <div class="img-container"> -->
+                                <img src="assets/Ayntech_CEO.webp" alt="Ayn-logo"
+                                    class="img-parallax absolute object-cover">
+                                <!-- </div> -->
                             </div>
+                            <!-- <div class="parallax-section">
+                                <div class="parallax2"></div>
+                            </div> -->
                         </div>
                         <div class="w-full text-gray-700 mt-10 lg:mt-10 xl:mt-0">
                             <div>The year 2020 saw a global transition towards adapting to different cultures, a
@@ -1785,7 +1817,15 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Register GSAP's ScrollTrigger plugin
-            gsap.registerPlugin(ScrollTrigger);
+            gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+            const smoother = ScrollSmoother.create({
+                content: '#ceoImage_container',
+                smooth: 3,
+                effects: true
+            })
+
+            smoother.effects('img', { speed: auto })
 
             // Parallax effect for .Who_we_are_BG
             gsap.to(".Who_we_are_BG", {
@@ -1798,6 +1838,32 @@
                     scrub: true,          // Smooth scrubbing based on scroll position
                 }
             });
+
+            // Parallax effect for .img-container
+            // gsap.registerPlugin(ScrollTrigger);
+            // const lenis = new Lenis({
+            //     lerp: 0.07,
+            // });
+            // lenis.on('scroll', scrollTrigger.update);
+
+            // const img = container.querySelector('.img-parallax');
+            // const tl = gsap.timeline({
+            //     scrollTrigger: {
+            //         trigger: container,
+            //         scrub: true,
+            //         pin: false,
+            //     }
+            // });
+
+            // tl.fromTo(img, {
+            //     yPercent: -20,
+            //     ease: 'none'
+            // }, {
+            //     yPercent: 20,
+            //     ease: 'none'
+            // })
+
+
 
             // Parallax effect for .parallax-bg
             gsap.to(".parallax-bg", {
