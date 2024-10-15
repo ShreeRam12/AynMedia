@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script
-     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <!-- Locomotive Scroll  -->
     <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
     <!-- AOS CSS -->
@@ -299,34 +298,34 @@
 
     #ceoImage_container {
         position: relative;
-        
+
     }
 
 
-    #ceoImage_container  img {
+    #ceoImage_container img {
         width: auto;
         position: absolute;
         object-fit: cover;
     }
 
     .image-ceo {
-  position: relative;
-  overflow: hidden;
-  background-color: red;
-  width: 30vw;
-  height: 30vw;
-}
+        position: relative;
+        overflow: hidden;
+        background-color: red;
+        width: 30vw;
+        height: 30vw;
+    }
 
-.image-ceo img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 170%;
-  object-fit: cover;
-  object-position: center;
-  padding: 0;
-}
+    .image-ceo img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 170%;
+        object-fit: cover;
+        object-position: center;
+        padding: 0;
+    }
 </style>
 
 <body>
@@ -1373,7 +1372,7 @@
                     </div>
                 </div>
                 <!-- Brands and Campaigns  -->
-                <!-- <section class="bg-white">
+                <section class="bg-white">
                     <div class="container mx-auto pt-20 p-20">
                         <div class="text-lg lg:text-3xl font-medium text-center bgfont2">
                             <div>We're driven to craft meaningful brands and dynamic campaigns that build lasting,
@@ -1383,12 +1382,12 @@
                     </div>
                     <div
                         class="pb-20 p-5 sm:p-0 container mx-auto flex flex-wrap md:flex-nowrap lg:gap-32 bgfont2 lg:mt-10">
-                        <div class="w-5/6 mx-auto" id="ceoImage_container">
-                            <div class="" >
+                        <div class="w-5/6 mx-auto">
+                            <div class="image-ceo h-[80%] w-[100%] relative">
                                 <img src="assets/Ayntech_CEO.webp" alt="Ayn-logo"
-                                    class="img-parallax absolute object-cover">
+                                    class="absolute h-full w-full object-cover">
                             </div>
-                           
+
                         </div>
                         <div class="w-full text-gray-700 mt-10 lg:mt-10 xl:mt-0">
                             <div>The year 2020 saw a global transition towards adapting to different cultures, a
@@ -1425,32 +1424,27 @@
                             <img src="assets/Ayn-logo.webp" alt="Ayn-logo" class="w-full">
                         </div>
                     </div>
-                </section> -->
-                
-                <section class="bg-white min-h-[1200px] py-24 relative overflow-hidden ">
-                    <div class=" image-ceo bg-green-800">
-                        <img src="assets/Ayntech_CEO.webp" alt="Ayn-logo" class="img-parallax w-full object-cover h-[500px]">
-                    </div>
                 </section>
 
-                <script>
-                    gsap.registerPlugin(ScrollTrigger);  
 
-gsap.utils.toArray(".image-ceo").forEach(function(container) {
-    let image = container.querySelector("img");
-  
-      gsap.to(image, {
-        y: () => image.offsetHeight - container.offsetHeight,
-        ease: "none",
-        scrollTrigger: {
-          trigger: container,
-          scrub: true,
-          pin: false,
-          markers: true,
-          invalidateOnRefresh: true
-        },
-      }); 
-  });
+
+                <script>
+                    gsap.registerPlugin(ScrollTrigger);
+
+                    gsap.utils.toArray(".image-ceo").forEach(function (container) {
+                        let image = container.querySelector("img");
+
+                        gsap.to(image, {
+                            y: () => image.offsetHeight - container.offsetHeight,
+                            ease: "none",
+                            scrollTrigger: {
+                                trigger: container,
+                                scrub: true,
+                                pin: false,
+                                invalidateOnRefresh: true
+                            },
+                        });
+                    });
                 </script>
 
                 <!-- Testimonials  -->
@@ -1850,8 +1844,8 @@ gsap.utils.toArray(".image-ceo").forEach(function(container) {
             // Register GSAP's ScrollTrigger plugin
             gsap.registerPlugin(ScrollTrigger);
 
-            
-           
+
+
             // Parallax effect for .Who_we_are_B
             gsap.to(".Who_we_are_BG", {
                 yPercent: -30, // Moves the element upwards as you scroll
@@ -1864,7 +1858,7 @@ gsap.utils.toArray(".image-ceo").forEach(function(container) {
                 }
             });
 
-    
+
 
 
 
