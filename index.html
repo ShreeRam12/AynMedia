@@ -296,9 +296,6 @@
         display: flex;
         justify-content: space-between;
     }
-
-
-    
 </style>
 
 <body>
@@ -1302,13 +1299,13 @@
                 <div data-scroll-container class="bg-black bgfont2 parallax-container pb-10">
                     <!-- Parallax Background -->
                     <div id="parallax-bg" class="parallax-background">
-                        <div class="text-white text-7xl font-medium text-center">
+                        <div class="text-white text-7xl font-medium text-center -z-10">
                             FEATURED WORK
                         </div>
                     </div>
                     <!-- Content Container -->
-                    <div class="content-container">
-                        <div class="grid grid-cols-2 container mx-auto gap-20 mt-20">
+                    <div class="content-container ">
+                        <div class="grid grid-cols-2 container mx-auto gap-20 mt-20 overscroll-none">
                             <div class="image-container origin-bottom-right">
                                 <img src="assets/MI - 2.webp" alt="Work-1">
                             </div>
@@ -1404,50 +1401,50 @@
                 <script>
                     gsap.registerPlugin(ScrollTrigger);
 
-const lenis = new Lenis({
-  lerp: 0.07
-});
+                    const lenis = new Lenis({
+                        lerp: 0.07
+                    });
 
-lenis.on('scroll', ScrollTrigger.update);
+                    lenis.on('scroll', ScrollTrigger.update);
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
-})
+                    gsap.ticker.add((time) => {
+                        lenis.raf(time * 1000)
+                    })
 
-// Images parallax
-gsap.utils.toArray('.image-ceo').forEach(container => {
-  const img = container.querySelector('img');
+                    // Images parallax
+                    gsap.utils.toArray('.image-ceo').forEach(container => {
+                        const img = container.querySelector('img');
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: container,
-      scrub: true,
-      pin: false,
-      markers: true,
-          invalidateOnRefresh: true
-    }
-  });
+                        const tl = gsap.timeline({
+                            scrollTrigger: {
+                                trigger: container,
+                                scrub: true,
+                                pin: false,
+                                markers: true,
+                                invalidateOnRefresh: true
+                            }
+                        });
 
-  tl.fromTo(img, {
-    yPercent: -20,
-    ease: 'none'
-  }, {
-    yPercent: 20,
-    ease: 'none'
-  });
-});
+                        tl.fromTo(img, {
+                            yPercent: -20,
+                            ease: 'none'
+                        }, {
+                            yPercent: 20,
+                            ease: 'none'
+                        });
+                    });
                 </script>
 
                 <style>
                     .img-ceo img {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) scale(1.4);
-  transform-origin: 50% 50%;
-}
+                        width: auto;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%) scale(1.4);
+                        transform-origin: 50% 50%;
+                    }
                 </style>
 
                 <!-- Testimonials  -->
