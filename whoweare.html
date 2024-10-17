@@ -980,37 +980,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <!-- Blog1  -->
-                                    <a href="Blog1.html">
-                                        <div class="bg-white  p-6">
-                                            <img src="assets/Blog1_Img.webp" alt="Blog 1"
-                                                class="w-full h-48 object-cover mb-4">
-                                            <div class="mt-10">
-                                                <div class="bg-gray-100 w-36 rounded-xl p-1">
-                                                    <div class="text-center">30/09/2024</div>
-                                                </div>
-                                            </div>
-                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">Paid Advertising
-                                                vs. Organic Growth: Which is Best for Your Business?</p>
-                                        </div>
-                                    </a>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="blogs-container">
 
-                                    <!-- Blog 2  -->
-                                    <a href="Blog2.html">
-                                        <div class="bg-white p-6">
-                                            <img src="assets/Blog2_Img.webp" alt="Blog 2"
-                                                class="w-full h-48 object-cover mb-4">
-                                            <div class="mt-10">
-                                                <div class="bg-gray-100 w-36 rounded-xl p-1">
-                                                    <div class="text-center">05/10/2024</div>
-                                                </div>
-                                            </div>
-                                            <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">How to Optimize
-                                                Campaigns for Maximum ROI</p>
-
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                             <div class="mt-10 flex justify-end">
@@ -1140,6 +1111,49 @@
         <span class="cursor"></span>
         <span class="cursor-trail"></span>
     </section>
+    <!-- Dynamic Blogs for Featured Blogs -->
+    <script>
+        // Array of blog objects
+        const blogs = [
+            {
+                title: "Paid Social Media Advertising: Tips for Creating High-Performing Ads",
+                date: "05/10/2024",
+                imgSrc: "assets/Blog6_Banner_Img.webp",
+                link: "Blog6.html",
+            },
+            {
+                title: "Top Digital Marketing Strategies for Retail Businesses",
+                date: "05/10/2024",
+                imgSrc: "assets/Blog4_Banner_Updated.webp",
+                link: "Blog4.html",
+            },
+        ];
+
+        // Function to dynamically generate blog HTML
+        function generateBlogs() {
+            const blogsContainer = document.getElementById('blogs-container');
+            blogs.forEach(blog => {
+                const blogItem = `
+                <a href="${blog.link}">
+                    <div class="bg-white p-6">
+                        <img src="${blog.imgSrc}" alt="${blog.title}" class="w-full h-48 object-cover mb-4">
+                        <div class="mt-10">
+                            <div class="bg-gray-100 w-36 rounded-xl p-1">
+                                <div class="text-center">${blog.date}</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4 mt-5 text-xl font-medium">${blog.title}</p>
+                    </div>
+                </a>
+            `;
+                blogsContainer.innerHTML += blogItem;
+            });
+        }
+
+        // Call the function to generate blogs
+        generateBlogs();
+
+    </script>
     <!-- Cursor Effects  -->
     <script>
         var timeout

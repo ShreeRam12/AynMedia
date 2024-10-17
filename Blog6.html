@@ -444,11 +444,6 @@
                                     <div class="text-black text-md lg:text-xl font-bold">
                                         4. Write Compelling Copy
                                     </div>
-                                    <!-- Responsive Banner Image -->
-                                    <div class="mt-5">
-                                        <img src="assets/aynmedia_ppc.webp" alt="Local SEO Banner"
-                                            class="w-full max-w-7xl mx-auto h-auto object-cover">
-                                    </div>
                                     <p class="text-black  text-md lg:text-xl mt-10">After grabbing the viewer’s
                                         attention with stunning visuals, you need strong ad copy to keep them
                                         interested. Your copy
@@ -528,7 +523,8 @@
                                         <p class="mt-5">iv) Cost per click (CPC)</p>
                                         <p class="mt-5">iii) Return on ad spend (ROAS)</p>
                                     </div>
-                                    <div class="text-black text-md lg:text-xl mt-5">By analyzing the performance data, you
+                                    <div class="text-black text-md lg:text-xl mt-5">By analyzing the performance data,
+                                        you
                                         can make data-driven decisions to improve the effectiveness of your social media
                                         advertising efforts over time.</div>
                                 </div>
@@ -579,7 +575,8 @@
                             <div class="container mx-auto p-5">
                                 <div class="text-black mb-4 mt-5 text-3xl lg:text-5xl font-medium">Related Articles
                                 </div>
-                                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div id="blog-container"
+                                    class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                                 </div>
                             </div>
@@ -834,6 +831,52 @@
             }
             animate()
         })
+    </script>
+    <!-- Dynamic Blogs For Related Articles  -->
+    <script>
+        const blogs = [
+            {
+                title: "Paid Advertising vs. Organic Growth: Which is Best for Your Business?",
+                date: "17/09/2024",
+                image: "assets/Blog1_Img.webp",
+                url: "Blog1.html"
+            },
+            {
+                title: "How to Optimize Campaigns for Maximum ROI",
+                date: "05/10/2024",
+                image: "assets/Blog2_Img.webp",
+                url: "Blog2.html"
+            },
+            {
+                title: "Build a Strong Social Media Brand Identity: Best Practices for Consistency",
+                date: "05/10/2024",
+                image: "assets/Blog3_Img.webp",
+                url: "Blog3.html"
+            }
+        ];
+
+        const blogContainer = document.getElementById('blog-container');
+
+        blogs.forEach(blog => {
+            const blogElement = document.createElement('a');
+            blogElement.href = blog.url;
+            blogElement.innerHTML = `
+        <div class="bg-white p-6">
+            <img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover mb-4">
+            <div class="mt-28">
+                <div class="w-36">
+                    <div class="text-left text-gray-500">${blog.date}</div>
+                </div>
+            </div>
+            <p class="text-gray-900 mb-8 pt-5 text-3xl font-medium">${blog.title}</p>
+            <div class="pt-6 lg:pt-[60px] xl:pt-9">
+                <hr class="text-gray-500">
+            </div>
+        </div>
+    `;
+            blogContainer.appendChild(blogElement);
+        });
+
     </script>
 </body>
 
